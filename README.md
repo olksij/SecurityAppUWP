@@ -1,19 +1,19 @@
 # SecurityApp UWP idea
 My idea about  Security App
 
-## Changelog:
+### Changelog:
 - 16.06.18 - v.0.1 - Released first Alpha version
 
 ## This project is in Alpha Version!
 
-## Knowing issues:
+### Knowing issues:
 - When windows resizing, elements can dont resizing
 
-## Target platform:
+### Target platform:
 - Universal Windows
 
-## Minimal version:
+### Minimal version:
 - Windows 10 Fall Creators Update 1709
 
-## Target version:
+### Target version:
 - Windows 10 Spring Creators Update 1803(build 17134)
