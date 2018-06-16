@@ -1,0 +1,39 @@
+﻿/debug:pdbonly
+/nowarn:0436;0618;1668;1685;1701;1702
+/debug+
+/nostdlib+
+/optimize+
+/out:"D:\Alex\Visual\Security\Security\obj\x86\Release\ilc\intermediate\Security.McgInterop.dll"
+/pdb:"D:\Alex\Visual\Security\Security\obj\x86\Release\ilc\intermediate\Security.McgInterop.pdb"
+/platform:anycpu
+/warnaserror+
+/unsafe
+/nologo
+/target:library
+/define:MCG_PRE_BUILD
+/r:"C:\Program Files (x86)\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x86.microsoft.net.native.sharedlibrary\2.1.8\tools\SharedLibrary\ret\AnalysisILToc\System.Private.CoreLib.iltoc"
+/r:"C:\Program Files (x86)\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x86.microsoft.net.native.sharedlibrary\2.1.8\tools\SharedLibrary\ret\AnalysisILToc\System.Private.Interop.iltoc"
+/r:"C:\Program Files (x86)\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x86.microsoft.net.native.sharedlibrary\2.1.8\tools\SharedLibrary\ret\AnalysisILToc\System.Private.Uri.iltoc"
+/r:"D:\Alex\Visual\Security\Security\obj\x86\Release\ilc\in\System.Reflection.DispatchProxy.dll"
+/r:"D:\Alex\Visual\Security\Security\obj\x86\Release\ilc\in\System.Reflection.dll"
+/r:"C:\Program Files (x86)\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x86.microsoft.net.native.sharedlibrary\2.1.8\tools\SharedLibrary\ret\AnalysisILToc\System.Runtime.iltoc"
+/r:"D:\Alex\Visual\Security\Security\obj\x86\Release\ilc\in\System.Runtime.InteropServices.dll"
+/r:"D:\Alex\Visual\Security\Security\obj\x86\Release\ilc\in\System.Runtime.InteropServices.WindowsRuntime.dll"
+/r:"D:\Alex\Visual\Security\Security\obj\x86\Release\ilc\in\System.Numerics.Vectors.dll"
+/r:"C:\Program Files (x86)\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x86.microsoft.net.native.sharedlibrary\2.1.8\tools\SharedLibrary\ret\AnalysisILToc\System.Threading.iltoc"
+/r:"C:\Program Files (x86)\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x86.microsoft.net.native.sharedlibrary\2.1.8\tools\SharedLibrary\ret\AnalysisILToc\System.Diagnostics.Debug.iltoc"
+/r:"C:\Program Files (x86)\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x86.microsoft.net.native.sharedlibrary\2.1.8\tools\SharedLibrary\ret\AnalysisILToc\System.Runtime.Extensions.iltoc"
+/r:"C:\Program Files (x86)\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x86.microsoft.net.native.sharedlibrary\2.1.8\tools\SharedLibrary\ret\AnalysisILToc\System.Collections.iltoc"
+/r:"C:\Program Files (x86)\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x86.microsoft.net.native.sharedlibrary\2.1.8\tools\SharedLibrary\ret\AnalysisILToc\System.ObjectModel.iltoc"
+/r:"D:\Alex\Visual\Security\Security\obj\x86\Release\ilc\in\System.Runtime.WindowsRuntime.dll"
+/r:"D:\Alex\Visual\Security\Security\obj\x86\Release\ilc\in\System.Runtime.WindowsRuntime.UI.Xaml.dll"
+/r:"C:\Program Files (x86)\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x86.microsoft.net.native.sharedlibrary\2.1.8\tools\SharedLibrary\ret\AnalysisILToc\System.Private.SharedLibrary.Interop.Generated.iltoc"
+/r:"D:\Alex\Visual\Security\Security\obj\x86\Release\ilc\intermediate\System.Private.Security.Generated.dll"
+"D:\Alex\Visual\Security\Security\obj\x86\Release\ilc\intermediate\Security.McgInterop\Adapters.g.cs"
+"D:\Alex\Visual\Security\Security\obj\x86\Release\ilc\intermediate\Security.McgInterop\AssemblyInfo.g.cs"
+"D:\Alex\Visual\Security\Security\obj\x86\Release\ilc\intermediate\Security.McgInterop\Data.g.cs"
+"D:\Alex\Visual\Security\Security\obj\x86\Release\ilc\intermediate\Security.McgInterop\Helpers.g.cs"
+"D:\Alex\Visual\Security\Security\obj\x86\Release\ilc\intermediate\Security.McgInterop\ImplTypes.g.cs"
+"D:\Alex\Visual\Security\Security\obj\x86\Release\ilc\intermediate\Security.McgInterop\PInvoke.g.cs"
+"D:\Alex\Visual\Security\Security\obj\x86\Release\ilc\intermediate\Security.McgInterop\SafeTypes.g.cs"
+"D:\Alex\Visual\Security\Security\obj\x86\Release\ilc\intermediate\Security.McgInterop\SharedStubs.g.cs"

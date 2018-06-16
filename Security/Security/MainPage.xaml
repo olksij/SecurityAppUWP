@@ -1,0 +1,35 @@
+﻿<Page
+    x:Class="Security.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Security"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Height="516.529" Width="851.24">
+
+    <Grid>
+        <Rectangle Height="115" Margin="0,0,0,0" VerticalAlignment="Top" Fill="#FFEEEEEE"/>
+        <TextBlock x:Name="txtBlock" HorizontalAlignment="Left" Margin="21,29,0,0" Text="Refresh to get info" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="30"/>
+        <ProgressBar x:Name="pb" HorizontalAlignment="Left" Height="8" Margin="21,80,0,0" VerticalAlignment="Top" Width="400"/>
+        <GridView HorizontalAlignment="Stretch" Margin="0,115,0,50" VerticalAlignment="Stretch" Height="354">
+            <ItemsControl HorizontalAlignment="Stretch" Height="125" VerticalAlignment="Stretch" Width="125" PointerPressed="ComingSoon">
+                <FontIcon Glyph="&#xE894;" Height="125" FontSize="30"/>
+            </ItemsControl>
+            <ItemsControl HorizontalAlignment="Stretch" Height="125" VerticalAlignment="Stretch" Width="125" PointerPressed="ComingSoon">
+                <FontIcon Glyph="&#xE895;" Height="125" FontSize="30"/>
+            </ItemsControl>
+        </GridView>
+        <CommandBar VerticalAlignment="Bottom" >
+            <CommandBar.RenderTransform>
+                <CompositeTransform ScaleY="1"/>
+            </CommandBar.RenderTransform>
+            <CommandBar.Content>
+                <Grid/>
+            </CommandBar.Content>
+            <AppBarButton Icon="Setting" Label="Settings" Width="50" VerticalAlignment="Bottom"/>
+            <AppBarButton Icon="Refresh" Label="Refresh" Click="AppBarButton_Click" Width="50" FontSize="18"/>
+        </CommandBar>
+
+    </Grid>
+</Page>
