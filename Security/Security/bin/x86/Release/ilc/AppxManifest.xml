@@ -7,7 +7,7 @@
 
  Дополнительные сведения о файлах манифестов приложений см. по адресу http://go.microsoft.com/fwlink/?LinkID=241727
   -->
-  <Identity Name="c3e0b9c7-5e94-41f3-9432-cdde74d9e3aa" Publisher="CN=cooler" Version="0.1.0.0" ProcessorArchitecture="x86" />
+  <Identity Name="c3e0b9c7-5e94-41f3-9432-cdde74d9e3aa" Publisher="CN=cooler" Version="0.1.2.0" ProcessorArchitecture="x86" />
   <mp:PhoneIdentity PhoneProductId="c3e0b9c7-5e94-41f3-9432-cdde74d9e3aa" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
   <Properties>
     <DisplayName>Security</DisplayName>
@@ -40,7 +40,7 @@
     <build:Item Name="VisualStudio" Version="15.0" />
     <build:Item Name="VisualStudioEdition" Value="Microsoft Visual Studio Community 2017" />
     <build:Item Name="OperatingSystem" Version="10.0.17134.1 (WinBuild.160101.0800)" />
-    <build:Item Name="Microsoft.Build.AppxPackage.dll" Version="15.0.27703.2018" />
+    <build:Item Name="Microsoft.Build.AppxPackage.dll" Version="15.0.27703.2026" />
     <build:Item Name="ProjectGUID" Value="{A183EA50-FDB1-48D9-A533-F28DA5982E92}" />
     <build:Item Name="ilc.exe" Version="2.1.26424.01 built by: PROJECTNREL" />
     <build:Item Name="OptimizingToolset" Value="ilc.exe" />
@@ -52,7 +52,7 @@
     <build:Item Name="SingleThreadNUTC" Value="false" />
     <build:Item Name="Use64BitCompiler" Value="false" />
     <build:Item Name="DisableMetadataStackTraceResolution" Value="false" />
-    <build:Item Name="Microsoft.Windows.UI.Xaml.Build.Tasks.dll" Version="15.0.27703.2018" />
+    <build:Item Name="Microsoft.Windows.UI.Xaml.Build.Tasks.dll" Version="15.0.27703.2026" />
     <build:Item Name="MakePri.exe" Version="10.0.17134.12 (WinBuild.160101.0800)" />
   </build:Metadata>
 </Package>
