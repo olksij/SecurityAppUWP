@@ -3,6 +3,7 @@ My idea about  Security App
 
 ### Changelog:
 - 16.06.18 - v.0.1 - Released first Alpha version
+- 20.06.18 - v.0.2.2 - Redesigned window, fixed bugs, added settings and more
 
 ## This project is in Alpha Version!
 
@@ -13,7 +14,7 @@ My idea about  Security App
 - Universal Windows
 
 ### Minimal version:
-- Windows 10 Fall Creators Update 1709
+- Windows 10 Spring Creators Update 1803(build 17134)
 
 ### Target version:
 - Windows 10 Spring Creators Update 1803(build 17134)
