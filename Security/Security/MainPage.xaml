@@ -1,4 +1,4 @@
-﻿<Page
+﻿<Page 
     x:Class="Security.MainPage"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
@@ -8,27 +8,29 @@
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
     <Grid>
-        <Rectangle Height="115" Margin="0,0,0,0" VerticalAlignment="Top" Fill="#FFEEEEEE"/>
-        <TextBlock x:Name="txtBlock" HorizontalAlignment="Left" Margin="21,29,0,0" Text="Refresh to get info" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="30"/>
-        <ProgressBar x:Name="pb" HorizontalAlignment="Left" Height="8" Margin="21,80,0,0" VerticalAlignment="Top" Width="400"/>
-        <GridView HorizontalAlignment="Stretch" Margin="0,115,0,50" VerticalAlignment="Stretch">
-            <ItemsControl HorizontalAlignment="Stretch" Height="125" VerticalAlignment="Stretch" Width="125" PointerPressed="ComingSoon">
-                <FontIcon Glyph="&#xE894;" Height="125" FontSize="30"/>
+
+        <Rectangle Height="115" Margin="0,0,0,0" VerticalAlignment="Top" Fill="WhiteSmoke"/>
+        <TextBlock x:Name="txtBlock" HorizontalAlignment="Left" Margin="25,29,0,0" Text="Refresh to get info" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="30"/>
+        <ProgressBar x:Name="pb" HorizontalAlignment="Left" Height="8" Margin="25,80,0,0" VerticalAlignment="Top" Width="400"/>
+        <GridView HorizontalAlignment="Stretch" Margin="25,145,0,0" VerticalAlignment="Stretch">
+            <ItemsControl HorizontalAlignment="Center" Height="125" VerticalAlignment="Top" Width="125" PointerPressed="ComingSoon" Margin="0,0,0,0">
+                <FontIcon Glyph="&#xE894;" Height="80" HorizontalAlignment="Center" Margin="0,0,0,0" VerticalAlignment="Top" Width="125" FontSize="25"/>
+                <GridViewItem HorizontalAlignment="Stretch" Margin="0,0,0,0" VerticalAlignment="Stretch" PointerPressed="ComingSoon" Height="20">Clear</GridViewItem>
             </ItemsControl>
             <ItemsControl HorizontalAlignment="Stretch" Height="125" VerticalAlignment="Stretch" Width="125" PointerPressed="ComingSoon">
-                <FontIcon Glyph="&#xE895;" Height="125" FontSize="30"/>
+                <FontIcon Glyph="&#xE895;" Height="80" HorizontalAlignment="Center" Margin="0,0,0,0" VerticalAlignment="Top" Width="125" FontSize="25"/>
+                <GridViewItem HorizontalAlignment="Stretch" Margin="0,0,0,0" VerticalAlignment="Stretch" PointerPressed="ComingSoon" Height="20">Reclone</GridViewItem>
             </ItemsControl>
         </GridView>
-        <CommandBar VerticalAlignment="Bottom" >
-            <CommandBar.RenderTransform>
-                <CompositeTransform ScaleY="1"/>
-            </CommandBar.RenderTransform>
+        <CommandBar Margin="0,0,0,0" VerticalAlignment="Top" HorizontalAlignment="Right" Background="WhiteSmoke" Height="50" Width="50">
             <CommandBar.Content>
                 <Grid/>
             </CommandBar.Content>
-            <AppBarButton Icon="Setting" Label="Settings" Width="50" VerticalAlignment="Bottom"/>
-            <AppBarButton Icon="Refresh" Label="Refresh" Click="AppBarButton_Click" Width="50" FontSize="18"/>
+            <AppBarButton Icon="Setting" Label="Settings" Click="AppBarButton_Click_2"/>
+            <AppBarButton Icon="Refresh" Label="Refresh" Click="AppBarButton_Click_1"/>
         </CommandBar>
+
+
 
     </Grid>
 

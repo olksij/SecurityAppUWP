@@ -469,3 +469,8 @@ D:\Alex\Visual\Security\Security\obj\ARM\Release\ilc\intermediate\Security.McgIn
 D:\Alex\Visual\Security\Security\obj\ARM\Release\ilc\intermediate\Security.McgInterop\SharedStubs.g.cs
 D:\Alex\Visual\Security\Security\obj\ARM\Release\ilc\intermediate\System.Private.Security.Generated.dll
 D:\Alex\Visual\Security\Security\obj\ARM\Release\Security.csprojAssemblyReference.cache
+D:\Alex\Visual\Security\Security\bin\ARM\Release\ContentDialog1.xbf
+D:\Alex\Visual\Security\Security\obj\ARM\Release\ContentDialog1.g.i.cs
+D:\Alex\Visual\Security\Security\obj\ARM\Release\ContentDialog1.g.cs
+D:\Alex\Visual\Security\Security\obj\ARM\Release\ContentDialog1.xaml
+D:\Alex\Visual\Security\Security\obj\ARM\Release\ContentDialog1.xbf

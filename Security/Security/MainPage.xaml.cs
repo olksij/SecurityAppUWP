@@ -12,7 +12,9 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.Devices.Power;
+using Windows.UI.ViewManagement;
 using Windows.UI.Xaml.Navigation;
+using Windows.ApplicationModel.Core;
 
 // Документацию по шаблону элемента "Пустая страница" см. по адресу https://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x419
 
@@ -23,9 +25,19 @@ namespace Security
     /// </summary>
     public sealed partial class MainPage : Page
     {
+
         public MainPage()
         {
             this.InitializeComponent();
+            var titleBar = ApplicationView.GetForCurrentView().TitleBar;
+            var coreTitleBar = CoreApplication.GetCurrentView().TitleBar;
+            coreTitleBar.ExtendViewIntoTitleBar = false;
+
+            titleBar.ForegroundColor = Windows.UI.Colors.Black;
+            titleBar.BackgroundColor = Windows.UI.Colors.WhiteSmoke;
+            titleBar.ButtonForegroundColor = Windows.UI.Colors.Black;
+            titleBar.ButtonBackgroundColor = Windows.UI.Colors.WhiteSmoke;
+
         }
 
         private void AppBarButton_Click(object sender, RoutedEventArgs e)
@@ -67,7 +79,34 @@ namespace Security
 
         private void AppBarButton_Click_1(object sender, RoutedEventArgs e)
         {
+            //Random rnd = new Random();
 
+            var aggBattery = Battery.AggregateBattery;
+            var report = aggBattery.GetReport();
+            //xtBlock.Text = report.ChargeRateInMilliwatts.ToString();
+
+            txtBlock.Text = report.Status.ToString();
+
+            if ((report.FullChargeCapacityInMilliwattHours == null) ||
+                (report.RemainingCapacityInMilliwattHours == null))
+            {
+                pb.IsEnabled = false;
+                txtBlock.Text = "N/A";
+            }
+            else
+            {
+                pb.IsEnabled = true;
+                pb.Maximum = Convert.ToDouble(report.FullChargeCapacityInMilliwattHours);
+                pb.Value = Convert.ToDouble(report.RemainingCapacityInMilliwattHours);
+                //txtBlock.Text = ((pb.Value / pb.Maximum) * 100).ToString("F2") + "%";
+            }
+
+        }
+
+        private async void AppBarButton_Click_2(object sender, RoutedEventArgs e)
+        {
+            ContentDialog1 ContentDialog = new ContentDialog1();
+            await ContentDialog.ShowAsync();
         }
     }
 }
