@@ -8,7 +8,7 @@ My idea about  Security App
 ## This project is in Alpha Version!
 
 ### Knowing issues:
-- When windows resizing, elements can dont resizing
+- When you clicking on text (on gridview elements), it dont do any action
 
 ### Target platform:
 - Universal Windows
@@ -18,3 +18,8 @@ My idea about  Security App
 
 ### Target version:
 - Windows 10 Spring Creators Update 1803(build 17134)
+
+## Dont dveloper, but want install and see?
+Go to folder Security>AppPackages>Security_0.2.2.0_Test and open file Security_0.2.2.0_x86_x64_arm.appxbundle.
+
+If you got problems with installing, try open context menu for file Add-AppDevPackage.ps1 and choose "Run with PowerShell"
