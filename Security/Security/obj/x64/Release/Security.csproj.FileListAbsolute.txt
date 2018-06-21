@@ -474,3 +474,8 @@ D:\Alex\Visual\Security\Security\obj\x64\Release\ContentDialog1.g.i.cs
 D:\Alex\Visual\Security\Security\obj\x64\Release\ContentDialog1.g.cs
 D:\Alex\Visual\Security\Security\obj\x64\Release\ContentDialog1.xaml
 D:\Alex\Visual\Security\Security\obj\x64\Release\ContentDialog1.xbf
+D:\Alex\Visual\Security\Security\bin\x64\Release\Defender.xbf
+D:\Alex\Visual\Security\Security\obj\x64\Release\Defender.g.i.cs
+D:\Alex\Visual\Security\Security\obj\x64\Release\Defender.g.cs
+D:\Alex\Visual\Security\Security\obj\x64\Release\Defender.xaml
+D:\Alex\Visual\Security\Security\obj\x64\Release\Defender.xbf

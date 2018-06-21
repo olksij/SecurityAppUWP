@@ -17,6 +17,11 @@
 					<Base64Value>[Embedded Binary Data]</Base64Value>
 				</Candidate>
 			</NamedResource>
+			<NamedResource name="Defender.xbf" uri="ms-resource://c3e0b9c7-5e94-41f3-9432-cdde74d9e3aa/Files/Defender.xbf">
+				<Candidate type="EmbeddedData">
+					<Base64Value>[Embedded Binary Data]</Base64Value>
+				</Candidate>
+			</NamedResource>
 			<NamedResource name="MainPage.xbf" uri="ms-resource://c3e0b9c7-5e94-41f3-9432-cdde74d9e3aa/Files/MainPage.xbf">
 				<Candidate type="EmbeddedData">
 					<Base64Value>[Embedded Binary Data]</Base64Value>

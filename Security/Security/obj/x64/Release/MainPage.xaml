@@ -14,12 +14,16 @@
         <ProgressBar x:ConnectionId='3' x:Name="pb" HorizontalAlignment="Left" Height="8" Margin="25,80,0,0" VerticalAlignment="Top" Width="400"/>
         <GridView HorizontalAlignment="Stretch" Margin="25,145,0,0" VerticalAlignment="Stretch">
             <ItemsControl x:ConnectionId='6' HorizontalAlignment="Center" Height="125" VerticalAlignment="Top" Width="125"                             Margin="0,0,0,0">
-                <FontIcon Glyph="&#xE894;" Height="80" HorizontalAlignment="Center" Margin="0,0,0,0" VerticalAlignment="Top" Width="125" FontSize="25"/>
-                <GridViewItem x:ConnectionId='9' HorizontalAlignment="Stretch" Margin="0,0,0,0" VerticalAlignment="Stretch"                             Height="20">Clear</GridViewItem>
+                <FontIcon Glyph="&#xF552;" Height="80" HorizontalAlignment="Center" Margin="0,0,0,0" VerticalAlignment="Top" Width="125" FontSize="25"/>
+                <GridViewItem x:ConnectionId='11' HorizontalAlignment="Stretch" Margin="0,0,0,0" VerticalAlignment="Stretch"                             Height="20">Defender</GridViewItem>
             </ItemsControl>
             <ItemsControl x:ConnectionId='7' HorizontalAlignment="Stretch" Height="125" VerticalAlignment="Stretch" Width="125"                            >
-                <FontIcon Glyph="&#xE895;" Height="80" HorizontalAlignment="Center" Margin="0,0,0,0" VerticalAlignment="Top" Width="125" FontSize="25"/>
-                <GridViewItem x:ConnectionId='8' HorizontalAlignment="Stretch" Margin="0,0,0,0" VerticalAlignment="Stretch"                             Height="20">Reclone</GridViewItem>
+                <FontIcon Glyph="&#xE95E;" Height="80" HorizontalAlignment="Center" Margin="0,0,0,0" VerticalAlignment="Top" Width="125" FontSize="25"/>
+                <GridViewItem x:ConnectionId='10' HorizontalAlignment="Stretch" Margin="0,0,0,0" VerticalAlignment="Stretch"                             Height="20">Health</GridViewItem>
+            </ItemsControl>
+            <ItemsControl x:ConnectionId='8' HorizontalAlignment="Stretch" Height="125" VerticalAlignment="Stretch" Width="125"                            >
+                <FontIcon Glyph="&#xE772;" Height="80" HorizontalAlignment="Center" Margin="0,0,0,0" VerticalAlignment="Top" Width="125" FontSize="25"/>
+                <GridViewItem x:ConnectionId='9' HorizontalAlignment="Stretch" Margin="0,0,0,0" VerticalAlignment="Stretch"                             Height="20">Devices</GridViewItem>
             </ItemsControl>
         </GridView>
         <CommandBar Margin="0,0,0,0" VerticalAlignment="Top" HorizontalAlignment="Right" Background="WhiteSmoke" Height="50" Width="50">

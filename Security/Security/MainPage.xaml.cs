@@ -108,5 +108,10 @@ namespace Security
             ContentDialog1 ContentDialog = new ContentDialog1();
             await ContentDialog.ShowAsync();
         }
+
+        private void ToDefender(object sender, PointerRoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(Defender));
+        }
     }
 }
