@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
+using System.Threading.Tasks;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
 using Windows.UI.Xaml;
@@ -26,6 +27,7 @@ namespace Security
         {
             this.InitializeComponent();
         }
+        bool checking = false;
 
         private void txtBlock_SelectionChanged(object sender, RoutedEventArgs e)
         {
@@ -35,6 +37,24 @@ namespace Security
         private void ToHome(object sender, TappedRoutedEventArgs e)
         {
             this.Frame.Navigate(typeof(MainPage));
+        }
+
+        private async void CheckButton_Click(object sender, RoutedEventArgs e)
+        {
+            if (checking==false)
+            {
+                txtBlockD.Text = "Checking your PC on viruses";
+                CheckButton.Visibility = Visibility.Collapsed;
+                progresB.Visibility = Visibility.Visible;
+                checking = true;
+                await Task.Delay(TimeSpan.FromSeconds(5));
+                checking = false;
+                txtBlockD.Text = "Seems all good";
+                progresB.Visibility = Visibility.Collapsed;
+                CheckButton.Visibility=Visibility.Visible;
+
+
+            }
         }
     }
 }
