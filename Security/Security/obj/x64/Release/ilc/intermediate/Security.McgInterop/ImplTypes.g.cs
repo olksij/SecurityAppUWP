@@ -8205,6 +8205,34 @@ namespace Windows.ApplicationModel
 		}
 	}
 
+	// Windows.ApplicationModel.IPackageId
+	public unsafe static class IPackageId__Impl
+	{
+		// StubClass for 'Windows.ApplicationModel.IPackageId'
+		public static partial class Stubs
+		{
+			public static string get_Name(global::System.__ComObject __this)
+			{
+				string __ret = global::__Interop.ForwardComStubs.Stub_1<global::Windows.ApplicationModel.IPackageId>(
+									__this, 
+									6
+								);
+				global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+				return __ret;
+			}
+
+			public static string get_FullName(global::System.__ComObject __this)
+			{
+				string __ret = global::__Interop.ForwardComStubs.Stub_1<global::Windows.ApplicationModel.IPackageId>(
+									__this, 
+									12
+								);
+				global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+				return __ret;
+			}
+		}
+	}
+
 	// Windows.ApplicationModel.IPackageStatics
 	public unsafe static class IPackageStatics__Impl
 	{
@@ -8244,34 +8272,6 @@ namespace Windows.ApplicationModel
 				global::Windows.Storage.StorageFolder __ret = global::__Interop.ForwardComStubs.Stub_2<global::Windows.ApplicationModel.IPackage, global::Windows.Storage.StorageFolder>(
 									__this, 
 									7
-								);
-				global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
-				return __ret;
-			}
-		}
-	}
-
-	// Windows.ApplicationModel.IPackageId
-	public unsafe static class IPackageId__Impl
-	{
-		// StubClass for 'Windows.ApplicationModel.IPackageId'
-		public static partial class Stubs
-		{
-			public static string get_Name(global::System.__ComObject __this)
-			{
-				string __ret = global::__Interop.ForwardComStubs.Stub_1<global::Windows.ApplicationModel.IPackageId>(
-									__this, 
-									6
-								);
-				global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
-				return __ret;
-			}
-
-			public static string get_FullName(global::System.__ComObject __this)
-			{
-				string __ret = global::__Interop.ForwardComStubs.Stub_1<global::Windows.ApplicationModel.IPackageId>(
-									__this, 
-									12
 								);
 				global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
 				return __ret;
@@ -28651,6 +28651,28 @@ namespace Windows.UI.Xaml
 									__this, 
 									value, 
 									18
+								);
+				global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			}
+
+			public static double get_MinWidth(global::System.__ComObject __this)
+			{
+				double __ret = global::__Interop.ForwardComStubs.Stub_22<global::Windows.UI.Xaml.IFrameworkElement>(
+									__this, 
+									19
+								);
+				global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+				return __ret;
+			}
+
+			public static void put_MinWidth(
+						global::System.__ComObject __this, 
+						double value)
+			{
+				global::__Interop.ForwardComStubs.Stub_23<global::Windows.UI.Xaml.IFrameworkElement>(
+									__this, 
+									value, 
+									20
 								);
 				global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
 			}

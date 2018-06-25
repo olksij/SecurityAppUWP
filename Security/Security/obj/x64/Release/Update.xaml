@@ -1,0 +1,21 @@
+﻿<Page
+    x:Class="Security.Update"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Security"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <Rectangle Height="115" Margin="0,0,0,0" VerticalAlignment="Top" Fill="WhiteSmoke"/>
+        <TextBlock x:ConnectionId='2' x:Name="txtBlock" HorizontalAlignment="Left" Margin="143,39,0,0" Text="Updater" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="28"/>
+        <AppBarButton x:ConnectionId='3' Width="85" Height="85" Margin="15,15,0,0"                 >
+            <FontIcon Glyph="&#xE80F;" HorizontalAlignment="Center" Margin="0,-14,0,-25" Width="85" Height="85" VerticalAlignment="Top" FontSize="30"/>
+        </AppBarButton>
+        <Button x:ConnectionId='4' x:Name="CheckButton" Content="Check Updates" HorizontalAlignment="Left" Margin="40,150,0,0" VerticalAlignment="Top"                           Height="50" MinWidth="135"/>
+        <ProgressBar x:ConnectionId='5' x:Name="pb" IsIndeterminate="True" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="40,150,0,0" Height="8" Width="400" Visibility="Collapsed"/>
+    </Grid>
+</Page>
+

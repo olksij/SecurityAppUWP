@@ -1,7 +1,7 @@
 [ResourceMetadata]
 "ResourceDimensions"		"scale-200"
-"ResourceDimensions"		"language-ru"
-"ResourceDimensions"		"language-ru-RU"
+"ResourceDimensions"		"language-en-gb"
+"ResourceDimensions"		"language-en-gb"
 
 [Files]
 "D:\Alex\Visual\Security\Security\obj\ARM\Release\split.pri"			"resources.pri"

@@ -1,4 +1,3 @@
-D:\Alex\Visual\Security\Security\obj\x64\Release\Security.csprojAssemblyReference.cache
 D:\Alex\Visual\Security\Security\obj\x64\Release\App.g.i.cs
 D:\Alex\Visual\Security\Security\obj\x64\Release\App.g.cs
 D:\Alex\Visual\Security\Security\obj\x64\Release\MainPage.g.i.cs
@@ -479,3 +478,9 @@ D:\Alex\Visual\Security\Security\obj\x64\Release\Defender.g.i.cs
 D:\Alex\Visual\Security\Security\obj\x64\Release\Defender.g.cs
 D:\Alex\Visual\Security\Security\obj\x64\Release\Defender.xaml
 D:\Alex\Visual\Security\Security\obj\x64\Release\Defender.xbf
+D:\Alex\Visual\Security\Security\obj\x64\Release\Security.csprojAssemblyReference.cache
+D:\Alex\Visual\Security\Security\obj\x64\Release\Update.g.i.cs
+D:\Alex\Visual\Security\Security\obj\x64\Release\Update.g.cs
+D:\Alex\Visual\Security\Security\obj\x64\Release\Update.xaml
+D:\Alex\Visual\Security\Security\obj\x64\Release\Update.xbf
+D:\Alex\Visual\Security\Security\bin\x64\Release\Update.xbf

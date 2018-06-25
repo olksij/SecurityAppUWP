@@ -189,7 +189,7 @@ namespace Security.Security_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[7];
+            _typeNameTable = new string[10];
             _typeNameTable[0] = "Security.ContentDialog1";
             _typeNameTable[1] = "Windows.UI.Xaml.Controls.ContentDialog";
             _typeNameTable[2] = "Windows.UI.Xaml.Controls.ContentControl";
@@ -197,8 +197,11 @@ namespace Security.Security_XamlTypeInfo
             _typeNameTable[4] = "Windows.UI.Xaml.Controls.Page";
             _typeNameTable[5] = "Windows.UI.Xaml.Controls.UserControl";
             _typeNameTable[6] = "Security.MainPage";
+            _typeNameTable[7] = "Security.Update";
+            _typeNameTable[8] = "Windows.ApplicationModel.PackageId";
+            _typeNameTable[9] = "Object";
 
-            _typeTable = new global::System.Type[7];
+            _typeTable = new global::System.Type[10];
             _typeTable[0] = typeof(global::Security.ContentDialog1);
             _typeTable[1] = typeof(global::Windows.UI.Xaml.Controls.ContentDialog);
             _typeTable[2] = typeof(global::Windows.UI.Xaml.Controls.ContentControl);
@@ -206,6 +209,9 @@ namespace Security.Security_XamlTypeInfo
             _typeTable[4] = typeof(global::Windows.UI.Xaml.Controls.Page);
             _typeTable[5] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
             _typeTable[6] = typeof(global::Security.MainPage);
+            _typeTable[7] = typeof(global::Security.Update);
+            _typeTable[8] = typeof(global::Windows.ApplicationModel.PackageId);
+            _typeTable[9] = typeof(global::System.Object);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -243,6 +249,7 @@ namespace Security.Security_XamlTypeInfo
         private object Activate_0_ContentDialog1() { return new global::Security.ContentDialog1(); }
         private object Activate_3_Defender() { return new global::Security.Defender(); }
         private object Activate_6_MainPage() { return new global::Security.MainPage(); }
+        private object Activate_7_Update() { return new global::Security.Update(); }
 
         private global::Windows.UI.Xaml.Markup.IXamlType CreateXamlType(int typeIndex)
         {
@@ -290,16 +297,49 @@ namespace Security.Security_XamlTypeInfo
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
+
+            case 7:   //  Security.Update
+                userType = new global::Security.Security_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_7_Update;
+                userType.AddMemberName("packageId");
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 8:   //  Windows.ApplicationModel.PackageId
+                userType = new global::Security.Security_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                userType.SetIsReturnTypeStub();
+                xamlType = userType;
+                break;
+
+            case 9:   //  Object
+                xamlType = new global::Security.Security_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
             }
             return xamlType;
         }
 
 
+        private object get_0_Update_packageId(object instance)
+        {
+            var that = (global::Security.Update)instance;
+            return that.packageId;
+        }
 
         private global::Windows.UI.Xaml.Markup.IXamlMember CreateXamlMember(string longMemberName)
         {
             global::Security.Security_XamlTypeInfo.XamlMember xamlMember = null;
-            // No Local Properties
+            global::Security.Security_XamlTypeInfo.XamlUserType userType;
+
+            switch (longMemberName)
+            {
+            case "Security.Update.packageId":
+                userType = (global::Security.Security_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Security.Update");
+                xamlMember = new global::Security.Security_XamlTypeInfo.XamlMember(this, "packageId", "Windows.ApplicationModel.PackageId");
+                xamlMember.Getter = get_0_Update_packageId;
+                xamlMember.SetIsReadOnly();
+                break;
+            }
             return xamlMember;
         }
     }

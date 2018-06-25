@@ -38,6 +38,26 @@ namespace Security
             titleBar.ButtonForegroundColor = Windows.UI.Colors.Black;
             titleBar.ButtonBackgroundColor = Windows.UI.Colors.WhiteSmoke;
 
+
+            var aggBattery = Battery.AggregateBattery;
+            var report = aggBattery.GetReport();
+
+            txtBlock.Text = report.Status.ToString();
+
+            if ((report.FullChargeCapacityInMilliwattHours == null) ||
+                (report.RemainingCapacityInMilliwattHours == null))
+            {
+                pb.IsEnabled = false;
+                txtBlock.Text = "N/A";
+            }
+            else
+            {
+                pb.IsEnabled = true;
+                pb.Maximum = Convert.ToDouble(report.FullChargeCapacityInMilliwattHours);
+                pb.Value = Convert.ToDouble(report.RemainingCapacityInMilliwattHours);
+                //txtBlock.Text = ((pb.Value / pb.Maximum) * 100).ToString("F2") + "%";
+            }
+
         }
 
         private void AppBarButton_Click(object sender, RoutedEventArgs e)
@@ -77,32 +97,6 @@ namespace Security
             ContentDialogResult result = await ComingSoon.ShowAsync();
         }
 
-        private void AppBarButton_Click_1(object sender, RoutedEventArgs e)
-        {
-            //Random rnd = new Random();
-
-            var aggBattery = Battery.AggregateBattery;
-            var report = aggBattery.GetReport();
-            //xtBlock.Text = report.ChargeRateInMilliwatts.ToString();
-
-            txtBlock.Text = report.Status.ToString();
-
-            if ((report.FullChargeCapacityInMilliwattHours == null) ||
-                (report.RemainingCapacityInMilliwattHours == null))
-            {
-                pb.IsEnabled = false;
-                txtBlock.Text = "N/A";
-            }
-            else
-            {
-                pb.IsEnabled = true;
-                pb.Maximum = Convert.ToDouble(report.FullChargeCapacityInMilliwattHours);
-                pb.Value = Convert.ToDouble(report.RemainingCapacityInMilliwattHours);
-                //txtBlock.Text = ((pb.Value / pb.Maximum) * 100).ToString("F2") + "%";
-            }
-
-        }
-
         private async void AppBarButton_Click_2(object sender, RoutedEventArgs e)
         {
             ContentDialog1 ContentDialog = new ContentDialog1();
@@ -112,6 +106,12 @@ namespace Security
         private void ToDefender(object sender, PointerRoutedEventArgs e)
         {
             this.Frame.Navigate(typeof(Defender));
+        }
+
+        private void AppBarButton_Click_3(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(Update));
+
         }
     }
 }

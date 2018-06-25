@@ -8,7 +8,7 @@
   </packaging>
   <index root="\" startIndexAt="D:\Alex\Visual\Security\Security\bin\x86\Release\ilc\resources.pri">
     <default>
-      <qualifier name="Language" value="ru-RU" />
+      <qualifier name="Language" value="en-gb" />
       <qualifier name="Contrast" value="standard" />
       <qualifier name="Scale" value="200" />
       <qualifier name="HomeRegion" value="001" />

@@ -30,8 +30,9 @@
             <CommandBar.Content>
                 <Grid/>
             </CommandBar.Content>
+            <AppBarButton Icon="Refresh" Label="Settings" Click="AppBarButton_Click"/>
             <AppBarButton Icon="Setting" Label="Settings" Click="AppBarButton_Click_2"/>
-            <AppBarButton Icon="Refresh" Label="Refresh" Click="AppBarButton_Click_1"/>
+            <AppBarButton Icon="Sync" Label="Update" Click="AppBarButton_Click_3"/>
         </CommandBar>
 
 

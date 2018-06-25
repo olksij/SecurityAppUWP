@@ -71,6 +71,7 @@
       <RootProperty Name="FontSize" />
       <RootProperty Name="Height" />
       <RootProperty Name="Width" />
+      <RootProperty Name="MinWidth" />
       <RootEvent Name="Click" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.ToolTipService">
@@ -130,5 +131,6 @@
       <RootEvent Name="PointerPressed" />
     </RootType>
     <RootType FullName="Security.MainPage" />
+    <RootType FullName="Security.Update" />
   </Roots.RootTypes>
 </Roots>
