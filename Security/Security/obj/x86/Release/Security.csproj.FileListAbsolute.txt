@@ -484,3 +484,8 @@ D:\Alex\Visual\Security\Security\obj\x86\Release\Update.g.i.cs
 D:\Alex\Visual\Security\Security\obj\x86\Release\Update.g.cs
 D:\Alex\Visual\Security\Security\obj\x86\Release\Update.xaml
 D:\Alex\Visual\Security\Security\obj\x86\Release\Update.xbf
+D:\Alex\Visual\Security\Security\bin\x86\Release\BatteryInfo.xbf
+D:\Alex\Visual\Security\Security\obj\x86\Release\BatteryInfo.g.i.cs
+D:\Alex\Visual\Security\Security\obj\x86\Release\BatteryInfo.g.cs
+D:\Alex\Visual\Security\Security\obj\x86\Release\BatteryInfo.xaml
+D:\Alex\Visual\Security\Security\obj\x86\Release\BatteryInfo.xbf

@@ -21,16 +21,16 @@
                 <FontIcon Glyph="&#xE95E;" Height="80" HorizontalAlignment="Center" Margin="0,0,0,0" VerticalAlignment="Top" Width="125" FontSize="25"/>
                 <GridViewItem x:ConnectionId='11' HorizontalAlignment="Stretch" Margin="0,0,0,0" VerticalAlignment="Stretch"                             Height="20">Health</GridViewItem>
             </ItemsControl>
-            <ItemsControl x:ConnectionId='9' HorizontalAlignment="Stretch" Height="125" VerticalAlignment="Stretch" Width="125"                            >
-                <FontIcon Glyph="&#xE772;" Height="80" HorizontalAlignment="Center" Margin="0,0,0,0" VerticalAlignment="Top" Width="125" FontSize="25"/>
-                <GridViewItem x:ConnectionId='10' HorizontalAlignment="Stretch" Margin="0,0,0,0" VerticalAlignment="Stretch"                             Height="20">Devices</GridViewItem>
+            <ItemsControl x:ConnectionId='9' HorizontalAlignment="Stretch" Height="125" VerticalAlignment="Stretch" Width="125"                             >
+                <FontIcon Glyph="&#xF5F8;" Height="80" HorizontalAlignment="Center" Margin="0,0,0,0" VerticalAlignment="Top" Width="125" FontSize="25"/>
+                <GridViewItem x:ConnectionId='10' HorizontalAlignment="Stretch" Margin="0,0,0,0" VerticalAlignment="Stretch"                              Height="20">Battery</GridViewItem>
             </ItemsControl>
         </GridView>
         <CommandBar Margin="0,0,0,0" VerticalAlignment="Top" HorizontalAlignment="Right" Background="WhiteSmoke" Height="50" Width="50">
             <CommandBar.Content>
                 <Grid/>
             </CommandBar.Content>
-            <AppBarButton x:ConnectionId='4' Icon="Refresh" Label="Settings"                           />
+            <AppBarButton x:ConnectionId='4' Icon="Refresh" Label="Refresh"                           />
             <AppBarButton x:ConnectionId='5' Icon="Setting" Label="Settings"                             />
             <AppBarButton x:ConnectionId='6' Icon="Sync" Label="Update"                             />
         </CommandBar>

@@ -12,6 +12,11 @@
 					<Base64Value>[Embedded Binary Data]</Base64Value>
 				</Candidate>
 			</NamedResource>
+			<NamedResource name="BatteryInfo.xbf" uri="ms-resource://DrAlexSecurityUWP/Files/BatteryInfo.xbf">
+				<Candidate type="EmbeddedData">
+					<Base64Value>[Embedded Binary Data]</Base64Value>
+				</Candidate>
+			</NamedResource>
 			<NamedResource name="ContentDialog1.xbf" uri="ms-resource://DrAlexSecurityUWP/Files/ContentDialog1.xbf">
 				<Candidate type="EmbeddedData">
 					<Base64Value>[Embedded Binary Data]</Base64Value>

@@ -7,7 +7,7 @@
 
  Дополнительные сведения о файлах манифестов приложений см. по адресу http://go.microsoft.com/fwlink/?LinkID=241727
   -->
-  <Identity Name="DrAlexSecurityUWP" Publisher="CN=cooler" Version="0.2.7.0" ProcessorArchitecture="x86" />
+  <Identity Name="DrAlexSecurityUWP" Publisher="CN=cooler" Version="0.2.8.0" ProcessorArchitecture="x86" />
   <mp:PhoneIdentity PhoneProductId="c3e0b9c7-5e94-41f3-9432-cdde74d9e3aa" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
   <Properties>
     <DisplayName>Security</DisplayName>

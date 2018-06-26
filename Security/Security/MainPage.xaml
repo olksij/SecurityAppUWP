@@ -21,16 +21,16 @@
                 <FontIcon Glyph="&#xE95E;" Height="80" HorizontalAlignment="Center" Margin="0,0,0,0" VerticalAlignment="Top" Width="125" FontSize="25"/>
                 <GridViewItem HorizontalAlignment="Stretch" Margin="0,0,0,0" VerticalAlignment="Stretch" PointerPressed="ComingSoon" Height="20">Health</GridViewItem>
             </ItemsControl>
-            <ItemsControl HorizontalAlignment="Stretch" Height="125" VerticalAlignment="Stretch" Width="125" PointerPressed="ComingSoon">
-                <FontIcon Glyph="&#xE772;" Height="80" HorizontalAlignment="Center" Margin="0,0,0,0" VerticalAlignment="Top" Width="125" FontSize="25"/>
-                <GridViewItem HorizontalAlignment="Stretch" Margin="0,0,0,0" VerticalAlignment="Stretch" PointerPressed="ComingSoon" Height="20">Devices</GridViewItem>
+            <ItemsControl HorizontalAlignment="Stretch" Height="125" VerticalAlignment="Stretch" Width="125" PointerPressed="BatteryInfo">
+                <FontIcon Glyph="&#xF5F8;" Height="80" HorizontalAlignment="Center" Margin="0,0,0,0" VerticalAlignment="Top" Width="125" FontSize="25"/>
+                <GridViewItem HorizontalAlignment="Stretch" Margin="0,0,0,0" VerticalAlignment="Stretch" PointerPressed="BatteryInfo" Height="20">Battery</GridViewItem>
             </ItemsControl>
         </GridView>
         <CommandBar Margin="0,0,0,0" VerticalAlignment="Top" HorizontalAlignment="Right" Background="WhiteSmoke" Height="50" Width="50">
             <CommandBar.Content>
                 <Grid/>
             </CommandBar.Content>
-            <AppBarButton Icon="Refresh" Label="Settings" Click="AppBarButton_Click"/>
+            <AppBarButton Icon="Refresh" Label="Refresh" Click="AppBarButton_Click"/>
             <AppBarButton Icon="Setting" Label="Settings" Click="AppBarButton_Click_2"/>
             <AppBarButton Icon="Sync" Label="Update" Click="AppBarButton_Click_3"/>
         </CommandBar>

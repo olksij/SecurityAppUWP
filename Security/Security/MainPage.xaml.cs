@@ -113,5 +113,11 @@ namespace Security
             this.Frame.Navigate(typeof(Update));
 
         }
+
+        private void BatteryInfo(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(BatteryInfo));
+
+        }
     }
 }
