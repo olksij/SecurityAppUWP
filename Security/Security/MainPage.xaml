@@ -10,23 +10,28 @@
     <Grid>
 
         <Rectangle Height="115" Margin="0,0,0,0" VerticalAlignment="Top" Fill="WhiteSmoke"/>
-        <TextBlock x:Name="txtBlock" HorizontalAlignment="Left" Margin="25,29,0,0" Text="Refresh to get info" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="30"/>
+        <TextBlock x:Name="txtBlock" HorizontalAlignment="Left" Margin="25,23,0,0" Text="Refresh to get info" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="30"/>
         <ProgressBar x:Name="pb" HorizontalAlignment="Left" Height="8" Margin="25,80,0,0" VerticalAlignment="Top" Width="400"/>
         <GridView HorizontalAlignment="Stretch" Margin="25,145,0,0" VerticalAlignment="Stretch">
             <ItemsControl HorizontalAlignment="Center" Height="125" VerticalAlignment="Top" Width="125" PointerPressed="ToDefender" Margin="0,0,0,0">
                 <FontIcon Glyph="&#xF552;" Height="80" HorizontalAlignment="Center" Margin="0,0,0,0" VerticalAlignment="Top" Width="125" FontSize="25"/>
-                <GridViewItem HorizontalAlignment="Stretch" Margin="0,0,0,0" VerticalAlignment="Stretch" PointerPressed="ComingSoon" Height="20">Defender</GridViewItem>
+                <!--<GridViewItem HorizontalAlignment="Stretch" Margin="0,0,0,0" VerticalAlignment="Stretch" PointerPressed="ComingSoon" Height="20">Defender</GridViewItem>-->
+                <TextBlock Text="Defender" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,10,0,0"/>
             </ItemsControl>
             <ItemsControl HorizontalAlignment="Stretch" Height="125" VerticalAlignment="Stretch" Width="125" PointerPressed="ComingSoon">
                 <FontIcon Glyph="&#xE95E;" Height="80" HorizontalAlignment="Center" Margin="0,0,0,0" VerticalAlignment="Top" Width="125" FontSize="25"/>
-                <GridViewItem HorizontalAlignment="Stretch" Margin="0,0,0,0" VerticalAlignment="Stretch" PointerPressed="ComingSoon" Height="20">Health</GridViewItem>
+                <!--<GridViewItem HorizontalAlignment="Stretch" Margin="0,0,0,0" VerticalAlignment="Stretch" PointerPressed="ComingSoon" Height="20">Health</GridViewItem>-->
+                <TextBlock Text="Health" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,10,0,0"/>
             </ItemsControl>
             <ItemsControl HorizontalAlignment="Stretch" Height="125" VerticalAlignment="Stretch" Width="125" PointerPressed="BatteryInfo">
                 <FontIcon Glyph="&#xF5F8;" Height="80" HorizontalAlignment="Center" Margin="0,0,0,0" VerticalAlignment="Top" Width="125" FontSize="25"/>
-                <GridViewItem HorizontalAlignment="Stretch" Margin="0,0,0,0" VerticalAlignment="Stretch" PointerPressed="BatteryInfo" Height="20">Battery</GridViewItem>
+                <!--<GridViewItem HorizontalAlignment="Stretch" Margin="0,0,0,0" VerticalAlignment="Stretch" PointerPressed="BatteryInfo" Height="20">Battery</GridViewItem> -->
+                <TextBlock Text="Battery" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,10,0,0"/>
             </ItemsControl>
         </GridView>
-        <CommandBar Margin="0,0,0,0" VerticalAlignment="Top" HorizontalAlignment="Right" Background="WhiteSmoke" Height="50" Width="50">
+        <Rectangle VerticalAlignment="Bottom" Height="50" Fill="WhiteSmoke"/>
+
+        <CommandBar Margin="0,0,0,0" VerticalAlignment="Bottom" HorizontalAlignment="Right" Background="WhiteSmoke" Height="50" Width="50">
             <CommandBar.Content>
                 <Grid/>
             </CommandBar.Content>
@@ -34,6 +39,10 @@
             <AppBarButton Icon="Setting" Label="Settings" Click="AppBarButton_Click_2"/>
             <AppBarButton Icon="Sync" Label="Update" Click="AppBarButton_Click_3"/>
         </CommandBar>
+        <Button HorizontalAlignment="Right" Height="75" Margin="0,21,21,0" VerticalAlignment="Top" Width="75" BorderBrush="{x:Null}" Background="#FFEEEEEE" Click="NextInfo">
+            <FontIcon Glyph="&#xE76C;"/>
+        </Button>
+        <TextBlock x:Name="txt2" HorizontalAlignment="Left" Margin="25,70,0,0" Text="TextBlock" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="20" Visibility="Collapsed"/>
 
 
 

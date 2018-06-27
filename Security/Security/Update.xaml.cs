@@ -19,6 +19,10 @@ using Windows.Web.Http;
 using System.Reflection;
 using Windows.ApplicationModel;
 using System.Threading.Tasks;
+using System.Net;
+using System.Globalization;
+using System.Threading;
+using Windows.Web;
 
 // Документацию по шаблону элемента "Пустая страница" см. по адресу https://go.microsoft.com/fwlink/?LinkId=234238
 
@@ -27,68 +31,73 @@ namespace Security
     /// <summary>
     /// Пустая страница, которую можно использовать саму по себе или для перехода внутри фрейма.
     /// </summary>
+    /// 
     public sealed partial class Update : Page
     {
+        private CancellationTokenSource cts;
+        private IProgress<DownloadOperation> progressCallback;
+
         public Update()
         {
             this.InitializeComponent();
-        }
 
-        public PackageId packageId { get; private set; }
+    }
+
+    public PackageId packageId { get; private set; }
 
         private async void CheckButton_Click(object sender, RoutedEventArgs e)
         {
             CheckButton.Visibility = Visibility.Collapsed;
             pb.Visibility = Visibility.Visible;
 
-            // Please, help me how to download files. I used tutorials, but dont work. 
+
+            // Please, help me how to download files.
             // All my trying you can see bellow 
             //
             //      V      V      V
             //      V      V      V
             //      V      V      V
 
+            try
+            {
+                var serverAddressField = "https://raw.githubusercontent.com/DrAlexOne/SecurityAppUWP/master/Security/Security/AppPackages/Security_0.2.8.0_Test/";
+                Uri source = new Uri(serverAddressField);
+                string destination = "Security_0.2.8.0_x86_x64_arm.appxbundle";
+
+                StorageFile destinationFile = await Windows.ApplicationModel.Package.Current.InstalledLocation.CreateFileAsync(destination, Windows.Storage.CreationCollisionOption.ReplaceExisting);
+
+                BackgroundDownloader downloader = new BackgroundDownloader();
+                DownloadOperation download = downloader.CreateDownload(source, destinationFile);
+
+                await download.StartAsync().AsTask(cts.Token, progressCallback);
+            }  
+            catch (Exception ex)
+            {
+                CheckButton.Content = "Its only developing.. . Error: " + ex;
+                CheckButton.Visibility = Visibility.Visible;
+                pb.Visibility = Visibility.Collapsed;
+            }
+
+            
+
+
+            //CheckButton.Content = "Downloaded!";
+            //CheckButton.Visibility = Visibility.Visible;
+            //pb.Visibility = Visibility.Collapsed;
 
 
 
             /*
-            try
-            {
+                                 await Task.Delay(TimeSpan.FromSeconds(5));
 
-                Uri source = new Uri("https://raw.githubusercontent.com/DrAlexOne/SecurityAppUWP/master/Security/Security/AppPackages/Security_0.2.7.0_Test/");
-                var uri = new Uri("ms-appx:///Security_0.2.7.0_x86_x64_arm.appxbundle");
-                var destination = await StorageFile.GetFileFromApplicationUriAsync(uri);
-                CheckButton.Content = destination;
-
-            Windows.Storage.StorageFolder storageFolder = Windows.Storage.ApplicationData.Current.LocalFolder;
-                Windows.Storage.StorageFile appx = await storageFolder.CreateFileAsync("Security_0.2.7.0_x86_x64_arm.appxbundle", Windows.Storage.CreationCollisionOption.ReplaceExisting);
-
-
- //               StorageFile destinationFile = await destinationFile.CreateFileAsync(destination.ToString(), Windows.Storage.CreationCollisionOption.ReplaceExisting);
-
-
-                BackgroundDownloader downloader = new BackgroundDownloader();
-                DownloadOperation download = downloader.CreateDownload(source, destination);
-            }
-            catch (Exception ex)
-            {
-                
-            }
-            */
-
-
-            // Please, help me how to download files. I used tutorials, but dont work. 
-            // All my trying you can see little up 
-
-
-            await Task.Delay(TimeSpan.FromSeconds(5));
-                CheckButton.Content = "Right now its developing. Look source code, and try to help me..";
-                CheckButton.Visibility = Visibility.Visible;
-                pb.Visibility = Visibility.Collapsed;
-            
-
+*/
         }
-        
+
+        private void HandleDownloadAsync(DownloadOperation download, bool v)
+        {
+            throw new NotImplementedException();
+        }
+
         private Task<StorageFile> CreateFileAsync(string v)
         {
             throw new NotImplementedException();

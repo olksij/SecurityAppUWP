@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Package xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10" xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest" xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10" IgnorableNamespaces="uap mp">
+<Package xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10" xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest" xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10" xmlns:uap2="http://schemas.microsoft.com/appx/manifest/uap/windows10/2" IgnorableNamespaces="uap mp uap2">
   <Identity Name="DrAlexSecurityUWP" Publisher="CN=cooler" Version="0.2.8.0" />
   <mp:PhoneIdentity PhoneProductId="c3e0b9c7-5e94-41f3-9432-cdde74d9e3aa" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
   <Properties>
@@ -24,5 +24,8 @@
   </Applications>
   <Capabilities>
     <Capability Name="internetClient" />
+    <Capability Name="internetClientServer" />
+    <uap2:Capability Name="spatialPerception" />
+    <DeviceCapability Name="location" />
   </Capabilities>
 </Package>

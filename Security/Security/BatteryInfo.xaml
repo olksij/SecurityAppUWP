@@ -11,7 +11,7 @@
         <Grid>
             <Rectangle Height="115" Margin="0,0,0,0" VerticalAlignment="Top" Fill="WhiteSmoke"/>
             <TextBlock HorizontalAlignment="Left" Margin="143,39,0,0" Text="Battery Info" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="28"/>
-            <AppBarButton Width="85" Height="85" Margin="15,15,0,0" Tapped="ToHome">
+            <AppBarButton Width="85" Height="85" Margin="15,15,0,0" Tapped="ToHome" Background="Transparent" BorderBrush="Transparent" FocusVisualPrimaryBrush="Black">
                 <FontIcon Glyph="&#xE80F;" HorizontalAlignment="Center" Margin="0,-14,0,-25" Width="85" Height="85" VerticalAlignment="Top" FontSize="30"/>
             </AppBarButton>
         </Grid>

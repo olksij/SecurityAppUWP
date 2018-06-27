@@ -25,7 +25,7 @@ namespace Security
     /// </summary>
     public sealed partial class MainPage : Page
     {
-
+        int InfoPage = 1;
         public MainPage()
         {
             this.InitializeComponent();
@@ -44,6 +44,12 @@ namespace Security
 
             txtBlock.Text = report.Status.ToString();
 
+
+            //xtBlock.Text = report.ChargeRateInMilliwatts.ToString();
+
+            txtBlock.Text = report.Status.ToString();
+            txt2.Visibility = Visibility.Collapsed;
+
             if ((report.FullChargeCapacityInMilliwattHours == null) ||
                 (report.RemainingCapacityInMilliwattHours == null))
             {
@@ -58,17 +64,22 @@ namespace Security
                 //txtBlock.Text = ((pb.Value / pb.Maximum) * 100).ToString("F2") + "%";
             }
 
+
+
+
         }
 
-        private void AppBarButton_Click(object sender, RoutedEventArgs e)
+        void AppBarButton_Click(object sender, RoutedEventArgs e)
         {
             //Random rnd = new Random();
-
             var aggBattery = Battery.AggregateBattery;
             var report = aggBattery.GetReport();
+
+
             //xtBlock.Text = report.ChargeRateInMilliwatts.ToString();
 
             txtBlock.Text = report.Status.ToString();
+            txt2.Visibility = Visibility.Collapsed;
 
             if ((report.FullChargeCapacityInMilliwattHours == null) ||
                 (report.RemainingCapacityInMilliwattHours == null))
@@ -118,6 +129,48 @@ namespace Security
         {
             this.Frame.Navigate(typeof(BatteryInfo));
 
+        }
+
+        private void NextInfo(object sender, RoutedEventArgs e)
+        {
+            InfoPage = InfoPage + 1;
+            if (InfoPage==3)
+            {
+                InfoPage = 1;
+            }
+            if (InfoPage==1)
+            {
+                var aggBattery = Battery.AggregateBattery;
+                var report = aggBattery.GetReport();
+
+
+                //xtBlock.Text = report.ChargeRateInMilliwatts.ToString();
+
+                txtBlock.Text = report.Status.ToString();
+                txt2.Visibility = Visibility.Collapsed;
+                pb.Visibility = Visibility.Visible;
+
+                if ((report.FullChargeCapacityInMilliwattHours == null) ||
+                    (report.RemainingCapacityInMilliwattHours == null))
+                {
+                    pb.IsEnabled = false;
+                    txtBlock.Text = "N/A";
+                }
+                else
+                {
+                    pb.IsEnabled = true;
+                    pb.Maximum = Convert.ToDouble(report.FullChargeCapacityInMilliwattHours);
+                    pb.Value = Convert.ToDouble(report.RemainingCapacityInMilliwattHours);
+                    //txtBlock.Text = ((pb.Value / pb.Maximum) * 100).ToString("F2") + "%";
+                }
+            }
+            if (InfoPage==2)
+            {
+                pb.Visibility = Visibility.Collapsed;
+                txtBlock.Text = "Seems all good";
+                txt2.Text = "Viruses dont found";
+                txt2.Visibility = Visibility.Visible;
+            }
         }
     }
 }
