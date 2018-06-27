@@ -1,7 +1,7 @@
 # SecurityApp UWP idea
 My idea about  Security App
 
-## Please, look at Update.xaml.cs, and try help me with downloading update files
+### This is testing!
 
 ### Knowing issues:
 - When you clicking on text (on gridview elements), it dont do any action
