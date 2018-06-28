@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24">
+  <defs>
+    <style>
+      .cls-1 {
+        clip-path: url(#clip-Square44x44Logo.targetsize-24_altform-unplated);
+      }
+
+      .cls-2 {
+        fill: #0090ff;
+        stroke: rgba(0,0,0,0.2);
+        stroke-width: 2.5px;
+      }
+
+      .cls-3 {
+        fill: #fff;
+        opacity: 0.95;
+      }
+
+      .cls-4 {
+        stroke: none;
+      }
+
+      .cls-5 {
+        fill: none;
+      }
+    </style>
+    <clipPath id="clip-Square44x44Logo.targetsize-24_altform-unplated">
+      <rect width="24" height="24"/>
+    </clipPath>
+  </defs>
+  <g id="Square44x44Logo.targetsize-24_altform-unplated" class="cls-1">
+    <g id="Group_3" data-name="Group 3">
+      <g id="Rectangle_1" data-name="Rectangle 1" class="cls-2">
+        <rect class="cls-4" width="24" height="24" rx="4"/>
+        <rect class="cls-5" x="1.25" y="1.25" width="21.5" height="21.5" rx="2.75"/>
+      </g>
+      <path id="flash-circle" class="cls-3" d="M10.407,15,13.75,8.312H11.439V4L8,10.692h2.407V15" transform="translate(1 2.5)"/>
+    </g>
+  </g>
+</svg>

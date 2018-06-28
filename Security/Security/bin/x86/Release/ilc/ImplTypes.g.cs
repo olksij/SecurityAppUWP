@@ -629,7 +629,7 @@ namespace System
 		{
 			public static global::Windows.UI.Color get_Value(global::System.__ComObject __this)
 			{
-				global::Windows.UI.Color __ret = global::__Interop.ForwardComStubs.Stub_41<global::Windows.Foundation.IReference<global::Windows.UI.Color>>(
+				global::Windows.UI.Color __ret = global::__Interop.ForwardComStubs.Stub_42<global::Windows.Foundation.IReference<global::Windows.UI.Color>>(
 									__this, 
 									6
 								);
@@ -1264,13 +1264,31 @@ namespace System
 		{
 			public static global::Windows.Foundation.AsyncOperationProgressHandler<global::Windows.Networking.BackgroundTransfer.DownloadOperation, global::Windows.Networking.BackgroundTransfer.DownloadOperation> get_Value(global::System.__ComObject __this)
 			{
-				global::Windows.Foundation.AsyncOperationProgressHandler<global::Windows.Networking.BackgroundTransfer.DownloadOperation, global::Windows.Networking.BackgroundTransfer.DownloadOperation> __ret = global::__Interop.ForwardComStubs.Stub_40<global::Windows.Foundation.IReference<global::Windows.Foundation.AsyncOperationProgressHandler<global::Windows.Networking.BackgroundTransfer.DownloadOperation, global::Windows.Networking.BackgroundTransfer.DownloadOperation>>>(
+				global::Windows.Foundation.AsyncOperationProgressHandler<global::Windows.Networking.BackgroundTransfer.DownloadOperation, global::Windows.Networking.BackgroundTransfer.DownloadOperation> __ret = global::__Interop.ForwardComStubs.Stub_41<global::Windows.Foundation.IReference<global::Windows.Foundation.AsyncOperationProgressHandler<global::Windows.Networking.BackgroundTransfer.DownloadOperation, global::Windows.Networking.BackgroundTransfer.DownloadOperation>>>(
 									__this, 
 									6
 								);
 				global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
 				return __ret;
 			}
+		}
+	}
+
+	// System.EventHandler<Windows.Networking.BackgroundTransfer.DownloadOperation>
+	public unsafe static class EventHandler_A__w_Networking_BackgroundTransfer_DownloadOperation_V___Impl
+	{
+		public static void Invoke(
+					this global::System.__ComObject __this, 
+					object sender, 
+					global::Windows.Networking.BackgroundTransfer.DownloadOperation args)
+		{
+			global::__Interop.ForwardComStubs.Stub_13<global::System.EventHandler<global::Windows.Networking.BackgroundTransfer.DownloadOperation>, global::Windows.Networking.BackgroundTransfer.DownloadOperation>(
+								__this, 
+								sender, 
+								args, 
+								3
+							);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
 		}
 	}
 
@@ -2338,6 +2356,85 @@ namespace System.Collections.Generic
 						out string value)
 			{
 				return global::System.Runtime.InteropServices.WindowsRuntime.IMapSharedReferenceTypesRCWAdapter.TryGetValue(
+									this, 
+									key, 
+									out value
+								);
+			}
+		}
+	}
+
+	// System.Collections.Generic.IReadOnlyDictionary<string,string>
+	public unsafe static class IReadOnlyDictionary_A_string_j_string_V___Impl
+	{
+		// DispatchClass for 'System.Collections.Generic.IReadOnlyDictionary<string,string>'
+		[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::System.Collections.Generic.IReadOnlyDictionary<string, string>))]
+		internal abstract partial class Dispatcher : global::System.__ComObject, global::System.Collections.Generic.IReadOnlyDictionary<string, string>, global::System.Collections.Generic.IReadOnlyCollection<global::System.Collections.Generic.KeyValuePair<string, string>>
+		{
+			global::System.Collections.Generic.IEnumerator<global::System.Collections.Generic.KeyValuePair<string, string>> global::System.Collections.Generic.IEnumerable<global::System.Collections.Generic.KeyValuePair<string, string>>.GetEnumerator()
+			{
+				return (global::System.Collections.Generic.IEnumerator<global::System.Collections.Generic.KeyValuePair<string, string>>)global::__Interop.McgHelpers.GetGenericEnumerator(
+									this, 
+									typeof(global::System.Collections.Generic.IEnumerable<global::System.Collections.Generic.KeyValuePair<string, string>>).TypeHandle
+								);
+			}
+
+			global::System.Collections.IEnumerator global::System.Collections.IEnumerable.GetEnumerator()
+			{
+				return global::__Interop.McgHelpers.GetNonGenericEnumerator(
+									this, 
+									typeof(global::System.Collections.Generic.IEnumerable<global::System.Collections.Generic.KeyValuePair<string, string>>).TypeHandle
+								);
+			}
+
+			int global::System.Collections.Generic.IReadOnlyCollection<global::System.Collections.Generic.KeyValuePair<string, string>>.Count
+			{
+				get
+				{
+					return global::System.Runtime.InteropServices.WindowsRuntime.IMapViewSharedReferenceTypesRCWAdapter.Count_Get(((global::System.Collections.Generic.IReadOnlyDictionary<string, string>)this));
+				}
+			}
+
+			string global::System.Collections.Generic.IReadOnlyDictionary<string, string>.this[string index]
+			{
+				get
+				{
+					return global::System.Runtime.InteropServices.WindowsRuntime.IMapViewSharedReferenceTypesRCWAdapter.Indexer_Get(
+										((global::System.Collections.Generic.IReadOnlyDictionary<string, string>)this), 
+										index
+									);
+				}
+			}
+
+			global::System.Collections.Generic.IEnumerable<string> global::System.Collections.Generic.IReadOnlyDictionary<string, string>.Keys
+			{
+				get
+				{
+					return global::System.Runtime.InteropServices.WindowsRuntime.IMapViewSharedReferenceTypesRCWAdapter.Keys(this);
+				}
+			}
+
+			global::System.Collections.Generic.IEnumerable<string> global::System.Collections.Generic.IReadOnlyDictionary<string, string>.Values
+			{
+				get
+				{
+					return global::System.Runtime.InteropServices.WindowsRuntime.IMapViewSharedReferenceTypesRCWAdapter.Values(this);
+				}
+			}
+
+			bool global::System.Collections.Generic.IReadOnlyDictionary<string, string>.ContainsKey(string key)
+			{
+				return global::System.Runtime.InteropServices.WindowsRuntime.IMapViewSharedReferenceTypesRCWAdapter.ContainsKey(
+									this, 
+									key
+								);
+			}
+
+			bool global::System.Collections.Generic.IReadOnlyDictionary<string, string>.TryGetValue(
+						string key, 
+						out string value)
+			{
+				return global::System.Runtime.InteropServices.WindowsRuntime.IMapViewSharedReferenceTypesRCWAdapter.TryGetValue(
 									this, 
 									key, 
 									out value
@@ -12121,7 +12218,7 @@ namespace Windows.Foundation
 
 			public static global::Windows.Foundation.AsyncOperationProgressHandler<global::Windows.Networking.BackgroundTransfer.DownloadOperation, global::Windows.Networking.BackgroundTransfer.DownloadOperation> get_Progress(global::System.__ComObject __this)
 			{
-				global::Windows.Foundation.AsyncOperationProgressHandler<global::Windows.Networking.BackgroundTransfer.DownloadOperation, global::Windows.Networking.BackgroundTransfer.DownloadOperation> __ret = global::__Interop.ForwardComStubs.Stub_40<global::Windows.Foundation.IAsyncOperationWithProgress<global::Windows.Networking.BackgroundTransfer.DownloadOperation, global::Windows.Networking.BackgroundTransfer.DownloadOperation>>(
+				global::Windows.Foundation.AsyncOperationProgressHandler<global::Windows.Networking.BackgroundTransfer.DownloadOperation, global::Windows.Networking.BackgroundTransfer.DownloadOperation> __ret = global::__Interop.ForwardComStubs.Stub_41<global::Windows.Foundation.IAsyncOperationWithProgress<global::Windows.Networking.BackgroundTransfer.DownloadOperation, global::Windows.Networking.BackgroundTransfer.DownloadOperation>>(
 									__this, 
 									7
 								);
@@ -13977,7 +14074,7 @@ namespace Windows.Foundation
 
 			public static uint GetResults(global::System.__ComObject __this)
 			{
-				uint __ret = global::__Interop.ForwardComStubs.Stub_49<global::Windows.Foundation.IAsyncOperationWithProgress<uint, uint>>(
+				uint __ret = global::__Interop.ForwardComStubs.Stub_40<global::Windows.Foundation.IAsyncOperationWithProgress<uint, uint>>(
 									__this, 
 									10
 								);
@@ -24936,7 +25033,7 @@ namespace Windows.Globalization
 						global::System.__ComObject __this, 
 						int value)
 			{
-				global::__Interop.ForwardComStubs.Stub_42<global::Windows.Globalization.ICalendar>(
+				global::__Interop.ForwardComStubs.Stub_43<global::Windows.Globalization.ICalendar>(
 									__this, 
 									value, 
 									23
@@ -25001,7 +25098,7 @@ namespace Windows.Globalization
 						global::System.__ComObject __this, 
 						int value)
 			{
-				global::__Interop.ForwardComStubs.Stub_42<global::Windows.Globalization.ICalendar>(
+				global::__Interop.ForwardComStubs.Stub_43<global::Windows.Globalization.ICalendar>(
 									__this, 
 									value, 
 									31
@@ -25023,7 +25120,7 @@ namespace Windows.Globalization
 						global::System.__ComObject __this, 
 						int value)
 			{
-				global::__Interop.ForwardComStubs.Stub_42<global::Windows.Globalization.ICalendar>(
+				global::__Interop.ForwardComStubs.Stub_43<global::Windows.Globalization.ICalendar>(
 									__this, 
 									value, 
 									40
@@ -25055,7 +25152,7 @@ namespace Windows.Globalization
 						global::System.__ComObject __this, 
 						int value)
 			{
-				global::__Interop.ForwardComStubs.Stub_42<global::Windows.Globalization.ICalendar>(
+				global::__Interop.ForwardComStubs.Stub_43<global::Windows.Globalization.ICalendar>(
 									__this, 
 									value, 
 									53
@@ -25075,7 +25172,7 @@ namespace Windows.Globalization
 						global::System.__ComObject __this, 
 						string languageTag)
 			{
-				global::System.IntPtr __ret = global::__Interop.ForwardComStubs.Stub_43<global::Windows.Globalization.ILanguageFactory>(
+				global::System.IntPtr __ret = global::__Interop.ForwardComStubs.Stub_44<global::Windows.Globalization.ILanguageFactory>(
 									__this, 
 									languageTag, 
 									6
@@ -25114,7 +25211,7 @@ namespace Windows.Globalization
 						global::System.__ComObject __this, 
 						string geographicRegionCode)
 			{
-				global::System.IntPtr __ret = global::__Interop.ForwardComStubs.Stub_43<global::Windows.Globalization.IGeographicRegionFactory>(
+				global::System.IntPtr __ret = global::__Interop.ForwardComStubs.Stub_44<global::Windows.Globalization.IGeographicRegionFactory>(
 									__this, 
 									geographicRegionCode, 
 									6
@@ -25190,6 +25287,31 @@ namespace Windows.Networking.BackgroundTransfer
 		// StubClass for 'Windows.Networking.BackgroundTransfer.IDownloadOperation'
 		public static partial class Stubs
 		{
+			// Signature, Windows.Networking.BackgroundTransfer.IDownloadOperation.get_Progress, [fwd] [return] [EETypeRva:0x000406BC] void__int, [fwd] [out] [retval] [nativebyref] [EETypeRva:0x0004084C] Windows_Networking_BackgroundTransfer_BackgroundDownloadProgress__Windows_Networking_BackgroundTransfer__BackgroundDownloadProgress, 
+			public static global::Windows.Networking.BackgroundTransfer.BackgroundDownloadProgress get_Progress(global::System.__ComObject __this)
+			{
+				// Setup
+				global::Windows.Networking.BackgroundTransfer.BackgroundDownloadProgress__Impl.UnsafeType unsafe_value__retval = default(global::Windows.Networking.BackgroundTransfer.BackgroundDownloadProgress__Impl.UnsafeType);
+				global::Windows.Networking.BackgroundTransfer.BackgroundDownloadProgress value__retval = default(global::Windows.Networking.BackgroundTransfer.BackgroundDownloadProgress);
+				int unsafe___hr;
+				// Marshalling
+				unsafe_value__retval = default(global::Windows.Networking.BackgroundTransfer.BackgroundDownloadProgress__Impl.UnsafeType);
+				// Call to native method
+				unsafe___hr = global::__Interop.ComCallHelpers.Call(
+									__this, 
+									typeof(global::Windows.Networking.BackgroundTransfer.IDownloadOperation).TypeHandle, 
+									7, 
+									&(unsafe_value__retval)
+								);
+				global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+				global::Windows.Networking.BackgroundTransfer.BackgroundDownloadProgress__Impl.Marshal__UnsafeToSafe(
+									ref unsafe_value__retval, 
+									out value__retval
+								);
+				// Return
+				return value__retval;
+			}
+
 			public static global::Windows.Foundation.IAsyncOperationWithProgress<global::Windows.Networking.BackgroundTransfer.DownloadOperation, global::Windows.Networking.BackgroundTransfer.DownloadOperation> StartAsync(global::System.__ComObject __this)
 			{
 				global::Windows.Foundation.IAsyncOperationWithProgress<global::Windows.Networking.BackgroundTransfer.DownloadOperation, global::Windows.Networking.BackgroundTransfer.DownloadOperation> __ret = global::__Interop.ForwardComStubs.Stub_3<global::Windows.Networking.BackgroundTransfer.IDownloadOperation, global::Windows.Foundation.IAsyncOperationWithProgress<global::Windows.Networking.BackgroundTransfer.DownloadOperation, global::Windows.Networking.BackgroundTransfer.DownloadOperation>>(
@@ -25198,6 +25320,82 @@ namespace Windows.Networking.BackgroundTransfer
 								);
 				global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
 				return __ret;
+			}
+
+			public static global::Windows.Foundation.IAsyncOperationWithProgress<global::Windows.Networking.BackgroundTransfer.DownloadOperation, global::Windows.Networking.BackgroundTransfer.DownloadOperation> AttachAsync(global::System.__ComObject __this)
+			{
+				global::Windows.Foundation.IAsyncOperationWithProgress<global::Windows.Networking.BackgroundTransfer.DownloadOperation, global::Windows.Networking.BackgroundTransfer.DownloadOperation> __ret = global::__Interop.ForwardComStubs.Stub_3<global::Windows.Networking.BackgroundTransfer.IDownloadOperation, global::Windows.Foundation.IAsyncOperationWithProgress<global::Windows.Networking.BackgroundTransfer.DownloadOperation, global::Windows.Networking.BackgroundTransfer.DownloadOperation>>(
+									__this, 
+									9
+								);
+				global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+				return __ret;
+			}
+		}
+	}
+
+	// Windows.Networking.BackgroundTransfer.IBackgroundTransferOperation
+	public unsafe static class IBackgroundTransferOperation__Impl
+	{
+		// StubClass for 'Windows.Networking.BackgroundTransfer.IBackgroundTransferOperation'
+		public static partial class Stubs
+		{
+			public static global::Windows.Networking.BackgroundTransfer.ResponseInformation GetResponseInformation(global::System.__ComObject __this)
+			{
+				global::Windows.Networking.BackgroundTransfer.ResponseInformation __ret = global::__Interop.ForwardComStubs.Stub_3<global::Windows.Networking.BackgroundTransfer.IBackgroundTransferOperation, global::Windows.Networking.BackgroundTransfer.ResponseInformation>(
+									__this, 
+									13
+								);
+				global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+				return __ret;
+			}
+		}
+	}
+
+	// Windows.Networking.BackgroundTransfer.IResponseInformation
+	public unsafe static class IResponseInformation__Impl
+	{
+		// StubClass for 'Windows.Networking.BackgroundTransfer.IResponseInformation'
+		public static partial class Stubs
+		{
+			public static uint get_StatusCode(global::System.__ComObject __this)
+			{
+				uint __ret = global::__Interop.ForwardComStubs.Stub_40<global::Windows.Networking.BackgroundTransfer.IResponseInformation>(
+									__this, 
+									8
+								);
+				global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+				return __ret;
+			}
+
+			public static global::System.Collections.Generic.IReadOnlyDictionary<string, string> get_Headers(global::System.__ComObject __this)
+			{
+				global::System.Collections.Generic.IReadOnlyDictionary<string, string> __ret = global::__Interop.ForwardComStubs.Stub_3<global::Windows.Networking.BackgroundTransfer.IResponseInformation, global::System.Collections.Generic.IReadOnlyDictionary<string, string>>(
+									__this, 
+									9
+								);
+				global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+				return __ret;
+			}
+		}
+	}
+
+	// Windows.Networking.BackgroundTransfer.IBackgroundTransferOperationPriority
+	public unsafe static class IBackgroundTransferOperationPriority__Impl
+	{
+		// StubClass for 'Windows.Networking.BackgroundTransfer.IBackgroundTransferOperationPriority'
+		public static partial class Stubs
+		{
+			public static void put_Priority(
+						global::System.__ComObject __this, 
+						global::Windows.Networking.BackgroundTransfer.BackgroundTransferPriority value)
+			{
+				global::__Interop.ForwardComStubs.Stub_8<global::Windows.Networking.BackgroundTransfer.IBackgroundTransferOperationPriority>(
+									__this, 
+									((int)value), 
+									7
+								);
+				global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
 			}
 		}
 	}
@@ -25258,6 +25456,53 @@ namespace Windows.Networking.BackgroundTransfer
 					global::System.Runtime.InteropServices.McgMarshal.ComSafeRelease(new global::System.IntPtr(((void*)unsafe_operation__retval)));
 				}
 			}
+		}
+	}
+
+	// Windows.Networking.BackgroundTransfer.BackgroundDownloadProgress
+	public unsafe static class BackgroundDownloadProgress__Impl
+	{
+		public static int Marshal__SafeToUnsafe(
+					ref global::Windows.Networking.BackgroundTransfer.BackgroundDownloadProgress safeSource, 
+					out global::Windows.Networking.BackgroundTransfer.BackgroundDownloadProgress__Impl.UnsafeType unsafeDest)
+		{
+			// [fwd] [in] [optional] [EETypeRva:0x0004157C] ulong__unsigned __int64 safeSource
+			unsafeDest.BytesReceived = safeSource.BytesReceived;
+			// [fwd] [in] [optional] [EETypeRva:0x0004157C] ulong__unsigned __int64 safeSource
+			unsafeDest.TotalBytesToReceive = safeSource.TotalBytesToReceive;
+			// [fwd] [in] [optional] [EETypeRva:0x000414B4]  -> int
+			unsafeDest.Status = safeSource.Status;
+			// [fwd] [in] [optional] [EETypeRva:0x0003EFA8] bool__bool safeSource
+			unsafeDest.HasResponseChanged = (safeSource.HasResponseChanged ? ((sbyte)1) : ((sbyte)0));
+			// [fwd] [in] [optional] [EETypeRva:0x0003EFA8] bool__bool safeSource
+			unsafeDest.HasRestarted = (safeSource.HasRestarted ? ((sbyte)1) : ((sbyte)0));
+			return 0;
+		}
+
+		public static int Marshal__UnsafeToSafe(
+					ref global::Windows.Networking.BackgroundTransfer.BackgroundDownloadProgress__Impl.UnsafeType unsafeSource, 
+					out global::Windows.Networking.BackgroundTransfer.BackgroundDownloadProgress safeDest)
+		{
+			// [rev] [in] [optional] [EETypeRva:0x0004157C] ulong__unsigned __int64 safeDest
+			safeDest.BytesReceived = unsafeSource.BytesReceived;
+			// [rev] [in] [optional] [EETypeRva:0x0004157C] ulong__unsigned __int64 safeDest
+			safeDest.TotalBytesToReceive = unsafeSource.TotalBytesToReceive;
+			// [rev] [in] [optional] [EETypeRva:0x000414B4] Windows_Networking_BackgroundTransfer_BackgroundTransferStatus__Windows_Networking_BackgroundTransfer__BackgroundTransferStatus safeDest
+			safeDest.Status = unsafeSource.Status;
+			// [rev] [in] [optional] [EETypeRva:0x0003EFA8] bool__bool safeDest
+			safeDest.HasResponseChanged = unsafeSource.HasResponseChanged != 0;
+			// [rev] [in] [optional] [EETypeRva:0x0003EFA8] bool__bool safeDest
+			safeDest.HasRestarted = unsafeSource.HasRestarted != 0;
+			return 0;
+		}
+
+		public unsafe struct UnsafeType
+		{
+			public ulong BytesReceived;
+			public ulong TotalBytesToReceive;
+			public global::Windows.Networking.BackgroundTransfer.BackgroundTransferStatus Status;
+			public sbyte HasResponseChanged;
+			public sbyte HasRestarted;
 		}
 	}
 }
@@ -25372,7 +25617,7 @@ namespace Windows.Storage
 						global::Windows.Storage.IStorageFolder destinationFolder, 
 						string desiredNewName)
 			{
-				global::Windows.Foundation.IAsyncOperation<global::Windows.Storage.StorageFile> __ret = global::__Interop.ForwardComStubs.Stub_44<global::Windows.Storage.IStorageFile, global::Windows.Storage.IStorageFolder, global::Windows.Foundation.IAsyncOperation<global::Windows.Storage.StorageFile>>(
+				global::Windows.Foundation.IAsyncOperation<global::Windows.Storage.StorageFile> __ret = global::__Interop.ForwardComStubs.Stub_45<global::Windows.Storage.IStorageFile, global::Windows.Storage.IStorageFolder, global::Windows.Foundation.IAsyncOperation<global::Windows.Storage.StorageFile>>(
 									__this, 
 									destinationFolder, 
 									desiredNewName, 
@@ -25388,7 +25633,7 @@ namespace Windows.Storage
 						string desiredNewName, 
 						global::Windows.Storage.NameCollisionOption option)
 			{
-				global::Windows.Foundation.IAsyncOperation<global::Windows.Storage.StorageFile> __ret = global::__Interop.ForwardComStubs.Stub_45<global::Windows.Storage.IStorageFile, global::Windows.Storage.IStorageFolder, global::Windows.Foundation.IAsyncOperation<global::Windows.Storage.StorageFile>>(
+				global::Windows.Foundation.IAsyncOperation<global::Windows.Storage.StorageFile> __ret = global::__Interop.ForwardComStubs.Stub_46<global::Windows.Storage.IStorageFile, global::Windows.Storage.IStorageFolder, global::Windows.Foundation.IAsyncOperation<global::Windows.Storage.StorageFile>>(
 									__this, 
 									destinationFolder, 
 									desiredNewName, 
@@ -25430,7 +25675,7 @@ namespace Windows.Storage
 						global::Windows.Storage.IStorageFolder destinationFolder, 
 						string desiredNewName)
 			{
-				global::Windows.Foundation.IAsyncAction __ret = global::__Interop.ForwardComStubs.Stub_44<global::Windows.Storage.IStorageFile, global::Windows.Storage.IStorageFolder, global::Windows.Foundation.IAsyncAction>(
+				global::Windows.Foundation.IAsyncAction __ret = global::__Interop.ForwardComStubs.Stub_45<global::Windows.Storage.IStorageFile, global::Windows.Storage.IStorageFolder, global::Windows.Foundation.IAsyncAction>(
 									__this, 
 									destinationFolder, 
 									desiredNewName, 
@@ -25446,7 +25691,7 @@ namespace Windows.Storage
 						string desiredNewName, 
 						global::Windows.Storage.NameCollisionOption option)
 			{
-				global::Windows.Foundation.IAsyncAction __ret = global::__Interop.ForwardComStubs.Stub_45<global::Windows.Storage.IStorageFile, global::Windows.Storage.IStorageFolder, global::Windows.Foundation.IAsyncAction>(
+				global::Windows.Foundation.IAsyncAction __ret = global::__Interop.ForwardComStubs.Stub_46<global::Windows.Storage.IStorageFile, global::Windows.Storage.IStorageFolder, global::Windows.Foundation.IAsyncAction>(
 									__this, 
 									destinationFolder, 
 									desiredNewName, 
@@ -26267,7 +26512,7 @@ namespace Windows.Storage.Streams
 		{
 			public static ulong get_Size(global::System.__ComObject __this)
 			{
-				ulong __ret = global::__Interop.ForwardComStubs.Stub_46<global::Windows.Storage.Streams.IRandomAccessStream>(
+				ulong __ret = global::__Interop.ForwardComStubs.Stub_47<global::Windows.Storage.Streams.IRandomAccessStream>(
 									__this, 
 									6
 								);
@@ -26279,7 +26524,7 @@ namespace Windows.Storage.Streams
 						global::System.__ComObject __this, 
 						ulong value)
 			{
-				global::__Interop.ForwardComStubs.Stub_47<global::Windows.Storage.Streams.IRandomAccessStream>(
+				global::__Interop.ForwardComStubs.Stub_48<global::Windows.Storage.Streams.IRandomAccessStream>(
 									__this, 
 									value, 
 									7
@@ -26291,7 +26536,7 @@ namespace Windows.Storage.Streams
 						global::System.__ComObject __this, 
 						ulong position)
 			{
-				global::Windows.Storage.Streams.IInputStream __ret = global::__Interop.ForwardComStubs.Stub_48<global::Windows.Storage.Streams.IRandomAccessStream, global::Windows.Storage.Streams.IInputStream>(
+				global::Windows.Storage.Streams.IInputStream __ret = global::__Interop.ForwardComStubs.Stub_49<global::Windows.Storage.Streams.IRandomAccessStream, global::Windows.Storage.Streams.IInputStream>(
 									__this, 
 									position, 
 									8
@@ -26304,7 +26549,7 @@ namespace Windows.Storage.Streams
 						global::System.__ComObject __this, 
 						ulong position)
 			{
-				global::Windows.Storage.Streams.IOutputStream __ret = global::__Interop.ForwardComStubs.Stub_48<global::Windows.Storage.Streams.IRandomAccessStream, global::Windows.Storage.Streams.IOutputStream>(
+				global::Windows.Storage.Streams.IOutputStream __ret = global::__Interop.ForwardComStubs.Stub_49<global::Windows.Storage.Streams.IRandomAccessStream, global::Windows.Storage.Streams.IOutputStream>(
 									__this, 
 									position, 
 									9
@@ -26315,7 +26560,7 @@ namespace Windows.Storage.Streams
 
 			public static ulong get_Position(global::System.__ComObject __this)
 			{
-				ulong __ret = global::__Interop.ForwardComStubs.Stub_46<global::Windows.Storage.Streams.IRandomAccessStream>(
+				ulong __ret = global::__Interop.ForwardComStubs.Stub_47<global::Windows.Storage.Streams.IRandomAccessStream>(
 									__this, 
 									10
 								);
@@ -26327,7 +26572,7 @@ namespace Windows.Storage.Streams
 						global::System.__ComObject __this, 
 						ulong position)
 			{
-				global::__Interop.ForwardComStubs.Stub_47<global::Windows.Storage.Streams.IRandomAccessStream>(
+				global::__Interop.ForwardComStubs.Stub_48<global::Windows.Storage.Streams.IRandomAccessStream>(
 									__this, 
 									position, 
 									11
@@ -26919,7 +27164,7 @@ namespace Windows.Storage.Streams
 		{
 			public static uint get_Capacity(global::System.__ComObject __this)
 			{
-				uint __ret = global::__Interop.ForwardComStubs.Stub_49<global::Windows.Storage.Streams.IBuffer>(
+				uint __ret = global::__Interop.ForwardComStubs.Stub_40<global::Windows.Storage.Streams.IBuffer>(
 									__this, 
 									6
 								);
@@ -26929,7 +27174,7 @@ namespace Windows.Storage.Streams
 
 			public static uint get_Length(global::System.__ComObject __this)
 			{
-				uint __ret = global::__Interop.ForwardComStubs.Stub_49<global::Windows.Storage.Streams.IBuffer>(
+				uint __ret = global::__Interop.ForwardComStubs.Stub_40<global::Windows.Storage.Streams.IBuffer>(
 									__this, 
 									7
 								);
@@ -27263,7 +27508,7 @@ namespace Windows.UI
 		{
 			public static global::Windows.UI.Color get_Black(global::System.__ComObject __this)
 			{
-				global::Windows.UI.Color __ret = global::__Interop.ForwardComStubs.Stub_41<global::Windows.UI.IColorsStatics>(
+				global::Windows.UI.Color __ret = global::__Interop.ForwardComStubs.Stub_42<global::Windows.UI.IColorsStatics>(
 									__this, 
 									13
 								);
@@ -27273,7 +27518,7 @@ namespace Windows.UI
 
 			public static global::Windows.UI.Color get_WhiteSmoke(global::System.__ComObject __this)
 			{
-				global::Windows.UI.Color __ret = global::__Interop.ForwardComStubs.Stub_41<global::Windows.UI.IColorsStatics>(
+				global::Windows.UI.Color __ret = global::__Interop.ForwardComStubs.Stub_42<global::Windows.UI.IColorsStatics>(
 									__this, 
 									144
 								);

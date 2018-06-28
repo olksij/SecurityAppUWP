@@ -26,6 +26,9 @@ namespace Security
     public sealed partial class MainPage : Page
     {
         int InfoPage = 1;
+
+        public static MainPage Current { get; internal set; }
+
         public MainPage()
         {
             this.InitializeComponent();

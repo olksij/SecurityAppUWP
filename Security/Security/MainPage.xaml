@@ -6,9 +6,9 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
-    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-    <Grid>
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" MinWidth="525">
 
+    <Grid>
         <Rectangle Height="115" Margin="0,0,0,0" VerticalAlignment="Top" Fill="WhiteSmoke"/>
         <TextBlock x:Name="txtBlock" HorizontalAlignment="Left" Margin="25,23,0,0" Text="Refresh to get info" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="30"/>
         <ProgressBar x:Name="pb" HorizontalAlignment="Left" Height="8" Margin="25,80,0,0" VerticalAlignment="Top" Width="400"/>
@@ -39,7 +39,7 @@
             <AppBarButton Icon="Setting" Label="Settings" Click="AppBarButton_Click_2"/>
             <AppBarButton Icon="Sync" Label="Update" Click="AppBarButton_Click_3"/>
         </CommandBar>
-        <Button HorizontalAlignment="Right" Height="75" Margin="0,21,21,0" VerticalAlignment="Top" Width="75" BorderBrush="{x:Null}" Background="#FFEEEEEE" Click="NextInfo">
+        <Button HorizontalAlignment="Right" Height="75" Margin="0,21,21,0" VerticalAlignment="Top" Width="75" Click="NextInfo">
             <FontIcon Glyph="&#xE76C;"/>
         </Button>
         <TextBlock x:Name="txt2" HorizontalAlignment="Left" Margin="25,70,0,0" Text="TextBlock" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="20" Visibility="Collapsed"/>

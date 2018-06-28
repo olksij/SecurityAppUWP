@@ -3037,11 +3037,21 @@ namespace Windows.Globalization
 namespace Windows.Networking.BackgroundTransfer
 {
 	[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::Windows.Networking.BackgroundTransfer.IDownloadOperation))]
+	[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::Windows.Networking.BackgroundTransfer.IBackgroundTransferOperation))]
+	[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::Windows.Networking.BackgroundTransfer.IBackgroundTransferOperationPriority))]
 	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(0)]
 	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
 	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
-	public unsafe sealed class DownloadOperation : global::System.__ComObject, global::Windows.Networking.BackgroundTransfer.IDownloadOperation
+	public unsafe sealed class DownloadOperation : global::System.__ComObject, global::Windows.Networking.BackgroundTransfer.IDownloadOperation, global::Windows.Networking.BackgroundTransfer.IBackgroundTransferOperation, global::Windows.Networking.BackgroundTransfer.IBackgroundTransferOperationPriority
 	{
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "Progress")]
+		public global::Windows.Networking.BackgroundTransfer.BackgroundDownloadProgress get_Progress()
+		{
+			global::Windows.Networking.BackgroundTransfer.BackgroundDownloadProgress __retVal = global::Windows.Networking.BackgroundTransfer.IDownloadOperation__Impl.Stubs.get_Progress(this);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			return __retVal;
+		}
+
 		public global::Windows.Foundation.IAsyncOperationWithProgress<global::Windows.Networking.BackgroundTransfer.DownloadOperation, global::Windows.Networking.BackgroundTransfer.DownloadOperation> StartAsync()
 		{
 			global::Windows.Foundation.IAsyncOperationWithProgress<global::Windows.Networking.BackgroundTransfer.DownloadOperation, global::Windows.Networking.BackgroundTransfer.DownloadOperation> __retVal = global::Windows.Networking.BackgroundTransfer.IDownloadOperation__Impl.Stubs.StartAsync(this);
@@ -3049,7 +3059,58 @@ namespace Windows.Networking.BackgroundTransfer
 			return __retVal;
 		}
 
+		public global::Windows.Foundation.IAsyncOperationWithProgress<global::Windows.Networking.BackgroundTransfer.DownloadOperation, global::Windows.Networking.BackgroundTransfer.DownloadOperation> AttachAsync()
+		{
+			global::Windows.Foundation.IAsyncOperationWithProgress<global::Windows.Networking.BackgroundTransfer.DownloadOperation, global::Windows.Networking.BackgroundTransfer.DownloadOperation> __retVal = global::Windows.Networking.BackgroundTransfer.IDownloadOperation__Impl.Stubs.AttachAsync(this);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			return __retVal;
+		}
+
+		public global::Windows.Networking.BackgroundTransfer.ResponseInformation GetResponseInformation()
+		{
+			global::Windows.Networking.BackgroundTransfer.ResponseInformation __retVal = global::Windows.Networking.BackgroundTransfer.IBackgroundTransferOperation__Impl.Stubs.GetResponseInformation(this);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			return __retVal;
+		}
+
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertySet, "Priority")]
+		public void put_Priority(global::Windows.Networking.BackgroundTransfer.BackgroundTransferPriority value)
+		{
+			global::Windows.Networking.BackgroundTransfer.IBackgroundTransferOperationPriority__Impl.Stubs.put_Priority(
+								this, 
+								value
+							);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+		}
+
 		public DownloadOperation(global::System.IntPtr dummy)
+		{
+		}
+	}
+
+	[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::Windows.Networking.BackgroundTransfer.IResponseInformation))]
+	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(0)]
+	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
+	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
+	public unsafe sealed class ResponseInformation : global::System.__ComObject, global::Windows.Networking.BackgroundTransfer.IResponseInformation
+	{
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "StatusCode")]
+		public uint get_StatusCode()
+		{
+			uint __retVal = global::Windows.Networking.BackgroundTransfer.IResponseInformation__Impl.Stubs.get_StatusCode(this);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			return __retVal;
+		}
+
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "Headers")]
+		public global::System.Collections.Generic.IReadOnlyDictionary<string, string> get_Headers()
+		{
+			global::System.Collections.Generic.IReadOnlyDictionary<string, string> __retVal = global::Windows.Networking.BackgroundTransfer.IResponseInformation__Impl.Stubs.get_Headers(this);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			return __retVal;
+		}
+
+		public ResponseInformation(global::System.IntPtr dummy)
 		{
 		}
 	}
@@ -3090,9 +3151,40 @@ namespace Windows.Networking.BackgroundTransfer
 
 	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
 	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
-	public unsafe interface IDownloadOperation
+	public unsafe interface IDownloadOperation : global::Windows.Networking.BackgroundTransfer.IBackgroundTransferOperation
 	{
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "Progress")]
+		global::Windows.Networking.BackgroundTransfer.BackgroundDownloadProgress get_Progress();
+
 		global::Windows.Foundation.IAsyncOperationWithProgress<global::Windows.Networking.BackgroundTransfer.DownloadOperation, global::Windows.Networking.BackgroundTransfer.DownloadOperation> StartAsync();
+
+		global::Windows.Foundation.IAsyncOperationWithProgress<global::Windows.Networking.BackgroundTransfer.DownloadOperation, global::Windows.Networking.BackgroundTransfer.DownloadOperation> AttachAsync();
+	}
+
+	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
+	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
+	public unsafe interface IBackgroundTransferOperation
+	{
+		global::Windows.Networking.BackgroundTransfer.ResponseInformation GetResponseInformation();
+	}
+
+	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
+	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
+	public unsafe interface IResponseInformation
+	{
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "StatusCode")]
+		uint get_StatusCode();
+
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "Headers")]
+		global::System.Collections.Generic.IReadOnlyDictionary<string, string> get_Headers();
+	}
+
+	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
+	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
+	public unsafe interface IBackgroundTransferOperationPriority
+	{
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertySet, "Priority")]
+		void put_Priority(global::Windows.Networking.BackgroundTransfer.BackgroundTransferPriority value);
 	}
 
 	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
@@ -3102,6 +3194,44 @@ namespace Windows.Networking.BackgroundTransfer
 		global::Windows.Networking.BackgroundTransfer.DownloadOperation CreateDownload(
 					global::System.Uri uri, 
 					global::Windows.Storage.IStorageFile resultFile);
+	}
+
+	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(0)]
+	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
+	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
+	public unsafe struct BackgroundDownloadProgress
+	{
+		public ulong BytesReceived;
+		public ulong TotalBytesToReceive;
+		public global::Windows.Networking.BackgroundTransfer.BackgroundTransferStatus Status;
+		public bool HasResponseChanged;
+		public bool HasRestarted;
+	}
+
+	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(0)]
+	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
+	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
+	public enum BackgroundTransferStatus
+	{
+		Idle = 0,
+		Running = 1,
+		PausedByApplication = 2,
+		PausedCostedNetwork = 3,
+		PausedNoNetwork = 4,
+		Completed = 5,
+		Canceled = 6,
+		Error = 7,
+		PausedRecoverableWebErrorStatus = 8,
+		PausedSystemPolicy = 32,
+	}
+
+	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(0)]
+	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
+	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
+	public enum BackgroundTransferPriority
+	{
+		Default = 0,
+		High = 1,
 	}
 }
 
@@ -3524,17 +3654,6 @@ namespace Windows.Storage
 	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(0)]
 	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
 	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
-	public enum CreationCollisionOption
-	{
-		GenerateUniqueName = 0,
-		ReplaceExisting = 1,
-		FailIfExists = 2,
-		OpenIfExists = 3,
-	}
-
-	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(0)]
-	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
-	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
 	public enum FileAccessMode
 	{
 		Read = 0,
@@ -3549,6 +3668,17 @@ namespace Windows.Storage
 		GenerateUniqueName = 0,
 		ReplaceExisting = 1,
 		FailIfExists = 2,
+	}
+
+	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(0)]
+	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
+	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
+	public enum CreationCollisionOption
+	{
+		GenerateUniqueName = 0,
+		ReplaceExisting = 1,
+		FailIfExists = 2,
+		OpenIfExists = 3,
 	}
 }
 

@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 48 48">
+  <defs>
+    <style>
+      .cls-1 {
+        clip-path: url(#clip-LockScreenLogo.scale-200);
+      }
+
+      .cls-2 {
+        fill: #0090ff;
+        stroke: rgba(0,0,0,0.2);
+        stroke-width: 5px;
+      }
+
+      .cls-3 {
+        fill: #fff;
+        opacity: 0.95;
+      }
+
+      .cls-4 {
+        stroke: none;
+      }
+
+      .cls-5 {
+        fill: none;
+      }
+    </style>
+    <clipPath id="clip-LockScreenLogo.scale-200">
+      <rect width="48" height="48"/>
+    </clipPath>
+  </defs>
+  <g id="LockScreenLogo.scale-200" class="cls-1">
+    <g id="Group_4" data-name="Group 4">
+      <g id="Rectangle_1" data-name="Rectangle 1" class="cls-2">
+        <rect class="cls-4" width="48" height="48" rx="8"/>
+        <rect class="cls-5" x="2.5" y="2.5" width="43" height="43" rx="5.5"/>
+      </g>
+      <path id="flash-circle" class="cls-3" d="M12.815,26.01,19.5,12.625H14.878V4L8,17.385h4.815V26.01" transform="translate(10 9)"/>
+    </g>
+  </g>
+</svg>

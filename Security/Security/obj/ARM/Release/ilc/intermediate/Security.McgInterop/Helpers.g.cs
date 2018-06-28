@@ -2871,21 +2871,31 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate object AddrOfTarget126(global::System.__ComObject a0);
+		public delegate void AddrOfTarget126(
+					global::System.__ComObject a0, 
+					object a1, 
+					global::Windows.Networking.BackgroundTransfer.DownloadOperation a2);
 
 		#endif
 
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate object AddrOfTarget127(object a0);
+		public delegate object AddrOfTarget127(global::System.__ComObject a0);
 
 		#endif
 
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate int AddrOfTarget128(
+		public delegate object AddrOfTarget128(object a0);
+
+		#endif
+
+
+		#if false
+		[global::Internal.PreInitializedAddrOfDelegate]
+		public delegate int AddrOfTarget129(
 					ref global::Windows.UI.Xaml.Markup.XmlnsDefinition a0, 
 					out global::Windows.UI.Xaml.Markup.XmlnsDefinition__Impl.UnsafeType a1);
 
@@ -2894,7 +2904,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate int AddrOfTarget129(
+		public delegate int AddrOfTarget130(
 					ref global::Windows.UI.Xaml.Markup.XmlnsDefinition__Impl.UnsafeType a0, 
 					out global::Windows.UI.Xaml.Markup.XmlnsDefinition a1);
 
@@ -2903,7 +2913,25 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget130(ref global::Windows.UI.Xaml.Markup.XmlnsDefinition__Impl.UnsafeType a0);
+		public delegate void AddrOfTarget131(ref global::Windows.UI.Xaml.Markup.XmlnsDefinition__Impl.UnsafeType a0);
+
+		#endif
+
+
+		#if false
+		[global::Internal.PreInitializedAddrOfDelegate]
+		public delegate int AddrOfTarget132(
+					ref global::Windows.Networking.BackgroundTransfer.BackgroundDownloadProgress a0, 
+					out global::Windows.Networking.BackgroundTransfer.BackgroundDownloadProgress__Impl.UnsafeType a1);
+
+		#endif
+
+
+		#if false
+		[global::Internal.PreInitializedAddrOfDelegate]
+		public delegate int AddrOfTarget133(
+					ref global::Windows.Networking.BackgroundTransfer.BackgroundDownloadProgress__Impl.UnsafeType a0, 
+					out global::Windows.Networking.BackgroundTransfer.BackgroundDownloadProgress a1);
 
 		#endif
 	}

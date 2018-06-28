@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 300 300">
+  <defs>
+    <style>
+      .cls-1 {
+        clip-path: url(#clip-Square150x150Logo.scale-200);
+      }
+
+      .cls-2 {
+        fill: #fff;
+        opacity: 0.95;
+      }
+    </style>
+    <clipPath id="clip-Square150x150Logo.scale-200">
+      <rect width="300" height="300"/>
+    </clipPath>
+  </defs>
+  <g id="Square150x150Logo.scale-200" class="cls-1">
+    <g id="Group_3" data-name="Group 3">
+      <path id="flash-circle" class="cls-2" d="M38.091,141.56,79.875,57.906H50.987V4L8,87.654H38.091V141.56" transform="translate(104.5 77.25)"/>
+    </g>
+  </g>
+</svg>
