@@ -39,7 +39,7 @@
             <AppBarButton x:ConnectionId='7' Icon="Setting" Label="Settings"                             />
             <AppBarButton x:ConnectionId='8' Icon="Sync" Label="Update"                             />
         </CommandBar>
-        <Button x:ConnectionId='4' HorizontalAlignment="Right" Height="75" Margin="0,21,21,0" VerticalAlignment="Top" Width="75"                 >
+        <Button x:ConnectionId='4' HorizontalAlignment="Right" Height="75" Margin="0,21,21,0" VerticalAlignment="Top" Width="75"                  Style="{ThemeResource ButtonRevealStyle}">
             <FontIcon Glyph="&#xE76C;"/>
         </Button>
         <TextBlock x:ConnectionId='5' x:Name="txt2" HorizontalAlignment="Left" Margin="25,70,0,0" Text="TextBlock" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="20" Visibility="Collapsed"/>

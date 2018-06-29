@@ -76,10 +76,16 @@ namespace Security
 
             download.Priority = BackgroundTransferPriority.Default;
 
+            //await HandleDownloadAsync(download, true);
+
+            
             await Task.Delay(TimeSpan.FromSeconds(2));
             CheckButton.Content = "Its only developing.. .";
             CheckButton.Visibility = Visibility.Visible;
             pb.Visibility = Visibility.Collapsed;
+            
+
+
 
             /*
 
@@ -104,11 +110,6 @@ namespace Security
                                  await Task.Delay(TimeSpan.FromSeconds(5));
 
 */
-        }
-
-        private void ToHome1(object sender, TappedRoutedEventArgs e)
-        {
-            this.Frame.Navigate(typeof(MainPage));
         }
 
         private async Task HandleDownloadAsync(DownloadOperation download, bool start)
@@ -148,6 +149,10 @@ namespace Security
             }
         }
 
+        private void ToHome1(object sender, TappedRoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(MainPage));
+        }
 
         private void DownloadProgress(DownloadOperation download)
         {
@@ -180,6 +185,21 @@ namespace Security
                 // If you want to stream the response data this is a good time to start.
                 // download.GetResultStreamAt(0);
             }
+        }
+
+        public static BackgroundDownloader CreateBackgroundDownloader()
+        {
+            BackgroundTransferCompletionGroup completionGroup = new BackgroundTransferCompletionGroup();
+
+            BackgroundTaskBuilder builder = new BackgroundTaskBuilder();
+            builder.TaskEntryPoint = "Tasks.CompletionGroupTask";
+            builder.SetTrigger(completionGroup.Trigger);
+
+            BackgroundTaskRegistration taskRegistration = builder.Register();
+
+            BackgroundDownloader downloader = new BackgroundDownloader(completionGroup);
+
+            return downloader;
         }
     }
 }
