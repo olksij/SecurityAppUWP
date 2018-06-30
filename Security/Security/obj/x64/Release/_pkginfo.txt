@@ -1,1 +1,1 @@
-D:\Alex\Visual\Security\Security\AppPackages\Security_0.3.0.0_Test\Security_0.3.0.0_x86_x64_arm.appxbundle
+D:\Alex\Visual\Security\Security\AppPackages\Security_0.4.0.0_Test\Security_0.4.0.0_x86_x64_arm.appxbundle

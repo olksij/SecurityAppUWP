@@ -1025,16 +1025,16 @@ namespace __Interop
 				12899, // Windows.UI.Core.IWindowSizeChangedEventArgs
 				12928, // Windows.UI.Xaml.WindowVisibilityChangedEventHandler
 				12965, // Windows.UI.Core.IVisibilityChangedEventArgs
-				12994, // Windows.UI.ViewManagement.IApplicationViewStatics2
-				13020, // Windows.UI.ViewManagement.IApplicationView
-				13038, // Windows.UI.ViewManagement.IApplicationView3
-				13057, // Windows.UI.ViewManagement.IApplicationViewTitleBar
-				13083, // Windows.UI.IColorsStatics
-				13099, // Windows.UI.IColors
-				13108, // Windows.ApplicationModel.Core.ICoreApplicationView
-				13130, // Windows.ApplicationModel.Core.ICoreApplicationView3
-				13153, // Windows.ApplicationModel.Core.ICoreApplicationViewTitleBar
-				13183, // Windows.ApplicationModel.Core.ICoreApplication
+				12994, // Windows.ApplicationModel.Core.ICoreApplicationView
+				13016, // Windows.ApplicationModel.Core.ICoreApplicationView3
+				13039, // Windows.ApplicationModel.Core.ICoreApplicationViewTitleBar
+				13069, // Windows.ApplicationModel.Core.ICoreApplication
+				13087, // Windows.UI.ViewManagement.IApplicationViewStatics2
+				13113, // Windows.UI.ViewManagement.IApplicationView
+				13131, // Windows.UI.ViewManagement.IApplicationView3
+				13150, // Windows.UI.ViewManagement.IApplicationViewTitleBar
+				13176, // Windows.UI.IColorsStatics
+				13192, // Windows.UI.IColors
 				13201, // Windows.Foundation.Collections.IIterable`1<Windows.Devices.Enumeration.IDeviceInformation>
 				13235, // Windows.Foundation.Collections.IIterator`1<Windows.Devices.Enumeration.IDeviceInformation>
 				13269, // Windows.Foundation.Collections.IIterable`1<Windows.Devices.Enumeration.IDeviceInformation2>
@@ -4309,68 +4309,68 @@ namespace __Interop
 					FixupItfType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::Windows.UI.Core.IVisibilityChangedEventArgs).TypeHandle),
 					Flags = global::System.Runtime.InteropServices.McgInterfaceFlags.isIInspectable,
 				}, 
-				// index: 452, iid: af338ae5-cf64-423c-85e5-f3e72448fb23 Windows.UI.ViewManagement.IApplicationViewStatics2, CCW discarded
-				new global::System.Runtime.InteropServices.McgInterfaceData() {
-					ItfGuid = new global::System.Guid(-1355576603, -12444, 16956, 0x85, 0xE5, 0xF3, 0xE7, 0x24, 0x48, 0xFB, 0x23), // {af338ae5-cf64-423c-85e5-f3e72448fb23}
-					FixupItfType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::Windows.UI.ViewManagement.IApplicationViewStatics2).TypeHandle),
-					Flags = global::System.Runtime.InteropServices.McgInterfaceFlags.isIInspectable,
-				}, 
-				// index: 453, iid: d222d519-4361-451e-96c4-60f4f9742db0 Windows.UI.ViewManagement.IApplicationView, CCW discarded, RCW discarded
-				new global::System.Runtime.InteropServices.McgInterfaceData() {
-					ItfGuid = new global::System.Guid(-769469159, 17249, 17694, 0x96, 0xC4, 0x60, 0xF4, 0xF9, 0x74, 0x2D, 0xB0), // {d222d519-4361-451e-96c4-60f4f9742db0}
-					FixupItfType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::Windows.UI.ViewManagement.IApplicationView).TypeHandle),
-					Flags = global::System.Runtime.InteropServices.McgInterfaceFlags.isIInspectable,
-				}, 
-				// index: 454, iid: 903c9ce5-793a-4fdf-a2b2-af1ac21e3108 Windows.UI.ViewManagement.IApplicationView3, CCW discarded
-				new global::System.Runtime.InteropServices.McgInterfaceData() {
-					ItfGuid = new global::System.Guid(-1875075867, 31034, 20447, 0xA2, 0xB2, 0xAF, 0x1A, 0xC2, 0x1E, 0x31, 0x8), // {903c9ce5-793a-4fdf-a2b2-af1ac21e3108}
-					FixupItfType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::Windows.UI.ViewManagement.IApplicationView3).TypeHandle),
-					FixupDispatchClassType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::Windows.UI.ViewManagement.ApplicationView).TypeHandle),
-					Flags = global::System.Runtime.InteropServices.McgInterfaceFlags.isIInspectable,
-				}, 
-				// index: 455, iid: 00924ac0-932b-4a6b-9c4b-dc38c82478ce Windows.UI.ViewManagement.IApplicationViewTitleBar, CCW discarded
-				new global::System.Runtime.InteropServices.McgInterfaceData() {
-					ItfGuid = new global::System.Guid(9587392, -27861, 19051, 0x9C, 0x4B, 0xDC, 0x38, 0xC8, 0x24, 0x78, 0xCE), // {00924ac0-932b-4a6b-9c4b-dc38c82478ce}
-					FixupItfType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::Windows.UI.ViewManagement.IApplicationViewTitleBar).TypeHandle),
-					FixupDispatchClassType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::Windows.UI.ViewManagement.ApplicationViewTitleBar).TypeHandle),
-					Flags = global::System.Runtime.InteropServices.McgInterfaceFlags.isIInspectable,
-				}, 
-				// index: 456, iid: cff52e04-cca6-4614-a17e-754910c84a99 Windows.UI.IColorsStatics, CCW discarded
-				new global::System.Runtime.InteropServices.McgInterfaceData() {
-					ItfGuid = new global::System.Guid(-806015484, -13146, 17940, 0xA1, 0x7E, 0x75, 0x49, 0x10, 0xC8, 0x4A, 0x99), // {cff52e04-cca6-4614-a17e-754910c84a99}
-					FixupItfType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::Windows.UI.IColorsStatics).TypeHandle),
-					Flags = global::System.Runtime.InteropServices.McgInterfaceFlags.isIInspectable,
-				}, 
-				// index: 457, iid: 9b8c9326-4ca6-4ce5-8994-9eff65cabdcc Windows.UI.IColors, CCW discarded, RCW discarded
-				new global::System.Runtime.InteropServices.McgInterfaceData() {
-					ItfGuid = new global::System.Guid(-1685286106, 19622, 19685, 0x89, 0x94, 0x9E, 0xFF, 0x65, 0xCA, 0xBD, 0xCC), // {9b8c9326-4ca6-4ce5-8994-9eff65cabdcc}
-					FixupItfType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::Windows.UI.IColors).TypeHandle),
-					Flags = global::System.Runtime.InteropServices.McgInterfaceFlags.isIInspectable,
-				}, 
-				// index: 458, iid: 638bb2db-451d-4661-b099-414f34ffb9f1 Windows.ApplicationModel.Core.ICoreApplicationView, CCW discarded, RCW discarded
+				// index: 452, iid: 638bb2db-451d-4661-b099-414f34ffb9f1 Windows.ApplicationModel.Core.ICoreApplicationView, CCW discarded, RCW discarded
 				new global::System.Runtime.InteropServices.McgInterfaceData() {
 					ItfGuid = new global::System.Guid(1670099675, 17693, 18017, 0xB0, 0x99, 0x41, 0x4F, 0x34, 0xFF, 0xB9, 0xF1), // {638bb2db-451d-4661-b099-414f34ffb9f1}
 					FixupItfType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::Windows.ApplicationModel.Core.ICoreApplicationView).TypeHandle),
 					Flags = global::System.Runtime.InteropServices.McgInterfaceFlags.isIInspectable,
 				}, 
-				// index: 459, iid: 07ebe1b3-a4cf-4550-ab70-b07e85330bc8 Windows.ApplicationModel.Core.ICoreApplicationView3, CCW discarded
+				// index: 453, iid: 07ebe1b3-a4cf-4550-ab70-b07e85330bc8 Windows.ApplicationModel.Core.ICoreApplicationView3, CCW discarded
 				new global::System.Runtime.InteropServices.McgInterfaceData() {
 					ItfGuid = new global::System.Guid(132899251, -23345, 17744, 0xAB, 0x70, 0xB0, 0x7E, 0x85, 0x33, 0xB, 0xC8), // {07ebe1b3-a4cf-4550-ab70-b07e85330bc8}
 					FixupItfType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::Windows.ApplicationModel.Core.ICoreApplicationView3).TypeHandle),
 					FixupDispatchClassType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::Windows.ApplicationModel.Core.CoreApplicationView).TypeHandle),
 					Flags = global::System.Runtime.InteropServices.McgInterfaceFlags.isIInspectable,
 				}, 
-				// index: 460, iid: 006d35e3-e1f1-431b-9508-29b96926ac53 Windows.ApplicationModel.Core.ICoreApplicationViewTitleBar, CCW discarded
+				// index: 454, iid: 006d35e3-e1f1-431b-9508-29b96926ac53 Windows.ApplicationModel.Core.ICoreApplicationViewTitleBar, CCW discarded
 				new global::System.Runtime.InteropServices.McgInterfaceData() {
 					ItfGuid = new global::System.Guid(7157219, -7695, 17179, 0x95, 0x8, 0x29, 0xB9, 0x69, 0x26, 0xAC, 0x53), // {006d35e3-e1f1-431b-9508-29b96926ac53}
 					FixupItfType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::Windows.ApplicationModel.Core.ICoreApplicationViewTitleBar).TypeHandle),
 					FixupDispatchClassType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::Windows.ApplicationModel.Core.CoreApplicationViewTitleBar).TypeHandle),
 					Flags = global::System.Runtime.InteropServices.McgInterfaceFlags.isIInspectable,
 				}, 
-				// index: 461, iid: 0aacf7a4-5e1d-49df-8034-fb6a68bc5ed1 Windows.ApplicationModel.Core.ICoreApplication, CCW discarded
+				// index: 455, iid: 0aacf7a4-5e1d-49df-8034-fb6a68bc5ed1 Windows.ApplicationModel.Core.ICoreApplication, CCW discarded
 				new global::System.Runtime.InteropServices.McgInterfaceData() {
 					ItfGuid = new global::System.Guid(179107748, 24093, 18911, 0x80, 0x34, 0xFB, 0x6A, 0x68, 0xBC, 0x5E, 0xD1), // {0aacf7a4-5e1d-49df-8034-fb6a68bc5ed1}
 					FixupItfType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::Windows.ApplicationModel.Core.ICoreApplication).TypeHandle),
+					Flags = global::System.Runtime.InteropServices.McgInterfaceFlags.isIInspectable,
+				}, 
+				// index: 456, iid: af338ae5-cf64-423c-85e5-f3e72448fb23 Windows.UI.ViewManagement.IApplicationViewStatics2, CCW discarded
+				new global::System.Runtime.InteropServices.McgInterfaceData() {
+					ItfGuid = new global::System.Guid(-1355576603, -12444, 16956, 0x85, 0xE5, 0xF3, 0xE7, 0x24, 0x48, 0xFB, 0x23), // {af338ae5-cf64-423c-85e5-f3e72448fb23}
+					FixupItfType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::Windows.UI.ViewManagement.IApplicationViewStatics2).TypeHandle),
+					Flags = global::System.Runtime.InteropServices.McgInterfaceFlags.isIInspectable,
+				}, 
+				// index: 457, iid: d222d519-4361-451e-96c4-60f4f9742db0 Windows.UI.ViewManagement.IApplicationView, CCW discarded, RCW discarded
+				new global::System.Runtime.InteropServices.McgInterfaceData() {
+					ItfGuid = new global::System.Guid(-769469159, 17249, 17694, 0x96, 0xC4, 0x60, 0xF4, 0xF9, 0x74, 0x2D, 0xB0), // {d222d519-4361-451e-96c4-60f4f9742db0}
+					FixupItfType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::Windows.UI.ViewManagement.IApplicationView).TypeHandle),
+					Flags = global::System.Runtime.InteropServices.McgInterfaceFlags.isIInspectable,
+				}, 
+				// index: 458, iid: 903c9ce5-793a-4fdf-a2b2-af1ac21e3108 Windows.UI.ViewManagement.IApplicationView3, CCW discarded
+				new global::System.Runtime.InteropServices.McgInterfaceData() {
+					ItfGuid = new global::System.Guid(-1875075867, 31034, 20447, 0xA2, 0xB2, 0xAF, 0x1A, 0xC2, 0x1E, 0x31, 0x8), // {903c9ce5-793a-4fdf-a2b2-af1ac21e3108}
+					FixupItfType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::Windows.UI.ViewManagement.IApplicationView3).TypeHandle),
+					FixupDispatchClassType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::Windows.UI.ViewManagement.ApplicationView).TypeHandle),
+					Flags = global::System.Runtime.InteropServices.McgInterfaceFlags.isIInspectable,
+				}, 
+				// index: 459, iid: 00924ac0-932b-4a6b-9c4b-dc38c82478ce Windows.UI.ViewManagement.IApplicationViewTitleBar, CCW discarded
+				new global::System.Runtime.InteropServices.McgInterfaceData() {
+					ItfGuid = new global::System.Guid(9587392, -27861, 19051, 0x9C, 0x4B, 0xDC, 0x38, 0xC8, 0x24, 0x78, 0xCE), // {00924ac0-932b-4a6b-9c4b-dc38c82478ce}
+					FixupItfType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::Windows.UI.ViewManagement.IApplicationViewTitleBar).TypeHandle),
+					FixupDispatchClassType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::Windows.UI.ViewManagement.ApplicationViewTitleBar).TypeHandle),
+					Flags = global::System.Runtime.InteropServices.McgInterfaceFlags.isIInspectable,
+				}, 
+				// index: 460, iid: cff52e04-cca6-4614-a17e-754910c84a99 Windows.UI.IColorsStatics, CCW discarded
+				new global::System.Runtime.InteropServices.McgInterfaceData() {
+					ItfGuid = new global::System.Guid(-806015484, -13146, 17940, 0xA1, 0x7E, 0x75, 0x49, 0x10, 0xC8, 0x4A, 0x99), // {cff52e04-cca6-4614-a17e-754910c84a99}
+					FixupItfType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::Windows.UI.IColorsStatics).TypeHandle),
+					Flags = global::System.Runtime.InteropServices.McgInterfaceFlags.isIInspectable,
+				}, 
+				// index: 461, iid: 9b8c9326-4ca6-4ce5-8994-9eff65cabdcc Windows.UI.IColors, CCW discarded, RCW discarded
+				new global::System.Runtime.InteropServices.McgInterfaceData() {
+					ItfGuid = new global::System.Guid(-1685286106, 19622, 19685, 0x89, 0x94, 0x9E, 0xFF, 0x65, 0xCA, 0xBD, 0xCC), // {9b8c9326-4ca6-4ce5-8994-9eff65cabdcc}
+					FixupItfType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::Windows.UI.IColors).TypeHandle),
 					Flags = global::System.Runtime.InteropServices.McgInterfaceFlags.isIInspectable,
 				}, 
 				// index: 462, iid: 180e4b06-9936-5d42-a5bf-1bdc08713dbd System.Collections.Generic.IEnumerable<Windows.Devices.Enumeration.IDeviceInformation>, CCW discarded
@@ -5693,12 +5693,12 @@ namespace __Interop
 				23233, // Windows.UI.Core.CoreWindowEventArgs
 				23254, // Windows.UI.Core.WindowSizeChangedEventArgs
 				23282, // Windows.UI.Core.VisibilityChangedEventArgs
-				23310, // Windows.UI.ViewManagement.ApplicationView
-				23327, // Windows.UI.ViewManagement.ApplicationViewTitleBar
-				23352, // Windows.UI.Colors
-				23360, // Windows.ApplicationModel.Core.CoreApplicationView
-				23381, // Windows.ApplicationModel.Core.CoreApplicationViewTitleBar
-				23410, // Windows.ApplicationModel.Core.CoreApplication
+				23310, // Windows.ApplicationModel.Core.CoreApplicationView
+				23331, // Windows.ApplicationModel.Core.CoreApplicationViewTitleBar
+				23360, // Windows.ApplicationModel.Core.CoreApplication
+				23377, // Windows.UI.ViewManagement.ApplicationView
+				23394, // Windows.UI.ViewManagement.ApplicationViewTitleBar
+				23419, // Windows.UI.Colors
 				23427, // Windows.Foundation.Metadata.RemoteAsyncAttribute
 				23449, // Windows.ApplicationModel.Resources.Core.ResourceManager
 				23466, // Windows.ApplicationModel.Resources.Core.ResourceMap
@@ -7624,50 +7624,23 @@ namespace __Interop
 				}, 
 				// Index = 237
 				new global::System.Runtime.InteropServices.McgClassData() {
-					FixupClassType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::Windows.UI.ViewManagement.ApplicationView).TypeHandle),
-					Flags = (global::System.Runtime.InteropServices.McgClassFlags.IsSealed | global::System.Runtime.InteropServices.McgClassFlags.IsWinRT 
-								| global::System.Runtime.InteropServices.McgClassFlags.MarshalingBehavior_Free 
-								| global::System.Runtime.InteropServices.McgClassFlags.GCPressureRange_WinRT_Default),
-					BaseClassIndex = -1,
-					DefaultInterfaceIndex = 453,
-				}, 
-				// Index = 238
-				new global::System.Runtime.InteropServices.McgClassData() {
-					FixupClassType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::Windows.UI.ViewManagement.ApplicationViewTitleBar).TypeHandle),
-					Flags = (global::System.Runtime.InteropServices.McgClassFlags.IsSealed | global::System.Runtime.InteropServices.McgClassFlags.IsWinRT 
-								| global::System.Runtime.InteropServices.McgClassFlags.MarshalingBehavior_Free 
-								| global::System.Runtime.InteropServices.McgClassFlags.GCPressureRange_WinRT_Default),
-					BaseClassIndex = -1,
-					DefaultInterfaceIndex = 455,
-				}, 
-				// Index = 239
-				new global::System.Runtime.InteropServices.McgClassData() {
-					FixupClassType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::Windows.UI.Colors).TypeHandle),
-					Flags = (global::System.Runtime.InteropServices.McgClassFlags.IsSealed | global::System.Runtime.InteropServices.McgClassFlags.IsWinRT 
-								| global::System.Runtime.InteropServices.McgClassFlags.MarshalingBehavior_Free 
-								| global::System.Runtime.InteropServices.McgClassFlags.GCPressureRange_WinRT_Default),
-					BaseClassIndex = -1,
-					DefaultInterfaceIndex = 457,
-				}, 
-				// Index = 240
-				new global::System.Runtime.InteropServices.McgClassData() {
 					FixupClassType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::Windows.ApplicationModel.Core.CoreApplicationView).TypeHandle),
 					Flags = (global::System.Runtime.InteropServices.McgClassFlags.IsSealed | global::System.Runtime.InteropServices.McgClassFlags.IsWinRT 
 								| global::System.Runtime.InteropServices.McgClassFlags.MarshalingBehavior_Standard 
 								| global::System.Runtime.InteropServices.McgClassFlags.GCPressureRange_WinRT_Default),
 					BaseClassIndex = -1,
-					DefaultInterfaceIndex = 458,
+					DefaultInterfaceIndex = 452,
 				}, 
-				// Index = 241
+				// Index = 238
 				new global::System.Runtime.InteropServices.McgClassData() {
 					FixupClassType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::Windows.ApplicationModel.Core.CoreApplicationViewTitleBar).TypeHandle),
 					Flags = (global::System.Runtime.InteropServices.McgClassFlags.IsSealed | global::System.Runtime.InteropServices.McgClassFlags.IsWinRT 
 								| global::System.Runtime.InteropServices.McgClassFlags.MarshalingBehavior_Standard 
 								| global::System.Runtime.InteropServices.McgClassFlags.GCPressureRange_WinRT_Default),
 					BaseClassIndex = -1,
-					DefaultInterfaceIndex = 460,
+					DefaultInterfaceIndex = 454,
 				}, 
-				// Index = 242
+				// Index = 239
 				new global::System.Runtime.InteropServices.McgClassData() {
 					FixupClassType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::Windows.ApplicationModel.Core.CoreApplication).TypeHandle),
 					Flags = (global::System.Runtime.InteropServices.McgClassFlags.IsSealed | global::System.Runtime.InteropServices.McgClassFlags.IsWinRT 
@@ -7675,6 +7648,33 @@ namespace __Interop
 								| global::System.Runtime.InteropServices.McgClassFlags.GCPressureRange_WinRT_Default),
 					BaseClassIndex = -1,
 					DefaultInterfaceIndex = -1,
+				}, 
+				// Index = 240
+				new global::System.Runtime.InteropServices.McgClassData() {
+					FixupClassType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::Windows.UI.ViewManagement.ApplicationView).TypeHandle),
+					Flags = (global::System.Runtime.InteropServices.McgClassFlags.IsSealed | global::System.Runtime.InteropServices.McgClassFlags.IsWinRT 
+								| global::System.Runtime.InteropServices.McgClassFlags.MarshalingBehavior_Free 
+								| global::System.Runtime.InteropServices.McgClassFlags.GCPressureRange_WinRT_Default),
+					BaseClassIndex = -1,
+					DefaultInterfaceIndex = 457,
+				}, 
+				// Index = 241
+				new global::System.Runtime.InteropServices.McgClassData() {
+					FixupClassType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::Windows.UI.ViewManagement.ApplicationViewTitleBar).TypeHandle),
+					Flags = (global::System.Runtime.InteropServices.McgClassFlags.IsSealed | global::System.Runtime.InteropServices.McgClassFlags.IsWinRT 
+								| global::System.Runtime.InteropServices.McgClassFlags.MarshalingBehavior_Free 
+								| global::System.Runtime.InteropServices.McgClassFlags.GCPressureRange_WinRT_Default),
+					BaseClassIndex = -1,
+					DefaultInterfaceIndex = 459,
+				}, 
+				// Index = 242
+				new global::System.Runtime.InteropServices.McgClassData() {
+					FixupClassType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::Windows.UI.Colors).TypeHandle),
+					Flags = (global::System.Runtime.InteropServices.McgClassFlags.IsSealed | global::System.Runtime.InteropServices.McgClassFlags.IsWinRT 
+								| global::System.Runtime.InteropServices.McgClassFlags.MarshalingBehavior_Free 
+								| global::System.Runtime.InteropServices.McgClassFlags.GCPressureRange_WinRT_Default),
+					BaseClassIndex = -1,
+					DefaultInterfaceIndex = 461,
 				}, 
 				// Index = 243
 				new global::System.Runtime.InteropServices.McgClassData() {
@@ -10430,6 +10430,7 @@ namespace __Interop
 				345, // Windows.UI.Xaml.IDependencyObject
 				345, // Windows.UI.Xaml.IDependencyObject
 				345, // Windows.UI.Xaml.IDependencyObject
+				345, // Windows.UI.Xaml.IDependencyObject
 				8923, // Windows.UI.Xaml.Markup.IXamlMetadataProvider
 				8957, // Windows.UI.Xaml.Markup.IXamlMember
 				35411, // Windows.Foundation.IClosable
@@ -10469,7 +10470,7 @@ namespace __Interop
 				18177, // Windows.Foundation.IReference`1<Windows.Foundation.AsyncOperationProgressHandler`2<UInt32,UInt32>>
 				18240  // Windows.Foundation.IReference`1<Windows.Foundation.AsyncOperationProgressHandler`2<Windows.Storage.Streams.IBuffer,UInt32>>
 		};
-		// Count=56
+		// Count=57
 		[global::System.Runtime.CompilerServices.PreInitialized]
 		[global::System.Runtime.CompilerServices.InitDataBlob(typeof(global::__Interop.McgCurrentModule.McgCurrentModule__McgRvaContainer), "RVA___Interop_McgCurrentModule_s_ccwTemplateData")]
 		static readonly global::System.Runtime.InteropServices.CCWTemplateData[] s_ccwTemplateData
@@ -10623,13 +10624,21 @@ namespace __Interop
 				}, 
 				// Index = 17
 				new global::System.Runtime.InteropServices.CCWTemplateData() {
-					FixupClassType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(global::System.Runtime.InteropServices.TypeOfHelper.RuntimeTypeHandleOf("Security.Update, Security, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null")),
+					FixupClassType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(global::System.Runtime.InteropServices.TypeOfHelper.RuntimeTypeHandleOf("Security.Settings, Security, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null")),
 					SupportedInterfaceListBeginIndex = 9,
 					NumberOfSupportedInterface = 2,
 					ParentCCWTemplateIndex = 6,
 					IsWinRTType = false,
 				}, 
 				// Index = 18
+				new global::System.Runtime.InteropServices.CCWTemplateData() {
+					FixupClassType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(global::System.Runtime.InteropServices.TypeOfHelper.RuntimeTypeHandleOf("Security.Update, Security, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null")),
+					SupportedInterfaceListBeginIndex = 9,
+					NumberOfSupportedInterface = 2,
+					ParentCCWTemplateIndex = 6,
+					IsWinRTType = false,
+				}, 
+				// Index = 19
 				new global::System.Runtime.InteropServices.CCWTemplateData() {
 					FixupClassType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(global::System.Runtime.InteropServices.TypeOfHelper.RuntimeTypeHandleOf("Security.Security_XamlTypeInfo.XamlMetaDataProvider, Security, Version=1.0.0.0, Culture=neutral, PublicKeyToken=" +
 								"null")),
@@ -10638,7 +10647,7 @@ namespace __Interop
 					ParentCCWTemplateIndex = -1,
 					IsWinRTType = false,
 				}, 
-				// Index = 19
+				// Index = 20
 				new global::System.Runtime.InteropServices.CCWTemplateData() {
 					FixupClassType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(global::System.Runtime.InteropServices.TypeOfHelper.RuntimeTypeHandleOf("Security.Security_XamlTypeInfo.XamlMember, Security, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null")),
 					SupportedInterfaceListBeginIndex = 43,
@@ -10646,7 +10655,7 @@ namespace __Interop
 					ParentCCWTemplateIndex = -1,
 					IsWinRTType = false,
 				}, 
-				// Index = 20
+				// Index = 21
 				new global::System.Runtime.InteropServices.CCWTemplateData() {
 					FixupClassType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(global::System.Runtime.InteropServices.TypeOfHelper.RuntimeTypeHandleOf("System.IO.Stream, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")),
 					SupportedInterfaceListBeginIndex = 44,
@@ -10654,7 +10663,7 @@ namespace __Interop
 					ParentCCWTemplateIndex = -1,
 					IsWinRTType = false,
 				}, 
-				// Index = 21
+				// Index = 22
 				new global::System.Runtime.InteropServices.CCWTemplateData() {
 					FixupClassType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(global::System.Runtime.InteropServices.TypeOfHelper.RuntimeTypeHandleOf("Internal.WinRT.Interop.WinRTCallbacks+ActionInvoker, System.Private.WinRTInterop.CoreLib, Version=4.0.0.0, Cultu" +
 								"re=neutral, PublicKeyToken=b77a5c561934e089")),
@@ -10663,7 +10672,7 @@ namespace __Interop
 					ParentCCWTemplateIndex = -1,
 					IsWinRTType = false,
 				}, 
-				// Index = 22
+				// Index = 23
 				new global::System.Runtime.InteropServices.CCWTemplateData() {
 					FixupClassType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(global::System.Runtime.InteropServices.TypeOfHelper.RuntimeTypeHandleOf("System.Threading.Tasks.Task, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11" +
 								"d50a3a")),
@@ -10672,7 +10681,7 @@ namespace __Interop
 					ParentCCWTemplateIndex = -1,
 					IsWinRTType = false,
 				}, 
-				// Index = 23
+				// Index = 24
 				new global::System.Runtime.InteropServices.CCWTemplateData() {
 					FixupClassType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(global::System.Runtime.InteropServices.TypeOfHelper.RuntimeTypeHandleOf("System.Runtime.InteropServices.ClassFactory, System.Private.Interop, Version=999.999.999.999, Culture=neutral, P" +
 								"ublicKeyToken=b03f5f7f11d50a3a")),
@@ -10682,17 +10691,17 @@ namespace __Interop
 					ParentCCWTemplateIndex = -1,
 					IsWinRTType = false,
 				}, 
-				// Index = 24
+				// Index = 25
 				new global::System.Runtime.InteropServices.CCWTemplateData() {
 					FixupClassType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(global::System.Runtime.InteropServices.TypeOfHelper.RuntimeTypeHandleOf("System.Threading.Tasks.Task`1[[System.Int32, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKey" +
 								"Token=b03f5f7f11d50a3a]], System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d5" +
 								"0a3a")),
 					SupportedInterfaceListBeginIndex = 8,
 					NumberOfSupportedInterface = 0,
-					ParentCCWTemplateIndex = 22,
+					ParentCCWTemplateIndex = 23,
 					IsWinRTType = false,
 				}, 
-				// Index = 25
+				// Index = 26
 				new global::System.Runtime.InteropServices.CCWTemplateData() {
 					FixupClassType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(global::System.Runtime.InteropServices.TypeOfHelper.RuntimeTypeHandleOf("System.Collections.Generic.List`1[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, Publ" +
 								"icKeyToken=b03f5f7f11d50a3a]], System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7" +
@@ -10702,17 +10711,17 @@ namespace __Interop
 					ParentCCWTemplateIndex = -1,
 					IsWinRTType = false,
 				}, 
-				// Index = 26
+				// Index = 27
 				new global::System.Runtime.InteropServices.CCWTemplateData() {
 					FixupClassType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(global::System.Runtime.InteropServices.TypeOfHelper.RuntimeTypeHandleOf("System.Threading.Tasks.Task`1[[System.IO.Stream, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, Publi" +
 								"cKeyToken=b03f5f7f11d50a3a]], System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f" +
 								"11d50a3a")),
 					SupportedInterfaceListBeginIndex = 8,
 					NumberOfSupportedInterface = 0,
-					ParentCCWTemplateIndex = 22,
+					ParentCCWTemplateIndex = 23,
 					IsWinRTType = false,
 				}, 
-				// Index = 27
+				// Index = 28
 				new global::System.Runtime.InteropServices.CCWTemplateData() {
 					FixupClassType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(global::System.Runtime.InteropServices.TypeOfHelper.RuntimeTypeHandleOf("System.Collections.ObjectModel.ReadOnlyCollection`1[[System.String, System.Private.CoreLib, Version=4.0.0.0, Cul" +
 								"ture=neutral, PublicKeyToken=b03f5f7f11d50a3a]], System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, Publ" +
@@ -10722,25 +10731,25 @@ namespace __Interop
 					ParentCCWTemplateIndex = -1,
 					IsWinRTType = false,
 				}, 
-				// Index = 28
+				// Index = 29
 				new global::System.Runtime.InteropServices.CCWTemplateData() {
 					FixupClassType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(global::System.Runtime.InteropServices.TypeOfHelper.RuntimeTypeHandleOf("System.IO.BufferedStream, System.Runtime.Extensions, Version=4.2.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11" +
 								"d50a3a")),
 					SupportedInterfaceListBeginIndex = 8,
 					NumberOfSupportedInterface = 0,
-					ParentCCWTemplateIndex = 20,
+					ParentCCWTemplateIndex = 21,
 					IsWinRTType = false,
 				}, 
-				// Index = 29
+				// Index = 30
 				new global::System.Runtime.InteropServices.CCWTemplateData() {
 					FixupClassType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(global::System.Runtime.InteropServices.TypeOfHelper.RuntimeTypeHandleOf("System.IO.WinRtToNetFxStreamAdapter, System.Runtime.WindowsRuntime, Version=4.0.14.0, Culture=neutral, PublicKey" +
 								"Token=b77a5c561934e089")),
 					SupportedInterfaceListBeginIndex = 44,
 					NumberOfSupportedInterface = 1,
-					ParentCCWTemplateIndex = 20,
+					ParentCCWTemplateIndex = 21,
 					IsWinRTType = false,
 				}, 
-				// Index = 30
+				// Index = 31
 				new global::System.Runtime.InteropServices.CCWTemplateData() {
 					FixupClassType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(global::System.Runtime.InteropServices.TypeOfHelper.RuntimeTypeHandleOf("System.Runtime.InteropServices.WindowsRuntime.WindowsRuntimeBuffer, System.Runtime.WindowsRuntime, Version=4.0.1" +
 								"4.0, Culture=neutral, PublicKeyToken=b77a5c561934e089")),
@@ -10749,7 +10758,7 @@ namespace __Interop
 					ParentCCWTemplateIndex = -1,
 					IsWinRTType = false,
 				}, 
-				// Index = 31
+				// Index = 32
 				new global::System.Runtime.InteropServices.CCWTemplateData() {
 					FixupClassType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Runtime.InteropServices.WindowsRuntime.ReferenceImpl<global::Windows.UI.Color>).TypeHandle),
 					SupportedInterfaceListBeginIndex = 62,
@@ -10757,7 +10766,7 @@ namespace __Interop
 					ParentCCWTemplateIndex = -1,
 					IsWinRTType = false,
 				}, 
-				// Index = 32
+				// Index = 33
 				new global::System.Runtime.InteropServices.CCWTemplateData() {
 					FixupClassType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Runtime.InteropServices.WindowsRuntime.ReferenceImpl<global::Windows.UI.Xaml.CornerRadius>).TypeHandle),
 					SupportedInterfaceListBeginIndex = 64,
@@ -10765,7 +10774,7 @@ namespace __Interop
 					ParentCCWTemplateIndex = -1,
 					IsWinRTType = false,
 				}, 
-				// Index = 33
+				// Index = 34
 				new global::System.Runtime.InteropServices.CCWTemplateData() {
 					FixupClassType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Runtime.InteropServices.WindowsRuntime.ReferenceImpl<global::Windows.UI.Xaml.Duration>).TypeHandle),
 					SupportedInterfaceListBeginIndex = 66,
@@ -10773,7 +10782,7 @@ namespace __Interop
 					ParentCCWTemplateIndex = -1,
 					IsWinRTType = false,
 				}, 
-				// Index = 34
+				// Index = 35
 				new global::System.Runtime.InteropServices.CCWTemplateData() {
 					FixupClassType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Runtime.InteropServices.WindowsRuntime.ReferenceImpl<global::Windows.UI.Xaml.GridLength>).TypeHandle),
 					SupportedInterfaceListBeginIndex = 68,
@@ -10781,7 +10790,7 @@ namespace __Interop
 					ParentCCWTemplateIndex = -1,
 					IsWinRTType = false,
 				}, 
-				// Index = 35
+				// Index = 36
 				new global::System.Runtime.InteropServices.CCWTemplateData() {
 					FixupClassType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Runtime.InteropServices.WindowsRuntime.ReferenceImpl<global::Windows.UI.Xaml.Thickness>).TypeHandle),
 					SupportedInterfaceListBeginIndex = 70,
@@ -10789,7 +10798,7 @@ namespace __Interop
 					ParentCCWTemplateIndex = -1,
 					IsWinRTType = false,
 				}, 
-				// Index = 36
+				// Index = 37
 				new global::System.Runtime.InteropServices.CCWTemplateData() {
 					FixupClassType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Runtime.InteropServices.WindowsRuntime.ReferenceImpl<global::Windows.UI.Xaml.Controls.Primitives.GeneratorPosition>).TypeHandle),
 					SupportedInterfaceListBeginIndex = 72,
@@ -10797,7 +10806,7 @@ namespace __Interop
 					ParentCCWTemplateIndex = -1,
 					IsWinRTType = false,
 				}, 
-				// Index = 37
+				// Index = 38
 				new global::System.Runtime.InteropServices.CCWTemplateData() {
 					FixupClassType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Runtime.InteropServices.WindowsRuntime.ReferenceImpl<global::Windows.UI.Xaml.Media.Matrix>).TypeHandle),
 					SupportedInterfaceListBeginIndex = 74,
@@ -10805,7 +10814,7 @@ namespace __Interop
 					ParentCCWTemplateIndex = -1,
 					IsWinRTType = false,
 				}, 
-				// Index = 38
+				// Index = 39
 				new global::System.Runtime.InteropServices.CCWTemplateData() {
 					FixupClassType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Runtime.InteropServices.WindowsRuntime.ReferenceImpl<global::Windows.UI.Xaml.Media.Animation.KeyTime>).TypeHandle),
 					SupportedInterfaceListBeginIndex = 76,
@@ -10813,7 +10822,7 @@ namespace __Interop
 					ParentCCWTemplateIndex = -1,
 					IsWinRTType = false,
 				}, 
-				// Index = 39
+				// Index = 40
 				new global::System.Runtime.InteropServices.CCWTemplateData() {
 					FixupClassType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Runtime.InteropServices.WindowsRuntime.ReferenceImpl<global::Windows.UI.Xaml.Media.Animation.RepeatBehavior>).TypeHandle),
 					SupportedInterfaceListBeginIndex = 78,
@@ -10821,7 +10830,7 @@ namespace __Interop
 					ParentCCWTemplateIndex = -1,
 					IsWinRTType = false,
 				}, 
-				// Index = 40
+				// Index = 41
 				new global::System.Runtime.InteropServices.CCWTemplateData() {
 					FixupClassType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Runtime.InteropServices.WindowsRuntime.ReferenceImpl<global::Windows.UI.Xaml.Media.Media3D.Matrix3D>).TypeHandle),
 					SupportedInterfaceListBeginIndex = 80,
@@ -10829,7 +10838,7 @@ namespace __Interop
 					ParentCCWTemplateIndex = -1,
 					IsWinRTType = false,
 				}, 
-				// Index = 41
+				// Index = 42
 				new global::System.Runtime.InteropServices.CCWTemplateData() {
 					FixupClassType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Runtime.InteropServices.WindowsRuntime.ReferenceImpl<global::System.Numerics.Vector2>).TypeHandle),
 					SupportedInterfaceListBeginIndex = 82,
@@ -10837,7 +10846,7 @@ namespace __Interop
 					ParentCCWTemplateIndex = -1,
 					IsWinRTType = false,
 				}, 
-				// Index = 42
+				// Index = 43
 				new global::System.Runtime.InteropServices.CCWTemplateData() {
 					FixupClassType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Runtime.InteropServices.WindowsRuntime.ReferenceImpl<global::System.Numerics.Vector3>).TypeHandle),
 					SupportedInterfaceListBeginIndex = 84,
@@ -10845,7 +10854,7 @@ namespace __Interop
 					ParentCCWTemplateIndex = -1,
 					IsWinRTType = false,
 				}, 
-				// Index = 43
+				// Index = 44
 				new global::System.Runtime.InteropServices.CCWTemplateData() {
 					FixupClassType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Runtime.InteropServices.WindowsRuntime.ReferenceImpl<global::System.Numerics.Vector4>).TypeHandle),
 					SupportedInterfaceListBeginIndex = 86,
@@ -10853,7 +10862,7 @@ namespace __Interop
 					ParentCCWTemplateIndex = -1,
 					IsWinRTType = false,
 				}, 
-				// Index = 44
+				// Index = 45
 				new global::System.Runtime.InteropServices.CCWTemplateData() {
 					FixupClassType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Runtime.InteropServices.WindowsRuntime.ReferenceImpl<global::System.Numerics.Matrix3x2>).TypeHandle),
 					SupportedInterfaceListBeginIndex = 88,
@@ -10861,7 +10870,7 @@ namespace __Interop
 					ParentCCWTemplateIndex = -1,
 					IsWinRTType = false,
 				}, 
-				// Index = 45
+				// Index = 46
 				new global::System.Runtime.InteropServices.CCWTemplateData() {
 					FixupClassType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Runtime.InteropServices.WindowsRuntime.ReferenceImpl<global::System.Numerics.Matrix4x4>).TypeHandle),
 					SupportedInterfaceListBeginIndex = 90,
@@ -10869,7 +10878,7 @@ namespace __Interop
 					ParentCCWTemplateIndex = -1,
 					IsWinRTType = false,
 				}, 
-				// Index = 46
+				// Index = 47
 				new global::System.Runtime.InteropServices.CCWTemplateData() {
 					FixupClassType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Runtime.InteropServices.WindowsRuntime.ReferenceImpl<global::System.Numerics.Plane>).TypeHandle),
 					SupportedInterfaceListBeginIndex = 92,
@@ -10877,7 +10886,7 @@ namespace __Interop
 					ParentCCWTemplateIndex = -1,
 					IsWinRTType = false,
 				}, 
-				// Index = 47
+				// Index = 48
 				new global::System.Runtime.InteropServices.CCWTemplateData() {
 					FixupClassType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Runtime.InteropServices.WindowsRuntime.ReferenceImpl<global::System.Numerics.Quaternion>).TypeHandle),
 					SupportedInterfaceListBeginIndex = 94,
@@ -10885,7 +10894,7 @@ namespace __Interop
 					ParentCCWTemplateIndex = -1,
 					IsWinRTType = false,
 				}, 
-				// Index = 48
+				// Index = 49
 				new global::System.Runtime.InteropServices.CCWTemplateData() {
 					FixupClassType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Runtime.InteropServices.WindowsRuntime.CLRIKeyValuePairImpl<string, global::Windows.ApplicationModel.Resources.Core.NamedResource>).TypeHandle),
 					SupportedInterfaceListBeginIndex = 96,
@@ -10893,7 +10902,7 @@ namespace __Interop
 					ParentCCWTemplateIndex = -1,
 					IsWinRTType = false,
 				}, 
-				// Index = 49
+				// Index = 50
 				new global::System.Runtime.InteropServices.CCWTemplateData() {
 					FixupClassType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Runtime.InteropServices.WindowsRuntime.CLRIKeyValuePairImpl<string, global::Windows.ApplicationModel.Resources.Core.ResourceMap>).TypeHandle),
 					SupportedInterfaceListBeginIndex = 97,
@@ -10901,7 +10910,7 @@ namespace __Interop
 					ParentCCWTemplateIndex = -1,
 					IsWinRTType = false,
 				}, 
-				// Index = 50
+				// Index = 51
 				new global::System.Runtime.InteropServices.CCWTemplateData() {
 					FixupClassType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Runtime.InteropServices.WindowsRuntime.CLRIKeyValuePairImpl<string, global::Windows.UI.Xaml.Markup.IXamlType>).TypeHandle),
 					SupportedInterfaceListBeginIndex = 98,
@@ -10909,7 +10918,7 @@ namespace __Interop
 					ParentCCWTemplateIndex = -1,
 					IsWinRTType = false,
 				}, 
-				// Index = 51
+				// Index = 52
 				new global::System.Runtime.InteropServices.CCWTemplateData() {
 					FixupClassType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Runtime.InteropServices.WindowsRuntime.CLRIKeyValuePairImpl<global::System.Type, global::Windows.UI.Xaml.Markup.IXamlType>).TypeHandle),
 					SupportedInterfaceListBeginIndex = 99,
@@ -10917,7 +10926,7 @@ namespace __Interop
 					ParentCCWTemplateIndex = -1,
 					IsWinRTType = false,
 				}, 
-				// Index = 52
+				// Index = 53
 				new global::System.Runtime.InteropServices.CCWTemplateData() {
 					FixupClassType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Runtime.InteropServices.WindowsRuntime.CLRIKeyValuePairImpl<string, global::Windows.UI.Xaml.Markup.IXamlMember>).TypeHandle),
 					SupportedInterfaceListBeginIndex = 100,
@@ -10925,7 +10934,7 @@ namespace __Interop
 					ParentCCWTemplateIndex = -1,
 					IsWinRTType = false,
 				}, 
-				// Index = 53
+				// Index = 54
 				new global::System.Runtime.InteropServices.CCWTemplateData() {
 					FixupClassType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Runtime.InteropServices.WindowsRuntime.ReferenceImpl<global::Windows.Foundation.AsyncOperationProgressHandler<global::Windows.Networking.BackgroundTransfer.DownloadOperation, global::Windows.Networking.BackgroundTransfer.DownloadOperation>>).TypeHandle),
 					SupportedInterfaceListBeginIndex = 101,
@@ -10933,7 +10942,7 @@ namespace __Interop
 					ParentCCWTemplateIndex = -1,
 					IsWinRTType = false,
 				}, 
-				// Index = 54
+				// Index = 55
 				new global::System.Runtime.InteropServices.CCWTemplateData() {
 					FixupClassType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Runtime.InteropServices.WindowsRuntime.ReferenceImpl<global::Windows.Foundation.AsyncOperationProgressHandler<uint, uint>>).TypeHandle),
 					SupportedInterfaceListBeginIndex = 103,
@@ -10941,7 +10950,7 @@ namespace __Interop
 					ParentCCWTemplateIndex = -1,
 					IsWinRTType = false,
 				}, 
-				// Index = 55
+				// Index = 56
 				new global::System.Runtime.InteropServices.CCWTemplateData() {
 					FixupClassType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Runtime.InteropServices.WindowsRuntime.ReferenceImpl<global::Windows.Foundation.AsyncOperationProgressHandler<global::Windows.Storage.Streams.IBuffer, uint>>).TypeHandle),
 					SupportedInterfaceListBeginIndex = 105,
@@ -12050,7 +12059,7 @@ namespace __Interop
 		       0,   22,   47,   79,   99,  116,  133,  159,  196,  219, 
 		     243,  266,  300,  332,  369,  395,  423,  460,  484,  508, 
 		     531,  570,  607,  624,  649,  673,  685,  718,  749,  778, 
-		     801,  833,  862,  903,  930,  961, 1000, 1032, 1079, 1120, 
+		     801,  833,  862,  903,  934,  961, 1000, 1032, 1079, 1120, 
 		    1149, 1171, 1208, 1240, 1267, 1293, 1324, 1352, 1383, 1425, 
 		    1450, 1469, 1493, 1586, 1645, 1689, 1719, 1793, 1927, 1965, 
 		    2001, 2078, 2109, 2231, }
@@ -12092,8 +12101,8 @@ namespace __Interop
 		    W, i, n, d, o, w, s, 46, F, o, u, n, d, a, t, i, o, n, 46, D, i, a, g, n, o, s, t, i, c, s, 46, 0, 
 		    W, i, n, d, o, w, s, 46, D, e, v, i, c, e, s, 46, E, n, u, m, e, r, a, t, i, o, n, 46, 0, 
 		    W, i, n, d, o, w, s, 46, A, p, p, l, i, c, a, t, i, o, n, M, o, d, e, l, 46, R, e, s, o, u, r, c, e, s, 46, C, o, r, e, 46, 0, 
-		    W, i, n, d, o, w, s, 46, U, I, 46, V, i, e, w, M, a, n, a, g, e, m, e, n, t, 46, 0, 
 		    W, i, n, d, o, w, s, 46, A, p, p, l, i, c, a, t, i, o, n, M, o, d, e, l, 46, C, o, r, e, 46, 0, 
+		    W, i, n, d, o, w, s, 46, U, I, 46, V, i, e, w, M, a, n, a, g, e, m, e, n, t, 46, 0, 
 		    I, n, t, e, r, n, a, l, 95, W, i, n, R, T, 95, I, n, t, e, r, o, p, 95, W, i, n, R, T, C, a, l, l, b, a, c, k, s, 46, 0, 
 		    S, y, s, t, e, m, 95, R, u, n, t, i, m, e, 95, I, n, t, e, r, o, p, S, e, r, v, i, c, e, s, 46, 0, 
 		    S, y, s, t, e, m, 95, R, u, n, t, i, m, e, 95, I, n, t, e, r, o, p, S, e, r, v, i, c, e, s, 95, W, i, n, d, o, w, s, R, u, n, t, i, m, e, 46, 0, 
@@ -12582,16 +12591,16 @@ namespace __Interop
 		    133, I, W, i, n, d, o, w, S, i, z, e, C, h, a, n, g, e, d, E, v, e, n, t, A, r, g, s, 0, 
 		    132, W, i, n, d, o, w, V, i, s, i, b, i, l, i, t, y, C, h, a, n, g, e, d, E, v, e, n, t, H, a, n, d, l, e, r, 0, 
 		    133, I, V, i, s, i, b, i, l, i, t, y, C, h, a, n, g, e, d, E, v, e, n, t, A, r, g, s, 0, 
-		    161, I, A, p, p, l, i, c, a, t, i, o, n, V, i, e, w, S, t, a, t, i, c, s, 50, 0, 
-		    161, I, A, p, p, l, i, c, a, t, i, o, n, V, i, e, w, 0, 
-		    161, I, A, p, p, l, i, c, a, t, i, o, n, V, i, e, w, 51, 0, 
-		    161, I, A, p, p, l, i, c, a, t, i, o, n, V, i, e, w, T, i, t, l, e, B, a, r, 0, 
+		    161, I, C, o, r, e, A, p, p, l, i, c, a, t, i, o, n, V, i, e, w, 0, 
+		    161, I, C, o, r, e, A, p, p, l, i, c, a, t, i, o, n, V, i, e, w, 51, 0, 
+		    161, I, C, o, r, e, A, p, p, l, i, c, a, t, i, o, n, V, i, e, w, T, i, t, l, e, B, a, r, 0, 
+		    161, I, C, o, r, e, A, p, p, l, i, c, a, t, i, o, n, 0, 
+		    162, I, A, p, p, l, i, c, a, t, i, o, n, V, i, e, w, S, t, a, t, i, c, s, 50, 0, 
+		    162, I, A, p, p, l, i, c, a, t, i, o, n, V, i, e, w, 0, 
+		    162, I, A, p, p, l, i, c, a, t, i, o, n, V, i, e, w, 51, 0, 
+		    162, I, A, p, p, l, i, c, a, t, i, o, n, V, i, e, w, T, i, t, l, e, B, a, r, 0, 
 		    153, I, C, o, l, o, r, s, S, t, a, t, i, c, s, 0, 
 		    153, I, C, o, l, o, r, s, 0, 
-		    162, I, C, o, r, e, A, p, p, l, i, c, a, t, i, o, n, V, i, e, w, 0, 
-		    162, I, C, o, r, e, A, p, p, l, i, c, a, t, i, o, n, V, i, e, w, 51, 0, 
-		    162, I, C, o, r, e, A, p, p, l, i, c, a, t, i, o, n, V, i, e, w, T, i, t, l, e, B, a, r, 0, 
-		    162, I, C, o, r, e, A, p, p, l, i, c, a, t, i, o, n, 0, 
 		    140, I, I, t, e, r, a, b, l, e, 96, 49, 60, 159, I, D, e, v, i, c, e, I, n, f, o, r, m, a, t, i, o, n, 62, 0, 
 		    140, I, I, t, e, r, a, t, o, r, 96, 49, 60, 159, I, D, e, v, i, c, e, I, n, f, o, r, m, a, t, i, o, n, 62, 0, 
 		    140, I, I, t, e, r, a, b, l, e, 96, 49, 60, 159, I, D, e, v, i, c, e, I, n, f, o, r, m, a, t, i, o, n, 50, 62, 0, 
@@ -12955,12 +12964,12 @@ namespace __Interop
 		    133, C, o, r, e, W, i, n, d, o, w, E, v, e, n, t, A, r, g, s, 0, 
 		    133, W, i, n, d, o, w, S, i, z, e, C, h, a, n, g, e, d, E, v, e, n, t, A, r, g, s, 0, 
 		    133, V, i, s, i, b, i, l, i, t, y, C, h, a, n, g, e, d, E, v, e, n, t, A, r, g, s, 0, 
-		    161, A, p, p, l, i, c, a, t, i, o, n, V, i, e, w, 0, 
-		    161, A, p, p, l, i, c, a, t, i, o, n, V, i, e, w, T, i, t, l, e, B, a, r, 0, 
+		    161, C, o, r, e, A, p, p, l, i, c, a, t, i, o, n, V, i, e, w, 0, 
+		    161, C, o, r, e, A, p, p, l, i, c, a, t, i, o, n, V, i, e, w, T, i, t, l, e, B, a, r, 0, 
+		    161, C, o, r, e, A, p, p, l, i, c, a, t, i, o, n, 0, 
+		    162, A, p, p, l, i, c, a, t, i, o, n, V, i, e, w, 0, 
+		    162, A, p, p, l, i, c, a, t, i, o, n, V, i, e, w, T, i, t, l, e, B, a, r, 0, 
 		    153, C, o, l, o, r, s, 0, 
-		    162, C, o, r, e, A, p, p, l, i, c, a, t, i, o, n, V, i, e, w, 0, 
-		    162, C, o, r, e, A, p, p, l, i, c, a, t, i, o, n, V, i, e, w, T, i, t, l, e, B, a, r, 0, 
-		    162, C, o, r, e, A, p, p, l, i, c, a, t, i, o, n, 0, 
 		    167, R, e, m, o, t, e, A, s, y, n, c, A, t, t, r, i, b, u, t, e, 0, 
 		    160, R, e, s, o, u, r, c, e, M, a, n, a, g, e, r, 0, 
 		    160, R, e, s, o, u, r, c, e, M, a, p, 0, 
@@ -14763,20 +14772,20 @@ namespace __Interop
 			[global::System.Runtime.CompilerServices.MethodAddrFixup(28848, typeof(global::Windows.UI.Xaml.WindowVisibilityChangedEventHandler__Impl.Vtbl), "GetVtbl")]
 			[global::System.Runtime.CompilerServices.MethodAddrFixup(28856, typeof(global::Windows.UI.Xaml.WindowVisibilityChangedEventHandler__Impl), "Invoke")]
 			[global::System.Runtime.CompilerServices.TypeHandleFixup(28864, typeof(global::Windows.UI.Core.IVisibilityChangedEventArgs))]
-			[global::System.Runtime.CompilerServices.TypeHandleFixup(28928, typeof(global::Windows.UI.ViewManagement.IApplicationViewStatics2))]
-			[global::System.Runtime.CompilerServices.TypeHandleFixup(28992, typeof(global::Windows.UI.ViewManagement.IApplicationView))]
-			[global::System.Runtime.CompilerServices.TypeHandleFixup(29056, typeof(global::Windows.UI.ViewManagement.IApplicationView3))]
-			[global::System.Runtime.CompilerServices.TypeHandleFixup(29064, typeof(global::Windows.UI.ViewManagement.ApplicationView))]
-			[global::System.Runtime.CompilerServices.TypeHandleFixup(29120, typeof(global::Windows.UI.ViewManagement.IApplicationViewTitleBar))]
-			[global::System.Runtime.CompilerServices.TypeHandleFixup(29128, typeof(global::Windows.UI.ViewManagement.ApplicationViewTitleBar))]
-			[global::System.Runtime.CompilerServices.TypeHandleFixup(29184, typeof(global::Windows.UI.IColorsStatics))]
-			[global::System.Runtime.CompilerServices.TypeHandleFixup(29248, typeof(global::Windows.UI.IColors))]
-			[global::System.Runtime.CompilerServices.TypeHandleFixup(29312, typeof(global::Windows.ApplicationModel.Core.ICoreApplicationView))]
-			[global::System.Runtime.CompilerServices.TypeHandleFixup(29376, typeof(global::Windows.ApplicationModel.Core.ICoreApplicationView3))]
-			[global::System.Runtime.CompilerServices.TypeHandleFixup(29384, typeof(global::Windows.ApplicationModel.Core.CoreApplicationView))]
-			[global::System.Runtime.CompilerServices.TypeHandleFixup(29440, typeof(global::Windows.ApplicationModel.Core.ICoreApplicationViewTitleBar))]
-			[global::System.Runtime.CompilerServices.TypeHandleFixup(29448, typeof(global::Windows.ApplicationModel.Core.CoreApplicationViewTitleBar))]
-			[global::System.Runtime.CompilerServices.TypeHandleFixup(29504, typeof(global::Windows.ApplicationModel.Core.ICoreApplication))]
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(28928, typeof(global::Windows.ApplicationModel.Core.ICoreApplicationView))]
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(28992, typeof(global::Windows.ApplicationModel.Core.ICoreApplicationView3))]
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(29000, typeof(global::Windows.ApplicationModel.Core.CoreApplicationView))]
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(29056, typeof(global::Windows.ApplicationModel.Core.ICoreApplicationViewTitleBar))]
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(29064, typeof(global::Windows.ApplicationModel.Core.CoreApplicationViewTitleBar))]
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(29120, typeof(global::Windows.ApplicationModel.Core.ICoreApplication))]
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(29184, typeof(global::Windows.UI.ViewManagement.IApplicationViewStatics2))]
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(29248, typeof(global::Windows.UI.ViewManagement.IApplicationView))]
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(29312, typeof(global::Windows.UI.ViewManagement.IApplicationView3))]
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(29320, typeof(global::Windows.UI.ViewManagement.ApplicationView))]
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(29376, typeof(global::Windows.UI.ViewManagement.IApplicationViewTitleBar))]
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(29384, typeof(global::Windows.UI.ViewManagement.ApplicationViewTitleBar))]
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(29440, typeof(global::Windows.UI.IColorsStatics))]
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(29504, typeof(global::Windows.UI.IColors))]
 			[global::System.Runtime.CompilerServices.TypeHandleFixup(29568, typeof(global::System.Collections.Generic.IEnumerable<global::Windows.Devices.Enumeration.IDeviceInformation>))]
 			[global::System.Runtime.CompilerServices.TypeHandleFixup(29576, typeof(global::System.Collections.Generic.IEnumerable_A__w_Devices_Enumeration_IDeviceInformation_V___Impl.Dispatcher))]
 			[global::System.Runtime.CompilerServices.TypeHandleFixup(29584, typeof(global::System.Runtime.InteropServices.WindowsRuntime.IIterableSharedReferenceTypesDynamicAdapter<global::Windows.Devices.Enumeration.IDeviceInformation>))]
@@ -15729,18 +15738,18 @@ namespace __Interop
 					0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xD6, 0x6A, 0x40, 0x10, 0x90, 0xB0, 0x4A, 0x4A, 0xB2, 0xAD, 0xD6, 0x82, 0xDF, 0x27, 0x13, 0xF, 0x2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
 					0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xEA, 0x18, 0x99, 0xBF, 0x1, 0xD8, 0x64, 0x45, 0xA4, 0x95, 0xB1, 0xE8, 
 					0x4F, 0x8A, 0xD0, 0x85, 0x1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-					0, 0, 0xE5, 0x8A, 0x33, 0xAF, 0x64, 0xCF, 0x3C, 0x42, 0x85, 0xE5, 0xF3, 0xE7, 0x24, 0x48, 0xFB, 0x23, 0x1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-					0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0x19, 0xD5, 0x22, 0xD2, 0x61, 0x43, 0x1E, 0x45, 0x96, 0xC4, 0x60, 0xF4, 0xF9, 0x74, 0x2D, 0xB0, 0x1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-					0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xE5, 0x9C, 0x3C, 0x90, 0x3A, 0x79, 0xDF, 0x4F, 0xA2, 0xB2, 0xAF, 0x1A, 0xC2, 0x1E, 0x31, 0x8, 0x1, 0, 0, 0, 
-					0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xC0, 0x4A, 0x92, 0x0, 0x2B, 0x93, 
-					0x6B, 0x4A, 0x9C, 0x4B, 0xDC, 0x38, 0xC8, 0x24, 0x78, 0xCE, 0x1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-					0, 0, 0, 0, 0, 0, 0, 0, 0x4, 0x2E, 0xF5, 0xCF, 0xA6, 0xCC, 0x14, 0x46, 0xA1, 0x7E, 0x75, 0x49, 0x10, 0xC8, 0x4A, 0x99, 0x1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-					0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0x26, 0x93, 0x8C, 0x9B, 0xA6, 0x4C, 0xE5, 0x4C, 0x89, 0x94, 0x9E, 0xFF, 0x65, 0xCA, 0xBD, 0xCC, 0x1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-					0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xDB, 0xB2, 0x8B, 0x63, 0x1D, 0x45, 0x61, 0x46, 0xB0, 0x99, 0x41, 0x4F, 0x34, 0xFF, 
-					0xB9, 0xF1, 0x1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-					0xB3, 0xE1, 0xEB, 0x7, 0xCF, 0xA4, 0x50, 0x45, 0xAB, 0x70, 0xB0, 0x7E, 0x85, 0x33, 0xB, 0xC8, 0x1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-					0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xE3, 0x35, 0x6D, 0x0, 0xF1, 0xE1, 0x1B, 0x43, 0x95, 0x8, 0x29, 0xB9, 0x69, 0x26, 0xAC, 0x53, 0x1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-					0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xA4, 0xF7, 0xAC, 0xA, 0x1D, 0x5E, 0xDF, 0x49, 0x80, 0x34, 0xFB, 0x6A, 0x68, 0xBC, 0x5E, 0xD1, 0x1, 0, 0, 0, 0, 0, 
+					0, 0, 0xDB, 0xB2, 0x8B, 0x63, 0x1D, 0x45, 0x61, 0x46, 0xB0, 0x99, 0x41, 0x4F, 0x34, 0xFF, 0xB9, 0xF1, 0x1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+					0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xB3, 0xE1, 0xEB, 0x7, 0xCF, 0xA4, 0x50, 0x45, 0xAB, 0x70, 0xB0, 0x7E, 0x85, 0x33, 0xB, 0xC8, 0x1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+					0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xE3, 0x35, 0x6D, 0x0, 0xF1, 0xE1, 0x1B, 0x43, 0x95, 0x8, 0x29, 0xB9, 0x69, 0x26, 0xAC, 0x53, 0x1, 0, 0, 0, 
+					0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xA4, 0xF7, 0xAC, 0xA, 0x1D, 0x5E, 
+					0xDF, 0x49, 0x80, 0x34, 0xFB, 0x6A, 0x68, 0xBC, 0x5E, 0xD1, 0x1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+					0, 0, 0, 0, 0, 0, 0, 0, 0xE5, 0x8A, 0x33, 0xAF, 0x64, 0xCF, 0x3C, 0x42, 0x85, 0xE5, 0xF3, 0xE7, 0x24, 0x48, 0xFB, 0x23, 0x1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+					0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0x19, 0xD5, 0x22, 0xD2, 0x61, 0x43, 0x1E, 0x45, 0x96, 0xC4, 0x60, 0xF4, 0xF9, 0x74, 0x2D, 0xB0, 0x1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+					0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xE5, 0x9C, 0x3C, 0x90, 0x3A, 0x79, 0xDF, 0x4F, 0xA2, 0xB2, 0xAF, 0x1A, 0xC2, 0x1E, 
+					0x31, 0x8, 0x1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+					0xC0, 0x4A, 0x92, 0x0, 0x2B, 0x93, 0x6B, 0x4A, 0x9C, 0x4B, 0xDC, 0x38, 0xC8, 0x24, 0x78, 0xCE, 0x1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+					0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0x4, 0x2E, 0xF5, 0xCF, 0xA6, 0xCC, 0x14, 0x46, 0xA1, 0x7E, 0x75, 0x49, 0x10, 0xC8, 0x4A, 0x99, 0x1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+					0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0x26, 0x93, 0x8C, 0x9B, 0xA6, 0x4C, 0xE5, 0x4C, 0x89, 0x94, 0x9E, 0xFF, 0x65, 0xCA, 0xBD, 0xCC, 0x1, 0, 0, 0, 0, 0, 
 					0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0x6, 0x4B, 0xE, 0x18, 0x36, 0x99, 0x42, 0x5D, 
 					0xA5, 0xBF, 0x1B, 0xDC, 0x8, 0x71, 0x3D, 0xBD, 0x1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
 					0, 0, 0, 0, 0, 0, 0xA0, 0x91, 0x64, 0xF0, 0x3D, 0x6D, 0x38, 0x5A, 0xB1, 0x64, 0xAE, 0xE6, 0xE5, 0xB0, 0x32, 0x6C, 0x1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
@@ -16162,12 +16171,12 @@ namespace __Interop
 			[global::System.Runtime.CompilerServices.TypeHandleFixup(11232, typeof(global::Windows.UI.Core.CoreWindowEventArgs))]
 			[global::System.Runtime.CompilerServices.TypeHandleFixup(11280, typeof(global::Windows.UI.Core.WindowSizeChangedEventArgs))]
 			[global::System.Runtime.CompilerServices.TypeHandleFixup(11328, typeof(global::Windows.UI.Core.VisibilityChangedEventArgs))]
-			[global::System.Runtime.CompilerServices.TypeHandleFixup(11376, typeof(global::Windows.UI.ViewManagement.ApplicationView))]
-			[global::System.Runtime.CompilerServices.TypeHandleFixup(11424, typeof(global::Windows.UI.ViewManagement.ApplicationViewTitleBar))]
-			[global::System.Runtime.CompilerServices.TypeHandleFixup(11472, typeof(global::Windows.UI.Colors))]
-			[global::System.Runtime.CompilerServices.TypeHandleFixup(11520, typeof(global::Windows.ApplicationModel.Core.CoreApplicationView))]
-			[global::System.Runtime.CompilerServices.TypeHandleFixup(11568, typeof(global::Windows.ApplicationModel.Core.CoreApplicationViewTitleBar))]
-			[global::System.Runtime.CompilerServices.TypeHandleFixup(11616, typeof(global::Windows.ApplicationModel.Core.CoreApplication))]
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(11376, typeof(global::Windows.ApplicationModel.Core.CoreApplicationView))]
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(11424, typeof(global::Windows.ApplicationModel.Core.CoreApplicationViewTitleBar))]
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(11472, typeof(global::Windows.ApplicationModel.Core.CoreApplication))]
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(11520, typeof(global::Windows.UI.ViewManagement.ApplicationView))]
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(11568, typeof(global::Windows.UI.ViewManagement.ApplicationViewTitleBar))]
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(11616, typeof(global::Windows.UI.Colors))]
 			[global::System.Runtime.CompilerServices.TypeHandleFixup(11664, typeof(global::Windows.Foundation.Metadata.RemoteAsyncAttribute))]
 			[global::System.Runtime.CompilerServices.TypeHandleFixup(11712, typeof(global::Windows.ApplicationModel.Resources.Core.ResourceManager))]
 			[global::System.Runtime.CompilerServices.TypeHandleFixup(11760, typeof(global::Windows.ApplicationModel.Resources.Core.ResourceMap))]
@@ -16409,13 +16418,13 @@ namespace __Interop
 					0, 0, 0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xBD, 0x1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xC7, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 
 					0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xBE, 0x1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xC7, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 
 					0, 0, 0, 0, 0xFF, 0xFF, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xC1, 0x1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xC7, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-					0, 0, 0xFF, 0xFF, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xC3, 0x1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xC6, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-					0xFF, 0xFF, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xC5, 0x1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xC6, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 
-					0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xC7, 0x1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xC6, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 0, 0, 
-					0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xC9, 0x1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xC7, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 0, 0, 0, 0, 
-					0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xCA, 0x1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xC7, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 0, 0, 0, 0, 0, 0, 
-					0, 0, 0, 0, 0, 0, 0, 0, 0xCC, 0x1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xC6, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 0, 0, 0, 0, 0, 0, 0, 0, 
-					0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xA0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+					0, 0, 0xFF, 0xFF, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xC3, 0x1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xC7, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+					0xFF, 0xFF, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xC4, 0x1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xC7, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 
+					0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xC6, 0x1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xC6, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 0, 0, 
+					0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xC6, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 0, 0, 0, 0, 
+					0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xC9, 0x1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xC6, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 0, 0, 0, 0, 0, 0, 
+					0, 0, 0, 0, 0, 0, 0, 0, 0xCB, 0x1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xC6, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 0, 0, 0, 0, 0, 0, 0, 0, 
+					0, 0, 0, 0, 0, 0, 0xCD, 0x1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xA0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
 					0, 0, 0, 0, 0xFF, 0xFF, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xC6, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
 					0, 0, 0xA, 0x2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xC6, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
 					0xB, 0x2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xC6, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xC, 0x2, 
@@ -16763,60 +16772,61 @@ namespace __Interop
 				" ContentType=WindowsRuntime")]
 			[global::System.Runtime.CompilerServices.TypeHandleFixup(720, "Security.Defender, Security, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null")]
 			[global::System.Runtime.CompilerServices.TypeHandleFixup(768, "Security.MainPage, Security, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null")]
-			[global::System.Runtime.CompilerServices.TypeHandleFixup(816, "Security.Update, Security, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null")]
-			[global::System.Runtime.CompilerServices.TypeHandleFixup(864, "Security.Security_XamlTypeInfo.XamlMetaDataProvider, Security, Version=1.0.0.0, Culture=neutral, PublicKeyToken=" +
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(816, "Security.Settings, Security, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null")]
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(864, "Security.Update, Security, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null")]
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(912, "Security.Security_XamlTypeInfo.XamlMetaDataProvider, Security, Version=1.0.0.0, Culture=neutral, PublicKeyToken=" +
 				"null")]
-			[global::System.Runtime.CompilerServices.TypeHandleFixup(912, "Security.Security_XamlTypeInfo.XamlMember, Security, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null")]
-			[global::System.Runtime.CompilerServices.TypeHandleFixup(960, "System.IO.Stream, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
-			[global::System.Runtime.CompilerServices.TypeHandleFixup(1008, "Internal.WinRT.Interop.WinRTCallbacks+ActionInvoker, System.Private.WinRTInterop.CoreLib, Version=4.0.0.0, Cultu" +
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(960, "Security.Security_XamlTypeInfo.XamlMember, Security, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null")]
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(1008, "System.IO.Stream, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(1056, "Internal.WinRT.Interop.WinRTCallbacks+ActionInvoker, System.Private.WinRTInterop.CoreLib, Version=4.0.0.0, Cultu" +
 				"re=neutral, PublicKeyToken=b77a5c561934e089")]
-			[global::System.Runtime.CompilerServices.TypeHandleFixup(1056, "System.Threading.Tasks.Task, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11" +
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(1104, "System.Threading.Tasks.Task, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11" +
 				"d50a3a")]
-			[global::System.Runtime.CompilerServices.TypeHandleFixup(1104, "System.Runtime.InteropServices.ClassFactory, System.Private.Interop, Version=999.999.999.999, Culture=neutral, P" +
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(1152, "System.Runtime.InteropServices.ClassFactory, System.Private.Interop, Version=999.999.999.999, Culture=neutral, P" +
 				"ublicKeyToken=b03f5f7f11d50a3a")]
-			[global::System.Runtime.CompilerServices.TypeHandleFixup(1152, "System.Threading.Tasks.Task`1[[System.Int32, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKey" +
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(1200, "System.Threading.Tasks.Task`1[[System.Int32, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKey" +
 				"Token=b03f5f7f11d50a3a]], System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d5" +
 				"0a3a")]
-			[global::System.Runtime.CompilerServices.TypeHandleFixup(1200, "System.Collections.Generic.List`1[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, Publ" +
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(1248, "System.Collections.Generic.List`1[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, Publ" +
 				"icKeyToken=b03f5f7f11d50a3a]], System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7" +
 				"f11d50a3a")]
-			[global::System.Runtime.CompilerServices.TypeHandleFixup(1248, "System.Threading.Tasks.Task`1[[System.IO.Stream, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, Publi" +
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(1296, "System.Threading.Tasks.Task`1[[System.IO.Stream, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, Publi" +
 				"cKeyToken=b03f5f7f11d50a3a]], System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f" +
 				"11d50a3a")]
-			[global::System.Runtime.CompilerServices.TypeHandleFixup(1296, "System.Collections.ObjectModel.ReadOnlyCollection`1[[System.String, System.Private.CoreLib, Version=4.0.0.0, Cul" +
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(1344, "System.Collections.ObjectModel.ReadOnlyCollection`1[[System.String, System.Private.CoreLib, Version=4.0.0.0, Cul" +
 				"ture=neutral, PublicKeyToken=b03f5f7f11d50a3a]], System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, Publ" +
 				"icKeyToken=b03f5f7f11d50a3a")]
-			[global::System.Runtime.CompilerServices.TypeHandleFixup(1344, "System.IO.BufferedStream, System.Runtime.Extensions, Version=4.2.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11" +
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(1392, "System.IO.BufferedStream, System.Runtime.Extensions, Version=4.2.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11" +
 				"d50a3a")]
-			[global::System.Runtime.CompilerServices.TypeHandleFixup(1392, "System.IO.WinRtToNetFxStreamAdapter, System.Runtime.WindowsRuntime, Version=4.0.14.0, Culture=neutral, PublicKey" +
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(1440, "System.IO.WinRtToNetFxStreamAdapter, System.Runtime.WindowsRuntime, Version=4.0.14.0, Culture=neutral, PublicKey" +
 				"Token=b77a5c561934e089")]
-			[global::System.Runtime.CompilerServices.TypeHandleFixup(1440, "System.Runtime.InteropServices.WindowsRuntime.WindowsRuntimeBuffer, System.Runtime.WindowsRuntime, Version=4.0.1" +
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(1488, "System.Runtime.InteropServices.WindowsRuntime.WindowsRuntimeBuffer, System.Runtime.WindowsRuntime, Version=4.0.1" +
 				"4.0, Culture=neutral, PublicKeyToken=b77a5c561934e089")]
-			[global::System.Runtime.CompilerServices.TypeHandleFixup(1488, typeof(global::System.Runtime.InteropServices.WindowsRuntime.ReferenceImpl<global::Windows.UI.Color>))]
-			[global::System.Runtime.CompilerServices.TypeHandleFixup(1536, typeof(global::System.Runtime.InteropServices.WindowsRuntime.ReferenceImpl<global::Windows.UI.Xaml.CornerRadius>))]
-			[global::System.Runtime.CompilerServices.TypeHandleFixup(1584, typeof(global::System.Runtime.InteropServices.WindowsRuntime.ReferenceImpl<global::Windows.UI.Xaml.Duration>))]
-			[global::System.Runtime.CompilerServices.TypeHandleFixup(1632, typeof(global::System.Runtime.InteropServices.WindowsRuntime.ReferenceImpl<global::Windows.UI.Xaml.GridLength>))]
-			[global::System.Runtime.CompilerServices.TypeHandleFixup(1680, typeof(global::System.Runtime.InteropServices.WindowsRuntime.ReferenceImpl<global::Windows.UI.Xaml.Thickness>))]
-			[global::System.Runtime.CompilerServices.TypeHandleFixup(1728, typeof(global::System.Runtime.InteropServices.WindowsRuntime.ReferenceImpl<global::Windows.UI.Xaml.Controls.Primitives.GeneratorPosition>))]
-			[global::System.Runtime.CompilerServices.TypeHandleFixup(1776, typeof(global::System.Runtime.InteropServices.WindowsRuntime.ReferenceImpl<global::Windows.UI.Xaml.Media.Matrix>))]
-			[global::System.Runtime.CompilerServices.TypeHandleFixup(1824, typeof(global::System.Runtime.InteropServices.WindowsRuntime.ReferenceImpl<global::Windows.UI.Xaml.Media.Animation.KeyTime>))]
-			[global::System.Runtime.CompilerServices.TypeHandleFixup(1872, typeof(global::System.Runtime.InteropServices.WindowsRuntime.ReferenceImpl<global::Windows.UI.Xaml.Media.Animation.RepeatBehavior>))]
-			[global::System.Runtime.CompilerServices.TypeHandleFixup(1920, typeof(global::System.Runtime.InteropServices.WindowsRuntime.ReferenceImpl<global::Windows.UI.Xaml.Media.Media3D.Matrix3D>))]
-			[global::System.Runtime.CompilerServices.TypeHandleFixup(1968, typeof(global::System.Runtime.InteropServices.WindowsRuntime.ReferenceImpl<global::System.Numerics.Vector2>))]
-			[global::System.Runtime.CompilerServices.TypeHandleFixup(2016, typeof(global::System.Runtime.InteropServices.WindowsRuntime.ReferenceImpl<global::System.Numerics.Vector3>))]
-			[global::System.Runtime.CompilerServices.TypeHandleFixup(2064, typeof(global::System.Runtime.InteropServices.WindowsRuntime.ReferenceImpl<global::System.Numerics.Vector4>))]
-			[global::System.Runtime.CompilerServices.TypeHandleFixup(2112, typeof(global::System.Runtime.InteropServices.WindowsRuntime.ReferenceImpl<global::System.Numerics.Matrix3x2>))]
-			[global::System.Runtime.CompilerServices.TypeHandleFixup(2160, typeof(global::System.Runtime.InteropServices.WindowsRuntime.ReferenceImpl<global::System.Numerics.Matrix4x4>))]
-			[global::System.Runtime.CompilerServices.TypeHandleFixup(2208, typeof(global::System.Runtime.InteropServices.WindowsRuntime.ReferenceImpl<global::System.Numerics.Plane>))]
-			[global::System.Runtime.CompilerServices.TypeHandleFixup(2256, typeof(global::System.Runtime.InteropServices.WindowsRuntime.ReferenceImpl<global::System.Numerics.Quaternion>))]
-			[global::System.Runtime.CompilerServices.TypeHandleFixup(2304, typeof(global::System.Runtime.InteropServices.WindowsRuntime.CLRIKeyValuePairImpl<string, global::Windows.ApplicationModel.Resources.Core.NamedResource>))]
-			[global::System.Runtime.CompilerServices.TypeHandleFixup(2352, typeof(global::System.Runtime.InteropServices.WindowsRuntime.CLRIKeyValuePairImpl<string, global::Windows.ApplicationModel.Resources.Core.ResourceMap>))]
-			[global::System.Runtime.CompilerServices.TypeHandleFixup(2400, typeof(global::System.Runtime.InteropServices.WindowsRuntime.CLRIKeyValuePairImpl<string, global::Windows.UI.Xaml.Markup.IXamlType>))]
-			[global::System.Runtime.CompilerServices.TypeHandleFixup(2448, typeof(global::System.Runtime.InteropServices.WindowsRuntime.CLRIKeyValuePairImpl<global::System.Type, global::Windows.UI.Xaml.Markup.IXamlType>))]
-			[global::System.Runtime.CompilerServices.TypeHandleFixup(2496, typeof(global::System.Runtime.InteropServices.WindowsRuntime.CLRIKeyValuePairImpl<string, global::Windows.UI.Xaml.Markup.IXamlMember>))]
-			[global::System.Runtime.CompilerServices.TypeHandleFixup(2544, typeof(global::System.Runtime.InteropServices.WindowsRuntime.ReferenceImpl<global::Windows.Foundation.AsyncOperationProgressHandler<global::Windows.Networking.BackgroundTransfer.DownloadOperation, global::Windows.Networking.BackgroundTransfer.DownloadOperation>>))]
-			[global::System.Runtime.CompilerServices.TypeHandleFixup(2592, typeof(global::System.Runtime.InteropServices.WindowsRuntime.ReferenceImpl<global::Windows.Foundation.AsyncOperationProgressHandler<uint, uint>>))]
-			[global::System.Runtime.CompilerServices.TypeHandleFixup(2640, typeof(global::System.Runtime.InteropServices.WindowsRuntime.ReferenceImpl<global::Windows.Foundation.AsyncOperationProgressHandler<global::Windows.Storage.Streams.IBuffer, uint>>))]
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(1536, typeof(global::System.Runtime.InteropServices.WindowsRuntime.ReferenceImpl<global::Windows.UI.Color>))]
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(1584, typeof(global::System.Runtime.InteropServices.WindowsRuntime.ReferenceImpl<global::Windows.UI.Xaml.CornerRadius>))]
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(1632, typeof(global::System.Runtime.InteropServices.WindowsRuntime.ReferenceImpl<global::Windows.UI.Xaml.Duration>))]
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(1680, typeof(global::System.Runtime.InteropServices.WindowsRuntime.ReferenceImpl<global::Windows.UI.Xaml.GridLength>))]
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(1728, typeof(global::System.Runtime.InteropServices.WindowsRuntime.ReferenceImpl<global::Windows.UI.Xaml.Thickness>))]
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(1776, typeof(global::System.Runtime.InteropServices.WindowsRuntime.ReferenceImpl<global::Windows.UI.Xaml.Controls.Primitives.GeneratorPosition>))]
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(1824, typeof(global::System.Runtime.InteropServices.WindowsRuntime.ReferenceImpl<global::Windows.UI.Xaml.Media.Matrix>))]
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(1872, typeof(global::System.Runtime.InteropServices.WindowsRuntime.ReferenceImpl<global::Windows.UI.Xaml.Media.Animation.KeyTime>))]
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(1920, typeof(global::System.Runtime.InteropServices.WindowsRuntime.ReferenceImpl<global::Windows.UI.Xaml.Media.Animation.RepeatBehavior>))]
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(1968, typeof(global::System.Runtime.InteropServices.WindowsRuntime.ReferenceImpl<global::Windows.UI.Xaml.Media.Media3D.Matrix3D>))]
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(2016, typeof(global::System.Runtime.InteropServices.WindowsRuntime.ReferenceImpl<global::System.Numerics.Vector2>))]
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(2064, typeof(global::System.Runtime.InteropServices.WindowsRuntime.ReferenceImpl<global::System.Numerics.Vector3>))]
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(2112, typeof(global::System.Runtime.InteropServices.WindowsRuntime.ReferenceImpl<global::System.Numerics.Vector4>))]
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(2160, typeof(global::System.Runtime.InteropServices.WindowsRuntime.ReferenceImpl<global::System.Numerics.Matrix3x2>))]
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(2208, typeof(global::System.Runtime.InteropServices.WindowsRuntime.ReferenceImpl<global::System.Numerics.Matrix4x4>))]
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(2256, typeof(global::System.Runtime.InteropServices.WindowsRuntime.ReferenceImpl<global::System.Numerics.Plane>))]
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(2304, typeof(global::System.Runtime.InteropServices.WindowsRuntime.ReferenceImpl<global::System.Numerics.Quaternion>))]
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(2352, typeof(global::System.Runtime.InteropServices.WindowsRuntime.CLRIKeyValuePairImpl<string, global::Windows.ApplicationModel.Resources.Core.NamedResource>))]
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(2400, typeof(global::System.Runtime.InteropServices.WindowsRuntime.CLRIKeyValuePairImpl<string, global::Windows.ApplicationModel.Resources.Core.ResourceMap>))]
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(2448, typeof(global::System.Runtime.InteropServices.WindowsRuntime.CLRIKeyValuePairImpl<string, global::Windows.UI.Xaml.Markup.IXamlType>))]
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(2496, typeof(global::System.Runtime.InteropServices.WindowsRuntime.CLRIKeyValuePairImpl<global::System.Type, global::Windows.UI.Xaml.Markup.IXamlType>))]
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(2544, typeof(global::System.Runtime.InteropServices.WindowsRuntime.CLRIKeyValuePairImpl<string, global::Windows.UI.Xaml.Markup.IXamlMember>))]
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(2592, typeof(global::System.Runtime.InteropServices.WindowsRuntime.ReferenceImpl<global::Windows.Foundation.AsyncOperationProgressHandler<global::Windows.Networking.BackgroundTransfer.DownloadOperation, global::Windows.Networking.BackgroundTransfer.DownloadOperation>>))]
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(2640, typeof(global::System.Runtime.InteropServices.WindowsRuntime.ReferenceImpl<global::Windows.Foundation.AsyncOperationProgressHandler<uint, uint>>))]
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(2688, typeof(global::System.Runtime.InteropServices.WindowsRuntime.ReferenceImpl<global::Windows.Foundation.AsyncOperationProgressHandler<global::Windows.Storage.Streams.IBuffer, uint>>))]
 			[global::System.Runtime.CompilerServices.ElemType(typeof(global::System.Runtime.InteropServices.CCWTemplateData))]
 			static readonly byte[] RVA___Interop_McgCurrentModule_s_ccwTemplateData = new byte[] {
 					0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 0xFF, 0xFF, 0x0, 0x0, 0x0, 0x0, 0x2, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
@@ -16836,43 +16846,44 @@ namespace __Interop
 					0x1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0x6, 0x0, 0x0, 0x0, 0x9, 0x0, 0x0, 0x0, 0x2, 0x0, 0x0, 0x0, 0x0, 0, 
 					0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0x6, 0x0, 0x0, 0x0, 0x9, 0x0, 0x0, 0x0, 0x2, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 
 					0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0x6, 0x0, 0x0, 0x0, 0x9, 0x0, 0x0, 0x0, 0x2, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 
-					0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 0xFF, 0xFF, 0x2A, 0x0, 0x0, 0x0, 0x1, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 
-					0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 0xFF, 0xFF, 0x2B, 0x0, 0x0, 0x0, 0x1, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-					0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 0xFF, 0xFF, 0x2C, 0x0, 0x0, 0x0, 0x1, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-					0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 0xFF, 0xFF, 0x2D, 0x0, 0x0, 0x0, 0x1, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-					0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 0xFF, 0xFF, 0x2C, 0x0, 0x0, 0x0, 0x1, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-					0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 0xFF, 0xFF, 0x2E, 0x0, 0x0, 0x0, 0x1, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0x14, 0xD5, 0xFD, 0x4F, 0xEC, 0x7D, 0xCF, 0x47, 0xA0, 0xAD, 0x49, 0x71, 0x86, 0x8D, 
-					0x84, 0x55, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0x16, 0x0, 0x0, 0x0, 0x8, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-					0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 0xFF, 0xFF, 0x2F, 0x0, 0x0, 0x0, 0xB, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-					0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0x16, 0x0, 0x0, 0x0, 0x8, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-					0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 0xFF, 0xFF, 0x2F, 0x0, 0x0, 0x0, 0xB, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-					0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0x14, 0x0, 0x0, 0x0, 0x8, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-					0, 0, 0, 0, 0, 0, 0, 0, 0x14, 0x0, 0x0, 0x0, 0x2C, 0x0, 0x0, 0x0, 0x1, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-					0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 0xFF, 0xFF, 0x3A, 0x0, 0x0, 0x0, 0x4, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-					0, 0, 0, 0, 0xFF, 0xFF, 0xFF, 0xFF, 0x3E, 0x0, 0x0, 0x0, 0x2, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-					0, 0, 0xFF, 0xFF, 0xFF, 0xFF, 0x40, 0x0, 0x0, 0x0, 0x2, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-					0xFF, 0xFF, 0xFF, 0xFF, 0x42, 0x0, 0x0, 0x0, 0x2, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 
-					0xFF, 0xFF, 0x44, 0x0, 0x0, 0x0, 0x2, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 0xFF, 0xFF, 
-					0x46, 0x0, 0x0, 0x0, 0x2, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 0xFF, 0xFF, 0x48, 0x0, 
-					0x0, 0x0, 0x2, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 0xFF, 0xFF, 0x4A, 0x0, 0x0, 0x0, 
-					0x2, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 0xFF, 0xFF, 0x4C, 0x0, 0x0, 0x0, 0x2, 0x0, 
-					0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 0xFF, 0xFF, 0x4E, 0x0, 0x0, 0x0, 0x2, 0x0, 0x0, 0x0, 
-					0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 0xFF, 0xFF, 0x50, 0x0, 0x0, 0x0, 0x2, 0x0, 0x0, 0x0, 0x0, 0, 
-					0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 0xFF, 0xFF, 0x52, 0x0, 0x0, 0x0, 0x2, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 
-					0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 0xFF, 0xFF, 0x54, 0x0, 0x0, 0x0, 0x2, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 
-					0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 0xFF, 0xFF, 0x56, 0x0, 0x0, 0x0, 0x2, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 
-					0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 0xFF, 0xFF, 0x58, 0x0, 0x0, 0x0, 0x2, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-					0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 0xFF, 0xFF, 0x5A, 0x0, 0x0, 0x0, 0x2, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-					0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 0xFF, 0xFF, 0x5C, 0x0, 0x0, 0x0, 0x2, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-					0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 0xFF, 0xFF, 0x5E, 0x0, 0x0, 0x0, 0x2, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-					0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 0xFF, 0xFF, 0x60, 0x0, 0x0, 0x0, 0x1, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-					0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 0xFF, 0xFF, 0x61, 0x0, 0x0, 0x0, 0x1, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-					0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 0xFF, 0xFF, 0x62, 0x0, 0x0, 0x0, 0x1, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-					0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 0xFF, 0xFF, 0x63, 0x0, 0x0, 0x0, 0x1, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-					0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 0xFF, 0xFF, 0x64, 0x0, 0x0, 0x0, 0x1, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-					0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 0xFF, 0xFF, 0x65, 0x0, 0x0, 0x0, 0x2, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-					0, 0, 0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 0xFF, 0xFF, 0x67, 0x0, 0x0, 0x0, 0x2, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-					0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 0xFF, 0xFF, 0x69, 0x0, 0x0, 0x0, 0x2, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
+					0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0x6, 0x0, 0x0, 0x0, 0x9, 0x0, 0x0, 0x0, 0x2, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 
+					0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 0xFF, 0xFF, 0x2A, 0x0, 0x0, 0x0, 0x1, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+					0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 0xFF, 0xFF, 0x2B, 0x0, 0x0, 0x0, 0x1, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+					0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 0xFF, 0xFF, 0x2C, 0x0, 0x0, 0x0, 0x1, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+					0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 0xFF, 0xFF, 0x2D, 0x0, 0x0, 0x0, 0x1, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+					0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 0xFF, 0xFF, 0x2C, 0x0, 0x0, 0x0, 0x1, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+					0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 0xFF, 0xFF, 0x2E, 0x0, 0x0, 0x0, 0x1, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0x14, 0xD5, 0xFD, 0x4F, 0xEC, 0x7D, 0xCF, 0x47, 0xA0, 0xAD, 0x49, 0x71, 0x86, 0x8D, 0x84, 0x55, 
+					0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0x17, 0x0, 0x0, 0x0, 0x8, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+					0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 0xFF, 0xFF, 0x2F, 0x0, 0x0, 0x0, 0xB, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+					0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0x17, 0x0, 0x0, 0x0, 0x8, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+					0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 0xFF, 0xFF, 0x2F, 0x0, 0x0, 0x0, 0xB, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+					0, 0, 0, 0, 0, 0, 0, 0, 0x15, 0x0, 0x0, 0x0, 0x8, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+					0, 0, 0, 0, 0, 0, 0x15, 0x0, 0x0, 0x0, 0x2C, 0x0, 0x0, 0x0, 0x1, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+					0, 0, 0, 0, 0xFF, 0xFF, 0xFF, 0xFF, 0x3A, 0x0, 0x0, 0x0, 0x4, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+					0, 0, 0xFF, 0xFF, 0xFF, 0xFF, 0x3E, 0x0, 0x0, 0x0, 0x2, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+					0xFF, 0xFF, 0xFF, 0xFF, 0x40, 0x0, 0x0, 0x0, 0x2, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 
+					0xFF, 0xFF, 0x42, 0x0, 0x0, 0x0, 0x2, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 0xFF, 0xFF, 
+					0x44, 0x0, 0x0, 0x0, 0x2, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 0xFF, 0xFF, 0x46, 0x0, 
+					0x0, 0x0, 0x2, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 0xFF, 0xFF, 0x48, 0x0, 0x0, 0x0, 
+					0x2, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 0xFF, 0xFF, 0x4A, 0x0, 0x0, 0x0, 0x2, 0x0, 
+					0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 0xFF, 0xFF, 0x4C, 0x0, 0x0, 0x0, 0x2, 0x0, 0x0, 0x0, 
+					0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 0xFF, 0xFF, 0x4E, 0x0, 0x0, 0x0, 0x2, 0x0, 0x0, 0x0, 0x0, 0, 
+					0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 0xFF, 0xFF, 0x50, 0x0, 0x0, 0x0, 0x2, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 
+					0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 0xFF, 0xFF, 0x52, 0x0, 0x0, 0x0, 0x2, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 
+					0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 0xFF, 0xFF, 0x54, 0x0, 0x0, 0x0, 0x2, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 
+					0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 0xFF, 0xFF, 0x56, 0x0, 0x0, 0x0, 0x2, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+					0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 0xFF, 0xFF, 0x58, 0x0, 0x0, 0x0, 0x2, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+					0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 0xFF, 0xFF, 0x5A, 0x0, 0x0, 0x0, 0x2, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+					0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 0xFF, 0xFF, 0x5C, 0x0, 0x0, 0x0, 0x2, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+					0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 0xFF, 0xFF, 0x5E, 0x0, 0x0, 0x0, 0x2, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+					0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 0xFF, 0xFF, 0x60, 0x0, 0x0, 0x0, 0x1, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+					0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 0xFF, 0xFF, 0x61, 0x0, 0x0, 0x0, 0x1, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+					0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 0xFF, 0xFF, 0x62, 0x0, 0x0, 0x0, 0x1, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+					0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 0xFF, 0xFF, 0x63, 0x0, 0x0, 0x0, 0x1, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+					0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 0xFF, 0xFF, 0x64, 0x0, 0x0, 0x0, 0x1, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+					0, 0, 0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 0xFF, 0xFF, 0x65, 0x0, 0x0, 0x0, 0x2, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+					0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 0xFF, 0xFF, 0x67, 0x0, 0x0, 0x0, 0x2, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+					0, 0, 0, 0, 0xFF, 0xFF, 0xFF, 0xFF, 0x69, 0x0, 0x0, 0x0, 0x2, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
 			[global::System.Runtime.CompilerServices.TypeHandleFixup(0, typeof(global::Windows.UI.Color))]
 			[global::System.Runtime.CompilerServices.TypeHandleFixup(8, typeof(global::System.Runtime.InteropServices.WindowsRuntime.ReferenceImpl<global::Windows.UI.Color>))]
 			[global::System.Runtime.CompilerServices.MethodAddrFixup(24, typeof(global::__Interop.McgCurrentModule), "Unboxing_Stub__Windows_UI__Color")]

@@ -19,25 +19,25 @@
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>D:\Windows Kits\10\</WindowsSdkPath>
     <LayoutDir>D:\Alex\Visual\Security\Security\bin\x64\Release\AppX</LayoutDir>
-    <RegisteredManifestChecksum>CAA9B49D8EA9A774403775AAF36078B2A8C5F77199068388A0C2D0542A258170</RegisteredManifestChecksum>
-    <RegisteredPackageMoniker>DrAlexSecurityUWP_0.2.10.0_x64__574mcq5q5mxfj</RegisteredPackageMoniker>
+    <RegisteredManifestChecksum>CB7C0C171A01D12E49E33BD3440166162F2518EB09E15CA6C2CA145F51FC77CD</RegisteredManifestChecksum>
+    <RegisteredPackageMoniker>DrAlexSecurityUWP_0.3.0.0_x64__574mcq5q5mxfj</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>DrAlexSecurityUWP_574mcq5q5mxfj!App</RegisteredUserModeAppID>
     <RegisteredPackageID>DrAlexSecurityUWP</RegisteredPackageID>
     <RegisteredPackagePublisher>CN=cooler</RegisteredPackagePublisher>
-    <RegisteredVersion>0.2.10.0</RegisteredVersion>
+    <RegisteredVersion>0.3.0.0</RegisteredVersion>
     <JitOptimizationSuppressed>True</JitOptimizationSuppressed>
   </PropertyGroup>
   <ItemGroup>
     <AppXManifest Include="D:\Alex\Visual\Security\Security\bin\x64\Release\ilc\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-06-30T07:34:45.909</Modified>
+      <Modified>2018-06-30T13:25:43.710</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="D:\Alex\Visual\Security\Security\bin\x64\Release\ilc\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2018-06-30T07:32:22.010</Modified>
+      <Modified>2018-06-30T13:24:53.049</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Alex\Visual\Security\Security\bin\x64\Release\ilc\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
@@ -75,7 +75,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Alex\Visual\Security\Security\bin\x64\Release\ilc\BatteryInfo.xbf">
       <PackagePath>BatteryInfo.xbf</PackagePath>
-      <Modified>2018-06-30T07:32:22.011</Modified>
+      <Modified>2018-06-30T13:24:53.052</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Alex\Visual\Security\Security\bin\x64\Release\ilc\clrcompression.dll">
       <PackagePath>clrcompression.dll</PackagePath>
@@ -83,40 +83,44 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Alex\Visual\Security\Security\bin\x64\Release\ilc\ContentDialog1.xbf">
       <PackagePath>ContentDialog1.xbf</PackagePath>
-      <Modified>2018-06-30T07:32:22.013</Modified>
+      <Modified>2018-06-30T13:24:53.054</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Alex\Visual\Security\Security\bin\x64\Release\ilc\Defender.xbf">
       <PackagePath>Defender.xbf</PackagePath>
-      <Modified>2018-06-30T07:32:22.014</Modified>
+      <Modified>2018-06-30T13:24:53.056</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Alex\Visual\Security\Security\bin\x64\Release\ilc\Dictionary1.xbf">
       <PackagePath>Dictionary1.xbf</PackagePath>
-      <Modified>2018-06-30T07:32:22.008</Modified>
+      <Modified>2018-06-30T13:24:53.047</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Alex\Visual\Security\Security\bin\x64\Release\ilc\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2018-06-30T07:32:22.016</Modified>
+      <Modified>2018-06-30T13:24:53.058</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Alex\Visual\Security\Security\bin\x64\Release\ilc\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-06-29T15:28:53.294</Modified>
+      <Modified>2018-06-30T12:38:42.250</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Alex\Visual\Security\Security\bin\x64\Release\ilc\Security.dll">
       <PackagePath>Security.dll</PackagePath>
-      <Modified>2018-06-30T07:34:45.378</Modified>
+      <Modified>2018-06-30T13:25:43.226</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Alex\Visual\Security\Security\bin\x64\Release\ilc\Security.exe">
       <PackagePath>Security.exe</PackagePath>
-      <Modified>2018-06-30T07:34:45.801</Modified>
+      <Modified>2018-06-30T13:25:43.682</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Alex\Visual\Security\Security\bin\x64\Release\ilc\Security.pdb">
       <PackagePath>Security.pdb</PackagePath>
-      <Modified>2018-06-30T07:34:45.765</Modified>
+      <Modified>2018-06-30T13:25:43.653</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Alex\Visual\Security\Security\bin\x64\Release\ilc\Settings.xbf">
+      <PackagePath>Settings.xbf</PackagePath>
+      <Modified>2018-06-30T13:24:53.060</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Alex\Visual\Security\Security\bin\x64\Release\ilc\Update.xbf">
       <PackagePath>Update.xbf</PackagePath>
-      <Modified>2018-06-30T07:32:22.018</Modified>
+      <Modified>2018-06-30T13:24:53.061</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

@@ -14,6 +14,10 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
+using Windows.Devices.Power;
+using Windows.UI.ViewManagement;
+using Windows.ApplicationModel.Core;
+using Windows.UI;
 
 namespace Security
 {
@@ -71,6 +75,13 @@ namespace Security
                 // Обеспечение активности текущего окна
                 Window.Current.Activate();
             }
+
+            CoreApplication.GetCurrentView().TitleBar.ExtendViewIntoTitleBar = true;
+            ApplicationViewTitleBar titleBar = ApplicationView.GetForCurrentView().TitleBar;
+            titleBar.ButtonBackgroundColor = Colors.Transparent;
+            titleBar.ButtonInactiveBackgroundColor = Colors.Transparent;
+            titleBar.ForegroundColor = Windows.UI.Colors.Black;
+            titleBar.ButtonForegroundColor = Windows.UI.Colors.Black;
         }
 
         /// <summary>

@@ -492,3 +492,8 @@ D:\Alex\Visual\Security\Security\bin\x64\Release\BatteryInfo.xbf
 D:\Alex\Visual\Security\Security\bin\x64\Release\Dictionary1.xbf
 D:\Alex\Visual\Security\Security\obj\x64\Release\Dictionary1.xaml
 D:\Alex\Visual\Security\Security\obj\x64\Release\Dictionary1.xbf
+D:\Alex\Visual\Security\Security\bin\x64\Release\Settings.xbf
+D:\Alex\Visual\Security\Security\obj\x64\Release\Settings.g.i.cs
+D:\Alex\Visual\Security\Security\obj\x64\Release\Settings.g.cs
+D:\Alex\Visual\Security\Security\obj\x64\Release\Settings.xaml
+D:\Alex\Visual\Security\Security\obj\x64\Release\Settings.xbf

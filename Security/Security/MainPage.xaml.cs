@@ -40,14 +40,14 @@ namespace Security
             titleBar.ForegroundColor = Windows.UI.Colors.Black;
             titleBar.BackgroundColor = Windows.UI.Colors.WhiteSmoke;
             titleBar.ButtonForegroundColor = Windows.UI.Colors.Black;
-            titleBar.ButtonBackgroundColor = Windows.UI.Colors.WhiteSmoke;*/
+            titleBar.ButtonBackgroundColor = Windows.UI.Colors.WhiteSmoke;
 
             CoreApplication.GetCurrentView().TitleBar.ExtendViewIntoTitleBar = true;
             ApplicationViewTitleBar titleBar = ApplicationView.GetForCurrentView().TitleBar;
             titleBar.ButtonBackgroundColor = Colors.Transparent;
             titleBar.ButtonInactiveBackgroundColor = Colors.Transparent;
             titleBar.ForegroundColor = Windows.UI.Colors.Black;
-            titleBar.ButtonForegroundColor = Windows.UI.Colors.Black;
+            titleBar.ButtonForegroundColor = Windows.UI.Colors.Black; */
 
             var aggBattery = Battery.AggregateBattery;
             var report = aggBattery.GetReport();
@@ -118,10 +118,9 @@ namespace Security
             ContentDialogResult result = await ComingSoon.ShowAsync();
         }
 
-        private async void AppBarButton_Click_2(object sender, RoutedEventArgs e)
+        private void AppBarButton_Click_2(object sender, RoutedEventArgs e)
         {
-            ContentDialog1 ContentDialog = new ContentDialog1();
-            await ContentDialog.ShowAsync();
+            this.Frame.Navigate(typeof(Settings));
         }
 
         private void ToDefender(object sender, PointerRoutedEventArgs e)

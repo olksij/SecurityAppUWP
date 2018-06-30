@@ -42,6 +42,11 @@
 					<Value>Security.xr.xml</Value>
 				</Candidate>
 			</NamedResource>
+			<NamedResource name="Settings.xbf" uri="ms-resource://DrAlexSecurityUWP/Files/Settings.xbf">
+				<Candidate type="EmbeddedData">
+					<Base64Value>[Embedded Binary Data]</Base64Value>
+				</Candidate>
+			</NamedResource>
 			<NamedResource name="Update.xbf" uri="ms-resource://DrAlexSecurityUWP/Files/Update.xbf">
 				<Candidate type="EmbeddedData">
 					<Base64Value>[Embedded Binary Data]</Base64Value>

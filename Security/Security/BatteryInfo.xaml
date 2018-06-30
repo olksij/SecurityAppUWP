@@ -28,6 +28,7 @@
             <Button x:Name="GetBatteryReportButton" 
                 Content="Get battery report" 
                 Margin="30,15,0,0" 
+                Style="{ThemeResource ButtonRevealStyle}"
                 Click="GetBatteryReport" Width="150" Height="45"/>
         </StackPanel>
         <StackPanel x:Name="BatteryReportPanel" Margin="30,15,0,0"/>

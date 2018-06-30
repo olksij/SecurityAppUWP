@@ -28,6 +28,7 @@
             <Button x:ConnectionId='3' x:Name="GetBatteryReportButton" 
                 Content="Get battery report" 
                 Margin="30,15,0,0" 
+                Style="{ThemeResource ButtonRevealStyle}"
                                          Width="150" Height="45"/>
         </StackPanel>
         <StackPanel x:ConnectionId='2' x:Name="BatteryReportPanel" Margin="30,15,0,0"/>
