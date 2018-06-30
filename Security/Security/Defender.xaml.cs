@@ -56,5 +56,10 @@ namespace Security
 
             }
         }
+
+        private void ToHome1(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(MainPage));
+        }
     }
 }

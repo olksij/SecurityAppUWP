@@ -15,6 +15,7 @@ using Windows.Devices.Power;
 using Windows.UI.ViewManagement;
 using Windows.UI.Xaml.Navigation;
 using Windows.ApplicationModel.Core;
+using Windows.UI;
 
 // Документацию по шаблону элемента "Пустая страница" см. по адресу https://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x419
 
@@ -32,15 +33,21 @@ namespace Security
         public MainPage()
         {
             this.InitializeComponent();
-            var titleBar = ApplicationView.GetForCurrentView().TitleBar;
+            /*var titleBar = ApplicationView.GetForCurrentView().TitleBar;
             var coreTitleBar = CoreApplication.GetCurrentView().TitleBar;
             coreTitleBar.ExtendViewIntoTitleBar = false;
 
             titleBar.ForegroundColor = Windows.UI.Colors.Black;
             titleBar.BackgroundColor = Windows.UI.Colors.WhiteSmoke;
             titleBar.ButtonForegroundColor = Windows.UI.Colors.Black;
-            titleBar.ButtonBackgroundColor = Windows.UI.Colors.WhiteSmoke;
+            titleBar.ButtonBackgroundColor = Windows.UI.Colors.WhiteSmoke;*/
 
+            CoreApplication.GetCurrentView().TitleBar.ExtendViewIntoTitleBar = true;
+            ApplicationViewTitleBar titleBar = ApplicationView.GetForCurrentView().TitleBar;
+            titleBar.ButtonBackgroundColor = Colors.Transparent;
+            titleBar.ButtonInactiveBackgroundColor = Colors.Transparent;
+            titleBar.ForegroundColor = Windows.UI.Colors.Black;
+            titleBar.ButtonForegroundColor = Windows.UI.Colors.Black;
 
             var aggBattery = Battery.AggregateBattery;
             var report = aggBattery.GetReport();

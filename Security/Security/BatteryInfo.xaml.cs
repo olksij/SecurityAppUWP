@@ -184,7 +184,9 @@ namespace Security
             this.Frame.Navigate(typeof(MainPage));
         }
 
-
-
+        private void ToHome1(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(MainPage));
+        }
     }
 }

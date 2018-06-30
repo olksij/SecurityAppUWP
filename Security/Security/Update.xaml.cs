@@ -149,9 +149,9 @@ namespace Security
             }
         }
 
-        private void ToHome1(object sender, TappedRoutedEventArgs e)
+        private void ToHome(object sender, TappedRoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(MainPage));
+
         }
 
         private void DownloadProgress(DownloadOperation download)
@@ -200,6 +200,11 @@ namespace Security
             BackgroundDownloader downloader = new BackgroundDownloader(completionGroup);
 
             return downloader;
+        }
+
+        private void ToHome1(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(MainPage));
         }
     }
 }

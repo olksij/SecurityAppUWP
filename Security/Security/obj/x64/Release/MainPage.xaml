@@ -9,9 +9,13 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" MinWidth="525">
 
     <Grid>
-        <Rectangle Height="115" Margin="0,0,0,0" VerticalAlignment="Top" Fill="WhiteSmoke"/>
-        <TextBlock x:ConnectionId='2' x:Name="txtBlock" HorizontalAlignment="Left" Margin="25,23,0,0" Text="Refresh to get info" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="30"/>
-        <ProgressBar x:ConnectionId='3' x:Name="pb" HorizontalAlignment="Left" Height="8" Margin="25,80,0,0" VerticalAlignment="Top" Width="400"/>
+        <Grid.Background>
+            <AcrylicBrush TintOpacity="0.8" BackgroundSource="HostBackdrop" TintColor="WhiteSmoke" FallbackColor="WhiteSmoke"/>
+        </Grid.Background>
+
+        <Rectangle Margin="0,115,0,0" VerticalAlignment="Stretch" Fill="White"/>
+        <TextBlock x:ConnectionId='2' x:Name="txtBlock" HorizontalAlignment="Left" Margin="115,23,0,0" Text="Refresh to get info" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="30"/>
+        <ProgressBar x:ConnectionId='3' x:Name="pb" HorizontalAlignment="Left" Height="8" Margin="115,80,0,0" VerticalAlignment="Top" Width="400"/>
         <GridView HorizontalAlignment="Stretch" Margin="25,145,0,0" VerticalAlignment="Stretch">
             <ItemsControl x:ConnectionId='9' HorizontalAlignment="Center" Height="125" VerticalAlignment="Top" Width="125"                             Margin="0,0,0,0">
                 <FontIcon Glyph="&#xF552;" Height="80" HorizontalAlignment="Center" Margin="0,0,0,0" VerticalAlignment="Top" Width="125" FontSize="25"/>
@@ -39,10 +43,10 @@
             <AppBarButton x:ConnectionId='7' Icon="Setting" Label="Settings"                             />
             <AppBarButton x:ConnectionId='8' Icon="Sync" Label="Update"                             />
         </CommandBar>
-        <Button x:ConnectionId='4' HorizontalAlignment="Right" Height="75" Margin="0,21,21,0" VerticalAlignment="Top" Width="75"                  Style="{ThemeResource ButtonRevealStyle}">
-            <FontIcon Glyph="&#xE76C;"/>
+        <Button x:ConnectionId='4' HorizontalAlignment="Left" Height="75" Margin="21,21,21,0" VerticalAlignment="Top" Width="75"                  Style="{ThemeResource ButtonRevealStyle}" Background="#13000000" Foreground="Black" FocusVisualPrimaryBrush="#1E000000">
+            <FontIcon Glyph="&#xE76B;"/>
         </Button>
-        <TextBlock x:ConnectionId='5' x:Name="txt2" HorizontalAlignment="Left" Margin="25,70,0,0" Text="TextBlock" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="20" Visibility="Collapsed"/>
+        <TextBlock x:ConnectionId='5' x:Name="txt2" HorizontalAlignment="Left" Margin="122,70,0,0" Text="TextBlock" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="20" Visibility="Collapsed"/>
 
 
 

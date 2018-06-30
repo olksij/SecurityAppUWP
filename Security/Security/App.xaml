@@ -10,6 +10,7 @@
         BackgroundSource="HostBackdrop"/>
             <AcrylicBrush x:Key="NavigationViewExpandedPaneBackground"
         BackgroundSource="HostBackdrop"/>
+            <AcrylicBrush x:Key="SystemControlAcrylicElementBrush" BackgroundSource="Backdrop"/>
         </ResourceDictionary>
     </Application.Resources>
 </Application>

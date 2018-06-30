@@ -9,9 +9,13 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" MinWidth="525">
 
     <Grid>
-        <Rectangle Height="115" Margin="0,0,0,0" VerticalAlignment="Top" Fill="WhiteSmoke"/>
-        <TextBlock x:Name="txtBlock" HorizontalAlignment="Left" Margin="25,23,0,0" Text="Refresh to get info" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="30"/>
-        <ProgressBar x:Name="pb" HorizontalAlignment="Left" Height="8" Margin="25,80,0,0" VerticalAlignment="Top" Width="400"/>
+        <Grid.Background>
+            <AcrylicBrush TintOpacity="0.8" BackgroundSource="HostBackdrop" TintColor="WhiteSmoke" FallbackColor="WhiteSmoke"/>
+        </Grid.Background>
+
+        <Rectangle Margin="0,115,0,0" VerticalAlignment="Stretch" Fill="White"/>
+        <TextBlock x:Name="txtBlock" HorizontalAlignment="Left" Margin="115,23,0,0" Text="Refresh to get info" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="30"/>
+        <ProgressBar x:Name="pb" HorizontalAlignment="Left" Height="8" Margin="115,80,0,0" VerticalAlignment="Top" Width="400"/>
         <GridView HorizontalAlignment="Stretch" Margin="25,145,0,0" VerticalAlignment="Stretch">
             <ItemsControl HorizontalAlignment="Center" Height="125" VerticalAlignment="Top" Width="125" PointerPressed="ToDefender" Margin="0,0,0,0">
                 <FontIcon Glyph="&#xF552;" Height="80" HorizontalAlignment="Center" Margin="0,0,0,0" VerticalAlignment="Top" Width="125" FontSize="25"/>
@@ -39,10 +43,10 @@
             <AppBarButton Icon="Setting" Label="Settings" Click="AppBarButton_Click_2"/>
             <AppBarButton Icon="Sync" Label="Update" Click="AppBarButton_Click_3"/>
         </CommandBar>
-        <Button HorizontalAlignment="Right" Height="75" Margin="0,21,21,0" VerticalAlignment="Top" Width="75" Click="NextInfo" Style="{ThemeResource ButtonRevealStyle}">
-            <FontIcon Glyph="&#xE76C;"/>
+        <Button HorizontalAlignment="Left" Height="75" Margin="21,21,21,0" VerticalAlignment="Top" Width="75" Click="NextInfo" Style="{ThemeResource ButtonRevealStyle}" Background="#13000000" Foreground="Black" FocusVisualPrimaryBrush="#1E000000">
+            <FontIcon Glyph="&#xE76B;"/>
         </Button>
-        <TextBlock x:Name="txt2" HorizontalAlignment="Left" Margin="25,70,0,0" Text="TextBlock" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="20" Visibility="Collapsed"/>
+        <TextBlock x:Name="txt2" HorizontalAlignment="Left" Margin="122,70,0,0" Text="TextBlock" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="20" Visibility="Collapsed"/>
 
 
 

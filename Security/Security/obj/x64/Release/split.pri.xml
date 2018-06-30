@@ -27,6 +27,11 @@
 					<Base64Value>[Embedded Binary Data]</Base64Value>
 				</Candidate>
 			</NamedResource>
+			<NamedResource name="Dictionary1.xbf" uri="ms-resource://DrAlexSecurityUWP/Files/Dictionary1.xbf">
+				<Candidate type="EmbeddedData">
+					<Base64Value>[Embedded Binary Data]</Base64Value>
+				</Candidate>
+			</NamedResource>
 			<NamedResource name="MainPage.xbf" uri="ms-resource://DrAlexSecurityUWP/Files/MainPage.xbf">
 				<Candidate type="EmbeddedData">
 					<Base64Value>[Embedded Binary Data]</Base64Value>

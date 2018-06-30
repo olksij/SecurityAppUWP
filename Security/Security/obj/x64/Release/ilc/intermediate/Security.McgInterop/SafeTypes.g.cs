@@ -3979,6 +3979,26 @@ namespace Windows.UI
 			return __pRetVal;
 		}
 
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "Transparent")]
+		public static global::Windows.UI.Color get_Transparent()
+		{
+			global::Windows.UI.Color retval;
+			retval = __Factory_Windows_UI__IColorsStatics_get_Transparent("Windows.UI.Colors");
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			return retval;
+		}
+
+		static global::Windows.UI.Color __Factory_Windows_UI__IColorsStatics_get_Transparent(string typeName)
+		{
+			global::Windows.UI.Color __pRetVal;
+			__pRetVal = global::Windows.UI.IColorsStatics__Impl.Stubs.get_Transparent(global::System.Runtime.InteropServices.McgMarshal.GetActivationFactory(
+									typeName, 
+									typeof(global::Windows.UI.IColorsStatics).TypeHandle
+								));
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			return __pRetVal;
+		}
+
 		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "WhiteSmoke")]
 		public static global::Windows.UI.Color get_WhiteSmoke()
 		{
@@ -4010,6 +4030,9 @@ namespace Windows.UI
 	{
 		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "Black")]
 		global::Windows.UI.Color get_Black();
+
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "Transparent")]
+		global::Windows.UI.Color get_Transparent();
 
 		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "WhiteSmoke")]
 		global::Windows.UI.Color get_WhiteSmoke();
@@ -4335,6 +4358,16 @@ namespace Windows.UI.ViewManagement
 			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
 		}
 
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertySet, "ButtonInactiveBackgroundColor")]
+		public void put_ButtonInactiveBackgroundColor(global::System.Nullable<global::Windows.UI.Color> value)
+		{
+			global::Windows.UI.ViewManagement.IApplicationViewTitleBar__Impl.Stubs.put_ButtonInactiveBackgroundColor(
+								this, 
+								value
+							);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+		}
+
 		public ApplicationViewTitleBar(global::System.IntPtr dummy)
 		{
 		}
@@ -4376,6 +4409,9 @@ namespace Windows.UI.ViewManagement
 
 		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertySet, "ButtonBackgroundColor")]
 		void put_ButtonBackgroundColor(global::System.Nullable<global::Windows.UI.Color> value);
+
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertySet, "ButtonInactiveBackgroundColor")]
+		void put_ButtonInactiveBackgroundColor(global::System.Nullable<global::Windows.UI.Color> value);
 	}
 }
 
@@ -8653,6 +8689,24 @@ namespace Windows.UI.Xaml.Controls
 			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
 		}
 
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "Foreground")]
+		public virtual global::Windows.UI.Xaml.Media.Brush get_Foreground()
+		{
+			global::Windows.UI.Xaml.Media.Brush __retVal = global::Windows.UI.Xaml.Controls.IControl__Impl.Stubs.get_Foreground(this);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			return __retVal;
+		}
+
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertySet, "Foreground")]
+		public virtual void put_Foreground(global::Windows.UI.Xaml.Media.Brush value)
+		{
+			global::Windows.UI.Xaml.Controls.IControl__Impl.Stubs.put_Foreground(
+								this, 
+								value
+							);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+		}
+
 		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertySet, "IsEnabled")]
 		public virtual void put_IsEnabled(bool value)
 		{
@@ -8675,24 +8729,6 @@ namespace Windows.UI.Xaml.Controls
 		public virtual void put_Background(global::Windows.UI.Xaml.Media.Brush value)
 		{
 			global::Windows.UI.Xaml.Controls.IControl__Impl.Stubs.put_Background(
-								this, 
-								value
-							);
-			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
-		}
-
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "BorderBrush")]
-		public virtual global::Windows.UI.Xaml.Media.Brush get_BorderBrush()
-		{
-			global::Windows.UI.Xaml.Media.Brush __retVal = global::Windows.UI.Xaml.Controls.IControl__Impl.Stubs.get_BorderBrush(this);
-			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
-			return __retVal;
-		}
-
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertySet, "BorderBrush")]
-		public virtual void put_BorderBrush(global::Windows.UI.Xaml.Media.Brush value)
-		{
-			global::Windows.UI.Xaml.Controls.IControl__Impl.Stubs.put_BorderBrush(
 								this, 
 								value
 							);
@@ -10522,107 +10558,6 @@ namespace Windows.UI.Xaml.Controls
 	public unsafe sealed class IsTextTrimmedChangedEventArgs : global::System.__ComObject, global::Windows.UI.Xaml.Controls.IIsTextTrimmedChangedEventArgs
 	{
 		public IsTextTrimmedChangedEventArgs(global::System.IntPtr dummy)
-		{
-		}
-	}
-
-	[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::Windows.UI.Xaml.Controls.IAppBarButton))]
-	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(65536)]
-	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
-	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
-	public unsafe class AppBarButton : global::Windows.UI.Xaml.Controls.Button, global::Windows.UI.Xaml.Controls.IAppBarButton, global::Windows.UI.Xaml.Controls.ICommandBarElement
-	{
-		[global::System.Runtime.CompilerServices.MethodImpl(global::System.Runtime.CompilerServices.MethodImplOptions.NoInlining)]
-		public AppBarButton() : 
-				base(default(global::System.IntPtr))
-		{
-			global::System.IntPtr retval;
-			retval = __Factory_Windows_UI_Xaml_Controls__IAppBarButtonFactory_CreateInstance("Windows.UI.Xaml.Controls.AppBarButton");
-			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
-			global::__Interop.McgHelpers.GetIUnknownForFactoryReturn(ref retval);
-			this.__AttachAndRelease(retval);
-		}
-
-		global::System.IntPtr __Factory_Windows_UI_Xaml_Controls__IAppBarButtonFactory_CreateInstance(string typeName)
-		{
-			global::System.IntPtr innerInspectable;
-			global::System.IntPtr outerInspectable = default(global::System.IntPtr);
-			if (global::System.Runtime.InteropServices.McgMarshal.IsOfType(
-								this, 
-								typeof(global::Windows.UI.Xaml.Controls.AppBarButton).TypeHandle
-							))
-			{
-				global::System.IntPtr __pRetVal_NoAggregation;
-				__pRetVal_NoAggregation = global::Windows.UI.Xaml.Controls.IAppBarButtonFactory__Impl.Stubs.CreateInstance(
-									global::System.Runtime.InteropServices.McgMarshal.GetActivationFactory(
-														typeName, 
-														typeof(global::Windows.UI.Xaml.Controls.IAppBarButtonFactory).TypeHandle
-													), 
-									outerInspectable, 
-									out innerInspectable
-								);
-				global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
-				global::System.Runtime.InteropServices.McgMarshal.ComSafeRelease(innerInspectable);
-				global::__Interop.McgHelpers.GetIUnknownForFactoryReturn(ref __pRetVal_NoAggregation);
-				return __pRetVal_NoAggregation;
-			}
-			else
-			{
-				outerInspectable = global::System.Runtime.InteropServices.McgMarshal.GetOuterIInspectableForManagedObject(this);
-				global::System.IntPtr __pRetVal_WithAggregation;
-				__pRetVal_WithAggregation = global::Windows.UI.Xaml.Controls.IAppBarButtonFactory__Impl.Stubs.CreateInstance(
-									global::System.Runtime.InteropServices.McgMarshal.GetActivationFactory(
-														typeName, 
-														typeof(global::Windows.UI.Xaml.Controls.IAppBarButtonFactory).TypeHandle
-													), 
-									outerInspectable, 
-									out innerInspectable
-								);
-				global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
-				global::System.Runtime.InteropServices.McgMarshal.ComSafeRelease(outerInspectable);
-				global::System.Runtime.InteropServices.McgMarshal.ComSafeRelease(__pRetVal_WithAggregation);
-				return innerInspectable;
-			}
-		}
-
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "Label")]
-		public virtual string get_Label()
-		{
-			string __retVal = global::Windows.UI.Xaml.Controls.IAppBarButton__Impl.Stubs.get_Label(this);
-			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
-			return __retVal;
-		}
-
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertySet, "Label")]
-		public virtual void put_Label(string value)
-		{
-			global::Windows.UI.Xaml.Controls.IAppBarButton__Impl.Stubs.put_Label(
-								this, 
-								value
-							);
-			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
-		}
-
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "Icon")]
-		public virtual global::Windows.UI.Xaml.Controls.IconElement get_Icon()
-		{
-			global::Windows.UI.Xaml.Controls.IconElement __retVal = global::Windows.UI.Xaml.Controls.IAppBarButton__Impl.Stubs.get_Icon(this);
-			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
-			return __retVal;
-		}
-
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertySet, "Icon")]
-		public virtual void put_Icon(global::Windows.UI.Xaml.Controls.IconElement value)
-		{
-			global::Windows.UI.Xaml.Controls.IAppBarButton__Impl.Stubs.put_Icon(
-								this, 
-								value
-							);
-			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
-		}
-
-		public AppBarButton(global::System.IntPtr dummy) : 
-				base(dummy)
 		{
 		}
 	}
@@ -12624,6 +12559,107 @@ namespace Windows.UI.Xaml.Controls
 		}
 	}
 
+	[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::Windows.UI.Xaml.Controls.IAppBarButton))]
+	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(65536)]
+	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
+	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
+	public unsafe class AppBarButton : global::Windows.UI.Xaml.Controls.Button, global::Windows.UI.Xaml.Controls.IAppBarButton, global::Windows.UI.Xaml.Controls.ICommandBarElement
+	{
+		[global::System.Runtime.CompilerServices.MethodImpl(global::System.Runtime.CompilerServices.MethodImplOptions.NoInlining)]
+		public AppBarButton() : 
+				base(default(global::System.IntPtr))
+		{
+			global::System.IntPtr retval;
+			retval = __Factory_Windows_UI_Xaml_Controls__IAppBarButtonFactory_CreateInstance("Windows.UI.Xaml.Controls.AppBarButton");
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			global::__Interop.McgHelpers.GetIUnknownForFactoryReturn(ref retval);
+			this.__AttachAndRelease(retval);
+		}
+
+		global::System.IntPtr __Factory_Windows_UI_Xaml_Controls__IAppBarButtonFactory_CreateInstance(string typeName)
+		{
+			global::System.IntPtr innerInspectable;
+			global::System.IntPtr outerInspectable = default(global::System.IntPtr);
+			if (global::System.Runtime.InteropServices.McgMarshal.IsOfType(
+								this, 
+								typeof(global::Windows.UI.Xaml.Controls.AppBarButton).TypeHandle
+							))
+			{
+				global::System.IntPtr __pRetVal_NoAggregation;
+				__pRetVal_NoAggregation = global::Windows.UI.Xaml.Controls.IAppBarButtonFactory__Impl.Stubs.CreateInstance(
+									global::System.Runtime.InteropServices.McgMarshal.GetActivationFactory(
+														typeName, 
+														typeof(global::Windows.UI.Xaml.Controls.IAppBarButtonFactory).TypeHandle
+													), 
+									outerInspectable, 
+									out innerInspectable
+								);
+				global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+				global::System.Runtime.InteropServices.McgMarshal.ComSafeRelease(innerInspectable);
+				global::__Interop.McgHelpers.GetIUnknownForFactoryReturn(ref __pRetVal_NoAggregation);
+				return __pRetVal_NoAggregation;
+			}
+			else
+			{
+				outerInspectable = global::System.Runtime.InteropServices.McgMarshal.GetOuterIInspectableForManagedObject(this);
+				global::System.IntPtr __pRetVal_WithAggregation;
+				__pRetVal_WithAggregation = global::Windows.UI.Xaml.Controls.IAppBarButtonFactory__Impl.Stubs.CreateInstance(
+									global::System.Runtime.InteropServices.McgMarshal.GetActivationFactory(
+														typeName, 
+														typeof(global::Windows.UI.Xaml.Controls.IAppBarButtonFactory).TypeHandle
+													), 
+									outerInspectable, 
+									out innerInspectable
+								);
+				global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+				global::System.Runtime.InteropServices.McgMarshal.ComSafeRelease(outerInspectable);
+				global::System.Runtime.InteropServices.McgMarshal.ComSafeRelease(__pRetVal_WithAggregation);
+				return innerInspectable;
+			}
+		}
+
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "Label")]
+		public virtual string get_Label()
+		{
+			string __retVal = global::Windows.UI.Xaml.Controls.IAppBarButton__Impl.Stubs.get_Label(this);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			return __retVal;
+		}
+
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertySet, "Label")]
+		public virtual void put_Label(string value)
+		{
+			global::Windows.UI.Xaml.Controls.IAppBarButton__Impl.Stubs.put_Label(
+								this, 
+								value
+							);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+		}
+
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "Icon")]
+		public virtual global::Windows.UI.Xaml.Controls.IconElement get_Icon()
+		{
+			global::Windows.UI.Xaml.Controls.IconElement __retVal = global::Windows.UI.Xaml.Controls.IAppBarButton__Impl.Stubs.get_Icon(this);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			return __retVal;
+		}
+
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertySet, "Icon")]
+		public virtual void put_Icon(global::Windows.UI.Xaml.Controls.IconElement value)
+		{
+			global::Windows.UI.Xaml.Controls.IAppBarButton__Impl.Stubs.put_Icon(
+								this, 
+								value
+							);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+		}
+
+		public AppBarButton(global::System.IntPtr dummy) : 
+				base(dummy)
+		{
+		}
+	}
+
 	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
 	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
 	public unsafe interface IControl
@@ -12634,6 +12670,12 @@ namespace Windows.UI.Xaml.Controls
 		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertySet, "FontSize")]
 		void put_FontSize(double value);
 
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "Foreground")]
+		global::Windows.UI.Xaml.Media.Brush get_Foreground();
+
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertySet, "Foreground")]
+		void put_Foreground(global::Windows.UI.Xaml.Media.Brush value);
+
 		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertySet, "IsEnabled")]
 		void put_IsEnabled(bool value);
 
@@ -12642,12 +12684,6 @@ namespace Windows.UI.Xaml.Controls
 
 		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertySet, "Background")]
 		void put_Background(global::Windows.UI.Xaml.Media.Brush value);
-
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "BorderBrush")]
-		global::Windows.UI.Xaml.Media.Brush get_BorderBrush();
-
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertySet, "BorderBrush")]
-		void put_BorderBrush(global::Windows.UI.Xaml.Media.Brush value);
 
 		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.EventAdd, "IsEnabledChanged")]
 		global::System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken add_IsEnabledChanged(global::Windows.UI.Xaml.DependencyPropertyChangedEventHandler value);
@@ -13073,39 +13109,7 @@ namespace Windows.UI.Xaml.Controls
 
 	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
 	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
-	public unsafe interface IAppBarButtonFactory
-	{
-		global::System.IntPtr CreateInstance(
-					global::System.IntPtr outer, 
-					out global::System.IntPtr inner);
-	}
-
-	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
-	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
-	public unsafe interface IAppBarButton
-	{
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "Label")]
-		string get_Label();
-
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertySet, "Label")]
-		void put_Label(string value);
-
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "Icon")]
-		global::Windows.UI.Xaml.Controls.IconElement get_Icon();
-
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertySet, "Icon")]
-		void put_Icon(global::Windows.UI.Xaml.Controls.IconElement value);
-	}
-
-	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
-	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
 	public unsafe interface IIconElement
-	{
-	}
-
-	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
-	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
-	public unsafe interface ICommandBarElement
 	{
 	}
 
@@ -13651,6 +13655,12 @@ namespace Windows.UI.Xaml.Controls
 
 	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
 	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
+	public unsafe interface ICommandBarElement
+	{
+	}
+
+	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
+	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
 	public unsafe interface ICommandBar3
 	{
 		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.EventAdd, "DynamicOverflowItemsChanging")]
@@ -13664,6 +13674,32 @@ namespace Windows.UI.Xaml.Controls
 	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
 	public unsafe interface IDynamicOverflowItemsChangingEventArgs
 	{
+	}
+
+	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
+	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
+	public unsafe interface IAppBarButtonFactory
+	{
+		global::System.IntPtr CreateInstance(
+					global::System.IntPtr outer, 
+					out global::System.IntPtr inner);
+	}
+
+	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
+	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
+	public unsafe interface IAppBarButton
+	{
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "Label")]
+		string get_Label();
+
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertySet, "Label")]
+		void put_Label(string value);
+
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "Icon")]
+		global::Windows.UI.Xaml.Controls.IconElement get_Icon();
+
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertySet, "Icon")]
+		void put_Icon(global::Windows.UI.Xaml.Controls.IconElement value);
 	}
 
 	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(0)]
@@ -14883,6 +14919,24 @@ namespace Windows.UI.Xaml.Media
 	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
 	public unsafe class XamlCompositionBrushBase : global::Windows.UI.Xaml.Media.Brush, global::Windows.UI.Xaml.Media.IXamlCompositionBrushBase, global::Windows.UI.Xaml.Media.IXamlCompositionBrushBaseOverrides, global::Windows.UI.Xaml.Media.IXamlCompositionBrushBaseProtected
 	{
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "FallbackColor")]
+		public virtual global::Windows.UI.Color get_FallbackColor()
+		{
+			global::Windows.UI.Color __retVal = global::Windows.UI.Xaml.Media.IXamlCompositionBrushBase__Impl.Stubs.get_FallbackColor(this);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			return __retVal;
+		}
+
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertySet, "FallbackColor")]
+		public virtual void put_FallbackColor(global::Windows.UI.Color value)
+		{
+			global::Windows.UI.Xaml.Media.IXamlCompositionBrushBase__Impl.Stubs.put_FallbackColor(
+								this, 
+								value
+							);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+		}
+
 		void global::Windows.UI.Xaml.Media.IXamlCompositionBrushBaseOverrides.OnConnected()
 		{
 			this.OnConnected();
@@ -15021,6 +15075,42 @@ namespace Windows.UI.Xaml.Media
 			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
 		}
 
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "TintColor")]
+		public virtual global::Windows.UI.Color get_TintColor()
+		{
+			global::Windows.UI.Color __retVal = global::Windows.UI.Xaml.Media.IAcrylicBrush__Impl.Stubs.get_TintColor(this);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			return __retVal;
+		}
+
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertySet, "TintColor")]
+		public virtual void put_TintColor(global::Windows.UI.Color value)
+		{
+			global::Windows.UI.Xaml.Media.IAcrylicBrush__Impl.Stubs.put_TintColor(
+								this, 
+								value
+							);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+		}
+
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "TintOpacity")]
+		public virtual double get_TintOpacity()
+		{
+			double __retVal = global::Windows.UI.Xaml.Media.IAcrylicBrush__Impl.Stubs.get_TintOpacity(this);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			return __retVal;
+		}
+
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertySet, "TintOpacity")]
+		public virtual void put_TintOpacity(double value)
+		{
+			global::Windows.UI.Xaml.Media.IAcrylicBrush__Impl.Stubs.put_TintOpacity(
+								this, 
+								value
+							);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+		}
+
 		public AcrylicBrush(global::System.IntPtr dummy) : 
 				base(dummy)
 		{
@@ -15107,6 +15197,11 @@ namespace Windows.UI.Xaml.Media
 	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
 	public unsafe interface IXamlCompositionBrushBase
 	{
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "FallbackColor")]
+		global::Windows.UI.Color get_FallbackColor();
+
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertySet, "FallbackColor")]
+		void put_FallbackColor(global::Windows.UI.Color value);
 	}
 
 	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
@@ -15147,6 +15242,18 @@ namespace Windows.UI.Xaml.Media
 
 		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertySet, "BackgroundSource")]
 		void put_BackgroundSource(global::Windows.UI.Xaml.Media.AcrylicBackgroundSource value);
+
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "TintColor")]
+		global::Windows.UI.Color get_TintColor();
+
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertySet, "TintColor")]
+		void put_TintColor(global::Windows.UI.Color value);
+
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "TintOpacity")]
+		double get_TintOpacity();
+
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertySet, "TintOpacity")]
+		void put_TintOpacity(double value);
 	}
 
 	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
