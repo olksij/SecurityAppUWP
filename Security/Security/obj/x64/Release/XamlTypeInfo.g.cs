@@ -189,7 +189,7 @@ namespace Security.Security_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[12];
+            _typeNameTable = new string[13];
             _typeNameTable[0] = "Security.BatteryInfo";
             _typeNameTable[1] = "Windows.UI.Xaml.Controls.Page";
             _typeNameTable[2] = "Windows.UI.Xaml.Controls.UserControl";
@@ -202,8 +202,9 @@ namespace Security.Security_XamlTypeInfo
             _typeNameTable[9] = "Security.Update";
             _typeNameTable[10] = "Windows.ApplicationModel.PackageId";
             _typeNameTable[11] = "Object";
+            _typeNameTable[12] = "System.Collections.Generic.IEnumerable`1<String>";
 
-            _typeTable = new global::System.Type[12];
+            _typeTable = new global::System.Type[13];
             _typeTable[0] = typeof(global::Security.BatteryInfo);
             _typeTable[1] = typeof(global::Windows.UI.Xaml.Controls.Page);
             _typeTable[2] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
@@ -216,6 +217,7 @@ namespace Security.Security_XamlTypeInfo
             _typeTable[9] = typeof(global::Security.Update);
             _typeTable[10] = typeof(global::Windows.ApplicationModel.PackageId);
             _typeTable[11] = typeof(global::System.Object);
+            _typeTable[12] = typeof(global::System.Collections.Generic.IEnumerable<global::System.String>);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -322,6 +324,7 @@ namespace Security.Security_XamlTypeInfo
                 userType = new global::Security.Security_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
                 userType.Activator = Activate_9_Update;
                 userType.AddMemberName("packageId");
+                userType.AddMemberName("MobileUserAgent");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
@@ -335,6 +338,12 @@ namespace Security.Security_XamlTypeInfo
             case 11:   //  Object
                 xamlType = new global::Security.Security_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
+
+            case 12:   //  System.Collections.Generic.IEnumerable`1<String>
+                userType = new global::Security.Security_XamlTypeInfo.XamlUserType(this, typeName, type, null);
+                userType.SetIsReturnTypeStub();
+                xamlType = userType;
+                break;
             }
             return xamlType;
         }
@@ -344,6 +353,11 @@ namespace Security.Security_XamlTypeInfo
         {
             var that = (global::Security.Update)instance;
             return that.packageId;
+        }
+        private object get_1_Update_MobileUserAgent(object instance)
+        {
+            var that = (global::Security.Update)instance;
+            return that.MobileUserAgent;
         }
 
         private global::Windows.UI.Xaml.Markup.IXamlMember CreateXamlMember(string longMemberName)
@@ -357,6 +371,12 @@ namespace Security.Security_XamlTypeInfo
                 userType = (global::Security.Security_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Security.Update");
                 xamlMember = new global::Security.Security_XamlTypeInfo.XamlMember(this, "packageId", "Windows.ApplicationModel.PackageId");
                 xamlMember.Getter = get_0_Update_packageId;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "Security.Update.MobileUserAgent":
+                userType = (global::Security.Security_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Security.Update");
+                xamlMember = new global::Security.Security_XamlTypeInfo.XamlMember(this, "MobileUserAgent", "System.Collections.Generic.IEnumerable`1<String>");
+                xamlMember.Getter = get_1_Update_MobileUserAgent;
                 xamlMember.SetIsReadOnly();
                 break;
             }

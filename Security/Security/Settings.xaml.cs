@@ -70,24 +70,27 @@ namespace Security
 
         private void ColorTitleBar(object sender, RoutedEventArgs e)
         {
-            if (ColorTitleBar1.IsOn == true)
+            if (ShowTitleBar1.IsOn == true)
             {
-                if (ShowTitleBar1.IsOn==true)
+                if (ColorTitleBar1.IsOn == true)
+                {
+                    if (ShowTitleBar1.IsOn == true)
+                    {
+                        var titleBar = ApplicationView.GetForCurrentView().TitleBar;
+                        titleBar.ForegroundColor = null;
+                        titleBar.BackgroundColor = null;
+                        titleBar.ButtonForegroundColor = null;
+                        titleBar.ButtonBackgroundColor = null;
+                    }
+                }
+                else
                 {
                     var titleBar = ApplicationView.GetForCurrentView().TitleBar;
-                    titleBar.ForegroundColor = null;
-                    titleBar.BackgroundColor = null;
-                    titleBar.ButtonForegroundColor = null;
-                    titleBar.ButtonBackgroundColor = null;
+                    titleBar.ForegroundColor = Windows.UI.Colors.Black;
+                    titleBar.BackgroundColor = Windows.UI.Colors.WhiteSmoke;
+                    titleBar.ButtonForegroundColor = Windows.UI.Colors.Black;
+                    titleBar.ButtonBackgroundColor = Windows.UI.Colors.WhiteSmoke;
                 }
-            }
-            else
-            {
-                var titleBar = ApplicationView.GetForCurrentView().TitleBar;
-                titleBar.ForegroundColor = Windows.UI.Colors.Black;
-                titleBar.BackgroundColor = Windows.UI.Colors.WhiteSmoke;
-                titleBar.ButtonForegroundColor = Windows.UI.Colors.Black;
-                titleBar.ButtonBackgroundColor = Windows.UI.Colors.WhiteSmoke;
             }
         }
 

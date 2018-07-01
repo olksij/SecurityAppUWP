@@ -27,6 +27,23 @@
             <TextBlock Text="User TitleBar Color" VerticalAlignment="Top" Margin="0,20,0,0"/>
             <ToggleSwitch x:Name="ColorTitleBar1" HorizontalAlignment="Left" Width="100" VerticalAlignment="Top" Toggled="ColorTitleBar" Margin="0,5,0,0"/>
 
+            <TextBlock Text="Interface color" VerticalAlignment="Top" Margin="0,20,0,0"/>
+            <StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <RadioButton Content="Default"/>
+                    <RadioButton Content="System"/>
+                    <RadioButton Content="Dark"/>
+                    <RadioButton Content="Blue"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <RadioButton Content="Green"/>
+                    <RadioButton Content="Red"/>
+                    <RadioButton Content="Pink"/>
+                    <RadioButton Content="Yellow"/>
+                </StackPanel>
+
+
+            </StackPanel>
         </StackPanel>
     </Grid>
 </Page>

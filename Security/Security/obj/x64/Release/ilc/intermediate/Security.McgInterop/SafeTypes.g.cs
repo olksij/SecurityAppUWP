@@ -95,6 +95,814 @@ namespace _
 		[global::System.Runtime.InteropServices.FieldOffset(0)]
 		public byte FixedElementField;
 	}
+
+	[global::System.Runtime.InteropServices.McgRedirectedType("Interop+Crypt32+CryptOidInfoKeyType,System.Security.Cryptography.Encoding, Version=4.1.1.0, Culture=neutral, Pub" +
+		"licKeyToken=b03f5f7f11d50a3a")]
+	public enum Interop_Crypt32_CryptOidInfoKeyType__System_Security_Cryptography_Encoding
+	{
+		CRYPT_OID_INFO_OID_KEY = 1,
+		CRYPT_OID_INFO_NAME_KEY = 2,
+		CRYPT_OID_INFO_ALGID_KEY = 3,
+		CRYPT_OID_INFO_SIGN_KEY = 4,
+		CRYPT_OID_INFO_CNG_ALGID_KEY = 5,
+		CRYPT_OID_INFO_CNG_SIGN_KEY = 6,
+	}
+
+	[global::System.Runtime.InteropServices.McgRedirectedType("Interop+Crypt32+CryptOidInfoKeyType,System.Security.Cryptography.X509Certificates, Version=4.2.1.0, Culture=neut" +
+		"ral, PublicKeyToken=b03f5f7f11d50a3a")]
+	public enum Interop_Crypt32_CryptOidInfoKeyType__System_Security_Cryptography_X509Certificates
+	{
+		CRYPT_OID_INFO_OID_KEY = 1,
+		CRYPT_OID_INFO_NAME_KEY = 2,
+		CRYPT_OID_INFO_ALGID_KEY = 3,
+		CRYPT_OID_INFO_SIGN_KEY = 4,
+		CRYPT_OID_INFO_CNG_ALGID_KEY = 5,
+		CRYPT_OID_INFO_CNG_SIGN_KEY = 6,
+	}
+
+	[global::System.Runtime.InteropServices.McgRedirectedType("Interop+NCrypt+ErrorCode,System.Security.Cryptography.Cng, Version=4.3.1.0, Culture=neutral, PublicKeyToken=b03f" +
+		"5f7f11d50a3a")]
+	public enum Interop_NCrypt_ErrorCode__System_Security_Cryptography_Cng
+	{
+		E_FAIL = -2147467259,
+		NTE_BAD_SIGNATURE = -2146893818,
+		NTE_NOT_FOUND = -2146893807,
+		NTE_BAD_KEYSET = -2146893802,
+		NTE_INVALID_PARAMETER = -2146893785,
+		NTE_BUFFER_TOO_SMALL = -2146893784,
+		NTE_NOT_SUPPORTED = -2146893783,
+		NTE_NO_MORE_ITEMS = -2146893782,
+		ERROR_SUCCESS = 0,
+	}
+
+	[global::System.Runtime.InteropServices.McgRedirectedType("Interop+BCrypt+NTSTATUS,System.Security.Cryptography.X509Certificates, Version=4.2.1.0, Culture=neutral, PublicK" +
+		"eyToken=b03f5f7f11d50a3a")]
+	public enum Interop_BCrypt_NTSTATUS__System_Security_Cryptography_X509Certificates : uint
+	{
+		STATUS_SUCCESS = 0x0u,
+		STATUS_INVALID_PARAMETER = 0xC000000Du,
+		STATUS_NO_MEMORY = 0xC0000017u,
+		STATUS_NOT_FOUND = 0xC0000225u,
+	}
+
+	[global::System.Runtime.InteropServices.McgRedirectedType("Interop+Crypt32+CryptOidInfoKeyType,System.Security.Cryptography.Cng, Version=4.3.1.0, Culture=neutral, PublicKe" +
+		"yToken=b03f5f7f11d50a3a")]
+	public enum Interop_Crypt32_CryptOidInfoKeyType__System_Security_Cryptography_Cng
+	{
+		CRYPT_OID_INFO_OID_KEY = 1,
+		CRYPT_OID_INFO_NAME_KEY = 2,
+		CRYPT_OID_INFO_ALGID_KEY = 3,
+		CRYPT_OID_INFO_SIGN_KEY = 4,
+		CRYPT_OID_INFO_CNG_ALGID_KEY = 5,
+		CRYPT_OID_INFO_CNG_SIGN_KEY = 6,
+	}
+
+	[global::System.Runtime.InteropServices.McgRedirectedType("Interop+BCrypt+NTSTATUS,System.Security.Cryptography.Algorithms, Version=4.3.1.0, Culture=neutral, PublicKeyToke" +
+		"n=b03f5f7f11d50a3a")]
+	public enum Interop_BCrypt_NTSTATUS__System_Security_Cryptography_Algorithms : uint
+	{
+		STATUS_SUCCESS = 0x0u,
+		STATUS_INVALID_PARAMETER = 0xC000000Du,
+		STATUS_NO_MEMORY = 0xC0000017u,
+		STATUS_NOT_FOUND = 0xC0000225u,
+	}
+
+	[global::System.Flags]
+	[global::System.Runtime.InteropServices.McgRedirectedType("Interop+BCrypt+BCryptCreateHashFlags,System.Security.Cryptography.Algorithms, Version=4.3.1.0, Culture=neutral, " +
+		"PublicKeyToken=b03f5f7f11d50a3a")]
+	public enum Interop_BCrypt_BCryptCreateHashFlags__System_Security_Cryptography_Algorithms
+	{
+		None = 0,
+		BCRYPT_HASH_REUSABLE_FLAG = 32,
+	}
+
+	[global::System.Flags]
+	[global::System.Runtime.InteropServices.McgRedirectedType("Interop+BCrypt+BCryptOpenAlgorithmProviderFlags,System.Security.Cryptography.Algorithms, Version=4.3.1.0, Cultur" +
+		"e=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
+	public enum Interop_BCrypt_BCryptOpenAlgorithmProviderFlags__System_Security_Cryptography_Algorithms
+	{
+		None = 0,
+		BCRYPT_ALG_HANDLE_HMAC_FLAG = 8,
+	}
+
+	[global::System.Runtime.InteropServices.McgRedirectedType("Interop+IpHlpApi+FIXED_INFO,System.Net.Primitives, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d5" +
+		"0a3a")]
+	public unsafe partial struct Interop_IpHlpApi_FIXED_INFO__System_Net_Primitives
+	{
+		public string hostName;
+		public string domainName;
+		public global::System.IntPtr currentDnsServer;
+		public global::_.Interop_IpHlpApi_IP_ADDR_STRING__System_Net_Primitives DnsServerList;
+		public uint nodeType;
+		public string scopeId;
+		public bool enableRouting;
+		public bool enableProxy;
+		public bool enableDns;
+	}
+
+	[global::System.Runtime.InteropServices.McgRedirectedType("Interop+IpHlpApi+IP_ADDR_STRING,System.Net.Primitives, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f" +
+		"11d50a3a")]
+	public unsafe partial struct Interop_IpHlpApi_IP_ADDR_STRING__System_Net_Primitives
+	{
+		public global::System.IntPtr Next;
+		public string IpAddress;
+		public string IpMask;
+		public uint Context;
+	}
+
+	[global::System.Runtime.InteropServices.McgRedirectedType("Interop+Crypt32+CRYPT_OID_INFO,System.Security.Cryptography.Encoding, Version=4.1.1.0, Culture=neutral, PublicKe" +
+		"yToken=b03f5f7f11d50a3a")]
+	public unsafe partial struct Interop_Crypt32_CRYPT_OID_INFO__System_Security_Cryptography_Encoding
+	{
+		public int cbSize;
+		public global::System.IntPtr pszOID;
+		public global::System.IntPtr pwszName;
+		public global::System_Security_Cryptography.OidGroup__System_Security_Cryptography_Encoding dwGroupId;
+		public int AlgId;
+		public int cbData;
+		public global::System.IntPtr pbData;
+	}
+
+	[global::System.Runtime.InteropServices.McgRedirectedType("Interop+Crypt32+CRYPT_OID_INFO,System.Security.Cryptography.X509Certificates, Version=4.2.1.0, Culture=neutral, " +
+		"PublicKeyToken=b03f5f7f11d50a3a")]
+	public unsafe partial struct Interop_Crypt32_CRYPT_OID_INFO__System_Security_Cryptography_X509Certificates
+	{
+		public int cbSize;
+		public global::System.IntPtr pszOID;
+		public global::System.IntPtr pwszName;
+		public global::System_Security_Cryptography.OidGroup__System_Security_Cryptography_Encoding dwGroupId;
+		public int AlgId;
+		public int cbData;
+		public global::System.IntPtr pbData;
+	}
+
+	[global::System.Runtime.InteropServices.McgRedirectedType("Interop+BCrypt+BCryptBufferDesc,System.Security.Cryptography.Cng, Version=4.3.1.0, Culture=neutral, PublicKeyTok" +
+		"en=b03f5f7f11d50a3a")]
+	public unsafe partial struct Interop_BCrypt_BCryptBufferDesc__System_Security_Cryptography_Cng
+	{
+		public int ulVersion;
+		public int cBuffers;
+		public global::System.IntPtr pBuffers;
+	}
+
+	[global::System.Runtime.InteropServices.McgRedirectedType("Interop+BCrypt+BCryptBuffer,System.Security.Cryptography.Cng, Version=4.3.1.0, Culture=neutral, PublicKeyToken=b" +
+		"03f5f7f11d50a3a")]
+	public unsafe partial struct Interop_BCrypt_BCryptBuffer__System_Security_Cryptography_Cng
+	{
+		public int cbBuffer;
+		public global::_.Interop_BCrypt_NCryptBufferDescriptors__System_Security_Cryptography_Cng BufferType;
+		public global::System.IntPtr pvBuffer;
+	}
+
+	[global::System.Runtime.InteropServices.McgRedirectedType("Interop+BCrypt+NCryptBufferDescriptors,System.Security.Cryptography.Cng, Version=4.3.1.0, Culture=neutral, Publi" +
+		"cKeyToken=b03f5f7f11d50a3a")]
+	public enum Interop_BCrypt_NCryptBufferDescriptors__System_Security_Cryptography_Cng
+	{
+		NCRYPTBUFFER_ECC_CURVE_NAME = 60,
+	}
+
+	[global::System.Runtime.InteropServices.McgRedirectedType("Interop+Crypt32+CRYPT_OID_INFO,System.Security.Cryptography.Cng, Version=4.3.1.0, Culture=neutral, PublicKeyToke" +
+		"n=b03f5f7f11d50a3a")]
+	public unsafe partial struct Interop_Crypt32_CRYPT_OID_INFO__System_Security_Cryptography_Cng
+	{
+		public int cbSize;
+		public global::System.IntPtr pszOID;
+		public global::System.IntPtr pwszName;
+		public global::System_Security_Cryptography.OidGroup__System_Security_Cryptography_Encoding dwGroupId;
+		public int AlgId;
+		public int cbData;
+		public global::System.IntPtr pbData;
+	}
+}
+
+namespace __Interop
+{
+	[global::System.Runtime.InteropServices.StructLayout(global::System.Runtime.InteropServices.LayoutKind.Sequential, Size=132)]
+	public unsafe partial struct InlineArray_byte___132
+	{
+		public byte this[uint index]
+		{
+			get
+			{
+				if (index < 0 
+							|| index >= 132)
+					throw new global::System.IndexOutOfRangeException();
+				fixed (global::__Interop.InlineArray_byte___132* pThis = &(this))
+					return ((byte*)pThis)[index];
+			}
+			set
+			{
+				if (index < 0 
+							|| index >= 132)
+					throw new global::System.IndexOutOfRangeException();
+				fixed (global::__Interop.InlineArray_byte___132* pThis = &(this))
+					((byte*)pThis)[index] = value;
+			}
+		}
+		public const int Length = 132;
+		byte firstElement;
+	}
+
+	[global::System.Runtime.InteropServices.StructLayout(global::System.Runtime.InteropServices.LayoutKind.Sequential, Size=16)]
+	public unsafe partial struct InlineArray_byte___16
+	{
+		public byte this[uint index]
+		{
+			get
+			{
+				if (index < 0 
+							|| index >= 16)
+					throw new global::System.IndexOutOfRangeException();
+				fixed (global::__Interop.InlineArray_byte___16* pThis = &(this))
+					return ((byte*)pThis)[index];
+			}
+			set
+			{
+				if (index < 0 
+							|| index >= 16)
+					throw new global::System.IndexOutOfRangeException();
+				fixed (global::__Interop.InlineArray_byte___16* pThis = &(this))
+					((byte*)pThis)[index] = value;
+			}
+		}
+		public const int Length = 16;
+		byte firstElement;
+	}
+
+	[global::System.Runtime.InteropServices.StructLayout(global::System.Runtime.InteropServices.LayoutKind.Sequential, Size=260)]
+	public unsafe partial struct InlineArray_byte___260
+	{
+		public byte this[uint index]
+		{
+			get
+			{
+				if (index < 0 
+							|| index >= 260)
+					throw new global::System.IndexOutOfRangeException();
+				fixed (global::__Interop.InlineArray_byte___260* pThis = &(this))
+					return ((byte*)pThis)[index];
+			}
+			set
+			{
+				if (index < 0 
+							|| index >= 260)
+					throw new global::System.IndexOutOfRangeException();
+				fixed (global::__Interop.InlineArray_byte___260* pThis = &(this))
+					((byte*)pThis)[index] = value;
+			}
+		}
+		public const int Length = 260;
+		byte firstElement;
+	}
+}
+
+namespace Internal.Cryptography.Pal.Native
+{
+	[global::System.Runtime.InteropServices.McgRedirectedType("Internal.Cryptography.Pal.Native.SafeCertContextHandle,System.Security.Cryptography.X509Certificates, Version=4." +
+		"2.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
+	public unsafe class SafeCertContextHandle__System_Security_Cryptography_X509Certificates : global::System.Runtime.InteropServices.SafeHandle
+	{
+		public SafeCertContextHandle__System_Security_Cryptography_X509Certificates() : 
+				base(default(global::System.IntPtr), false)
+		{
+		}
+
+		public override bool IsInvalid
+		{
+			get
+			{
+				return false;
+			}
+		}
+
+		protected override bool ReleaseHandle()
+		{
+			return false;
+		}
+	}
+
+	[global::System.Runtime.InteropServices.McgRedirectedType("Internal.Cryptography.Pal.Native.SafeCertStoreHandle,System.Security.Cryptography.X509Certificates, Version=4.2." +
+		"1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
+	public unsafe class SafeCertStoreHandle__System_Security_Cryptography_X509Certificates : global::System.Runtime.InteropServices.SafeHandle
+	{
+		public SafeCertStoreHandle__System_Security_Cryptography_X509Certificates() : 
+				base(default(global::System.IntPtr), false)
+		{
+		}
+
+		public override bool IsInvalid
+		{
+			get
+			{
+				return false;
+			}
+		}
+
+		protected override bool ReleaseHandle()
+		{
+			return false;
+		}
+	}
+
+	[global::System.Runtime.InteropServices.McgRedirectedType("Internal.Cryptography.Pal.Native.SafeCryptMsgHandle,System.Security.Cryptography.X509Certificates, Version=4.2.1" +
+		".0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
+	public unsafe class SafeCryptMsgHandle__System_Security_Cryptography_X509Certificates : global::System.Runtime.InteropServices.SafeHandle
+	{
+		public SafeCryptMsgHandle__System_Security_Cryptography_X509Certificates() : 
+				base(default(global::System.IntPtr), false)
+		{
+		}
+
+		public override bool IsInvalid
+		{
+			get
+			{
+				return false;
+			}
+		}
+
+		protected override bool ReleaseHandle()
+		{
+			return false;
+		}
+	}
+
+	[global::System.Runtime.InteropServices.McgRedirectedType("Internal.Cryptography.Pal.Native.SafeCertContextHandleWithKeyContainerDeletion,System.Security.Cryptography.X509" +
+		"Certificates, Version=4.2.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
+	public unsafe class SafeCertContextHandleWithKeyContainerDeletion__System_Security_Cryptography_X509Certificates : global::System.Runtime.InteropServices.SafeHandle
+	{
+		public SafeCertContextHandleWithKeyContainerDeletion__System_Security_Cryptography_X509Certificates() : 
+				base(default(global::System.IntPtr), false)
+		{
+		}
+
+		public override bool IsInvalid
+		{
+			get
+			{
+				return false;
+			}
+		}
+
+		protected override bool ReleaseHandle()
+		{
+			return false;
+		}
+	}
+}
+
+namespace Internal_Cryptography_Pal_Native
+{
+	[global::System.Runtime.InteropServices.McgRedirectedType("Internal.Cryptography.Pal.Native.CertContextPropId,System.Security.Cryptography.X509Certificates, Version=4.2.1." +
+		"0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
+	public enum CertContextPropId__System_Security_Cryptography_X509Certificates
+	{
+		CERT_KEY_PROV_INFO_PROP_ID = 2,
+		CERT_SHA1_HASH_PROP_ID = 3,
+		CERT_KEY_CONTEXT_PROP_ID = 5,
+		CERT_FRIENDLY_NAME_PROP_ID = 11,
+		CERT_ARCHIVED_PROP_ID = 19,
+		CERT_KEY_IDENTIFIER_PROP_ID = 20,
+		CERT_PUBKEY_ALG_PARA_PROP_ID = 22,
+		CERT_NCRYPT_KEY_HANDLE_PROP_ID = 78,
+		CERT_DELETE_KEYSET_PROP_ID = 101,
+	}
+
+	[global::System.Runtime.InteropServices.McgRedirectedType("Internal.Cryptography.Pal.Native.CRYPTOAPI_BLOB,System.Security.Cryptography.X509Certificates, Version=4.2.1.0, " +
+		"Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
+	public unsafe partial struct CRYPTOAPI_BLOB__System_Security_Cryptography_X509Certificates
+	{
+		public int cbData;
+		public byte* pbData;
+	}
+
+	[global::System.Runtime.InteropServices.McgRedirectedType("Internal.Cryptography.Pal.Native.CertNameType,System.Security.Cryptography.X509Certificates, Version=4.2.1.0, Cu" +
+		"lture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
+	public enum CertNameType__System_Security_Cryptography_X509Certificates
+	{
+		CERT_NAME_EMAIL_TYPE = 1,
+		CERT_NAME_RDN_TYPE = 2,
+		CERT_NAME_ATTR_TYPE = 3,
+		CERT_NAME_SIMPLE_DISPLAY_TYPE = 4,
+		CERT_NAME_FRIENDLY_DISPLAY_TYPE = 5,
+		CERT_NAME_DNS_TYPE = 6,
+		CERT_NAME_URL_TYPE = 7,
+		CERT_NAME_UPN_TYPE = 8,
+	}
+
+	[global::System.Flags]
+	[global::System.Runtime.InteropServices.McgRedirectedType("Internal.Cryptography.Pal.Native.CertNameFlags,System.Security.Cryptography.X509Certificates, Version=4.2.1.0, C" +
+		"ulture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
+	public enum CertNameFlags__System_Security_Cryptography_X509Certificates
+	{
+		None = 0,
+		CERT_NAME_ISSUER_FLAG = 1,
+	}
+
+	[global::System.Flags]
+	[global::System.Runtime.InteropServices.McgRedirectedType("Internal.Cryptography.Pal.Native.CertNameStrTypeAndFlags,System.Security.Cryptography.X509Certificates, Version=" +
+		"4.2.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
+	public enum CertNameStrTypeAndFlags__System_Security_Cryptography_X509Certificates
+	{
+		CERT_SIMPLE_NAME_STR = 1,
+		CERT_OID_NAME_STR = 2,
+		CERT_X500_NAME_STR = 3,
+		CERT_NAME_STR_DISABLE_IE4_UTF8_FLAG = 65536,
+		CERT_NAME_STR_ENABLE_T61_UNICODE_FLAG = 131072,
+		CERT_NAME_STR_ENABLE_UTF8_UNICODE_FLAG = 262144,
+		CERT_NAME_STR_FORCE_UTF8_DIR_STR_FLAG = 524288,
+		CERT_NAME_STR_REVERSE_FLAG = 33554432,
+		CERT_NAME_STR_COMMA_FLAG = 67108864,
+		CERT_NAME_STR_CRLF_FLAG = 134217728,
+		CERT_NAME_STR_NO_QUOTING_FLAG = 268435456,
+		CERT_NAME_STR_NO_PLUS_FLAG = 536870912,
+		CERT_NAME_STR_SEMICOLON_FLAG = 1073741824,
+	}
+
+	[global::System.Runtime.InteropServices.McgRedirectedType("Internal.Cryptography.Pal.Native.CertQueryObjectType,System.Security.Cryptography.X509Certificates, Version=4.2." +
+		"1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
+	public enum CertQueryObjectType__System_Security_Cryptography_X509Certificates
+	{
+		CERT_QUERY_OBJECT_FILE = 1,
+		CERT_QUERY_OBJECT_BLOB = 2,
+	}
+
+	[global::System.Flags]
+	[global::System.Runtime.InteropServices.McgRedirectedType("Internal.Cryptography.Pal.Native.ExpectedContentTypeFlags,System.Security.Cryptography.X509Certificates, Version" +
+		"=4.2.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
+	public enum ExpectedContentTypeFlags__System_Security_Cryptography_X509Certificates
+	{
+		CERT_QUERY_CONTENT_FLAG_CERT = 2,
+		CERT_QUERY_CONTENT_FLAG_CTL = 4,
+		CERT_QUERY_CONTENT_FLAG_CRL = 8,
+		CERT_QUERY_CONTENT_FLAG_SERIALIZED_STORE = 16,
+		CERT_QUERY_CONTENT_FLAG_SERIALIZED_CERT = 32,
+		CERT_QUERY_CONTENT_FLAG_SERIALIZED_CTL = 64,
+		CERT_QUERY_CONTENT_FLAG_SERIALIZED_CRL = 128,
+		CERT_QUERY_CONTENT_FLAG_PKCS7_SIGNED = 256,
+		CERT_QUERY_CONTENT_FLAG_PKCS7_UNSIGNED = 512,
+		CERT_QUERY_CONTENT_FLAG_PKCS7_SIGNED_EMBED = 1024,
+		CERT_QUERY_CONTENT_FLAG_PKCS10 = 2048,
+		CERT_QUERY_CONTENT_FLAG_PFX = 4096,
+		CERT_QUERY_CONTENT_FLAG_CERT_PAIR = 8192,
+		CERT_QUERY_CONTENT_FLAG_ALL = 16382,
+		CERT_QUERY_CONTENT_FLAG_PFX_AND_LOAD = 16384,
+	}
+
+	[global::System.Flags]
+	[global::System.Runtime.InteropServices.McgRedirectedType("Internal.Cryptography.Pal.Native.ExpectedFormatTypeFlags,System.Security.Cryptography.X509Certificates, Version=" +
+		"4.2.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
+	public enum ExpectedFormatTypeFlags__System_Security_Cryptography_X509Certificates
+	{
+		CERT_QUERY_FORMAT_FLAG_BINARY = 2,
+		CERT_QUERY_FORMAT_FLAG_BASE64_ENCODED = 4,
+		CERT_QUERY_FORMAT_FLAG_ASN_ASCII_HEX_ENCODED = 8,
+		CERT_QUERY_FORMAT_FLAG_ALL = 14,
+	}
+
+	[global::System.Runtime.InteropServices.McgRedirectedType("Internal.Cryptography.Pal.Native.CertEncodingType,System.Security.Cryptography.X509Certificates, Version=4.2.1.0" +
+		", Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
+	public enum CertEncodingType__System_Security_Cryptography_X509Certificates
+	{
+		X509_ASN_ENCODING = 1,
+		PKCS_7_ASN_ENCODING = 65536,
+		All = 65537,
+	}
+
+	[global::System.Runtime.InteropServices.McgRedirectedType("Internal.Cryptography.Pal.Native.ContentType,System.Security.Cryptography.X509Certificates, Version=4.2.1.0, Cul" +
+		"ture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
+	public enum ContentType__System_Security_Cryptography_X509Certificates
+	{
+		CERT_QUERY_CONTENT_CERT = 1,
+		CERT_QUERY_CONTENT_CTL = 2,
+		CERT_QUERY_CONTENT_CRL = 3,
+		CERT_QUERY_CONTENT_SERIALIZED_STORE = 4,
+		CERT_QUERY_CONTENT_SERIALIZED_CERT = 5,
+		CERT_QUERY_CONTENT_SERIALIZED_CTL = 6,
+		CERT_QUERY_CONTENT_SERIALIZED_CRL = 7,
+		CERT_QUERY_CONTENT_PKCS7_SIGNED = 8,
+		CERT_QUERY_CONTENT_PKCS7_UNSIGNED = 9,
+		CERT_QUERY_CONTENT_PKCS7_SIGNED_EMBED = 10,
+		CERT_QUERY_CONTENT_PKCS10 = 11,
+		CERT_QUERY_CONTENT_PFX = 12,
+		CERT_QUERY_CONTENT_CERT_PAIR = 13,
+		CERT_QUERY_CONTENT_PFX_AND_LOAD = 14,
+	}
+
+	[global::System.Runtime.InteropServices.McgRedirectedType("Internal.Cryptography.Pal.Native.FormatType,System.Security.Cryptography.X509Certificates, Version=4.2.1.0, Cult" +
+		"ure=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
+	public enum FormatType__System_Security_Cryptography_X509Certificates
+	{
+		CERT_QUERY_FORMAT_BINARY = 1,
+		CERT_QUERY_FORMAT_BASE64_ENCODED = 2,
+		CERT_QUERY_FORMAT_ASN_ASCII_HEX_ENCODED = 3,
+	}
+
+	[global::System.Runtime.InteropServices.McgRedirectedType("Internal.Cryptography.Pal.Native.CertNameStringType,System.Security.Cryptography.X509Certificates, Version=4.2.1" +
+		".0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
+	public enum CertNameStringType__System_Security_Cryptography_X509Certificates
+	{
+		CERT_X500_NAME_STR = 3,
+		CERT_NAME_STR_REVERSE_FLAG = 33554432,
+	}
+
+	[global::System.Runtime.InteropServices.McgRedirectedType("Internal.Cryptography.Pal.Native.CryptMessageParameterType,System.Security.Cryptography.X509Certificates, Versio" +
+		"n=4.2.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
+	public enum CryptMessageParameterType__System_Security_Cryptography_X509Certificates
+	{
+		CMSG_SIGNER_COUNT_PARAM = 5,
+		CMSG_SIGNER_INFO_PARAM = 6,
+	}
+
+	[global::System.Flags]
+	[global::System.Runtime.InteropServices.McgRedirectedType("Internal.Cryptography.Pal.Native.PfxCertStoreFlags,System.Security.Cryptography.X509Certificates, Version=4.2.1." +
+		"0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
+	public enum PfxCertStoreFlags__System_Security_Cryptography_X509Certificates
+	{
+		None = 0,
+		CRYPT_EXPORTABLE = 1,
+		CRYPT_USER_PROTECTED = 2,
+		PKCS12_INCLUDE_EXTENDED_PROPERTIES = 16,
+		CRYPT_MACHINE_KEYSET = 32,
+		PKCS12_PREFER_CNG_KSP = 256,
+		PKCS12_ALWAYS_CNG_KSP = 512,
+		CRYPT_USER_KEYSET = 4096,
+		PKCS12_ALLOW_OVERWRITE_KEY = 16384,
+		PKCS12_NO_PERSIST_KEY = 32768,
+	}
+
+	[global::System.Runtime.InteropServices.McgRedirectedType("Internal.Cryptography.Pal.Native.FILETIME,System.Security.Cryptography.X509Certificates, Version=4.2.1.0, Cultur" +
+		"e=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
+	public unsafe partial struct FILETIME__System_Security_Cryptography_X509Certificates
+	{
+		public uint ftTimeLow;
+		public uint ftTimeHigh;
+	}
+
+	[global::System.Runtime.InteropServices.McgRedirectedType("Internal.Cryptography.Pal.Native.CERT_CHAIN_PARA,System.Security.Cryptography.X509Certificates, Version=4.2.1.0," +
+		" Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
+	public unsafe partial struct CERT_CHAIN_PARA__System_Security_Cryptography_X509Certificates
+	{
+		public int cbSize;
+		public global::Internal_Cryptography_Pal_Native.CERT_USAGE_MATCH__System_Security_Cryptography_X509Certificates RequestedUsage;
+		public global::Internal_Cryptography_Pal_Native.CERT_USAGE_MATCH__System_Security_Cryptography_X509Certificates RequestedIssuancePolicy;
+		public int dwUrlRetrievalTimeout;
+		public int fCheckRevocationFreshnessTime;
+		public int dwRevocationFreshnessTime;
+		public global::Internal_Cryptography_Pal_Native.FILETIME__System_Security_Cryptography_X509Certificates* pftCacheResync;
+		public int pStrongSignPara;
+		public int dwStrongSignFlags;
+	}
+
+	[global::System.Runtime.InteropServices.McgRedirectedType("Internal.Cryptography.Pal.Native.CERT_USAGE_MATCH,System.Security.Cryptography.X509Certificates, Version=4.2.1.0" +
+		", Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
+	public unsafe partial struct CERT_USAGE_MATCH__System_Security_Cryptography_X509Certificates
+	{
+		public global::Internal_Cryptography_Pal_Native.CertUsageMatchType__System_Security_Cryptography_X509Certificates dwType;
+		public global::Internal_Cryptography_Pal_Native.CTL_USAGE__System_Security_Cryptography_X509Certificates Usage;
+	}
+
+	[global::System.Runtime.InteropServices.McgRedirectedType("Internal.Cryptography.Pal.Native.CertUsageMatchType,System.Security.Cryptography.X509Certificates, Version=4.2.1" +
+		".0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
+	public enum CertUsageMatchType__System_Security_Cryptography_X509Certificates
+	{
+		USAGE_MATCH_TYPE_AND = 0,
+		USAGE_MATCH_TYPE_OR = 1,
+	}
+
+	[global::System.Runtime.InteropServices.McgRedirectedType("Internal.Cryptography.Pal.Native.CTL_USAGE,System.Security.Cryptography.X509Certificates, Version=4.2.1.0, Cultu" +
+		"re=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
+	public unsafe partial struct CTL_USAGE__System_Security_Cryptography_X509Certificates
+	{
+		public int cUsageIdentifier;
+		public global::System.IntPtr rgpszUsageIdentifier;
+	}
+
+	[global::System.Flags]
+	[global::System.Runtime.InteropServices.McgRedirectedType("Internal.Cryptography.Pal.Native.CertChainFlags,System.Security.Cryptography.X509Certificates, Version=4.2.1.0, " +
+		"Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
+	public enum CertChainFlags__System_Security_Cryptography_X509Certificates
+	{
+		CERT_CHAIN_REVOCATION_CHECK_CACHE_ONLY = -2147483648,
+		None = 0,
+		CERT_CHAIN_REVOCATION_CHECK_END_CERT = 268435456,
+		CERT_CHAIN_REVOCATION_CHECK_CHAIN = 536870912,
+		CERT_CHAIN_REVOCATION_CHECK_CHAIN_EXCLUDE_ROOT = 1073741824,
+	}
+
+	[global::System.Runtime.InteropServices.McgRedirectedType("Internal.Cryptography.Pal.Native.CERT_CHAIN_POLICY_PARA,System.Security.Cryptography.X509Certificates, Version=4" +
+		".2.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
+	public unsafe partial struct CERT_CHAIN_POLICY_PARA__System_Security_Cryptography_X509Certificates
+	{
+		public int cbSize;
+		public int dwFlags;
+		public global::System.IntPtr pvExtraPolicyPara;
+	}
+
+	[global::System.Runtime.InteropServices.McgRedirectedType("Internal.Cryptography.Pal.Native.CERT_CHAIN_POLICY_STATUS,System.Security.Cryptography.X509Certificates, Version" +
+		"=4.2.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
+	public unsafe partial struct CERT_CHAIN_POLICY_STATUS__System_Security_Cryptography_X509Certificates
+	{
+		public int cbSize;
+		public int dwError;
+		public global::System.IntPtr lChainIndex;
+		public global::System.IntPtr lElementIndex;
+		public global::System.IntPtr pvExtraPolicyStatus;
+	}
+
+	[global::System.Flags]
+	[global::System.Runtime.InteropServices.McgRedirectedType("Internal.Cryptography.Pal.Native.CertFindFlags,System.Security.Cryptography.X509Certificates, Version=4.2.1.0, C" +
+		"ulture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
+	public enum CertFindFlags__System_Security_Cryptography_X509Certificates
+	{
+		None = 0,
+	}
+
+	[global::System.Runtime.InteropServices.McgRedirectedType("Internal.Cryptography.Pal.Native.CertFindType,System.Security.Cryptography.X509Certificates, Version=4.2.1.0, Cu" +
+		"lture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
+	public enum CertFindType__System_Security_Cryptography_X509Certificates
+	{
+		CERT_FIND_ANY = 0,
+		CERT_FIND_HASH = 65536,
+		CERT_FIND_ISSUER_STR = 524292,
+		CERT_FIND_SUBJECT_STR = 524295,
+		CERT_FIND_SUBJECT_CERT = 720896,
+		CERT_FIND_EXISTING = 851968,
+	}
+
+	[global::System.Runtime.InteropServices.McgRedirectedType("Internal.Cryptography.Pal.Native.CERT_CONTEXT,System.Security.Cryptography.X509Certificates, Version=4.2.1.0, Cu" +
+		"lture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
+	public unsafe partial struct CERT_CONTEXT__System_Security_Cryptography_X509Certificates
+	{
+		public global::Internal_Cryptography_Pal_Native.CertEncodingType__System_Security_Cryptography_X509Certificates dwCertEncodingType;
+		public byte* pbCertEncoded;
+		public int cbCertEncoded;
+		public global::Internal_Cryptography_Pal_Native.CERT_INFO__System_Security_Cryptography_X509Certificates* pCertInfo;
+		public global::System.IntPtr hCertStore;
+	}
+
+	[global::System.Runtime.InteropServices.McgRedirectedType("Internal.Cryptography.Pal.Native.CERT_INFO,System.Security.Cryptography.X509Certificates, Version=4.2.1.0, Cultu" +
+		"re=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
+	public unsafe partial struct CERT_INFO__System_Security_Cryptography_X509Certificates
+	{
+		public int dwVersion;
+		public global::Internal_Cryptography_Pal_Native.CRYPTOAPI_BLOB__System_Security_Cryptography_X509Certificates SerialNumber;
+		public global::Internal_Cryptography_Pal_Native.CRYPT_ALGORITHM_IDENTIFIER__System_Security_Cryptography_X509Certificates SignatureAlgorithm;
+		public global::Internal_Cryptography_Pal_Native.CRYPTOAPI_BLOB__System_Security_Cryptography_X509Certificates Issuer;
+		public global::Internal_Cryptography_Pal_Native.FILETIME__System_Security_Cryptography_X509Certificates NotBefore;
+		public global::Internal_Cryptography_Pal_Native.FILETIME__System_Security_Cryptography_X509Certificates NotAfter;
+		public global::Internal_Cryptography_Pal_Native.CRYPTOAPI_BLOB__System_Security_Cryptography_X509Certificates Subject;
+		public global::Internal_Cryptography_Pal_Native.CERT_PUBLIC_KEY_INFO__System_Security_Cryptography_X509Certificates SubjectPublicKeyInfo;
+		public global::Internal_Cryptography_Pal_Native.CRYPT_BIT_BLOB__System_Security_Cryptography_X509Certificates IssuerUniqueId;
+		public global::Internal_Cryptography_Pal_Native.CRYPT_BIT_BLOB__System_Security_Cryptography_X509Certificates SubjectUniqueId;
+		public int cExtension;
+		public global::Internal_Cryptography_Pal_Native.CERT_EXTENSION__System_Security_Cryptography_X509Certificates* rgExtension;
+	}
+
+	[global::System.Runtime.InteropServices.McgRedirectedType("Internal.Cryptography.Pal.Native.CRYPT_ALGORITHM_IDENTIFIER,System.Security.Cryptography.X509Certificates, Versi" +
+		"on=4.2.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
+	public unsafe partial struct CRYPT_ALGORITHM_IDENTIFIER__System_Security_Cryptography_X509Certificates
+	{
+		public global::System.IntPtr pszObjId;
+		public global::Internal_Cryptography_Pal_Native.CRYPTOAPI_BLOB__System_Security_Cryptography_X509Certificates Parameters;
+	}
+
+	[global::System.Runtime.InteropServices.McgRedirectedType("Internal.Cryptography.Pal.Native.CERT_PUBLIC_KEY_INFO,System.Security.Cryptography.X509Certificates, Version=4.2" +
+		".1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
+	public unsafe partial struct CERT_PUBLIC_KEY_INFO__System_Security_Cryptography_X509Certificates
+	{
+		public global::Internal_Cryptography_Pal_Native.CRYPT_ALGORITHM_IDENTIFIER__System_Security_Cryptography_X509Certificates Algorithm;
+		public global::Internal_Cryptography_Pal_Native.CRYPT_BIT_BLOB__System_Security_Cryptography_X509Certificates PublicKey;
+	}
+
+	[global::System.Runtime.InteropServices.McgRedirectedType("Internal.Cryptography.Pal.Native.CRYPT_BIT_BLOB,System.Security.Cryptography.X509Certificates, Version=4.2.1.0, " +
+		"Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
+	public unsafe partial struct CRYPT_BIT_BLOB__System_Security_Cryptography_X509Certificates
+	{
+		public int cbData;
+		public byte* pbData;
+		public int cUnusedBits;
+	}
+
+	[global::System.Runtime.InteropServices.McgRedirectedType("Internal.Cryptography.Pal.Native.CERT_EXTENSION,System.Security.Cryptography.X509Certificates, Version=4.2.1.0, " +
+		"Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
+	public unsafe partial struct CERT_EXTENSION__System_Security_Cryptography_X509Certificates
+	{
+		public global::System.IntPtr pszObjId;
+		public int fCritical;
+		public global::Internal_Cryptography_Pal_Native.CRYPTOAPI_BLOB__System_Security_Cryptography_X509Certificates Value;
+	}
+
+	[global::System.Flags]
+	[global::System.Runtime.InteropServices.McgRedirectedType("Internal.Cryptography.Pal.Native.CryptAcquireContextFlags,System.Security.Cryptography.X509Certificates, Version" +
+		"=4.2.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
+	public enum CryptAcquireContextFlags__System_Security_Cryptography_X509Certificates
+	{
+		None = 0,
+		CRYPT_DELETEKEYSET = 16,
+		CRYPT_MACHINE_KEYSET = 32,
+	}
+
+	[global::System.Runtime.InteropServices.McgRedirectedType("Internal.Cryptography.Pal.Native.CertStoreAddDisposition,System.Security.Cryptography.X509Certificates, Version=" +
+		"4.2.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
+	public enum CertStoreAddDisposition__System_Security_Cryptography_X509Certificates
+	{
+		CERT_STORE_ADD_NEW = 1,
+		CERT_STORE_ADD_USE_EXISTING = 2,
+		CERT_STORE_ADD_REPLACE_EXISTING = 3,
+		CERT_STORE_ADD_ALWAYS = 4,
+		CERT_STORE_ADD_REPLACE_EXISTING_INHERIT_PROPERTIES = 5,
+		CERT_STORE_ADD_NEWER = 6,
+		CERT_STORE_ADD_NEWER_INHERIT_PROPERTIES = 7,
+	}
+
+	[global::System.Flags]
+	[global::System.Runtime.InteropServices.McgRedirectedType("Internal.Cryptography.Pal.Native.FormatMessageFlags,System.Security.Cryptography.X509Certificates, Version=4.2.1" +
+		".0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
+	public enum FormatMessageFlags__System_Security_Cryptography_X509Certificates
+	{
+		FORMAT_MESSAGE_IGNORE_INSERTS = 512,
+		FORMAT_MESSAGE_FROM_SYSTEM = 4096,
+	}
+
+	[global::System.Flags]
+	[global::System.Runtime.InteropServices.McgRedirectedType("Internal.Cryptography.Pal.Native.CertStoreFlags,System.Security.Cryptography.X509Certificates, Version=4.2.1.0, " +
+		"Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
+	public enum CertStoreFlags__System_Security_Cryptography_X509Certificates
+	{
+		None = 0,
+		CERT_STORE_NO_CRYPT_RELEASE_FLAG = 1,
+		CERT_STORE_SET_LOCALIZED_NAME_FLAG = 2,
+		CERT_STORE_DEFER_CLOSE_UNTIL_LAST_FREE_FLAG = 4,
+		CERT_STORE_DELETE_FLAG = 16,
+		CERT_STORE_UNSAFE_PHYSICAL_FLAG = 32,
+		CERT_STORE_SHARE_STORE_FLAG = 64,
+		CERT_STORE_SHARE_CONTEXT_FLAG = 128,
+		CERT_STORE_MANIFOLD_FLAG = 256,
+		CERT_STORE_ENUM_ARCHIVED_FLAG = 512,
+		CERT_STORE_UPDATE_KEYID_FLAG = 1024,
+		CERT_STORE_BACKUP_RESTORE_FLAG = 2048,
+		CERT_STORE_MAXIMUM_ALLOWED_FLAG = 4096,
+		CERT_STORE_CREATE_NEW_FLAG = 8192,
+		CERT_STORE_OPEN_EXISTING_FLAG = 16384,
+		CERT_STORE_READONLY_FLAG = 32768,
+		CERT_SYSTEM_STORE_CURRENT_USER = 65536,
+		CERT_SYSTEM_STORE_LOCAL_MACHINE = 131072,
+	}
+
+	[global::System.Runtime.InteropServices.McgRedirectedType("Internal.Cryptography.Pal.Native.FormatObjectType,System.Security.Cryptography.X509Certificates, Version=4.2.1.0" +
+		", Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
+	public enum FormatObjectType__System_Security_Cryptography_X509Certificates
+	{
+		None = 0,
+	}
+
+	[global::System.Flags]
+	[global::System.Runtime.InteropServices.McgRedirectedType("Internal.Cryptography.Pal.Native.FormatObjectStringType,System.Security.Cryptography.X509Certificates, Version=4" +
+		".2.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
+	public enum FormatObjectStringType__System_Security_Cryptography_X509Certificates
+	{
+		None = 0,
+		CRYPT_FORMAT_STR_MULTI_LINE = 1,
+		CRYPT_FORMAT_STR_NO_HEX = 16,
+	}
+
+	[global::System.Flags]
+	[global::System.Runtime.InteropServices.McgRedirectedType("Internal.Cryptography.Pal.Native.CryptDecodeObjectFlags,System.Security.Cryptography.X509Certificates, Version=4" +
+		".2.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
+	public enum CryptDecodeObjectFlags__System_Security_Cryptography_X509Certificates
+	{
+		None = 0,
+	}
+
+	[global::System.Flags]
+	[global::System.Runtime.InteropServices.McgRedirectedType("Internal.Cryptography.Pal.Native.CertControlStoreFlags,System.Security.Cryptography.X509Certificates, Version=4." +
+		"2.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
+	public enum CertControlStoreFlags__System_Security_Cryptography_X509Certificates
+	{
+		None = 0,
+	}
+
+	[global::System.Runtime.InteropServices.McgRedirectedType("Internal.Cryptography.Pal.Native.CertControlStoreType,System.Security.Cryptography.X509Certificates, Version=4.2" +
+		".1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
+	public enum CertControlStoreType__System_Security_Cryptography_X509Certificates
+	{
+		CERT_STORE_CTRL_AUTO_RESYNC = 4,
+	}
+}
+
+namespace Internal_NativeCrypto
+{
+	[global::System.Runtime.InteropServices.McgRedirectedType("Internal.NativeCrypto.CapiHelper+CryptGetProvParam,System.Security.Cryptography.Csp, Version=4.1.1.0, Culture=ne" +
+		"utral, PublicKeyToken=b03f5f7f11d50a3a")]
+	public enum CapiHelper_CryptGetProvParam__System_Security_Cryptography_Csp
+	{
+		PP_CLIENT_HWND = 1,
+		PP_IMPTYPE = 3,
+		PP_KEYEXCHANGE_PIN = 32,
+		PP_SIGNATURE_PIN = 33,
+		PP_UNIQUE_CONTAINER = 36,
+	}
 }
 
 namespace Internal_WinRT_Interop
@@ -136,6 +944,311 @@ namespace Internal_WinRT_Interop_WinRTCallbacks
 	public unsafe interface IDispatcherQueueStatics__System_Private_WinRTInterop_CoreLib
 	{
 		global::Internal_WinRT_Interop_WinRTCallbacks.IDispatcherQueue__System_Private_WinRTInterop_CoreLib GetForCurrentThread();
+	}
+}
+
+namespace Microsoft.Win32.SafeHandles
+{
+	[global::System.Runtime.InteropServices.McgRedirectedType("Microsoft.Win32.SafeHandles.SafeLocalAllocHandle,System.Net.Primitives, Version=4.1.1.0, Culture=neutral, Public" +
+		"KeyToken=b03f5f7f11d50a3a")]
+	public unsafe class SafeLocalAllocHandle__System_Net_Primitives : global::System.Runtime.InteropServices.SafeHandle
+	{
+		public SafeLocalAllocHandle__System_Net_Primitives() : 
+				base(default(global::System.IntPtr), false)
+		{
+		}
+
+		public override bool IsInvalid
+		{
+			get
+			{
+				return false;
+			}
+		}
+
+		protected override bool ReleaseHandle()
+		{
+			return false;
+		}
+	}
+
+	[global::System.Runtime.InteropServices.McgRedirectedType("Microsoft.Win32.SafeHandles.SafePasswordHandle,System.Security.Cryptography.X509Certificates, Version=4.2.1.0, C" +
+		"ulture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
+	public unsafe class SafePasswordHandle__System_Security_Cryptography_X509Certificates : global::System.Runtime.InteropServices.SafeHandle
+	{
+		public SafePasswordHandle__System_Security_Cryptography_X509Certificates() : 
+				base(default(global::System.IntPtr), false)
+		{
+		}
+
+		public override bool IsInvalid
+		{
+			get
+			{
+				return false;
+			}
+		}
+
+		protected override bool ReleaseHandle()
+		{
+			return false;
+		}
+	}
+
+	[global::System.Runtime.InteropServices.McgRedirectedType("Microsoft.Win32.SafeHandles.SafeX509ChainHandle,System.Security.Cryptography.X509Certificates, Version=4.2.1.0, " +
+		"Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
+	public unsafe class SafeX509ChainHandle__System_Security_Cryptography_X509Certificates : global::System.Runtime.InteropServices.SafeHandle
+	{
+		public SafeX509ChainHandle__System_Security_Cryptography_X509Certificates() : 
+				base(default(global::System.IntPtr), false)
+		{
+		}
+
+		public override bool IsInvalid
+		{
+			get
+			{
+				return false;
+			}
+		}
+
+		protected override bool ReleaseHandle()
+		{
+			return false;
+		}
+	}
+
+	[global::System.Runtime.InteropServices.McgRedirectedType("Microsoft.Win32.SafeHandles.SafeNCryptProviderHandle,System.Security.Cryptography.Cng, Version=4.3.1.0, Culture=" +
+		"neutral, PublicKeyToken=b03f5f7f11d50a3a")]
+	public unsafe class SafeNCryptProviderHandle__System_Security_Cryptography_Cng : global::System.Runtime.InteropServices.SafeHandle
+	{
+		public SafeNCryptProviderHandle__System_Security_Cryptography_Cng() : 
+				base(default(global::System.IntPtr), false)
+		{
+		}
+
+		public override bool IsInvalid
+		{
+			get
+			{
+				return false;
+			}
+		}
+
+		protected override bool ReleaseHandle()
+		{
+			return false;
+		}
+	}
+
+	[global::System.Runtime.InteropServices.McgRedirectedType("Microsoft.Win32.SafeHandles.SafeNCryptKeyHandle,System.Security.Cryptography.Cng, Version=4.3.1.0, Culture=neutr" +
+		"al, PublicKeyToken=b03f5f7f11d50a3a")]
+	public unsafe class SafeNCryptKeyHandle__System_Security_Cryptography_Cng : global::System.Runtime.InteropServices.SafeHandle
+	{
+		public SafeNCryptKeyHandle__System_Security_Cryptography_Cng() : 
+				base(default(global::System.IntPtr), false)
+		{
+		}
+
+		public override bool IsInvalid
+		{
+			get
+			{
+				return false;
+			}
+		}
+
+		protected override bool ReleaseHandle()
+		{
+			return false;
+		}
+	}
+
+	[global::System.Runtime.InteropServices.McgRedirectedType("Microsoft.Win32.SafeHandles.SafeBCryptKeyHandle,System.Security.Cryptography.X509Certificates, Version=4.2.1.0, " +
+		"Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
+	public unsafe class SafeBCryptKeyHandle__System_Security_Cryptography_X509Certificates : global::System.Runtime.InteropServices.SafeHandle
+	{
+		public SafeBCryptKeyHandle__System_Security_Cryptography_X509Certificates() : 
+				base(default(global::System.IntPtr), false)
+		{
+		}
+
+		public override bool IsInvalid
+		{
+			get
+			{
+				return false;
+			}
+		}
+
+		protected override bool ReleaseHandle()
+		{
+			return false;
+		}
+	}
+
+	[global::System.Runtime.InteropServices.McgRedirectedType("Microsoft.Win32.SafeHandles.SafeBCryptHandle,System.Security.Cryptography.X509Certificates, Version=4.2.1.0, Cul" +
+		"ture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
+	public unsafe class SafeBCryptHandle__System_Security_Cryptography_X509Certificates : global::System.Runtime.InteropServices.SafeHandle
+	{
+		public SafeBCryptHandle__System_Security_Cryptography_X509Certificates() : 
+				base(default(global::System.IntPtr), false)
+		{
+		}
+
+		public override bool IsInvalid
+		{
+			get
+			{
+				return false;
+			}
+		}
+
+		protected override bool ReleaseHandle()
+		{
+			return false;
+		}
+	}
+
+	[global::System.Runtime.InteropServices.McgRedirectedType("Microsoft.Win32.SafeHandles.SafeNCryptHandle,System.Security.Cryptography.Cng, Version=4.3.1.0, Culture=neutral," +
+		" PublicKeyToken=b03f5f7f11d50a3a")]
+	public unsafe class SafeNCryptHandle__System_Security_Cryptography_Cng : global::System.Runtime.InteropServices.SafeHandle
+	{
+		public SafeNCryptHandle__System_Security_Cryptography_Cng() : 
+				base(default(global::System.IntPtr), false)
+		{
+		}
+
+		public override bool IsInvalid
+		{
+			get
+			{
+				return false;
+			}
+		}
+
+		protected override bool ReleaseHandle()
+		{
+			return false;
+		}
+	}
+
+	[global::System.Runtime.InteropServices.McgRedirectedType("Microsoft.Win32.SafeHandles.SafeBCryptAlgorithmHandle,System.Security.Cryptography.Algorithms, Version=4.3.1.0, " +
+		"Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
+	public unsafe class SafeBCryptAlgorithmHandle__System_Security_Cryptography_Algorithms : global::System.Runtime.InteropServices.SafeHandle
+	{
+		public SafeBCryptAlgorithmHandle__System_Security_Cryptography_Algorithms() : 
+				base(default(global::System.IntPtr), false)
+		{
+		}
+
+		public override bool IsInvalid
+		{
+			get
+			{
+				return false;
+			}
+		}
+
+		protected override bool ReleaseHandle()
+		{
+			return false;
+		}
+	}
+
+	[global::System.Runtime.InteropServices.McgRedirectedType("Microsoft.Win32.SafeHandles.SafeBCryptHashHandle,System.Security.Cryptography.Algorithms, Version=4.3.1.0, Cultu" +
+		"re=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
+	public unsafe class SafeBCryptHashHandle__System_Security_Cryptography_Algorithms : global::System.Runtime.InteropServices.SafeHandle
+	{
+		public SafeBCryptHashHandle__System_Security_Cryptography_Algorithms() : 
+				base(default(global::System.IntPtr), false)
+		{
+		}
+
+		public override bool IsInvalid
+		{
+			get
+			{
+				return false;
+			}
+		}
+
+		protected override bool ReleaseHandle()
+		{
+			return false;
+		}
+	}
+
+	[global::System.Runtime.InteropServices.McgRedirectedType("Microsoft.Win32.SafeHandles.SafeBCryptHandle,System.Security.Cryptography.Algorithms, Version=4.3.1.0, Culture=n" +
+		"eutral, PublicKeyToken=b03f5f7f11d50a3a")]
+	public unsafe class SafeBCryptHandle__System_Security_Cryptography_Algorithms : global::System.Runtime.InteropServices.SafeHandle
+	{
+		public SafeBCryptHandle__System_Security_Cryptography_Algorithms() : 
+				base(default(global::System.IntPtr), false)
+		{
+		}
+
+		public override bool IsInvalid
+		{
+			get
+			{
+				return false;
+			}
+		}
+
+		protected override bool ReleaseHandle()
+		{
+			return false;
+		}
+	}
+}
+
+namespace System.Security.Cryptography
+{
+	[global::System.Runtime.InteropServices.McgRedirectedType("System.Security.Cryptography.SafeKeyHandle,System.Security.Cryptography.Csp, Version=4.1.1.0, Culture=neutral, P" +
+		"ublicKeyToken=b03f5f7f11d50a3a")]
+	public unsafe class SafeKeyHandle__System_Security_Cryptography_Csp : global::System.Runtime.InteropServices.SafeHandle
+	{
+		public SafeKeyHandle__System_Security_Cryptography_Csp() : 
+				base(default(global::System.IntPtr), false)
+		{
+		}
+
+		public override bool IsInvalid
+		{
+			get
+			{
+				return false;
+			}
+		}
+
+		protected override bool ReleaseHandle()
+		{
+			return false;
+		}
+	}
+
+	[global::System.Runtime.InteropServices.McgRedirectedType("System.Security.Cryptography.SafeProvHandle,System.Security.Cryptography.Csp, Version=4.1.1.0, Culture=neutral, " +
+		"PublicKeyToken=b03f5f7f11d50a3a")]
+	public unsafe class SafeProvHandle__System_Security_Cryptography_Csp : global::System.Runtime.InteropServices.SafeHandle
+	{
+		public SafeProvHandle__System_Security_Cryptography_Csp() : 
+				base(default(global::System.IntPtr), false)
+		{
+		}
+
+		public override bool IsInvalid
+		{
+			get
+			{
+				return false;
+			}
+		}
+
+		protected override bool ReleaseHandle()
+		{
+			return false;
+		}
 	}
 }
 
@@ -449,6 +1562,67 @@ namespace System_Runtime_InteropServices_WindowsRuntime
 	public unsafe interface IBufferByteAccess__System_Runtime_WindowsRuntime
 	{
 		global::System.IntPtr GetBuffer();
+	}
+}
+
+namespace System_Security_Cryptography
+{
+	[global::System.Runtime.InteropServices.McgRedirectedType("System.Security.Cryptography.OidGroup,System.Security.Cryptography.Encoding, Version=4.1.1.0, Culture=neutral, P" +
+		"ublicKeyToken=b03f5f7f11d50a3a")]
+	public enum OidGroup__System_Security_Cryptography_Encoding
+	{
+		All = 0,
+		HashAlgorithm = 1,
+		EncryptionAlgorithm = 2,
+		PublicKeyAlgorithm = 3,
+		SignatureAlgorithm = 4,
+		Attribute = 5,
+		ExtensionOrAttribute = 6,
+		EnhancedKeyUsage = 7,
+		Policy = 8,
+		Template = 9,
+		KeyDerivationFunction = 10,
+	}
+
+	[global::System.Flags]
+	[global::System.Runtime.InteropServices.McgRedirectedType("System.Security.Cryptography.CngKeyOpenOptions,System.Security.Cryptography.Cng, Version=4.3.1.0, Culture=neutra" +
+		"l, PublicKeyToken=b03f5f7f11d50a3a")]
+	public enum CngKeyOpenOptions__System_Security_Cryptography_Cng
+	{
+		None = 0,
+		UserKey = 0,
+		MachineKey = 32,
+		Silent = 64,
+	}
+
+	[global::System.Flags]
+	[global::System.Runtime.InteropServices.McgRedirectedType("System.Security.Cryptography.CngPropertyOptions,System.Security.Cryptography.Cng, Version=4.3.1.0, Culture=neutr" +
+		"al, PublicKeyToken=b03f5f7f11d50a3a")]
+	public enum CngPropertyOptions__System_Security_Cryptography_Cng
+	{
+		Persist = -2147483648,
+		None = 0,
+		CustomProperty = 1073741824,
+	}
+}
+
+namespace System_Security_Cryptography_X509Certificates
+{
+	[global::System.Flags]
+	[global::System.Runtime.InteropServices.McgRedirectedType("System.Security.Cryptography.X509Certificates.X509KeyUsageFlags,System.Security.Cryptography.X509Certificates, V" +
+		"ersion=4.2.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
+	public enum X509KeyUsageFlags__System_Security_Cryptography_X509Certificates
+	{
+		None = 0,
+		EncipherOnly = 1,
+		CrlSign = 2,
+		KeyCertSign = 4,
+		KeyAgreement = 8,
+		DataEncipherment = 16,
+		KeyEncipherment = 32,
+		NonRepudiation = 64,
+		DigitalSignature = 128,
+		DecipherOnly = 32768,
 	}
 }
 
@@ -926,91 +2100,6 @@ namespace Windows.ApplicationModel.Activation
 		Suspended = 2,
 		Terminated = 3,
 		ClosedByUser = 4,
-	}
-}
-
-namespace Windows.ApplicationModel.Background
-{
-	[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::Windows.ApplicationModel.Background.IBackgroundTaskBuilder))]
-	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(65536)]
-	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
-	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
-	public unsafe sealed class BackgroundTaskBuilder : global::System.__ComObject, global::Windows.ApplicationModel.Background.IBackgroundTaskBuilder
-	{
-		[global::System.Runtime.CompilerServices.MethodImpl(global::System.Runtime.CompilerServices.MethodImplOptions.NoInlining)]
-		public BackgroundTaskBuilder()
-		{
-			global::System.IntPtr retval;
-			retval = global::System.Runtime.InteropServices.McgMarshal.ActivateInstance("Windows.ApplicationModel.Background.BackgroundTaskBuilder");
-			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
-			global::__Interop.McgHelpers.GetIUnknownForFactoryReturn(ref retval);
-			this.__AttachAndRelease(retval);
-		}
-
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertySet, "TaskEntryPoint")]
-		public void put_TaskEntryPoint(string value)
-		{
-			global::Windows.ApplicationModel.Background.IBackgroundTaskBuilder__Impl.Stubs.put_TaskEntryPoint(
-								this, 
-								value
-							);
-			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
-		}
-
-		public void SetTrigger(global::Windows.ApplicationModel.Background.IBackgroundTrigger trigger)
-		{
-			global::Windows.ApplicationModel.Background.IBackgroundTaskBuilder__Impl.Stubs.SetTrigger(
-								this, 
-								trigger
-							);
-			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
-		}
-
-		public global::Windows.ApplicationModel.Background.BackgroundTaskRegistration Register()
-		{
-			global::Windows.ApplicationModel.Background.BackgroundTaskRegistration __retVal = global::Windows.ApplicationModel.Background.IBackgroundTaskBuilder__Impl.Stubs.Register(this);
-			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
-			return __retVal;
-		}
-
-		public BackgroundTaskBuilder(global::System.IntPtr dummy)
-		{
-		}
-	}
-
-	[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::Windows.ApplicationModel.Background.IBackgroundTaskRegistration))]
-	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(0)]
-	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
-	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
-	public unsafe sealed class BackgroundTaskRegistration : global::System.__ComObject, global::Windows.ApplicationModel.Background.IBackgroundTaskRegistration
-	{
-		public BackgroundTaskRegistration(global::System.IntPtr dummy)
-		{
-		}
-	}
-
-	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
-	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
-	public unsafe interface IBackgroundTrigger
-	{
-	}
-
-	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
-	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
-	public unsafe interface IBackgroundTaskBuilder
-	{
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertySet, "TaskEntryPoint")]
-		void put_TaskEntryPoint(string value);
-
-		void SetTrigger(global::Windows.ApplicationModel.Background.IBackgroundTrigger trigger);
-
-		global::Windows.ApplicationModel.Background.BackgroundTaskRegistration Register();
-	}
-
-	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
-	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
-	public unsafe interface IBackgroundTaskRegistration
-	{
 	}
 }
 
@@ -2170,6 +3259,129 @@ namespace Windows.Foundation.Diagnostics
 
 namespace Windows.Foundation.Metadata
 {
+	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(65536)]
+	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
+	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
+	public unsafe sealed class ApiInformation : global::System.__ComObject
+	{
+		public static bool IsEventPresent(
+					string typeName, 
+					string eventName)
+		{
+			bool retval;
+			retval = __Factory_Windows_Foundation_Metadata__IApiInformationStatics_IsEventPresent(
+								"Windows.Foundation.Metadata.ApiInformation", 
+								typeName, 
+								eventName
+							);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			return retval;
+		}
+
+		static bool __Factory_Windows_Foundation_Metadata__IApiInformationStatics_IsEventPresent(
+					string typeName_1, 
+					string typeName, 
+					string eventName)
+		{
+			bool __pRetVal;
+			__pRetVal = global::Windows.Foundation.Metadata.IApiInformationStatics__Impl.Stubs.IsEventPresent(
+								global::System.Runtime.InteropServices.McgMarshal.GetActivationFactory(
+													typeName_1, 
+													typeof(global::Windows.Foundation.Metadata.IApiInformationStatics).TypeHandle
+												), 
+								typeName, 
+								eventName
+							);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			return __pRetVal;
+		}
+
+		public static bool IsPropertyPresent(
+					string typeName, 
+					string propertyName)
+		{
+			bool retval;
+			retval = __Factory_Windows_Foundation_Metadata__IApiInformationStatics_IsPropertyPresent(
+								"Windows.Foundation.Metadata.ApiInformation", 
+								typeName, 
+								propertyName
+							);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			return retval;
+		}
+
+		static bool __Factory_Windows_Foundation_Metadata__IApiInformationStatics_IsPropertyPresent(
+					string typeName_1, 
+					string typeName, 
+					string propertyName)
+		{
+			bool __pRetVal;
+			__pRetVal = global::Windows.Foundation.Metadata.IApiInformationStatics__Impl.Stubs.IsPropertyPresent(
+								global::System.Runtime.InteropServices.McgMarshal.GetActivationFactory(
+													typeName_1, 
+													typeof(global::Windows.Foundation.Metadata.IApiInformationStatics).TypeHandle
+												), 
+								typeName, 
+								propertyName
+							);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			return __pRetVal;
+		}
+
+		public static bool IsEnumNamedValuePresent(
+					string enumTypeName, 
+					string valueName)
+		{
+			bool retval;
+			retval = __Factory_Windows_Foundation_Metadata__IApiInformationStatics_IsEnumNamedValuePresent(
+								"Windows.Foundation.Metadata.ApiInformation", 
+								enumTypeName, 
+								valueName
+							);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			return retval;
+		}
+
+		static bool __Factory_Windows_Foundation_Metadata__IApiInformationStatics_IsEnumNamedValuePresent(
+					string typeName, 
+					string enumTypeName, 
+					string valueName)
+		{
+			bool __pRetVal;
+			__pRetVal = global::Windows.Foundation.Metadata.IApiInformationStatics__Impl.Stubs.IsEnumNamedValuePresent(
+								global::System.Runtime.InteropServices.McgMarshal.GetActivationFactory(
+													typeName, 
+													typeof(global::Windows.Foundation.Metadata.IApiInformationStatics).TypeHandle
+												), 
+								enumTypeName, 
+								valueName
+							);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			return __pRetVal;
+		}
+
+		public ApiInformation(global::System.IntPtr dummy)
+		{
+		}
+	}
+
+	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
+	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
+	public unsafe interface IApiInformationStatics
+	{
+		bool IsEventPresent(
+					string typeName, 
+					string eventName);
+
+		bool IsPropertyPresent(
+					string typeName, 
+					string propertyName);
+
+		bool IsEnumNamedValuePresent(
+					string enumTypeName, 
+					string valueName);
+	}
+
 	[global::System.AttributeUsage((global::System.AttributeTargets.Assembly | global::System.AttributeTargets.Module 
 				| global::System.AttributeTargets.Class 
 				| global::System.AttributeTargets.Struct 
@@ -3122,298 +4334,258 @@ namespace Windows.Globalization
 namespace Windows.Networking.BackgroundTransfer
 {
 	[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::Windows.Networking.BackgroundTransfer.IDownloadOperation))]
-	[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::Windows.Networking.BackgroundTransfer.IBackgroundTransferOperation))]
-	[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::Windows.Networking.BackgroundTransfer.IBackgroundTransferOperationPriority))]
 	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(0)]
 	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
 	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
-	public unsafe sealed class DownloadOperation : global::System.__ComObject, global::Windows.Networking.BackgroundTransfer.IDownloadOperation, global::Windows.Networking.BackgroundTransfer.IBackgroundTransferOperation, global::Windows.Networking.BackgroundTransfer.IBackgroundTransferOperationPriority
+	public unsafe sealed class DownloadOperation : global::System.__ComObject, global::Windows.Networking.BackgroundTransfer.IDownloadOperation
 	{
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "Progress")]
-		public global::Windows.Networking.BackgroundTransfer.BackgroundDownloadProgress get_Progress()
+		public DownloadOperation(global::System.IntPtr dummy)
 		{
-			global::Windows.Networking.BackgroundTransfer.BackgroundDownloadProgress __retVal = global::Windows.Networking.BackgroundTransfer.IDownloadOperation__Impl.Stubs.get_Progress(this);
+		}
+	}
+
+	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
+	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
+	public unsafe interface IDownloadOperation
+	{
+	}
+}
+
+namespace Windows.Security.Credentials
+{
+	[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::Windows.Security.Credentials.IPasswordCredential))]
+	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(65536)]
+	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
+	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
+	public unsafe sealed class PasswordCredential : global::System.__ComObject, global::Windows.Security.Credentials.IPasswordCredential
+	{
+		[global::System.Runtime.CompilerServices.MethodImpl(global::System.Runtime.CompilerServices.MethodImplOptions.NoInlining)]
+		public PasswordCredential()
+		{
+			global::System.IntPtr retval;
+			retval = global::System.Runtime.InteropServices.McgMarshal.ActivateInstance("Windows.Security.Credentials.PasswordCredential");
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			global::__Interop.McgHelpers.GetIUnknownForFactoryReturn(ref retval);
+			this.__AttachAndRelease(retval);
+		}
+
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertySet, "UserName")]
+		public void put_UserName(string userName)
+		{
+			global::Windows.Security.Credentials.IPasswordCredential__Impl.Stubs.put_UserName(
+								this, 
+								userName
+							);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+		}
+
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertySet, "Password")]
+		public void put_Password(string password)
+		{
+			global::Windows.Security.Credentials.IPasswordCredential__Impl.Stubs.put_Password(
+								this, 
+								password
+							);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+		}
+
+		public PasswordCredential(global::System.IntPtr dummy)
+		{
+		}
+	}
+
+	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
+	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
+	public unsafe interface IPasswordCredential
+	{
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertySet, "UserName")]
+		void put_UserName(string userName);
+
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertySet, "Password")]
+		void put_Password(string password);
+	}
+}
+
+namespace Windows.Security.Cryptography.Certificates
+{
+	[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::Windows.Security.Cryptography.Certificates.ICertificate))]
+	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(0)]
+	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
+	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
+	public unsafe sealed class Certificate : global::System.__ComObject, global::Windows.Security.Cryptography.Certificates.ICertificate, global::Windows.Security.Cryptography.Certificates.ICertificate2, global::Windows.Security.Cryptography.Certificates.ICertificate3
+	{
+		public global::Windows.Storage.Streams.IBuffer GetCertificateBlob()
+		{
+			global::Windows.Storage.Streams.IBuffer __retVal = global::Windows.Security.Cryptography.Certificates.ICertificate__Impl.Stubs.GetCertificateBlob(this);
 			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
 			return __retVal;
 		}
 
-		public global::Windows.Foundation.IAsyncOperationWithProgress<global::Windows.Networking.BackgroundTransfer.DownloadOperation, global::Windows.Networking.BackgroundTransfer.DownloadOperation> StartAsync()
+		public Certificate(global::System.IntPtr dummy)
 		{
-			global::Windows.Foundation.IAsyncOperationWithProgress<global::Windows.Networking.BackgroundTransfer.DownloadOperation, global::Windows.Networking.BackgroundTransfer.DownloadOperation> __retVal = global::Windows.Networking.BackgroundTransfer.IDownloadOperation__Impl.Stubs.StartAsync(this);
+		}
+	}
+
+	[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::Windows.Security.Cryptography.Certificates.ICertificateQuery))]
+	[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::Windows.Security.Cryptography.Certificates.ICertificateQuery2))]
+	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(65536)]
+	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
+	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
+	public unsafe sealed class CertificateQuery : global::System.__ComObject, global::Windows.Security.Cryptography.Certificates.ICertificateQuery, global::Windows.Security.Cryptography.Certificates.ICertificateQuery2
+	{
+		[global::System.Runtime.CompilerServices.MethodImpl(global::System.Runtime.CompilerServices.MethodImplOptions.NoInlining)]
+		public CertificateQuery()
+		{
+			global::System.IntPtr retval;
+			retval = global::System.Runtime.InteropServices.McgMarshal.ActivateInstance("Windows.Security.Cryptography.Certificates.CertificateQuery");
 			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
-			return __retVal;
+			global::__Interop.McgHelpers.GetIUnknownForFactoryReturn(ref retval);
+			this.__AttachAndRelease(retval);
 		}
 
-		public global::Windows.Foundation.IAsyncOperationWithProgress<global::Windows.Networking.BackgroundTransfer.DownloadOperation, global::Windows.Networking.BackgroundTransfer.DownloadOperation> AttachAsync()
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertySet, "Thumbprint")]
+		public void put_Thumbprint(byte[] value)
 		{
-			global::Windows.Foundation.IAsyncOperationWithProgress<global::Windows.Networking.BackgroundTransfer.DownloadOperation, global::Windows.Networking.BackgroundTransfer.DownloadOperation> __retVal = global::Windows.Networking.BackgroundTransfer.IDownloadOperation__Impl.Stubs.AttachAsync(this);
-			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
-			return __retVal;
-		}
-
-		public global::Windows.Networking.BackgroundTransfer.ResponseInformation GetResponseInformation()
-		{
-			global::Windows.Networking.BackgroundTransfer.ResponseInformation __retVal = global::Windows.Networking.BackgroundTransfer.IBackgroundTransferOperation__Impl.Stubs.GetResponseInformation(this);
-			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
-			return __retVal;
-		}
-
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertySet, "Priority")]
-		public void put_Priority(global::Windows.Networking.BackgroundTransfer.BackgroundTransferPriority value)
-		{
-			global::Windows.Networking.BackgroundTransfer.IBackgroundTransferOperationPriority__Impl.Stubs.put_Priority(
+			global::Windows.Security.Cryptography.Certificates.ICertificateQuery__Impl.Stubs.put_Thumbprint(
 								this, 
 								value
 							);
 			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
 		}
 
-		public DownloadOperation(global::System.IntPtr dummy)
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertySet, "IncludeDuplicates")]
+		public void put_IncludeDuplicates(bool value)
+		{
+			global::Windows.Security.Cryptography.Certificates.ICertificateQuery2__Impl.Stubs.put_IncludeDuplicates(
+								this, 
+								value
+							);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+		}
+
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertySet, "StoreName")]
+		public void put_StoreName(string value)
+		{
+			global::Windows.Security.Cryptography.Certificates.ICertificateQuery2__Impl.Stubs.put_StoreName(
+								this, 
+								value
+							);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+		}
+
+		public CertificateQuery(global::System.IntPtr dummy)
 		{
 		}
 	}
 
-	[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::Windows.Networking.BackgroundTransfer.IResponseInformation))]
-	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(0)]
-	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
-	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
-	public unsafe sealed class ResponseInformation : global::System.__ComObject, global::Windows.Networking.BackgroundTransfer.IResponseInformation
-	{
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "StatusCode")]
-		public uint get_StatusCode()
-		{
-			uint __retVal = global::Windows.Networking.BackgroundTransfer.IResponseInformation__Impl.Stubs.get_StatusCode(this);
-			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
-			return __retVal;
-		}
-
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "Headers")]
-		public global::System.Collections.Generic.IReadOnlyDictionary<string, string> get_Headers()
-		{
-			global::System.Collections.Generic.IReadOnlyDictionary<string, string> __retVal = global::Windows.Networking.BackgroundTransfer.IResponseInformation__Impl.Stubs.get_Headers(this);
-			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
-			return __retVal;
-		}
-
-		public ResponseInformation(global::System.IntPtr dummy)
-		{
-		}
-	}
-
-	[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::Windows.Networking.BackgroundTransfer.IBackgroundDownloader))]
 	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(65536)]
 	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
 	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
-	public unsafe sealed class BackgroundDownloader : global::System.__ComObject, global::Windows.Networking.BackgroundTransfer.IBackgroundDownloader
+	public unsafe sealed class CertificateStores : global::System.__ComObject
 	{
-		[global::System.Runtime.CompilerServices.MethodImpl(global::System.Runtime.CompilerServices.MethodImplOptions.NoInlining)]
-		public BackgroundDownloader(global::Windows.Networking.BackgroundTransfer.BackgroundTransferCompletionGroup completionGroup)
+		public static global::Windows.Foundation.IAsyncOperation<global::System.Collections.Generic.IReadOnlyList<global::Windows.Security.Cryptography.Certificates.Certificate>> FindAllAsync(global::Windows.Security.Cryptography.Certificates.CertificateQuery query)
 		{
-			global::System.IntPtr retval;
-			retval = __Factory_Windows_Networking_BackgroundTransfer__IBackgroundDownloaderFactory_CreateWithCompletionGroup(
-								"Windows.Networking.BackgroundTransfer.BackgroundDownloader", 
-								completionGroup
+			global::Windows.Foundation.IAsyncOperation<global::System.Collections.Generic.IReadOnlyList<global::Windows.Security.Cryptography.Certificates.Certificate>> retval;
+			retval = __Factory_Windows_Security_Cryptography_Certificates__ICertificateStoresStatics_FindAllAsync(
+								"Windows.Security.Cryptography.Certificates.CertificateStores", 
+								query
 							);
 			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
-			global::__Interop.McgHelpers.GetIUnknownForFactoryReturn(ref retval);
-			this.__AttachAndRelease(retval);
+			return retval;
 		}
 
-		global::System.IntPtr __Factory_Windows_Networking_BackgroundTransfer__IBackgroundDownloaderFactory_CreateWithCompletionGroup(
+		static global::Windows.Foundation.IAsyncOperation<global::System.Collections.Generic.IReadOnlyList<global::Windows.Security.Cryptography.Certificates.Certificate>> __Factory_Windows_Security_Cryptography_Certificates__ICertificateStoresStatics_FindAllAsync(
 					string typeName, 
-					global::Windows.Networking.BackgroundTransfer.BackgroundTransferCompletionGroup completionGroup)
+					global::Windows.Security.Cryptography.Certificates.CertificateQuery query)
 		{
-			global::System.IntPtr __pRetVal;
-			__pRetVal = global::Windows.Networking.BackgroundTransfer.IBackgroundDownloaderFactory__Impl.Stubs.CreateWithCompletionGroup(
+			global::Windows.Foundation.IAsyncOperation<global::System.Collections.Generic.IReadOnlyList<global::Windows.Security.Cryptography.Certificates.Certificate>> __pRetVal;
+			__pRetVal = global::Windows.Security.Cryptography.Certificates.ICertificateStoresStatics__Impl.Stubs.FindAllAsync(
 								global::System.Runtime.InteropServices.McgMarshal.GetActivationFactory(
 													typeName, 
-													typeof(global::Windows.Networking.BackgroundTransfer.IBackgroundDownloaderFactory).TypeHandle
+													typeof(global::Windows.Security.Cryptography.Certificates.ICertificateStoresStatics).TypeHandle
 												), 
-								completionGroup
+								query
 							);
 			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
-			global::__Interop.McgHelpers.GetIUnknownForFactoryReturn(ref __pRetVal);
 			return __pRetVal;
 		}
 
-		[global::System.Runtime.CompilerServices.MethodImpl(global::System.Runtime.CompilerServices.MethodImplOptions.NoInlining)]
-		public BackgroundDownloader()
-		{
-			global::System.IntPtr retval;
-			retval = global::System.Runtime.InteropServices.McgMarshal.ActivateInstance("Windows.Networking.BackgroundTransfer.BackgroundDownloader");
-			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
-			global::__Interop.McgHelpers.GetIUnknownForFactoryReturn(ref retval);
-			this.__AttachAndRelease(retval);
-		}
-
-		public global::Windows.Networking.BackgroundTransfer.DownloadOperation CreateDownload(
-					global::System.Uri uri, 
-					global::Windows.Storage.IStorageFile resultFile)
-		{
-			global::Windows.Networking.BackgroundTransfer.DownloadOperation __retVal = global::Windows.Networking.BackgroundTransfer.IBackgroundDownloader__Impl.Stubs.CreateDownload(
-								this, 
-								uri, 
-								resultFile
-							);
-			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
-			return __retVal;
-		}
-
-		public BackgroundDownloader(global::System.IntPtr dummy)
-		{
-		}
-	}
-
-	[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::Windows.Networking.BackgroundTransfer.IBackgroundTransferCompletionGroup))]
-	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(65536)]
-	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
-	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
-	public unsafe sealed class BackgroundTransferCompletionGroup : global::System.__ComObject, global::Windows.Networking.BackgroundTransfer.IBackgroundTransferCompletionGroup
-	{
-		[global::System.Runtime.CompilerServices.MethodImpl(global::System.Runtime.CompilerServices.MethodImplOptions.NoInlining)]
-		public BackgroundTransferCompletionGroup()
-		{
-			global::System.IntPtr retval;
-			retval = global::System.Runtime.InteropServices.McgMarshal.ActivateInstance("Windows.Networking.BackgroundTransfer.BackgroundTransferCompletionGroup");
-			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
-			global::__Interop.McgHelpers.GetIUnknownForFactoryReturn(ref retval);
-			this.__AttachAndRelease(retval);
-		}
-
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "Trigger")]
-		public global::Windows.ApplicationModel.Background.IBackgroundTrigger get_Trigger()
-		{
-			global::Windows.ApplicationModel.Background.IBackgroundTrigger __retVal = global::Windows.Networking.BackgroundTransfer.IBackgroundTransferCompletionGroup__Impl.Stubs.get_Trigger(this);
-			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
-			return __retVal;
-		}
-
-		public BackgroundTransferCompletionGroup(global::System.IntPtr dummy)
+		public CertificateStores(global::System.IntPtr dummy)
 		{
 		}
 	}
 
 	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
 	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
-	public unsafe interface IDownloadOperation : global::Windows.Networking.BackgroundTransfer.IBackgroundTransferOperation
+	public unsafe interface ICertificate
 	{
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "Progress")]
-		global::Windows.Networking.BackgroundTransfer.BackgroundDownloadProgress get_Progress();
-
-		global::Windows.Foundation.IAsyncOperationWithProgress<global::Windows.Networking.BackgroundTransfer.DownloadOperation, global::Windows.Networking.BackgroundTransfer.DownloadOperation> StartAsync();
-
-		global::Windows.Foundation.IAsyncOperationWithProgress<global::Windows.Networking.BackgroundTransfer.DownloadOperation, global::Windows.Networking.BackgroundTransfer.DownloadOperation> AttachAsync();
+		global::Windows.Storage.Streams.IBuffer GetCertificateBlob();
 	}
 
 	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
 	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
-	public unsafe interface IBackgroundTransferOperation
+	public unsafe interface ICertificate2
 	{
-		global::Windows.Networking.BackgroundTransfer.ResponseInformation GetResponseInformation();
 	}
 
 	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
 	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
-	public unsafe interface IResponseInformation
+	public unsafe interface ICertificate3
 	{
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "StatusCode")]
-		uint get_StatusCode();
-
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "Headers")]
-		global::System.Collections.Generic.IReadOnlyDictionary<string, string> get_Headers();
 	}
 
 	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
 	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
-	public unsafe interface IBackgroundTransferOperationPriority
+	public unsafe interface ICertificateQuery
 	{
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertySet, "Priority")]
-		void put_Priority(global::Windows.Networking.BackgroundTransfer.BackgroundTransferPriority value);
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertySet, "Thumbprint")]
+		void put_Thumbprint(byte[] value);
 	}
 
 	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
 	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
-	public unsafe interface IBackgroundDownloaderFactory
+	public unsafe interface ICertificateQuery2
 	{
-		global::System.IntPtr CreateWithCompletionGroup(global::Windows.Networking.BackgroundTransfer.BackgroundTransferCompletionGroup completionGroup);
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertySet, "IncludeDuplicates")]
+		void put_IncludeDuplicates(bool value);
+
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertySet, "StoreName")]
+		void put_StoreName(string value);
 	}
 
 	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
 	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
-	public unsafe interface IBackgroundTransferCompletionGroup
+	public unsafe interface ICertificateStoresStatics
 	{
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "Trigger")]
-		global::Windows.ApplicationModel.Background.IBackgroundTrigger get_Trigger();
-	}
-
-	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
-	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
-	public unsafe interface IBackgroundDownloader
-	{
-		global::Windows.Networking.BackgroundTransfer.DownloadOperation CreateDownload(
-					global::System.Uri uri, 
-					global::Windows.Storage.IStorageFile resultFile);
+		global::Windows.Foundation.IAsyncOperation<global::System.Collections.Generic.IReadOnlyList<global::Windows.Security.Cryptography.Certificates.Certificate>> FindAllAsync(global::Windows.Security.Cryptography.Certificates.CertificateQuery query);
 	}
 
 	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(0)]
 	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
 	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
-	public unsafe struct BackgroundDownloadProgress
+	public enum ChainValidationResult
 	{
-		public ulong BytesReceived;
-		public ulong TotalBytesToReceive;
-		public global::Windows.Networking.BackgroundTransfer.BackgroundTransferStatus Status;
-		public bool HasResponseChanged;
-		public bool HasRestarted;
-	}
-
-	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(0)]
-	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
-	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
-	public enum BackgroundTransferStatus
-	{
-		Idle = 0,
-		Running = 1,
-		PausedByApplication = 2,
-		PausedCostedNetwork = 3,
-		PausedNoNetwork = 4,
-		Completed = 5,
-		Canceled = 6,
-		Error = 7,
-		PausedRecoverableWebErrorStatus = 8,
-		PausedSystemPolicy = 32,
-	}
-
-	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(0)]
-	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
-	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
-	public enum BackgroundTransferPriority
-	{
-		Default = 0,
-		High = 1,
+		Success = 0,
+		Untrusted = 1,
+		Revoked = 2,
+		Expired = 3,
+		IncompleteChain = 4,
+		InvalidSignature = 5,
+		WrongUsage = 6,
+		InvalidName = 7,
+		InvalidCertificateAuthorityPolicy = 8,
+		BasicConstraintsError = 9,
+		UnknownCriticalExtension = 10,
+		RevocationInformationMissing = 11,
+		RevocationFailure = 12,
+		OtherErrors = 13,
 	}
 }
 
 namespace Windows.Storage
 {
-	[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::Windows.Storage.IStorageStreamTransaction))]
-	[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::System.IDisposable))]
-	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(0)]
-	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
-	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
-	public unsafe sealed class StorageStreamTransaction : global::System.__ComObject, global::Windows.Storage.IStorageStreamTransaction, global::System.IDisposable
-	{
-		public void Dispose()
-		{
-			global::System.IDisposable__Impl.Stubs.Close(this);
-		}
-
-		public StorageStreamTransaction(global::System.IntPtr dummy)
-		{
-		}
-	}
-
 	[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::Windows.Storage.IStorageFile))]
+	[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::Windows.Storage.IStorageItem))]
 	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(0)]
 	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
 	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
@@ -3561,8 +4733,23 @@ namespace Windows.Storage
 		}
 	}
 
+	[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::Windows.Storage.IStorageStreamTransaction))]
+	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(0)]
+	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
+	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
+	public unsafe sealed class StorageStreamTransaction : global::System.__ComObject, global::Windows.Storage.IStorageStreamTransaction, global::System.IDisposable
+	{
+		public void Dispose()
+		{
+			global::System.IDisposable__Impl.Stubs.Close(this);
+		}
+
+		public StorageStreamTransaction(global::System.IntPtr dummy)
+		{
+		}
+	}
+
 	[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::Windows.Storage.IStorageFolder))]
-	[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::Windows.Storage.IStorageItem))]
 	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(0)]
 	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
 	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
@@ -3678,6 +4865,95 @@ namespace Windows.Storage
 		}
 	}
 
+	[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::Windows.Storage.IApplicationData))]
+	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(65536)]
+	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
+	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
+	public unsafe sealed class ApplicationData : global::System.__ComObject, global::Windows.Storage.IApplicationData
+	{
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "LocalFolder")]
+		public global::Windows.Storage.StorageFolder get_LocalFolder()
+		{
+			global::Windows.Storage.StorageFolder __retVal = global::Windows.Storage.IApplicationData__Impl.Stubs.get_LocalFolder(this);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			return __retVal;
+		}
+
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "Current")]
+		public static global::Windows.Storage.ApplicationData get_Current()
+		{
+			global::Windows.Storage.ApplicationData retval;
+			retval = __Factory_Windows_Storage__IApplicationDataStatics_get_Current("Windows.Storage.ApplicationData");
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			return retval;
+		}
+
+		static global::Windows.Storage.ApplicationData __Factory_Windows_Storage__IApplicationDataStatics_get_Current(string typeName)
+		{
+			global::Windows.Storage.ApplicationData __pRetVal;
+			__pRetVal = global::Windows.Storage.IApplicationDataStatics__Impl.Stubs.get_Current(global::System.Runtime.InteropServices.McgMarshal.GetActivationFactory(
+									typeName, 
+									typeof(global::Windows.Storage.IApplicationDataStatics).TypeHandle
+								));
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			return __pRetVal;
+		}
+
+		public ApplicationData(global::System.IntPtr dummy)
+		{
+		}
+	}
+
+	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(65536)]
+	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
+	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
+	public unsafe sealed class FileIO : global::System.__ComObject
+	{
+		public static global::Windows.Foundation.IAsyncAction WriteTextAsync(
+					global::Windows.Storage.IStorageFile file, 
+					string contents)
+		{
+			global::Windows.Foundation.IAsyncAction retval;
+			retval = __Factory_Windows_Storage__IFileIOStatics_WriteTextAsync(
+								"Windows.Storage.FileIO", 
+								file, 
+								contents
+							);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			return retval;
+		}
+
+		static global::Windows.Foundation.IAsyncAction __Factory_Windows_Storage__IFileIOStatics_WriteTextAsync(
+					string typeName, 
+					global::Windows.Storage.IStorageFile file, 
+					string contents)
+		{
+			global::Windows.Foundation.IAsyncAction __pRetVal;
+			__pRetVal = global::Windows.Storage.IFileIOStatics__Impl.Stubs.WriteTextAsync(
+								global::System.Runtime.InteropServices.McgMarshal.GetActivationFactory(
+													typeName, 
+													typeof(global::Windows.Storage.IFileIOStatics).TypeHandle
+												), 
+								file, 
+								contents
+							);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			return __pRetVal;
+		}
+
+		public FileIO(global::System.IntPtr dummy)
+		{
+		}
+	}
+
+	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
+	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
+	public unsafe interface IStorageItem
+	{
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "Path")]
+		string get_Path();
+	}
+
 	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
 	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
 	public unsafe interface IStorageFile : global::Windows.Storage.IStorageItem, global::Windows.Storage.Streams.IRandomAccessStreamReference, global::Windows.Storage.Streams.IInputStreamReference
@@ -3717,14 +4993,6 @@ namespace Windows.Storage
 					global::Windows.Storage.NameCollisionOption option);
 
 		global::Windows.Foundation.IAsyncAction MoveAndReplaceAsync(global::Windows.Storage.IStorageFile fileToReplace);
-	}
-
-	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
-	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
-	public unsafe interface IStorageItem
-	{
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "Path")]
-		string get_Path();
 	}
 
 	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
@@ -3782,7 +5050,19 @@ namespace Windows.Storage
 
 	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
 	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
+	public unsafe interface IStorageFolder2
+	{
+	}
+
+	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
+	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
 	public unsafe interface IStorageItemPropertiesWithProvider : global::Windows.Storage.IStorageItemProperties
+	{
+	}
+
+	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
+	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
+	public unsafe interface IStorageFolder3
 	{
 	}
 
@@ -3800,14 +5080,27 @@ namespace Windows.Storage
 
 	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
 	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
-	public unsafe interface IStorageFolder2
+	public unsafe interface IApplicationDataStatics
 	{
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "Current")]
+		global::Windows.Storage.ApplicationData get_Current();
 	}
 
 	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
 	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
-	public unsafe interface IStorageFolder3
+	public unsafe interface IApplicationData
 	{
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "LocalFolder")]
+		global::Windows.Storage.StorageFolder get_LocalFolder();
+	}
+
+	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
+	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
+	public unsafe interface IFileIOStatics
+	{
+		global::Windows.Foundation.IAsyncAction WriteTextAsync(
+					global::Windows.Storage.IStorageFile file, 
+					string contents);
 	}
 
 	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(0)]
@@ -3822,22 +5115,22 @@ namespace Windows.Storage
 	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(0)]
 	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
 	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
-	public enum NameCollisionOption
-	{
-		GenerateUniqueName = 0,
-		ReplaceExisting = 1,
-		FailIfExists = 2,
-	}
-
-	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(0)]
-	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
-	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
 	public enum CreationCollisionOption
 	{
 		GenerateUniqueName = 0,
 		ReplaceExisting = 1,
 		FailIfExists = 2,
 		OpenIfExists = 3,
+	}
+
+	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(0)]
+	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
+	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
+	public enum NameCollisionOption
+	{
+		GenerateUniqueName = 0,
+		ReplaceExisting = 1,
+		FailIfExists = 2,
 	}
 }
 
@@ -15439,6 +16732,1697 @@ namespace Windows.UI.Xaml.Shapes
 	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
 	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
 	public unsafe interface IRectangle
+	{
+	}
+}
+
+namespace Windows.Web.Http
+{
+	[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::Windows.Web.Http.IHttpRequestMessage))]
+	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(65536)]
+	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
+	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
+	public unsafe sealed class HttpRequestMessage : global::System.__ComObject, global::Windows.Web.Http.IHttpRequestMessage, global::System.IDisposable, global::Windows.Foundation.IStringable
+	{
+		public void Dispose()
+		{
+			global::System.IDisposable__Impl.Stubs.Close(this);
+		}
+
+		[global::System.Runtime.CompilerServices.MethodImpl(global::System.Runtime.CompilerServices.MethodImplOptions.NoInlining)]
+		public HttpRequestMessage(
+					global::Windows.Web.Http.HttpMethod method, 
+					global::System.Uri uri)
+		{
+			global::System.IntPtr retval;
+			retval = __Factory_Windows_Web_Http__IHttpRequestMessageFactory_Create(
+								"Windows.Web.Http.HttpRequestMessage", 
+								method, 
+								uri
+							);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			global::__Interop.McgHelpers.GetIUnknownForFactoryReturn(ref retval);
+			this.__AttachAndRelease(retval);
+		}
+
+		global::System.IntPtr __Factory_Windows_Web_Http__IHttpRequestMessageFactory_Create(
+					string typeName, 
+					global::Windows.Web.Http.HttpMethod method, 
+					global::System.Uri uri)
+		{
+			global::System.IntPtr __pRetVal;
+			__pRetVal = global::Windows.Web.Http.IHttpRequestMessageFactory__Impl.Stubs.Create(
+								global::System.Runtime.InteropServices.McgMarshal.GetActivationFactory(
+													typeName, 
+													typeof(global::Windows.Web.Http.IHttpRequestMessageFactory).TypeHandle
+												), 
+								method, 
+								uri
+							);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			global::__Interop.McgHelpers.GetIUnknownForFactoryReturn(ref __pRetVal);
+			return __pRetVal;
+		}
+
+		[global::System.Runtime.CompilerServices.MethodImpl(global::System.Runtime.CompilerServices.MethodImplOptions.NoInlining)]
+		public HttpRequestMessage()
+		{
+			global::System.IntPtr retval;
+			retval = global::System.Runtime.InteropServices.McgMarshal.ActivateInstance("Windows.Web.Http.HttpRequestMessage");
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			global::__Interop.McgHelpers.GetIUnknownForFactoryReturn(ref retval);
+			this.__AttachAndRelease(retval);
+		}
+
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertySet, "Content")]
+		public void put_Content(global::Windows.Web.Http.IHttpContent value)
+		{
+			global::Windows.Web.Http.IHttpRequestMessage__Impl.Stubs.put_Content(
+								this, 
+								value
+							);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+		}
+
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "Headers")]
+		public global::Windows.Web.Http.Headers.HttpRequestHeaderCollection get_Headers()
+		{
+			global::Windows.Web.Http.Headers.HttpRequestHeaderCollection __retVal = global::Windows.Web.Http.IHttpRequestMessage__Impl.Stubs.get_Headers(this);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			return __retVal;
+		}
+
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "Properties")]
+		public global::System.Collections.Generic.IDictionary<string, object> get_Properties()
+		{
+			global::System.Collections.Generic.IDictionary<string, object> __retVal = global::Windows.Web.Http.IHttpRequestMessage__Impl.Stubs.get_Properties(this);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			return __retVal;
+		}
+
+		public override string ToString()
+		{
+			string __retVal = global::Windows.Foundation.IStringable__Impl.Stubs.ToString(this);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			return __retVal;
+		}
+
+		public HttpRequestMessage(global::System.IntPtr dummy)
+		{
+		}
+	}
+
+	[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::Windows.Web.Http.IHttpMethod))]
+	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(65536)]
+	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
+	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
+	public unsafe sealed class HttpMethod : global::System.__ComObject, global::Windows.Web.Http.IHttpMethod, global::Windows.Foundation.IStringable
+	{
+		[global::System.Runtime.CompilerServices.MethodImpl(global::System.Runtime.CompilerServices.MethodImplOptions.NoInlining)]
+		public HttpMethod(string method)
+		{
+			global::System.IntPtr retval;
+			retval = __Factory_Windows_Web_Http__IHttpMethodFactory_Create(
+								"Windows.Web.Http.HttpMethod", 
+								method
+							);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			global::__Interop.McgHelpers.GetIUnknownForFactoryReturn(ref retval);
+			this.__AttachAndRelease(retval);
+		}
+
+		global::System.IntPtr __Factory_Windows_Web_Http__IHttpMethodFactory_Create(
+					string typeName, 
+					string method)
+		{
+			global::System.IntPtr __pRetVal;
+			__pRetVal = global::Windows.Web.Http.IHttpMethodFactory__Impl.Stubs.Create(
+								global::System.Runtime.InteropServices.McgMarshal.GetActivationFactory(
+													typeName, 
+													typeof(global::Windows.Web.Http.IHttpMethodFactory).TypeHandle
+												), 
+								method
+							);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			global::__Interop.McgHelpers.GetIUnknownForFactoryReturn(ref __pRetVal);
+			return __pRetVal;
+		}
+
+		public override string ToString()
+		{
+			string __retVal = global::Windows.Foundation.IStringable__Impl.Stubs.ToString(this);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			return __retVal;
+		}
+
+		public HttpMethod(global::System.IntPtr dummy)
+		{
+		}
+	}
+
+	[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::Windows.Web.Http.IHttpResponseMessage))]
+	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(65536)]
+	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
+	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
+	public unsafe sealed class HttpResponseMessage : global::System.__ComObject, global::Windows.Web.Http.IHttpResponseMessage, global::System.IDisposable, global::Windows.Foundation.IStringable
+	{
+		public void Dispose()
+		{
+			global::System.IDisposable__Impl.Stubs.Close(this);
+		}
+
+		[global::System.Runtime.CompilerServices.MethodImpl(global::System.Runtime.CompilerServices.MethodImplOptions.NoInlining)]
+		public HttpResponseMessage()
+		{
+			global::System.IntPtr retval;
+			retval = global::System.Runtime.InteropServices.McgMarshal.ActivateInstance("Windows.Web.Http.HttpResponseMessage");
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			global::__Interop.McgHelpers.GetIUnknownForFactoryReturn(ref retval);
+			this.__AttachAndRelease(retval);
+		}
+
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "Content")]
+		public global::Windows.Web.Http.IHttpContent get_Content()
+		{
+			global::Windows.Web.Http.IHttpContent __retVal = global::Windows.Web.Http.IHttpResponseMessage__Impl.Stubs.get_Content(this);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			return __retVal;
+		}
+
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "Headers")]
+		public global::Windows.Web.Http.Headers.HttpResponseHeaderCollection get_Headers()
+		{
+			global::Windows.Web.Http.Headers.HttpResponseHeaderCollection __retVal = global::Windows.Web.Http.IHttpResponseMessage__Impl.Stubs.get_Headers(this);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			return __retVal;
+		}
+
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "ReasonPhrase")]
+		public string get_ReasonPhrase()
+		{
+			string __retVal = global::Windows.Web.Http.IHttpResponseMessage__Impl.Stubs.get_ReasonPhrase(this);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			return __retVal;
+		}
+
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "StatusCode")]
+		public global::Windows.Web.Http.HttpStatusCode get_StatusCode()
+		{
+			global::Windows.Web.Http.HttpStatusCode __retVal = global::Windows.Web.Http.IHttpResponseMessage__Impl.Stubs.get_StatusCode(this);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			return __retVal;
+		}
+
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "Version")]
+		public global::Windows.Web.Http.HttpVersion get_Version()
+		{
+			global::Windows.Web.Http.HttpVersion __retVal = global::Windows.Web.Http.IHttpResponseMessage__Impl.Stubs.get_Version(this);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			return __retVal;
+		}
+
+		public override string ToString()
+		{
+			string __retVal = global::Windows.Foundation.IStringable__Impl.Stubs.ToString(this);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			return __retVal;
+		}
+
+		public HttpResponseMessage(global::System.IntPtr dummy)
+		{
+		}
+	}
+
+	[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::Windows.Web.Http.IHttpContent))]
+	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(65536)]
+	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
+	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
+	public unsafe sealed class HttpBufferContent : global::System.__ComObject, global::Windows.Web.Http.IHttpContent, global::System.IDisposable, global::Windows.Foundation.IStringable
+	{
+		public void Dispose()
+		{
+			global::System.IDisposable__Impl.Stubs.Close(this);
+		}
+
+		[global::System.Runtime.CompilerServices.MethodImpl(global::System.Runtime.CompilerServices.MethodImplOptions.NoInlining)]
+		public HttpBufferContent(
+					global::Windows.Storage.Streams.IBuffer content, 
+					uint offset, 
+					uint count)
+		{
+			global::System.IntPtr retval;
+			retval = __Factory_Windows_Web_Http__IHttpBufferContentFactory_CreateFromBufferWithOffset(
+								"Windows.Web.Http.HttpBufferContent", 
+								content, 
+								offset, 
+								count
+							);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			global::__Interop.McgHelpers.GetIUnknownForFactoryReturn(ref retval);
+			this.__AttachAndRelease(retval);
+		}
+
+		global::System.IntPtr __Factory_Windows_Web_Http__IHttpBufferContentFactory_CreateFromBufferWithOffset(
+					string typeName, 
+					global::Windows.Storage.Streams.IBuffer content, 
+					uint offset, 
+					uint count)
+		{
+			global::System.IntPtr __pRetVal;
+			__pRetVal = global::Windows.Web.Http.IHttpBufferContentFactory__Impl.Stubs.CreateFromBufferWithOffset(
+								global::System.Runtime.InteropServices.McgMarshal.GetActivationFactory(
+													typeName, 
+													typeof(global::Windows.Web.Http.IHttpBufferContentFactory).TypeHandle
+												), 
+								content, 
+								offset, 
+								count
+							);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			global::__Interop.McgHelpers.GetIUnknownForFactoryReturn(ref __pRetVal);
+			return __pRetVal;
+		}
+
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "Headers")]
+		public global::Windows.Web.Http.Headers.HttpContentHeaderCollection get_Headers()
+		{
+			global::Windows.Web.Http.Headers.HttpContentHeaderCollection __retVal = global::Windows.Web.Http.IHttpContent__Impl.Stubs.get_Headers(this);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			return __retVal;
+		}
+
+		public global::Windows.Foundation.IAsyncOperationWithProgress<ulong, ulong> BufferAllAsync()
+		{
+			global::Windows.Foundation.IAsyncOperationWithProgress<ulong, ulong> __retVal = global::Windows.Web.Http.IHttpContent__Impl.Stubs.BufferAllAsync(this);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			return __retVal;
+		}
+
+		public global::Windows.Foundation.IAsyncOperationWithProgress<global::Windows.Storage.Streams.IBuffer, ulong> ReadAsBufferAsync()
+		{
+			global::Windows.Foundation.IAsyncOperationWithProgress<global::Windows.Storage.Streams.IBuffer, ulong> __retVal = global::Windows.Web.Http.IHttpContent__Impl.Stubs.ReadAsBufferAsync(this);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			return __retVal;
+		}
+
+		public global::Windows.Foundation.IAsyncOperationWithProgress<global::Windows.Storage.Streams.IInputStream, ulong> ReadAsInputStreamAsync()
+		{
+			global::Windows.Foundation.IAsyncOperationWithProgress<global::Windows.Storage.Streams.IInputStream, ulong> __retVal = global::Windows.Web.Http.IHttpContent__Impl.Stubs.ReadAsInputStreamAsync(this);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			return __retVal;
+		}
+
+		public global::Windows.Foundation.IAsyncOperationWithProgress<string, ulong> ReadAsStringAsync()
+		{
+			global::Windows.Foundation.IAsyncOperationWithProgress<string, ulong> __retVal = global::Windows.Web.Http.IHttpContent__Impl.Stubs.ReadAsStringAsync(this);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			return __retVal;
+		}
+
+		public bool TryComputeLength(out ulong length)
+		{
+			bool __retVal = global::Windows.Web.Http.IHttpContent__Impl.Stubs.TryComputeLength(
+								this, 
+								out length
+							);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			return __retVal;
+		}
+
+		public global::Windows.Foundation.IAsyncOperationWithProgress<ulong, ulong> WriteToStreamAsync(global::Windows.Storage.Streams.IOutputStream outputStream)
+		{
+			global::Windows.Foundation.IAsyncOperationWithProgress<ulong, ulong> __retVal = global::Windows.Web.Http.IHttpContent__Impl.Stubs.WriteToStreamAsync(
+								this, 
+								outputStream
+							);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			return __retVal;
+		}
+
+		public override string ToString()
+		{
+			string __retVal = global::Windows.Foundation.IStringable__Impl.Stubs.ToString(this);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			return __retVal;
+		}
+
+		public HttpBufferContent(global::System.IntPtr dummy)
+		{
+		}
+	}
+
+	[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::Windows.Web.Http.IHttpContent))]
+	[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::System.IDisposable))]
+	[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::Windows.Foundation.IStringable))]
+	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(65536)]
+	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
+	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
+	public unsafe sealed class HttpStreamContent : global::System.__ComObject, global::Windows.Web.Http.IHttpContent, global::System.IDisposable, global::Windows.Foundation.IStringable
+	{
+		public void Dispose()
+		{
+			global::System.IDisposable__Impl.Stubs.Close(this);
+		}
+
+		[global::System.Runtime.CompilerServices.MethodImpl(global::System.Runtime.CompilerServices.MethodImplOptions.NoInlining)]
+		public HttpStreamContent(global::Windows.Storage.Streams.IInputStream content)
+		{
+			global::System.IntPtr retval;
+			retval = __Factory_Windows_Web_Http__IHttpStreamContentFactory_CreateFromInputStream(
+								"Windows.Web.Http.HttpStreamContent", 
+								content
+							);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			global::__Interop.McgHelpers.GetIUnknownForFactoryReturn(ref retval);
+			this.__AttachAndRelease(retval);
+		}
+
+		global::System.IntPtr __Factory_Windows_Web_Http__IHttpStreamContentFactory_CreateFromInputStream(
+					string typeName, 
+					global::Windows.Storage.Streams.IInputStream content)
+		{
+			global::System.IntPtr __pRetVal;
+			__pRetVal = global::Windows.Web.Http.IHttpStreamContentFactory__Impl.Stubs.CreateFromInputStream(
+								global::System.Runtime.InteropServices.McgMarshal.GetActivationFactory(
+													typeName, 
+													typeof(global::Windows.Web.Http.IHttpStreamContentFactory).TypeHandle
+												), 
+								content
+							);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			global::__Interop.McgHelpers.GetIUnknownForFactoryReturn(ref __pRetVal);
+			return __pRetVal;
+		}
+
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "Headers")]
+		public global::Windows.Web.Http.Headers.HttpContentHeaderCollection get_Headers()
+		{
+			global::Windows.Web.Http.Headers.HttpContentHeaderCollection __retVal = global::Windows.Web.Http.IHttpContent__Impl.Stubs.get_Headers(this);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			return __retVal;
+		}
+
+		public global::Windows.Foundation.IAsyncOperationWithProgress<ulong, ulong> BufferAllAsync()
+		{
+			global::Windows.Foundation.IAsyncOperationWithProgress<ulong, ulong> __retVal = global::Windows.Web.Http.IHttpContent__Impl.Stubs.BufferAllAsync(this);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			return __retVal;
+		}
+
+		public global::Windows.Foundation.IAsyncOperationWithProgress<global::Windows.Storage.Streams.IBuffer, ulong> ReadAsBufferAsync()
+		{
+			global::Windows.Foundation.IAsyncOperationWithProgress<global::Windows.Storage.Streams.IBuffer, ulong> __retVal = global::Windows.Web.Http.IHttpContent__Impl.Stubs.ReadAsBufferAsync(this);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			return __retVal;
+		}
+
+		public global::Windows.Foundation.IAsyncOperationWithProgress<global::Windows.Storage.Streams.IInputStream, ulong> ReadAsInputStreamAsync()
+		{
+			global::Windows.Foundation.IAsyncOperationWithProgress<global::Windows.Storage.Streams.IInputStream, ulong> __retVal = global::Windows.Web.Http.IHttpContent__Impl.Stubs.ReadAsInputStreamAsync(this);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			return __retVal;
+		}
+
+		public global::Windows.Foundation.IAsyncOperationWithProgress<string, ulong> ReadAsStringAsync()
+		{
+			global::Windows.Foundation.IAsyncOperationWithProgress<string, ulong> __retVal = global::Windows.Web.Http.IHttpContent__Impl.Stubs.ReadAsStringAsync(this);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			return __retVal;
+		}
+
+		public bool TryComputeLength(out ulong length)
+		{
+			bool __retVal = global::Windows.Web.Http.IHttpContent__Impl.Stubs.TryComputeLength(
+								this, 
+								out length
+							);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			return __retVal;
+		}
+
+		public global::Windows.Foundation.IAsyncOperationWithProgress<ulong, ulong> WriteToStreamAsync(global::Windows.Storage.Streams.IOutputStream outputStream)
+		{
+			global::Windows.Foundation.IAsyncOperationWithProgress<ulong, ulong> __retVal = global::Windows.Web.Http.IHttpContent__Impl.Stubs.WriteToStreamAsync(
+								this, 
+								outputStream
+							);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			return __retVal;
+		}
+
+		public override string ToString()
+		{
+			string __retVal = global::Windows.Foundation.IStringable__Impl.Stubs.ToString(this);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			return __retVal;
+		}
+
+		public HttpStreamContent(global::System.IntPtr dummy)
+		{
+		}
+	}
+
+	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
+	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
+	public unsafe interface IHttpRequestMessageFactory
+	{
+		global::System.IntPtr Create(
+					global::Windows.Web.Http.HttpMethod method, 
+					global::System.Uri uri);
+	}
+
+	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
+	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
+	public unsafe interface IHttpMethodFactory
+	{
+		global::System.IntPtr Create(string method);
+	}
+
+	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
+	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
+	public unsafe interface IHttpMethod
+	{
+	}
+
+	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
+	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
+	public unsafe interface IHttpRequestMessage : global::System.IDisposable
+	{
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertySet, "Content")]
+		void put_Content(global::Windows.Web.Http.IHttpContent value);
+
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "Headers")]
+		global::Windows.Web.Http.Headers.HttpRequestHeaderCollection get_Headers();
+
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "Properties")]
+		global::System.Collections.Generic.IDictionary<string, object> get_Properties();
+	}
+
+	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
+	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
+	public unsafe interface IHttpContent : global::System.IDisposable
+	{
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "Headers")]
+		global::Windows.Web.Http.Headers.HttpContentHeaderCollection get_Headers();
+
+		global::Windows.Foundation.IAsyncOperationWithProgress<ulong, ulong> BufferAllAsync();
+
+		global::Windows.Foundation.IAsyncOperationWithProgress<global::Windows.Storage.Streams.IBuffer, ulong> ReadAsBufferAsync();
+
+		global::Windows.Foundation.IAsyncOperationWithProgress<global::Windows.Storage.Streams.IInputStream, ulong> ReadAsInputStreamAsync();
+
+		global::Windows.Foundation.IAsyncOperationWithProgress<string, ulong> ReadAsStringAsync();
+
+		bool TryComputeLength(out ulong length);
+
+		global::Windows.Foundation.IAsyncOperationWithProgress<ulong, ulong> WriteToStreamAsync(global::Windows.Storage.Streams.IOutputStream outputStream);
+	}
+
+	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
+	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
+	public unsafe interface IHttpResponseMessage : global::System.IDisposable
+	{
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "Content")]
+		global::Windows.Web.Http.IHttpContent get_Content();
+
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "Headers")]
+		global::Windows.Web.Http.Headers.HttpResponseHeaderCollection get_Headers();
+
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "ReasonPhrase")]
+		string get_ReasonPhrase();
+
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "StatusCode")]
+		global::Windows.Web.Http.HttpStatusCode get_StatusCode();
+
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "Version")]
+		global::Windows.Web.Http.HttpVersion get_Version();
+	}
+
+	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
+	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
+	public unsafe interface IHttpBufferContentFactory
+	{
+		global::System.IntPtr CreateFromBufferWithOffset(
+					global::Windows.Storage.Streams.IBuffer content, 
+					uint offset, 
+					uint count);
+	}
+
+	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
+	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
+	public unsafe interface IHttpStreamContentFactory
+	{
+		global::System.IntPtr CreateFromInputStream(global::Windows.Storage.Streams.IInputStream content);
+	}
+
+	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(0)]
+	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
+	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
+	public enum HttpStatusCode
+	{
+		None = 0,
+		Continue = 100,
+		SwitchingProtocols = 101,
+		Processing = 102,
+		Ok = 200,
+		Created = 201,
+		Accepted = 202,
+		NonAuthoritativeInformation = 203,
+		NoContent = 204,
+		ResetContent = 205,
+		PartialContent = 206,
+		MultiStatus = 207,
+		AlreadyReported = 208,
+		IMUsed = 226,
+		MultipleChoices = 300,
+		MovedPermanently = 301,
+		Found = 302,
+		SeeOther = 303,
+		NotModified = 304,
+		UseProxy = 305,
+		TemporaryRedirect = 307,
+		PermanentRedirect = 308,
+		BadRequest = 400,
+		Unauthorized = 401,
+		PaymentRequired = 402,
+		Forbidden = 403,
+		NotFound = 404,
+		MethodNotAllowed = 405,
+		NotAcceptable = 406,
+		ProxyAuthenticationRequired = 407,
+		RequestTimeout = 408,
+		Conflict = 409,
+		Gone = 410,
+		LengthRequired = 411,
+		PreconditionFailed = 412,
+		RequestEntityTooLarge = 413,
+		RequestUriTooLong = 414,
+		UnsupportedMediaType = 415,
+		RequestedRangeNotSatisfiable = 416,
+		ExpectationFailed = 417,
+		UnprocessableEntity = 422,
+		Locked = 423,
+		FailedDependency = 424,
+		UpgradeRequired = 426,
+		PreconditionRequired = 428,
+		TooManyRequests = 429,
+		RequestHeaderFieldsTooLarge = 431,
+		InternalServerError = 500,
+		NotImplemented = 501,
+		BadGateway = 502,
+		ServiceUnavailable = 503,
+		GatewayTimeout = 504,
+		HttpVersionNotSupported = 505,
+		VariantAlsoNegotiates = 506,
+		InsufficientStorage = 507,
+		LoopDetected = 508,
+		NotExtended = 510,
+		NetworkAuthenticationRequired = 511,
+	}
+
+	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(0)]
+	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
+	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
+	public enum HttpVersion
+	{
+		None = 0,
+		Http10 = 1,
+		Http11 = 2,
+		Http20 = 3,
+	}
+
+	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(0)]
+	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
+	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
+	public unsafe struct HttpProgress
+	{
+		public global::Windows.Web.Http.HttpProgressStage Stage;
+		public ulong BytesSent;
+		public global::System.Nullable<ulong> TotalBytesToSend;
+		public ulong BytesReceived;
+		public global::System.Nullable<ulong> TotalBytesToReceive;
+		public uint Retries;
+	}
+
+	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(0)]
+	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
+	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
+	public enum HttpProgressStage
+	{
+		None = 0,
+		DetectingProxy = 10,
+		ResolvingName = 20,
+		ConnectingToServer = 30,
+		NegotiatingSsl = 40,
+		SendingHeaders = 50,
+		SendingContent = 60,
+		WaitingForResponse = 70,
+		ReceivingHeaders = 80,
+		ReceivingContent = 90,
+	}
+}
+
+namespace Windows.Web.Http.Filters
+{
+	[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::Windows.Web.Http.Filters.IHttpBaseProtocolFilter))]
+	[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::Windows.Web.Http.Filters.IHttpFilter))]
+	[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::Windows.Web.Http.Filters.IHttpBaseProtocolFilter2))]
+	[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::Windows.Web.Http.Filters.IHttpBaseProtocolFilter3))]
+	[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::Windows.Web.Http.Filters.IHttpBaseProtocolFilter4))]
+	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(65536)]
+	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
+	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
+	public unsafe sealed class HttpBaseProtocolFilter : global::System.__ComObject, global::Windows.Web.Http.Filters.IHttpBaseProtocolFilter, global::Windows.Web.Http.Filters.IHttpFilter, global::System.IDisposable, global::Windows.Web.Http.Filters.IHttpBaseProtocolFilter2, global::Windows.Web.Http.Filters.IHttpBaseProtocolFilter3, global::Windows.Web.Http.Filters.IHttpBaseProtocolFilter4
+	{
+		public void Dispose()
+		{
+			global::System.IDisposable__Impl.Stubs.Close(this);
+		}
+
+		[global::System.Runtime.CompilerServices.MethodImpl(global::System.Runtime.CompilerServices.MethodImplOptions.NoInlining)]
+		public HttpBaseProtocolFilter()
+		{
+			global::System.IntPtr retval;
+			retval = global::System.Runtime.InteropServices.McgMarshal.ActivateInstance("Windows.Web.Http.Filters.HttpBaseProtocolFilter");
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			global::__Interop.McgHelpers.GetIUnknownForFactoryReturn(ref retval);
+			this.__AttachAndRelease(retval);
+		}
+
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "AllowAutoRedirect")]
+		public bool get_AllowAutoRedirect()
+		{
+			bool __retVal = global::Windows.Web.Http.Filters.IHttpBaseProtocolFilter__Impl.Stubs.get_AllowAutoRedirect(this);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			return __retVal;
+		}
+
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertySet, "AllowAutoRedirect")]
+		public void put_AllowAutoRedirect(bool value)
+		{
+			global::Windows.Web.Http.Filters.IHttpBaseProtocolFilter__Impl.Stubs.put_AllowAutoRedirect(
+								this, 
+								value
+							);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+		}
+
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "AllowUI")]
+		public bool get_AllowUI()
+		{
+			bool __retVal = global::Windows.Web.Http.Filters.IHttpBaseProtocolFilter__Impl.Stubs.get_AllowUI(this);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			return __retVal;
+		}
+
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertySet, "AllowUI")]
+		public void put_AllowUI(bool value)
+		{
+			global::Windows.Web.Http.Filters.IHttpBaseProtocolFilter__Impl.Stubs.put_AllowUI(
+								this, 
+								value
+							);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+		}
+
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "AutomaticDecompression")]
+		public bool get_AutomaticDecompression()
+		{
+			bool __retVal = global::Windows.Web.Http.Filters.IHttpBaseProtocolFilter__Impl.Stubs.get_AutomaticDecompression(this);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			return __retVal;
+		}
+
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertySet, "AutomaticDecompression")]
+		public void put_AutomaticDecompression(bool value)
+		{
+			global::Windows.Web.Http.Filters.IHttpBaseProtocolFilter__Impl.Stubs.put_AutomaticDecompression(
+								this, 
+								value
+							);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+		}
+
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "CacheControl")]
+		public global::Windows.Web.Http.Filters.HttpCacheControl get_CacheControl()
+		{
+			global::Windows.Web.Http.Filters.HttpCacheControl __retVal = global::Windows.Web.Http.Filters.IHttpBaseProtocolFilter__Impl.Stubs.get_CacheControl(this);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			return __retVal;
+		}
+
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertySet, "ClientCertificate")]
+		public void put_ClientCertificate(global::Windows.Security.Cryptography.Certificates.Certificate value)
+		{
+			global::Windows.Web.Http.Filters.IHttpBaseProtocolFilter__Impl.Stubs.put_ClientCertificate(
+								this, 
+								value
+							);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+		}
+
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "IgnorableServerCertificateErrors")]
+		public global::System.Collections.Generic.IList<global::Windows.Security.Cryptography.Certificates.ChainValidationResult> get_IgnorableServerCertificateErrors()
+		{
+			global::System.Collections.Generic.IList<global::Windows.Security.Cryptography.Certificates.ChainValidationResult> __retVal = global::Windows.Web.Http.Filters.IHttpBaseProtocolFilter__Impl.Stubs.get_IgnorableServerCertificateErrors(this);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			return __retVal;
+		}
+
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "MaxConnectionsPerServer")]
+		public uint get_MaxConnectionsPerServer()
+		{
+			uint __retVal = global::Windows.Web.Http.Filters.IHttpBaseProtocolFilter__Impl.Stubs.get_MaxConnectionsPerServer(this);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			return __retVal;
+		}
+
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertySet, "MaxConnectionsPerServer")]
+		public void put_MaxConnectionsPerServer(uint value)
+		{
+			global::Windows.Web.Http.Filters.IHttpBaseProtocolFilter__Impl.Stubs.put_MaxConnectionsPerServer(
+								this, 
+								value
+							);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+		}
+
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertySet, "ProxyCredential")]
+		public void put_ProxyCredential(global::Windows.Security.Credentials.PasswordCredential value)
+		{
+			global::Windows.Web.Http.Filters.IHttpBaseProtocolFilter__Impl.Stubs.put_ProxyCredential(
+								this, 
+								value
+							);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+		}
+
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertySet, "ServerCredential")]
+		public void put_ServerCredential(global::Windows.Security.Credentials.PasswordCredential value)
+		{
+			global::Windows.Web.Http.Filters.IHttpBaseProtocolFilter__Impl.Stubs.put_ServerCredential(
+								this, 
+								value
+							);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+		}
+
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "UseProxy")]
+		public bool get_UseProxy()
+		{
+			bool __retVal = global::Windows.Web.Http.Filters.IHttpBaseProtocolFilter__Impl.Stubs.get_UseProxy(this);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			return __retVal;
+		}
+
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertySet, "UseProxy")]
+		public void put_UseProxy(bool value)
+		{
+			global::Windows.Web.Http.Filters.IHttpBaseProtocolFilter__Impl.Stubs.put_UseProxy(
+								this, 
+								value
+							);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+		}
+
+		public global::Windows.Foundation.IAsyncOperationWithProgress<global::Windows.Web.Http.HttpResponseMessage, global::Windows.Web.Http.HttpProgress> SendRequestAsync(global::Windows.Web.Http.HttpRequestMessage request)
+		{
+			global::Windows.Foundation.IAsyncOperationWithProgress<global::Windows.Web.Http.HttpResponseMessage, global::Windows.Web.Http.HttpProgress> __retVal = global::Windows.Web.Http.Filters.IHttpFilter__Impl.Stubs.SendRequestAsync(
+								this, 
+								request
+							);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			return __retVal;
+		}
+
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "MaxVersion")]
+		public global::Windows.Web.Http.HttpVersion get_MaxVersion()
+		{
+			global::Windows.Web.Http.HttpVersion __retVal = global::Windows.Web.Http.Filters.IHttpBaseProtocolFilter2__Impl.Stubs.get_MaxVersion(this);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			return __retVal;
+		}
+
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertySet, "MaxVersion")]
+		public void put_MaxVersion(global::Windows.Web.Http.HttpVersion value)
+		{
+			global::Windows.Web.Http.Filters.IHttpBaseProtocolFilter2__Impl.Stubs.put_MaxVersion(
+								this, 
+								value
+							);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+		}
+
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "CookieUsageBehavior")]
+		public global::Windows.Web.Http.Filters.HttpCookieUsageBehavior get_CookieUsageBehavior()
+		{
+			global::Windows.Web.Http.Filters.HttpCookieUsageBehavior __retVal = global::Windows.Web.Http.Filters.IHttpBaseProtocolFilter3__Impl.Stubs.get_CookieUsageBehavior(this);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			return __retVal;
+		}
+
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertySet, "CookieUsageBehavior")]
+		public void put_CookieUsageBehavior(global::Windows.Web.Http.Filters.HttpCookieUsageBehavior value)
+		{
+			global::Windows.Web.Http.Filters.IHttpBaseProtocolFilter3__Impl.Stubs.put_CookieUsageBehavior(
+								this, 
+								value
+							);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+		}
+
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.EventAdd, "ServerCustomValidationRequested")]
+		public global::System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken add_ServerCustomValidationRequested(global::Windows.Foundation.TypedEventHandler<global::Windows.Web.Http.Filters.HttpBaseProtocolFilter, global::Windows.Web.Http.Filters.HttpServerCustomValidationRequestedEventArgs> eventHandler)
+		{
+			global::System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken __retVal = global::Windows.Web.Http.Filters.IHttpBaseProtocolFilter4__Impl.Stubs.add_ServerCustomValidationRequested(
+								this, 
+								eventHandler
+							);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			return __retVal;
+		}
+
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.EventRemove, "ServerCustomValidationRequested")]
+		public void remove_ServerCustomValidationRequested(global::System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken eventCookie)
+		{
+			global::Windows.Web.Http.Filters.IHttpBaseProtocolFilter4__Impl.Stubs.remove_ServerCustomValidationRequested(
+								this, 
+								eventCookie
+							);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+		}
+
+		public HttpBaseProtocolFilter(global::System.IntPtr dummy)
+		{
+		}
+	}
+
+	[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::Windows.Web.Http.Filters.IHttpCacheControl))]
+	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(0)]
+	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
+	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
+	public unsafe sealed class HttpCacheControl : global::System.__ComObject, global::Windows.Web.Http.Filters.IHttpCacheControl
+	{
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "ReadBehavior")]
+		public global::Windows.Web.Http.Filters.HttpCacheReadBehavior get_ReadBehavior()
+		{
+			global::Windows.Web.Http.Filters.HttpCacheReadBehavior __retVal = global::Windows.Web.Http.Filters.IHttpCacheControl__Impl.Stubs.get_ReadBehavior(this);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			return __retVal;
+		}
+
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertySet, "ReadBehavior")]
+		public void put_ReadBehavior(global::Windows.Web.Http.Filters.HttpCacheReadBehavior value)
+		{
+			global::Windows.Web.Http.Filters.IHttpCacheControl__Impl.Stubs.put_ReadBehavior(
+								this, 
+								value
+							);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+		}
+
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "WriteBehavior")]
+		public global::Windows.Web.Http.Filters.HttpCacheWriteBehavior get_WriteBehavior()
+		{
+			global::Windows.Web.Http.Filters.HttpCacheWriteBehavior __retVal = global::Windows.Web.Http.Filters.IHttpCacheControl__Impl.Stubs.get_WriteBehavior(this);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			return __retVal;
+		}
+
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertySet, "WriteBehavior")]
+		public void put_WriteBehavior(global::Windows.Web.Http.Filters.HttpCacheWriteBehavior value)
+		{
+			global::Windows.Web.Http.Filters.IHttpCacheControl__Impl.Stubs.put_WriteBehavior(
+								this, 
+								value
+							);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+		}
+
+		public HttpCacheControl(global::System.IntPtr dummy)
+		{
+		}
+	}
+
+	[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::Windows.Web.Http.Filters.IHttpServerCustomValidationRequestedEventArgs))]
+	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(0)]
+	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
+	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
+	public unsafe sealed class HttpServerCustomValidationRequestedEventArgs : global::System.__ComObject, global::Windows.Web.Http.Filters.IHttpServerCustomValidationRequestedEventArgs
+	{
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "RequestMessage")]
+		public global::Windows.Web.Http.HttpRequestMessage get_RequestMessage()
+		{
+			global::Windows.Web.Http.HttpRequestMessage __retVal = global::Windows.Web.Http.Filters.IHttpServerCustomValidationRequestedEventArgs__Impl.Stubs.get_RequestMessage(this);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			return __retVal;
+		}
+
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "ServerCertificate")]
+		public global::Windows.Security.Cryptography.Certificates.Certificate get_ServerCertificate()
+		{
+			global::Windows.Security.Cryptography.Certificates.Certificate __retVal = global::Windows.Web.Http.Filters.IHttpServerCustomValidationRequestedEventArgs__Impl.Stubs.get_ServerCertificate(this);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			return __retVal;
+		}
+
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "ServerCertificateErrors")]
+		public global::System.Collections.Generic.IReadOnlyList<global::Windows.Security.Cryptography.Certificates.ChainValidationResult> get_ServerCertificateErrors()
+		{
+			global::System.Collections.Generic.IReadOnlyList<global::Windows.Security.Cryptography.Certificates.ChainValidationResult> __retVal = global::Windows.Web.Http.Filters.IHttpServerCustomValidationRequestedEventArgs__Impl.Stubs.get_ServerCertificateErrors(this);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			return __retVal;
+		}
+
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "ServerIntermediateCertificates")]
+		public global::System.Collections.Generic.IReadOnlyList<global::Windows.Security.Cryptography.Certificates.Certificate> get_ServerIntermediateCertificates()
+		{
+			global::System.Collections.Generic.IReadOnlyList<global::Windows.Security.Cryptography.Certificates.Certificate> __retVal = global::Windows.Web.Http.Filters.IHttpServerCustomValidationRequestedEventArgs__Impl.Stubs.get_ServerIntermediateCertificates(this);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			return __retVal;
+		}
+
+		public void Reject()
+		{
+			global::Windows.Web.Http.Filters.IHttpServerCustomValidationRequestedEventArgs__Impl.Stubs.Reject(this);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+		}
+
+		public HttpServerCustomValidationRequestedEventArgs(global::System.IntPtr dummy)
+		{
+		}
+	}
+
+	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
+	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
+	public unsafe interface IHttpBaseProtocolFilter : global::Windows.Web.Http.Filters.IHttpFilter, global::System.IDisposable
+	{
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "AllowAutoRedirect")]
+		bool get_AllowAutoRedirect();
+
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertySet, "AllowAutoRedirect")]
+		void put_AllowAutoRedirect(bool value);
+
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "AllowUI")]
+		bool get_AllowUI();
+
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertySet, "AllowUI")]
+		void put_AllowUI(bool value);
+
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "AutomaticDecompression")]
+		bool get_AutomaticDecompression();
+
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertySet, "AutomaticDecompression")]
+		void put_AutomaticDecompression(bool value);
+
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "CacheControl")]
+		global::Windows.Web.Http.Filters.HttpCacheControl get_CacheControl();
+
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertySet, "ClientCertificate")]
+		void put_ClientCertificate(global::Windows.Security.Cryptography.Certificates.Certificate value);
+
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "IgnorableServerCertificateErrors")]
+		global::System.Collections.Generic.IList<global::Windows.Security.Cryptography.Certificates.ChainValidationResult> get_IgnorableServerCertificateErrors();
+
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "MaxConnectionsPerServer")]
+		uint get_MaxConnectionsPerServer();
+
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertySet, "MaxConnectionsPerServer")]
+		void put_MaxConnectionsPerServer(uint value);
+
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertySet, "ProxyCredential")]
+		void put_ProxyCredential(global::Windows.Security.Credentials.PasswordCredential value);
+
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertySet, "ServerCredential")]
+		void put_ServerCredential(global::Windows.Security.Credentials.PasswordCredential value);
+
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "UseProxy")]
+		bool get_UseProxy();
+
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertySet, "UseProxy")]
+		void put_UseProxy(bool value);
+	}
+
+	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
+	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
+	public unsafe interface IHttpFilter : global::System.IDisposable
+	{
+		global::Windows.Foundation.IAsyncOperationWithProgress<global::Windows.Web.Http.HttpResponseMessage, global::Windows.Web.Http.HttpProgress> SendRequestAsync(global::Windows.Web.Http.HttpRequestMessage request);
+	}
+
+	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
+	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
+	public unsafe interface IHttpCacheControl
+	{
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "ReadBehavior")]
+		global::Windows.Web.Http.Filters.HttpCacheReadBehavior get_ReadBehavior();
+
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertySet, "ReadBehavior")]
+		void put_ReadBehavior(global::Windows.Web.Http.Filters.HttpCacheReadBehavior value);
+
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "WriteBehavior")]
+		global::Windows.Web.Http.Filters.HttpCacheWriteBehavior get_WriteBehavior();
+
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertySet, "WriteBehavior")]
+		void put_WriteBehavior(global::Windows.Web.Http.Filters.HttpCacheWriteBehavior value);
+	}
+
+	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
+	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
+	public unsafe interface IHttpBaseProtocolFilter2 : global::Windows.Web.Http.Filters.IHttpFilter, global::System.IDisposable
+	{
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "MaxVersion")]
+		global::Windows.Web.Http.HttpVersion get_MaxVersion();
+
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertySet, "MaxVersion")]
+		void put_MaxVersion(global::Windows.Web.Http.HttpVersion value);
+	}
+
+	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
+	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
+	public unsafe interface IHttpBaseProtocolFilter3 : global::Windows.Web.Http.Filters.IHttpFilter, global::System.IDisposable
+	{
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "CookieUsageBehavior")]
+		global::Windows.Web.Http.Filters.HttpCookieUsageBehavior get_CookieUsageBehavior();
+
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertySet, "CookieUsageBehavior")]
+		void put_CookieUsageBehavior(global::Windows.Web.Http.Filters.HttpCookieUsageBehavior value);
+	}
+
+	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
+	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
+	public unsafe interface IHttpBaseProtocolFilter4 : global::Windows.Web.Http.Filters.IHttpFilter, global::System.IDisposable
+	{
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.EventAdd, "ServerCustomValidationRequested")]
+		global::System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken add_ServerCustomValidationRequested(global::Windows.Foundation.TypedEventHandler<global::Windows.Web.Http.Filters.HttpBaseProtocolFilter, global::Windows.Web.Http.Filters.HttpServerCustomValidationRequestedEventArgs> eventHandler);
+
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.EventRemove, "ServerCustomValidationRequested")]
+		void remove_ServerCustomValidationRequested(global::System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken eventCookie);
+	}
+
+	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
+	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
+	public unsafe interface IHttpServerCustomValidationRequestedEventArgs
+	{
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "RequestMessage")]
+		global::Windows.Web.Http.HttpRequestMessage get_RequestMessage();
+
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "ServerCertificate")]
+		global::Windows.Security.Cryptography.Certificates.Certificate get_ServerCertificate();
+
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "ServerCertificateErrors")]
+		global::System.Collections.Generic.IReadOnlyList<global::Windows.Security.Cryptography.Certificates.ChainValidationResult> get_ServerCertificateErrors();
+
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "ServerIntermediateCertificates")]
+		global::System.Collections.Generic.IReadOnlyList<global::Windows.Security.Cryptography.Certificates.Certificate> get_ServerIntermediateCertificates();
+
+		void Reject();
+	}
+
+	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(0)]
+	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
+	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
+	public enum HttpCacheReadBehavior
+	{
+		Default = 0,
+		MostRecent = 1,
+		OnlyFromCache = 2,
+		NoCache = 3,
+	}
+
+	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(0)]
+	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
+	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
+	public enum HttpCacheWriteBehavior
+	{
+		Default = 0,
+		NoCache = 1,
+	}
+
+	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(0)]
+	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
+	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
+	public enum HttpCookieUsageBehavior
+	{
+		Default = 0,
+		NoCookies = 1,
+	}
+}
+
+namespace Windows.Web.Http.Headers
+{
+	[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::Windows.Web.Http.Headers.IHttpContentHeaderCollection))]
+	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(65536)]
+	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
+	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
+	public unsafe sealed class HttpContentHeaderCollection : global::System.__ComObject, global::System.Collections.Generic.ICollection<global::System.Collections.Generic.KeyValuePair<string, string>>, global::System.Collections.Generic.IDictionary<string, string>, global::Windows.Web.Http.Headers.IHttpContentHeaderCollection, global::System.Collections.Generic.IEnumerable<global::System.Collections.Generic.KeyValuePair<string, string>>, global::Windows.Foundation.IStringable
+	{
+		int global::System.Collections.Generic.ICollection<global::System.Collections.Generic.KeyValuePair<string, string>>.Count
+		{
+			get
+			{
+				return global::System.Runtime.InteropServices.WindowsRuntime.IMapSharedReferenceTypesRCWAdapter.Count(((global::System.Collections.Generic.IDictionary<string, string>)this));
+			}
+		}
+
+		bool global::System.Collections.Generic.ICollection<global::System.Collections.Generic.KeyValuePair<string, string>>.IsReadOnly
+		{
+			get
+			{
+				return global::System.Runtime.InteropServices.WindowsRuntime.IMapSharedReferenceTypesRCWAdapter.IsReadOnly(((global::System.Collections.Generic.IDictionary<string, string>)this));
+			}
+		}
+
+		void global::System.Collections.Generic.ICollection<global::System.Collections.Generic.KeyValuePair<string, string>>.Add(global::System.Collections.Generic.KeyValuePair<string, string> item)
+		{
+			global::System.Runtime.InteropServices.WindowsRuntime.IMapSharedReferenceTypesRCWAdapter.Add(
+								this, 
+								item
+							);
+		}
+
+		void global::System.Collections.Generic.ICollection<global::System.Collections.Generic.KeyValuePair<string, string>>.Clear()
+		{
+			global::System.Runtime.InteropServices.WindowsRuntime.IMapSharedReferenceTypesRCWAdapter.Clear(((global::System.Collections.Generic.IDictionary<string, string>)this));
+		}
+
+		bool global::System.Collections.Generic.ICollection<global::System.Collections.Generic.KeyValuePair<string, string>>.Contains(global::System.Collections.Generic.KeyValuePair<string, string> item)
+		{
+			return global::System.Runtime.InteropServices.WindowsRuntime.IMapSharedReferenceTypesRCWAdapter.Contains(
+								this, 
+								item
+							);
+		}
+
+		void global::System.Collections.Generic.ICollection<global::System.Collections.Generic.KeyValuePair<string, string>>.CopyTo(
+					global::System.Collections.Generic.KeyValuePair<string, string>[] array, 
+					int arrayindex)
+		{
+			global::System.Runtime.InteropServices.WindowsRuntime.IMapSharedReferenceTypesRCWAdapter.CopyTo(
+								this, 
+								array, 
+								arrayindex
+							);
+		}
+
+		bool global::System.Collections.Generic.ICollection<global::System.Collections.Generic.KeyValuePair<string, string>>.Remove(global::System.Collections.Generic.KeyValuePair<string, string> item)
+		{
+			return global::System.Runtime.InteropServices.WindowsRuntime.IMapSharedReferenceTypesRCWAdapter.Remove(
+								this, 
+								item
+							);
+		}
+
+		string global::System.Collections.Generic.IDictionary<string, string>.this[string index]
+		{
+			get
+			{
+				return global::System.Runtime.InteropServices.WindowsRuntime.IMapSharedReferenceTypesRCWAdapter.Indexer_Get(
+									((global::System.Collections.Generic.IDictionary<string, string>)this), 
+									index
+								);
+			}
+			set
+			{
+				global::System.Runtime.InteropServices.WindowsRuntime.IMapSharedReferenceTypesRCWAdapter.Indexer_Set(
+									this, 
+									index, 
+									value
+								);
+			}
+		}
+
+		global::System.Collections.Generic.ICollection<string> global::System.Collections.Generic.IDictionary<string, string>.Keys
+		{
+			get
+			{
+				return global::System.Runtime.InteropServices.WindowsRuntime.IMapSharedReferenceTypesRCWAdapter.Keys(((global::System.Collections.Generic.IDictionary<string, string>)this));
+			}
+		}
+
+		global::System.Collections.Generic.ICollection<string> global::System.Collections.Generic.IDictionary<string, string>.Values
+		{
+			get
+			{
+				return global::System.Runtime.InteropServices.WindowsRuntime.IMapSharedReferenceTypesRCWAdapter.Values(((global::System.Collections.Generic.IDictionary<string, string>)this));
+			}
+		}
+
+		void global::System.Collections.Generic.IDictionary<string, string>.Add(
+					string key, 
+					string value)
+		{
+			global::System.Runtime.InteropServices.WindowsRuntime.IMapSharedReferenceTypesRCWAdapter.Add(
+								this, 
+								key, 
+								value
+							);
+		}
+
+		bool global::System.Collections.Generic.IDictionary<string, string>.ContainsKey(string key)
+		{
+			return global::System.Runtime.InteropServices.WindowsRuntime.IMapSharedReferenceTypesRCWAdapter.ContainsKey(
+								((global::System.Collections.Generic.IDictionary<string, string>)this), 
+								key
+							);
+		}
+
+		bool global::System.Collections.Generic.IDictionary<string, string>.Remove(string key)
+		{
+			return global::System.Runtime.InteropServices.WindowsRuntime.IMapSharedReferenceTypesRCWAdapter.Remove(
+								((global::System.Collections.Generic.IDictionary<string, string>)this), 
+								key
+							);
+		}
+
+		bool global::System.Collections.Generic.IDictionary<string, string>.TryGetValue(
+					string key, 
+					out string value)
+		{
+			return global::System.Runtime.InteropServices.WindowsRuntime.IMapSharedReferenceTypesRCWAdapter.TryGetValue(
+								this, 
+								key, 
+								out value
+							);
+		}
+
+		global::System.Collections.Generic.IEnumerator<global::System.Collections.Generic.KeyValuePair<string, string>> global::System.Collections.Generic.IEnumerable<global::System.Collections.Generic.KeyValuePair<string, string>>.GetEnumerator()
+		{
+			return (global::System.Collections.Generic.IEnumerator<global::System.Collections.Generic.KeyValuePair<string, string>>)global::__Interop.McgHelpers.GetGenericEnumerator(
+								this, 
+								typeof(global::System.Collections.Generic.IEnumerable<global::System.Collections.Generic.KeyValuePair<string, string>>).TypeHandle
+							);
+		}
+
+		global::System.Collections.IEnumerator global::System.Collections.IEnumerable.GetEnumerator()
+		{
+			return global::__Interop.McgHelpers.GetNonGenericEnumerator(
+								this, 
+								typeof(global::System.Collections.Generic.IEnumerable<global::System.Collections.Generic.KeyValuePair<string, string>>).TypeHandle
+							);
+		}
+
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertySet, "ContentLength")]
+		public void put_ContentLength(global::System.Nullable<ulong> value)
+		{
+			global::Windows.Web.Http.Headers.IHttpContentHeaderCollection__Impl.Stubs.put_ContentLength(
+								this, 
+								value
+							);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+		}
+
+		public bool TryAppendWithoutValidation(
+					string name, 
+					string value)
+		{
+			bool __retVal = global::Windows.Web.Http.Headers.IHttpContentHeaderCollection__Impl.Stubs.TryAppendWithoutValidation(
+								this, 
+								name, 
+								value
+							);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			return __retVal;
+		}
+
+		public override string ToString()
+		{
+			string __retVal = global::Windows.Foundation.IStringable__Impl.Stubs.ToString(this);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			return __retVal;
+		}
+
+		public HttpContentHeaderCollection(global::System.IntPtr dummy)
+		{
+		}
+	}
+
+	[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::Windows.Web.Http.Headers.IHttpRequestHeaderCollection))]
+	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(0)]
+	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
+	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
+	public unsafe sealed class HttpRequestHeaderCollection : global::System.__ComObject, global::System.Collections.Generic.ICollection<global::System.Collections.Generic.KeyValuePair<string, string>>, global::System.Collections.Generic.IDictionary<string, string>, global::Windows.Web.Http.Headers.IHttpRequestHeaderCollection, global::System.Collections.Generic.IEnumerable<global::System.Collections.Generic.KeyValuePair<string, string>>, global::Windows.Foundation.IStringable
+	{
+		int global::System.Collections.Generic.ICollection<global::System.Collections.Generic.KeyValuePair<string, string>>.Count
+		{
+			get
+			{
+				return global::System.Runtime.InteropServices.WindowsRuntime.IMapSharedReferenceTypesRCWAdapter.Count(((global::System.Collections.Generic.IDictionary<string, string>)this));
+			}
+		}
+
+		bool global::System.Collections.Generic.ICollection<global::System.Collections.Generic.KeyValuePair<string, string>>.IsReadOnly
+		{
+			get
+			{
+				return global::System.Runtime.InteropServices.WindowsRuntime.IMapSharedReferenceTypesRCWAdapter.IsReadOnly(((global::System.Collections.Generic.IDictionary<string, string>)this));
+			}
+		}
+
+		void global::System.Collections.Generic.ICollection<global::System.Collections.Generic.KeyValuePair<string, string>>.Add(global::System.Collections.Generic.KeyValuePair<string, string> item)
+		{
+			global::System.Runtime.InteropServices.WindowsRuntime.IMapSharedReferenceTypesRCWAdapter.Add(
+								this, 
+								item
+							);
+		}
+
+		void global::System.Collections.Generic.ICollection<global::System.Collections.Generic.KeyValuePair<string, string>>.Clear()
+		{
+			global::System.Runtime.InteropServices.WindowsRuntime.IMapSharedReferenceTypesRCWAdapter.Clear(((global::System.Collections.Generic.IDictionary<string, string>)this));
+		}
+
+		bool global::System.Collections.Generic.ICollection<global::System.Collections.Generic.KeyValuePair<string, string>>.Contains(global::System.Collections.Generic.KeyValuePair<string, string> item)
+		{
+			return global::System.Runtime.InteropServices.WindowsRuntime.IMapSharedReferenceTypesRCWAdapter.Contains(
+								this, 
+								item
+							);
+		}
+
+		void global::System.Collections.Generic.ICollection<global::System.Collections.Generic.KeyValuePair<string, string>>.CopyTo(
+					global::System.Collections.Generic.KeyValuePair<string, string>[] array, 
+					int arrayindex)
+		{
+			global::System.Runtime.InteropServices.WindowsRuntime.IMapSharedReferenceTypesRCWAdapter.CopyTo(
+								this, 
+								array, 
+								arrayindex
+							);
+		}
+
+		bool global::System.Collections.Generic.ICollection<global::System.Collections.Generic.KeyValuePair<string, string>>.Remove(global::System.Collections.Generic.KeyValuePair<string, string> item)
+		{
+			return global::System.Runtime.InteropServices.WindowsRuntime.IMapSharedReferenceTypesRCWAdapter.Remove(
+								this, 
+								item
+							);
+		}
+
+		string global::System.Collections.Generic.IDictionary<string, string>.this[string index]
+		{
+			get
+			{
+				return global::System.Runtime.InteropServices.WindowsRuntime.IMapSharedReferenceTypesRCWAdapter.Indexer_Get(
+									((global::System.Collections.Generic.IDictionary<string, string>)this), 
+									index
+								);
+			}
+			set
+			{
+				global::System.Runtime.InteropServices.WindowsRuntime.IMapSharedReferenceTypesRCWAdapter.Indexer_Set(
+									this, 
+									index, 
+									value
+								);
+			}
+		}
+
+		global::System.Collections.Generic.ICollection<string> global::System.Collections.Generic.IDictionary<string, string>.Keys
+		{
+			get
+			{
+				return global::System.Runtime.InteropServices.WindowsRuntime.IMapSharedReferenceTypesRCWAdapter.Keys(((global::System.Collections.Generic.IDictionary<string, string>)this));
+			}
+		}
+
+		global::System.Collections.Generic.ICollection<string> global::System.Collections.Generic.IDictionary<string, string>.Values
+		{
+			get
+			{
+				return global::System.Runtime.InteropServices.WindowsRuntime.IMapSharedReferenceTypesRCWAdapter.Values(((global::System.Collections.Generic.IDictionary<string, string>)this));
+			}
+		}
+
+		void global::System.Collections.Generic.IDictionary<string, string>.Add(
+					string key, 
+					string value)
+		{
+			global::System.Runtime.InteropServices.WindowsRuntime.IMapSharedReferenceTypesRCWAdapter.Add(
+								this, 
+								key, 
+								value
+							);
+		}
+
+		bool global::System.Collections.Generic.IDictionary<string, string>.ContainsKey(string key)
+		{
+			return global::System.Runtime.InteropServices.WindowsRuntime.IMapSharedReferenceTypesRCWAdapter.ContainsKey(
+								((global::System.Collections.Generic.IDictionary<string, string>)this), 
+								key
+							);
+		}
+
+		bool global::System.Collections.Generic.IDictionary<string, string>.Remove(string key)
+		{
+			return global::System.Runtime.InteropServices.WindowsRuntime.IMapSharedReferenceTypesRCWAdapter.Remove(
+								((global::System.Collections.Generic.IDictionary<string, string>)this), 
+								key
+							);
+		}
+
+		bool global::System.Collections.Generic.IDictionary<string, string>.TryGetValue(
+					string key, 
+					out string value)
+		{
+			return global::System.Runtime.InteropServices.WindowsRuntime.IMapSharedReferenceTypesRCWAdapter.TryGetValue(
+								this, 
+								key, 
+								out value
+							);
+		}
+
+		global::System.Collections.Generic.IEnumerator<global::System.Collections.Generic.KeyValuePair<string, string>> global::System.Collections.Generic.IEnumerable<global::System.Collections.Generic.KeyValuePair<string, string>>.GetEnumerator()
+		{
+			return (global::System.Collections.Generic.IEnumerator<global::System.Collections.Generic.KeyValuePair<string, string>>)global::__Interop.McgHelpers.GetGenericEnumerator(
+								this, 
+								typeof(global::System.Collections.Generic.IEnumerable<global::System.Collections.Generic.KeyValuePair<string, string>>).TypeHandle
+							);
+		}
+
+		global::System.Collections.IEnumerator global::System.Collections.IEnumerable.GetEnumerator()
+		{
+			return global::__Interop.McgHelpers.GetNonGenericEnumerator(
+								this, 
+								typeof(global::System.Collections.Generic.IEnumerable<global::System.Collections.Generic.KeyValuePair<string, string>>).TypeHandle
+							);
+		}
+
+		public bool TryAppendWithoutValidation(
+					string name, 
+					string value)
+		{
+			bool __retVal = global::Windows.Web.Http.Headers.IHttpRequestHeaderCollection__Impl.Stubs.TryAppendWithoutValidation(
+								this, 
+								name, 
+								value
+							);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			return __retVal;
+		}
+
+		public override string ToString()
+		{
+			string __retVal = global::Windows.Foundation.IStringable__Impl.Stubs.ToString(this);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			return __retVal;
+		}
+
+		public HttpRequestHeaderCollection(global::System.IntPtr dummy)
+		{
+		}
+	}
+
+	[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::Windows.Web.Http.Headers.IHttpResponseHeaderCollection))]
+	[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::System.Collections.Generic.IDictionary<string, string>))]
+	[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::System.Collections.Generic.ICollection<string>))]
+	[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::System.Collections.Generic.IEnumerable<global::System.Collections.Generic.KeyValuePair<string, string>>))]
+	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(0)]
+	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
+	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
+	public unsafe sealed class HttpResponseHeaderCollection : global::System.__ComObject, global::System.Collections.Generic.ICollection<global::System.Collections.Generic.KeyValuePair<string, string>>, global::System.Collections.Generic.IDictionary<string, string>, global::Windows.Web.Http.Headers.IHttpResponseHeaderCollection, global::System.Collections.Generic.IEnumerable<global::System.Collections.Generic.KeyValuePair<string, string>>, global::Windows.Foundation.IStringable
+	{
+		int global::System.Collections.Generic.ICollection<global::System.Collections.Generic.KeyValuePair<string, string>>.Count
+		{
+			get
+			{
+				return global::System.Runtime.InteropServices.WindowsRuntime.IMapSharedReferenceTypesRCWAdapter.Count(((global::System.Collections.Generic.IDictionary<string, string>)this));
+			}
+		}
+
+		bool global::System.Collections.Generic.ICollection<global::System.Collections.Generic.KeyValuePair<string, string>>.IsReadOnly
+		{
+			get
+			{
+				return global::System.Runtime.InteropServices.WindowsRuntime.IMapSharedReferenceTypesRCWAdapter.IsReadOnly(((global::System.Collections.Generic.IDictionary<string, string>)this));
+			}
+		}
+
+		void global::System.Collections.Generic.ICollection<global::System.Collections.Generic.KeyValuePair<string, string>>.Add(global::System.Collections.Generic.KeyValuePair<string, string> item)
+		{
+			global::System.Runtime.InteropServices.WindowsRuntime.IMapSharedReferenceTypesRCWAdapter.Add(
+								this, 
+								item
+							);
+		}
+
+		void global::System.Collections.Generic.ICollection<global::System.Collections.Generic.KeyValuePair<string, string>>.Clear()
+		{
+			global::System.Runtime.InteropServices.WindowsRuntime.IMapSharedReferenceTypesRCWAdapter.Clear(((global::System.Collections.Generic.IDictionary<string, string>)this));
+		}
+
+		bool global::System.Collections.Generic.ICollection<global::System.Collections.Generic.KeyValuePair<string, string>>.Contains(global::System.Collections.Generic.KeyValuePair<string, string> item)
+		{
+			return global::System.Runtime.InteropServices.WindowsRuntime.IMapSharedReferenceTypesRCWAdapter.Contains(
+								this, 
+								item
+							);
+		}
+
+		void global::System.Collections.Generic.ICollection<global::System.Collections.Generic.KeyValuePair<string, string>>.CopyTo(
+					global::System.Collections.Generic.KeyValuePair<string, string>[] array, 
+					int arrayindex)
+		{
+			global::System.Runtime.InteropServices.WindowsRuntime.IMapSharedReferenceTypesRCWAdapter.CopyTo(
+								this, 
+								array, 
+								arrayindex
+							);
+		}
+
+		bool global::System.Collections.Generic.ICollection<global::System.Collections.Generic.KeyValuePair<string, string>>.Remove(global::System.Collections.Generic.KeyValuePair<string, string> item)
+		{
+			return global::System.Runtime.InteropServices.WindowsRuntime.IMapSharedReferenceTypesRCWAdapter.Remove(
+								this, 
+								item
+							);
+		}
+
+		string global::System.Collections.Generic.IDictionary<string, string>.this[string index]
+		{
+			get
+			{
+				return global::System.Runtime.InteropServices.WindowsRuntime.IMapSharedReferenceTypesRCWAdapter.Indexer_Get(
+									((global::System.Collections.Generic.IDictionary<string, string>)this), 
+									index
+								);
+			}
+			set
+			{
+				global::System.Runtime.InteropServices.WindowsRuntime.IMapSharedReferenceTypesRCWAdapter.Indexer_Set(
+									this, 
+									index, 
+									value
+								);
+			}
+		}
+
+		global::System.Collections.Generic.ICollection<string> global::System.Collections.Generic.IDictionary<string, string>.Keys
+		{
+			get
+			{
+				return global::System.Runtime.InteropServices.WindowsRuntime.IMapSharedReferenceTypesRCWAdapter.Keys(((global::System.Collections.Generic.IDictionary<string, string>)this));
+			}
+		}
+
+		global::System.Collections.Generic.ICollection<string> global::System.Collections.Generic.IDictionary<string, string>.Values
+		{
+			get
+			{
+				return global::System.Runtime.InteropServices.WindowsRuntime.IMapSharedReferenceTypesRCWAdapter.Values(((global::System.Collections.Generic.IDictionary<string, string>)this));
+			}
+		}
+
+		void global::System.Collections.Generic.IDictionary<string, string>.Add(
+					string key, 
+					string value)
+		{
+			global::System.Runtime.InteropServices.WindowsRuntime.IMapSharedReferenceTypesRCWAdapter.Add(
+								this, 
+								key, 
+								value
+							);
+		}
+
+		bool global::System.Collections.Generic.IDictionary<string, string>.ContainsKey(string key)
+		{
+			return global::System.Runtime.InteropServices.WindowsRuntime.IMapSharedReferenceTypesRCWAdapter.ContainsKey(
+								((global::System.Collections.Generic.IDictionary<string, string>)this), 
+								key
+							);
+		}
+
+		bool global::System.Collections.Generic.IDictionary<string, string>.Remove(string key)
+		{
+			return global::System.Runtime.InteropServices.WindowsRuntime.IMapSharedReferenceTypesRCWAdapter.Remove(
+								((global::System.Collections.Generic.IDictionary<string, string>)this), 
+								key
+							);
+		}
+
+		bool global::System.Collections.Generic.IDictionary<string, string>.TryGetValue(
+					string key, 
+					out string value)
+		{
+			return global::System.Runtime.InteropServices.WindowsRuntime.IMapSharedReferenceTypesRCWAdapter.TryGetValue(
+								this, 
+								key, 
+								out value
+							);
+		}
+
+		global::System.Collections.Generic.IEnumerator<global::System.Collections.Generic.KeyValuePair<string, string>> global::System.Collections.Generic.IEnumerable<global::System.Collections.Generic.KeyValuePair<string, string>>.GetEnumerator()
+		{
+			return (global::System.Collections.Generic.IEnumerator<global::System.Collections.Generic.KeyValuePair<string, string>>)global::__Interop.McgHelpers.GetGenericEnumerator(
+								this, 
+								typeof(global::System.Collections.Generic.IEnumerable<global::System.Collections.Generic.KeyValuePair<string, string>>).TypeHandle
+							);
+		}
+
+		global::System.Collections.IEnumerator global::System.Collections.IEnumerable.GetEnumerator()
+		{
+			return global::__Interop.McgHelpers.GetNonGenericEnumerator(
+								this, 
+								typeof(global::System.Collections.Generic.IEnumerable<global::System.Collections.Generic.KeyValuePair<string, string>>).TypeHandle
+							);
+		}
+
+		public override string ToString()
+		{
+			string __retVal = global::Windows.Foundation.IStringable__Impl.Stubs.ToString(this);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			return __retVal;
+		}
+
+		public HttpResponseHeaderCollection(global::System.IntPtr dummy)
+		{
+		}
+	}
+
+	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
+	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
+	public unsafe interface IHttpContentHeaderCollection : global::System.Collections.Generic.IDictionary<string, string>, global::System.Collections.Generic.IEnumerable<global::System.Collections.Generic.KeyValuePair<string, string>>
+	{
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertySet, "ContentLength")]
+		void put_ContentLength(global::System.Nullable<ulong> value);
+
+		bool TryAppendWithoutValidation(
+					string name, 
+					string value);
+	}
+
+	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
+	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
+	public unsafe interface IHttpRequestHeaderCollection : global::System.Collections.Generic.IDictionary<string, string>, global::System.Collections.Generic.IEnumerable<global::System.Collections.Generic.KeyValuePair<string, string>>
+	{
+		bool TryAppendWithoutValidation(
+					string name, 
+					string value);
+	}
+
+	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
+	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
+	public unsafe interface IHttpResponseHeaderCollection : global::System.Collections.Generic.IDictionary<string, string>, global::System.Collections.Generic.IEnumerable<global::System.Collections.Generic.KeyValuePair<string, string>>
 	{
 	}
 }

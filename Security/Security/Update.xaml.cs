@@ -24,6 +24,7 @@ using System.Globalization;
 using System.Threading;
 using Windows.Web;
 using Windows.ApplicationModel.Background;
+using System.Net.Http;
 
 
 // Документацию по шаблону элемента "Пустая страница" см. по адресу https://go.microsoft.com/fwlink/?LinkId=234238
@@ -39,12 +40,15 @@ namespace Security
         private List<DownloadOperation> activeDownloads;
         private CancellationTokenSource cts;
 
+        string version = "0.4.1.0";
+
         public Update()
         {
             this.InitializeComponent();
         }
 
         public PackageId packageId { get; private set; }
+        public IEnumerable<string> MobileUserAgent { get; private set; }
 
         private async void CheckButton_Click(object sender, RoutedEventArgs e)
         {
@@ -58,94 +62,44 @@ namespace Security
             //      V      V      V
             //      V      V      V
             //      V      V      V
-
-            //            try
-            //            {
-
-            
-            var serverAddressField = "https://raw.githubusercontent.com/DrAlexOne/SecurityAppUWP/master/Security/Security/AppPackages/Security_0.2.9.0_Test/";
-            Uri source = new Uri(serverAddressField);
-            string destination = "Security_0.2.9.0_x86_x64_arm.appxbundle";
-
-            
-
-            StorageFile destinationFile = await Windows.ApplicationModel.Package.Current.InstalledLocation.CreateFileAsync(destination, CreationCollisionOption.GenerateUniqueName);
-
-            BackgroundDownloader downloader = new BackgroundDownloader();
-            DownloadOperation download = downloader.CreateDownload(source, destinationFile);
-
-            download.Priority = BackgroundTransferPriority.Default;
-
-            //await HandleDownloadAsync(download, true);
-
-            
-            await Task.Delay(TimeSpan.FromSeconds(2));
-            CheckButton.Content = "Its only developing.. .";
-            CheckButton.Visibility = Visibility.Visible;
-            pb.Visibility = Visibility.Collapsed;
-            
-
-
-
-            /*
-
-            //            }  
-                        catch (Exception ex)
-                        {
-                            CheckButton.Content = "Its only developing.. . Error: " + ex;
-                            CheckButton.Visibility = Visibility.Visible;
-                            pb.Visibility = Visibility.Collapsed;
-                        }
+            //
 
 
 
 
-            //CheckButton.Content = "Downloaded!";
-            //CheckButton.Visibility = Visibility.Visible;
-            //pb.Visibility = Visibility.Collapsed;
 
+            Windows.Storage.StorageFolder storageFolder = Windows.Storage.ApplicationData.Current.LocalFolder;
+            Windows.Storage.StorageFile sampleFile = await storageFolder.CreateFileAsync("Security_" + version + "_x64.appxbundle", Windows.Storage.CreationCollisionOption.ReplaceExisting);
 
-
-            
-                                 await Task.Delay(TimeSpan.FromSeconds(5));
-
-*/
+            Write();
         }
 
-        private async Task HandleDownloadAsync(DownloadOperation download, bool start)
+        private async void Write()
         {
+            var uri = "https://raw.githubusercontent.com/DrAlexOne/SecurityAppUWP/master/Security/Security/AppPackages/Security_" + version + "_Test/Security_" + version + "_x86_x64_arm.appxbundle";
+
             try
             {
+                var handler = new HttpClientHandler { AllowAutoRedirect = true };
+                var client = new System.Net.Http.HttpClient(handler);
+                client.DefaultRequestHeaders.Add("user-agent", MobileUserAgent);
+                Uri requestUri = new Uri(uri);
+                var response = await client.GetAsync(requestUri);
+                response.EnsureSuccessStatusCode();
+                var html = await response.Content.ReadAsStringAsync();
 
-                // Store the download so we can pause/resume.
-                activeDownloads.Add(download);
+                Windows.Storage.StorageFolder storageFolder = Windows.Storage.ApplicationData.Current.LocalFolder;
+                Windows.Storage.StorageFile sampleFile = await storageFolder.GetFileAsync("Security_" + version + "_x64.appxbundle");
 
-                Progress<DownloadOperation> progressCallback = new Progress<DownloadOperation>(DownloadProgress);
-                if (start)
-                {
-                    // Start the download and attach a progress handler.
-                    await download.StartAsync().AsTask(cts.Token, progressCallback);
-                }
-                else
-                {
-                    // The download was already running when the application started, re-attach the progress handler.
-                    await download.AttachAsync().AsTask(cts.Token, progressCallback);
-                }
 
-                ResponseInformation response = download.GetResponseInformation();
+                await Windows.Storage.FileIO.WriteTextAsync(sampleFile, html);
 
-                // GetResponseInformation() returns null for non-HTTP transfers (e.g., FTP).
-                string statusCode = response != null ? response.StatusCode.ToString() : String.Empty;
             }
-            catch (TaskCanceledException)
+            catch
             {
-            }
-            catch (Exception ex)
-            {
-            }
-            finally
-            {
-                activeDownloads.Remove(download);
+                CheckButton.Content = "Its only developing.. .";
+                CheckButton.Visibility = Visibility.Visible;
+                pb.Visibility = Visibility.Collapsed;
             }
         }
 
@@ -154,57 +108,10 @@ namespace Security
 
         }
 
-        private void DownloadProgress(DownloadOperation download)
-        {
-            // DownloadOperation.Progress is updated in real-time while the operation is ongoing. Therefore,
-            // we must make a local copy so that we can have a consistent view of that ever-changing state
-            // throughout this method's lifetime.
-            BackgroundDownloadProgress currentProgress = download.Progress;
-
-
-            double percent = 100;
-            if (currentProgress.TotalBytesToReceive > 0)
-            {
-                percent = currentProgress.BytesReceived * 100 / currentProgress.TotalBytesToReceive;
-            }
-
-
-
-            if (currentProgress.HasRestarted)
-            {
-            }
-
-            if (currentProgress.HasResponseChanged)
-            {
-                // We have received new response headers from the server.
-                // Be aware that GetResponseInformation() returns null for non-HTTP transfers (e.g., FTP).
-                ResponseInformation response = download.GetResponseInformation();
-                int headersCount = response != null ? response.Headers.Count : 0;
-
-
-                // If you want to stream the response data this is a good time to start.
-                // download.GetResultStreamAt(0);
-            }
-        }
-
-        public static BackgroundDownloader CreateBackgroundDownloader()
-        {
-            BackgroundTransferCompletionGroup completionGroup = new BackgroundTransferCompletionGroup();
-
-            BackgroundTaskBuilder builder = new BackgroundTaskBuilder();
-            builder.TaskEntryPoint = "Tasks.CompletionGroupTask";
-            builder.SetTrigger(completionGroup.Trigger);
-
-            BackgroundTaskRegistration taskRegistration = builder.Register();
-
-            BackgroundDownloader downloader = new BackgroundDownloader(completionGroup);
-
-            return downloader;
-        }
-
         private void ToHome1(object sender, RoutedEventArgs e)
         {
             this.Frame.Navigate(typeof(MainPage));
         }
+
     }
 }
