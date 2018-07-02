@@ -27,7 +27,7 @@ namespace Security
     public sealed partial class MainPage : Page
     {
         int InfoPage = 1;
-
+        string color = "light";
         public static MainPage Current { get; internal set; }
 
         public MainPage()
@@ -73,9 +73,6 @@ namespace Security
                 pb.Value = Convert.ToDouble(report.RemainingCapacityInMilliwattHours);
                 //txtBlock.Text = ((pb.Value / pb.Maximum) * 100).ToString("F2") + "%";
             }
-
-
-
 
         }
 
@@ -125,29 +122,29 @@ namespace Security
 
         private void ToDefender(object sender, PointerRoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(Defender));
+            this.Frame.Navigate(typeof(Defender), color);
         }
 
         private void AppBarButton_Click_3(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(Update));
+            this.Frame.Navigate(typeof(Update), color);
 
         }
 
         private void BatteryInfo(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(BatteryInfo));
+            this.Frame.Navigate(typeof(BatteryInfo), color);
 
         }
 
         private void NextInfo(object sender, RoutedEventArgs e)
         {
             InfoPage = InfoPage + 1;
-            if (InfoPage==3)
+            if (InfoPage == 3)
             {
                 InfoPage = 1;
             }
-            if (InfoPage==1)
+            if (InfoPage == 1)
             {
                 var aggBattery = Battery.AggregateBattery;
                 var report = aggBattery.GetReport();
@@ -173,13 +170,45 @@ namespace Security
                     //txtBlock.Text = ((pb.Value / pb.Maximum) * 100).ToString("F2") + "%";
                 }
             }
-            if (InfoPage==2)
+            if (InfoPage == 2)
             {
                 pb.Visibility = Visibility.Collapsed;
                 txtBlock.Text = "Seems all good";
                 txt2.Text = "Viruses dont found";
                 txt2.Visibility = Visibility.Visible;
             }
+        }
+
+        protected override void OnNavigatedTo(NavigationEventArgs e)
+        {
+            color = e.Parameter.ToString();
+
+            Windows.UI.Xaml.Media.AcrylicBrush myBrush = new Windows.UI.Xaml.Media.AcrylicBrush();
+            myBrush.BackgroundSource = Windows.UI.Xaml.Media.AcrylicBackgroundSource.HostBackdrop;
+            if (color == "light")
+            {
+                myBrush.TintColor = Windows.UI.Colors.WhiteSmoke;
+                myBrush.FallbackColor = Windows.UI.Colors.WhiteSmoke;
+                RequestedTheme = ElementTheme.Light;
+                HomeIcon.Foreground = new SolidColorBrush(Windows.UI.Colors.Black);
+            }
+            if (color == "dark")
+            {
+                myBrush.TintColor = Color.FromArgb(255, 50, 50, 50);
+                myBrush.FallbackColor = Color.FromArgb(255, 50, 50, 50);
+                RequestedTheme = ElementTheme.Dark;
+                HomeIcon.Foreground = new SolidColorBrush(Windows.UI.Colors.White);
+            }
+            else
+            {
+                color = "light";
+                myBrush.TintColor = Windows.UI.Colors.WhiteSmoke;
+                myBrush.FallbackColor = Windows.UI.Colors.WhiteSmoke;
+                RequestedTheme = ElementTheme.Light;
+                HomeIcon.Foreground = new SolidColorBrush(Windows.UI.Colors.Black);
+            }
+            myBrush.TintOpacity = 0.7;
+            RectangleAcrylic.Fill = myBrush;
         }
     }
 }

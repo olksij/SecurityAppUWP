@@ -9,17 +9,17 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
-        <Rectangle Height="115" Margin="0,0,0,0" VerticalAlignment="Top">
+        <Rectangle x:ConnectionId='2' x:Name="RectangleAcrylic" Height="115" Margin="0,0,0,0" VerticalAlignment="Top">
             <Rectangle.Fill>
                 <AcrylicBrush TintOpacity="0.8" BackgroundSource="HostBackdrop" TintColor="WhiteSmoke" FallbackColor="WhiteSmoke"/>
             </Rectangle.Fill>
         </Rectangle>
-        <TextBlock x:ConnectionId='2' x:Name="txtBlock" HorizontalAlignment="Left" Margin="143,39,0,0" Text="Updater" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="28"/>
-        <Button x:ConnectionId='3' HorizontalAlignment="Left" Height="75" Margin="21,21,21,0" VerticalAlignment="Top" Width="75"                 Style="{ThemeResource ButtonRevealStyle}" Background="#13000000" Foreground="Black" FocusVisualPrimaryBrush="#1E000000">
-            <FontIcon Glyph="&#xE80F;" FontSize="25"/>
+        <TextBlock x:ConnectionId='3' x:Name="txtBlock" HorizontalAlignment="Left" Margin="143,39,0,0" Text="Updater" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="28"/>
+        <Button x:ConnectionId='4' HorizontalAlignment="Left" Height="75" Margin="21,21,21,0" VerticalAlignment="Top" Width="75"                 Style="{ThemeResource ButtonRevealStyle}" Background="#13000000" Foreground="Black" FocusVisualPrimaryBrush="#1E000000">
+            <FontIcon x:ConnectionId='7' x:Name="HomeIcon" Glyph="&#xE80F;" FontSize="25"/>
         </Button>
-        <Button x:ConnectionId='4' x:Name="CheckButton" Content="Check Updates" HorizontalAlignment="Left" Margin="40,150,0,0" VerticalAlignment="Top"                           Height="50" MinWidth="135" Style="{ThemeResource ButtonRevealStyle}"/>
-        <ProgressBar x:ConnectionId='5' x:Name="pb" IsIndeterminate="True" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="40,150,0,0" Height="8" Width="400" Visibility="Collapsed"/>
+        <Button x:ConnectionId='5' x:Name="CheckButton" Content="Check Updates" HorizontalAlignment="Left" Margin="40,150,0,0" VerticalAlignment="Top"                           Height="50" MinWidth="135" Style="{ThemeResource ButtonRevealStyle}"/>
+        <ProgressBar x:ConnectionId='6' x:Name="pb" IsIndeterminate="True" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="40,150,0,0" Height="8" Width="400" Visibility="Collapsed"/>
     </Grid>
 </Page>
 

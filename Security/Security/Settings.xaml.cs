@@ -30,6 +30,7 @@ namespace Security
         public Settings()
         {
             this.InitializeComponent();
+            this.NavigationCacheMode = Windows.UI.Xaml.Navigation.NavigationCacheMode.Enabled;
         }
 
         private void ShowTitleBar(object sender, RoutedEventArgs e)

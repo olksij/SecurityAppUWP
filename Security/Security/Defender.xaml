@@ -9,7 +9,7 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
-        <Rectangle Height="115" Margin="0,0,0,0" VerticalAlignment="Top">
+        <Rectangle x:Name="RectangleAcrylic" Height="115" Margin="0,0,0,0" VerticalAlignment="Top">
             <Rectangle.Fill>
                 <AcrylicBrush TintOpacity="0.8" BackgroundSource="HostBackdrop" TintColor="WhiteSmoke" FallbackColor="WhiteSmoke"/>
             </Rectangle.Fill>
@@ -17,7 +17,7 @@
         <TextBlock x:Name="txtBlock" HorizontalAlignment="Left" Margin="143,39,0,0" Text="Defender" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="28" SelectionChanged="txtBlock_SelectionChanged"/>
         <TextBlock x:Name="txtBlockD" HorizontalAlignment="Left" Margin="58,234,0,0" Text="Seems all good" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="20" SelectionChanged="txtBlock_SelectionChanged"/>
         <Button HorizontalAlignment="Left" Height="75" Margin="21,21,21,0" VerticalAlignment="Top" Width="75" Click="ToHome1" Style="{ThemeResource ButtonRevealStyle}" Background="#13000000" Foreground="Black" FocusVisualPrimaryBrush="#1E000000">
-            <FontIcon Glyph="&#xE80F;" FontSize="25"/>
+            <FontIcon x:Name="HomeIcon" Glyph="&#xE80F;" FontSize="25"/>
          </Button>
         <Button x:Name="CheckButton" Content="Check now" HorizontalAlignment="Left" Margin="58,280,0,0" VerticalAlignment="Top" FontSize="18" ToolTipService.ToolTip="Right now this app dont check your PC on viruses. Wait for next updates!" Click="CheckButton_Click" Height="40" Width="130" Style="{ThemeResource ButtonRevealStyle}"/>
         <TextBlock HorizontalAlignment="Left" Margin="58,162,0,0" Text="Viruses" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="30"/>

@@ -9,14 +9,14 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
-        <Rectangle Height="115" Margin="0,0,0,0" VerticalAlignment="Top">
+        <Rectangle x:Name="RectangleAcrylic" Height="115" Margin="0,0,0,0" VerticalAlignment="Top">
             <Rectangle.Fill>
                 <AcrylicBrush TintOpacity="0.8" BackgroundSource="HostBackdrop" TintColor="WhiteSmoke" FallbackColor="WhiteSmoke"/>
             </Rectangle.Fill>
         </Rectangle>
         <TextBlock x:Name="txtBlock" HorizontalAlignment="Left" Margin="143,39,0,0" Text="Updater" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="28"/>
         <Button HorizontalAlignment="Left" Height="75" Margin="21,21,21,0" VerticalAlignment="Top" Width="75" Click="ToHome1" Style="{ThemeResource ButtonRevealStyle}" Background="#13000000" Foreground="Black" FocusVisualPrimaryBrush="#1E000000">
-            <FontIcon Glyph="&#xE80F;" FontSize="25"/>
+            <FontIcon x:Name="HomeIcon" Glyph="&#xE80F;" FontSize="25"/>
         </Button>
         <Button x:Name="CheckButton" Content="Check Updates" HorizontalAlignment="Left" Margin="40,150,0,0" VerticalAlignment="Top" Click="CheckButton_Click" Height="50" MinWidth="135" Style="{ThemeResource ButtonRevealStyle}"/>
         <ProgressBar x:Name="pb" IsIndeterminate="True" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="40,150,0,0" Height="8" Width="400" Visibility="Collapsed"/>

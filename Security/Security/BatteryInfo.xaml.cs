@@ -15,6 +15,7 @@ using Windows.UI.Xaml.Navigation;
 using Windows.Devices.Enumeration;
 using Windows.Devices.Power;
 using Windows.UI.Core;
+using Windows.UI;
 
 // Документацию по шаблону элемента "Пустая страница" см. по адресу https://go.microsoft.com/fwlink/?LinkId=234238
 
@@ -26,7 +27,7 @@ namespace Security
     public sealed partial class BatteryInfo : Page
     {
         bool reportRequested = false;
-
+        string color = "light";
         public BatteryInfo()
         {
             this.InitializeComponent();
@@ -181,12 +182,44 @@ namespace Security
 
         private void ToHome(object sender, TappedRoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(MainPage));
+            this.Frame.Navigate(typeof(MainPage), color);
         }
 
         private void ToHome1(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(MainPage));
+            this.Frame.Navigate(typeof(MainPage), color);
+        }
+
+        protected override void OnNavigatedTo(NavigationEventArgs e)
+        {
+            color = e.Parameter.ToString();
+
+            Windows.UI.Xaml.Media.AcrylicBrush myBrush = new Windows.UI.Xaml.Media.AcrylicBrush();
+            myBrush.BackgroundSource = Windows.UI.Xaml.Media.AcrylicBackgroundSource.HostBackdrop;
+            if (color == "light")
+            {
+                myBrush.TintColor = Windows.UI.Colors.WhiteSmoke;
+                myBrush.FallbackColor = Windows.UI.Colors.WhiteSmoke;
+                RequestedTheme = ElementTheme.Light;
+                HomeIcon.Foreground = new SolidColorBrush(Colors.Black);
+            }
+            if (color == "dark")
+            {
+                myBrush.TintColor = Color.FromArgb(255, 50, 50, 50);
+                myBrush.FallbackColor = Color.FromArgb(255, 50, 50, 50);
+                RequestedTheme = ElementTheme.Dark;
+                HomeIcon.Foreground = new SolidColorBrush(Colors.White);
+            }
+            else
+            {
+                color = "light";
+                myBrush.TintColor = Windows.UI.Colors.WhiteSmoke;
+                myBrush.FallbackColor = Windows.UI.Colors.WhiteSmoke;
+                RequestedTheme = ElementTheme.Light;
+                HomeIcon.Foreground = new SolidColorBrush(Colors.Black);
+            }
+            myBrush.TintOpacity = 0.7;
+            RectangleAcrylic.Fill = myBrush;
         }
     }
 }
