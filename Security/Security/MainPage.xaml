@@ -9,9 +9,11 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" MinWidth="525">
 
     <Grid>
-        <Grid.Background>
-            <AcrylicBrush TintOpacity="0.8" BackgroundSource="HostBackdrop" TintColor="WhiteSmoke" FallbackColor="WhiteSmoke"/>
-        </Grid.Background>
+        <Rectangle Height="115" Margin="0,0,0,0" VerticalAlignment="Top">
+            <Rectangle.Fill>
+                <AcrylicBrush TintOpacity="0.8" BackgroundSource="HostBackdrop" TintColor="WhiteSmoke" FallbackColor="WhiteSmoke"/>
+            </Rectangle.Fill>
+        </Rectangle>
 
         <Rectangle Margin="0,115,0,0" VerticalAlignment="Stretch" Fill="White"/>
         <TextBlock x:Name="txtBlock" HorizontalAlignment="Left" Margin="115,23,0,0" Text="Refresh to get info" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="30"/>
@@ -44,7 +46,7 @@
             <AppBarButton Icon="Sync" Label="Update" Click="AppBarButton_Click_3"/>
         </CommandBar>
         <Button HorizontalAlignment="Left" Height="75" Margin="21,21,21,0" VerticalAlignment="Top" Width="75" Click="NextInfo" Style="{ThemeResource ButtonRevealStyle}" Background="#13000000" Foreground="Black" FocusVisualPrimaryBrush="#1E000000">
-            <FontIcon Glyph="&#xE76B;"/>
+            <FontIcon x:Name="HomeIcon" Glyph="&#xE76B;"/>
         </Button>
         <TextBlock x:Name="txt2" HorizontalAlignment="Left" Margin="122,70,0,0" Text="TextBlock" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="20" Visibility="Collapsed"/>
 

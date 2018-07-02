@@ -26,6 +26,7 @@ namespace Security
     /// </summary>
     public sealed partial class Settings : Page
     {
+        string color = "light";
         public Settings()
         {
             this.InitializeComponent();
@@ -85,18 +86,112 @@ namespace Security
                 }
                 else
                 {
-                    var titleBar = ApplicationView.GetForCurrentView().TitleBar;
-                    titleBar.ForegroundColor = Windows.UI.Colors.Black;
-                    titleBar.BackgroundColor = Windows.UI.Colors.WhiteSmoke;
-                    titleBar.ButtonForegroundColor = Windows.UI.Colors.Black;
-                    titleBar.ButtonBackgroundColor = Windows.UI.Colors.WhiteSmoke;
+                    if (color == "light")
+                    {
+                        var titleBar = ApplicationView.GetForCurrentView().TitleBar;
+                        titleBar.ForegroundColor = Windows.UI.Colors.Black;
+                        titleBar.BackgroundColor = Windows.UI.Colors.WhiteSmoke;
+                        titleBar.ButtonForegroundColor = Windows.UI.Colors.Black;
+                        titleBar.ButtonBackgroundColor = Windows.UI.Colors.WhiteSmoke;
+                    }
+                    else
+                    {
+                        var titleBar = ApplicationView.GetForCurrentView().TitleBar;
+                        titleBar.ForegroundColor = Windows.UI.Colors.White;
+                        titleBar.BackgroundColor = Color.FromArgb(255, 50, 50, 50);
+                        titleBar.ButtonForegroundColor = Windows.UI.Colors.White;
+                        titleBar.ButtonBackgroundColor = Color.FromArgb(255, 50, 50, 50);
+                    }
                 }
             }
         }
 
         private void ToHome(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(MainPage));
+            this.Frame.Navigate(typeof(MainPage), color);
+        }
+
+        private void StackPanel_Tapped(object sender, TappedRoutedEventArgs e)
+        {
+
+        }
+
+        private void RadioButton_Checked(object sender, RoutedEventArgs e)
+        {
+            if (RBdefault.IsChecked == true)
+            {
+                color = "light";
+            }
+
+            RefreshColors();
+
+        }
+
+        private void RadioButton_Checked1(object sender, RoutedEventArgs e)
+        {
+            if (RBdark.IsChecked == true)
+            {
+                color = "dark";
+            }
+
+            RefreshColors();
+        }
+
+        void RefreshColors()
+        {
+            Windows.UI.Xaml.Media.AcrylicBrush myBrush = new Windows.UI.Xaml.Media.AcrylicBrush();
+            myBrush.BackgroundSource = Windows.UI.Xaml.Media.AcrylicBackgroundSource.HostBackdrop;
+            if (color == "light")
+            {
+                myBrush.TintColor = Windows.UI.Colors.WhiteSmoke;
+                myBrush.FallbackColor = Windows.UI.Colors.WhiteSmoke;
+                RequestedTheme = ElementTheme.Light;
+                HomeIcon.Foreground = new SolidColorBrush(Colors.Black);
+            }
+            else
+            {
+                myBrush.TintColor = Color.FromArgb(255, 50, 50, 50);
+                myBrush.FallbackColor = Color.FromArgb(255, 50, 50, 50);
+                RequestedTheme = ElementTheme.Dark;
+                HomeIcon.Foreground = new SolidColorBrush(Colors.White);
+            }
+            myBrush.TintOpacity = 0.7;
+            RectangleAcrylic.Fill = myBrush;
+
+
+            if (ShowTitleBar1.IsOn == true)
+            {
+                if (ColorTitleBar1.IsOn == true)
+                {
+                    if (ShowTitleBar1.IsOn == true)
+                    {
+                        var titleBar = ApplicationView.GetForCurrentView().TitleBar;
+                        titleBar.ForegroundColor = null;
+                        titleBar.BackgroundColor = null;
+                        titleBar.ButtonForegroundColor = null;
+                        titleBar.ButtonBackgroundColor = null;
+                    }
+                }
+                else
+                {
+                    if (color == "light")
+                    {
+                        var titleBar = ApplicationView.GetForCurrentView().TitleBar;
+                        titleBar.ForegroundColor = Windows.UI.Colors.Black;
+                        titleBar.BackgroundColor = Windows.UI.Colors.WhiteSmoke;
+                        titleBar.ButtonForegroundColor = Windows.UI.Colors.Black;
+                        titleBar.ButtonBackgroundColor = Windows.UI.Colors.WhiteSmoke;
+                    }
+                    else
+                    {
+                        var titleBar = ApplicationView.GetForCurrentView().TitleBar;
+                        titleBar.ForegroundColor = Windows.UI.Colors.White;
+                        titleBar.BackgroundColor = Color.FromArgb(255, 50, 50, 50);
+                        titleBar.ButtonForegroundColor = Windows.UI.Colors.White;
+                        titleBar.ButtonBackgroundColor = Color.FromArgb(255, 50, 50, 50);
+                    }
+                }
+            }
         }
     }
 }

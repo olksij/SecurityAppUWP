@@ -31881,6 +31881,16 @@ namespace Windows.UI
 				return __ret;
 			}
 
+			public static global::Windows.UI.Color get_White(global::System.__ComObject __this)
+			{
+				global::Windows.UI.Color __ret = global::__Interop.ForwardComStubs.Stub_14<global::Windows.UI.IColorsStatics>(
+									__this, 
+									143
+								);
+				global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+				return __ret;
+			}
+
 			public static global::Windows.UI.Color get_WhiteSmoke(global::System.__ComObject __this)
 			{
 				global::Windows.UI.Color __ret = global::__Interop.ForwardComStubs.Stub_14<global::Windows.UI.IColorsStatics>(
@@ -35749,6 +35759,18 @@ namespace Windows.UI.Xaml
 		// StubClass for 'Windows.UI.Xaml.IFrameworkElement2'
 		public static partial class Stubs
 		{
+			public static void put_RequestedTheme(
+						global::System.__ComObject __this, 
+						global::Windows.UI.Xaml.ElementTheme value)
+			{
+				global::__Interop.ForwardComStubs.Stub_8<global::Windows.UI.Xaml.IFrameworkElement2>(
+									__this, 
+									((int)value), 
+									7
+								);
+				global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			}
+
 			// Signature, Windows.UI.Xaml.IFrameworkElement2.add_DataContextChanged, [fwd] [return] [EETypeRva:0x000406BC] void__int, [fwd] [in] [EETypeRva:0x0003F504] Windows_Foundation_TypedEventHandler_2_Windows_UI_Xaml_FrameworkElement__Windows_UI_Xaml_DataContextChangedEventArgs___Windows_Foundation__TypedEventHandler_A__wux__FrameworkElement_j__wux__DataContextChangedEventArgs_V_ *, [fwd] [out] [retval] [nativebyref] [EETypeRva:0x0004157C] System_Runtime_InteropServices_WindowsRuntime_EventRegistrationToken__Windows_Foundation__EventRegistrationToken, 
 			public static global::System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken add_DataContextChanged(
 						global::System.__ComObject __this, 
@@ -39054,6 +39076,26 @@ namespace Windows.UI.Xaml.Controls
 									__this, 
 									token, 
 									11
+								);
+				global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			}
+		}
+	}
+
+	// Windows.UI.Xaml.Controls.IIconElement
+	public unsafe static class IIconElement__Impl
+	{
+		// StubClass for 'Windows.UI.Xaml.Controls.IIconElement'
+		public static partial class Stubs
+		{
+			public static void put_Foreground(
+						global::System.__ComObject __this, 
+						global::Windows.UI.Xaml.Media.Brush value)
+			{
+				global::__Interop.ForwardComStubs.Stub_7<global::Windows.UI.Xaml.Controls.IIconElement, global::Windows.UI.Xaml.Media.Brush>(
+									__this, 
+									value, 
+									7
 								);
 				global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
 			}
@@ -45022,6 +45064,38 @@ namespace Windows.UI.Xaml.Media
 								);
 				global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
 				return __ret;
+			}
+		}
+	}
+
+	// Windows.UI.Xaml.Media.ISolidColorBrushFactory
+	public unsafe static class ISolidColorBrushFactory__Impl
+	{
+		// StubClass for 'Windows.UI.Xaml.Media.ISolidColorBrushFactory'
+		public static partial class Stubs
+		{
+			// Signature, Windows.UI.Xaml.Media.ISolidColorBrushFactory.CreateInstanceWithColor, [fwd] [return] [EETypeRva:0x000406BC] void__int, [fwd] [in] [EETypeRva:0x0004157C] Windows_UI_Color__Windows_UI__Color, [fwd] [out] [retval] [nativebyref] [EETypeRva:0x0004157C] System_IntPtr____w64 int, 
+			public static global::System.IntPtr CreateInstanceWithColor(
+						global::System.__ComObject __this, 
+						global::Windows.UI.Color color)
+			{
+				// Setup
+				global::System.IntPtr unsafe_instance__retval;
+				global::System.IntPtr instance__retval;
+				int unsafe___hr;
+				// Marshalling
+				// Call to native method
+				unsafe___hr = global::__Interop.ComCallHelpers.Call(
+									__this, 
+									typeof(global::Windows.UI.Xaml.Media.ISolidColorBrushFactory).TypeHandle, 
+									6, 
+									color, 
+									&(unsafe_instance__retval)
+								);
+				global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+				instance__retval = unsafe_instance__retval;
+				// Return
+				return instance__retval;
 			}
 		}
 	}

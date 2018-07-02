@@ -10,14 +10,14 @@
 
     <Grid>
         <Grid>
-            <Rectangle Height="115" Margin="0,0,0,0" VerticalAlignment="Top">
+            <Rectangle x:ConnectionId='6' x:Name="RectangleAcrylic" Height="115" Margin="0,0,0,0" VerticalAlignment="Top">
                 <Rectangle.Fill>
                     <AcrylicBrush TintOpacity="0.8" BackgroundSource="HostBackdrop" TintColor="WhiteSmoke" FallbackColor="WhiteSmoke"/>
                 </Rectangle.Fill>
             </Rectangle>
             <TextBlock HorizontalAlignment="Left" Margin="143,39,0,0" Text="Settings" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="28"/>
-            <Button x:ConnectionId='4' HorizontalAlignment="Left" Height="75" Margin="21,21,21,0" VerticalAlignment="Top" Width="75"                Style="{ThemeResource ButtonRevealStyle}" Background="#13000000" Foreground="Black" FocusVisualPrimaryBrush="#1E000000">
-                <FontIcon Glyph="&#xE80F;" FontSize="25"/>
+            <Button x:ConnectionId='7' HorizontalAlignment="Left" Height="75" Margin="21,21,21,0" VerticalAlignment="Top" Width="75"                Style="{ThemeResource ButtonRevealStyle}" Background="#13000000" Foreground="Black" FocusVisualPrimaryBrush="#1E000000">
+                <FontIcon x:ConnectionId='8' x:Name="HomeIcon" Glyph="&#xE80F;" FontSize="25"/>
             </Button>
         </Grid>
         <StackPanel Margin="15,130,0,0">
@@ -27,6 +27,13 @@
             <TextBlock Text="User TitleBar Color" VerticalAlignment="Top" Margin="0,20,0,0"/>
             <ToggleSwitch x:ConnectionId='3' x:Name="ColorTitleBar1" HorizontalAlignment="Left" Width="100" VerticalAlignment="Top"                         Margin="0,5,0,0"/>
 
+            <TextBlock Text="Interface color" VerticalAlignment="Top" Margin="0,20,0,0"/>
+            <StackPanel>
+                <RadioButton x:ConnectionId='4' x:Name="RBdefault" Content="Default"                               IsChecked="True"/>
+                <RadioButton x:ConnectionId='5' x:Name="RBdark" Content="Dark"                               />
+            </StackPanel>
+            
+            
         </StackPanel>
     </Grid>
 </Page>
