@@ -40,23 +40,6 @@ namespace Security
                 var titleBar = ApplicationView.GetForCurrentView().TitleBar;
                 var coreTitleBar = CoreApplication.GetCurrentView().TitleBar;
                 coreTitleBar.ExtendViewIntoTitleBar = false;
-                if (ColorTitleBar1.IsOn == true)
-                {
-                    if (ShowTitleBar1.IsOn == true)
-                    {
-                        titleBar.ForegroundColor = null;
-                        titleBar.BackgroundColor = null;
-                        titleBar.ButtonForegroundColor = null;
-                        titleBar.ButtonBackgroundColor = null;
-                    }
-                }
-                else
-                {
-                    titleBar.ForegroundColor = Windows.UI.Colors.Black;
-                    titleBar.BackgroundColor = Windows.UI.Colors.WhiteSmoke;
-                    titleBar.ButtonForegroundColor = Windows.UI.Colors.Black;
-                    titleBar.ButtonBackgroundColor = Windows.UI.Colors.WhiteSmoke;
-                }
             }
             else
             {
@@ -65,13 +48,22 @@ namespace Security
                 titleBar.ButtonBackgroundColor = Colors.Transparent;
                 titleBar.ButtonInactiveBackgroundColor = Colors.Transparent;
                 titleBar.ForegroundColor = Windows.UI.Colors.Black;
-                titleBar.ButtonForegroundColor = Windows.UI.Colors.Black;
+                if (color == "light")
+                {
+                    titleBar.ButtonForegroundColor = Windows.UI.Colors.Black;
+                }
+                else
+                {
+                    titleBar.ButtonForegroundColor = Windows.UI.Colors.White;
+                }
             }
+
+            RefreshColors();
 
         }
 
         private void ColorTitleBar(object sender, RoutedEventArgs e)
-        {
+        {/*
             if (ShowTitleBar1.IsOn == true)
             {
                 if (ColorTitleBar1.IsOn == true)
@@ -104,7 +96,9 @@ namespace Security
                         titleBar.ButtonBackgroundColor = Color.FromArgb(255, 50, 50, 50);
                     }
                 }
-            }
+            }*/
+
+            RefreshColors();
         }
 
         private void ToHome(object sender, RoutedEventArgs e)
@@ -151,8 +145,8 @@ namespace Security
             }
             else
             {
-                myBrush.TintColor = Color.FromArgb(255, 50, 50, 50);
-                myBrush.FallbackColor = Color.FromArgb(255, 50, 50, 50);
+                myBrush.TintColor = Color.FromArgb(255, 25, 25, 25);
+                myBrush.FallbackColor = Colors.Black;
                 RequestedTheme = ElementTheme.Dark;
                 HomeIcon.Foreground = new SolidColorBrush(Colors.White);
             }
@@ -171,6 +165,11 @@ namespace Security
                         titleBar.BackgroundColor = null;
                         titleBar.ButtonForegroundColor = null;
                         titleBar.ButtonBackgroundColor = null;
+
+                        titleBar.ButtonHoverForegroundColor = null;
+                        titleBar.ButtonHoverBackgroundColor = null;
+                        titleBar.ButtonPressedForegroundColor = null;
+                        titleBar.ButtonPressedBackgroundColor = null;
                     }
                 }
                 else
@@ -182,15 +181,51 @@ namespace Security
                         titleBar.BackgroundColor = Windows.UI.Colors.WhiteSmoke;
                         titleBar.ButtonForegroundColor = Windows.UI.Colors.Black;
                         titleBar.ButtonBackgroundColor = Windows.UI.Colors.WhiteSmoke;
+
+                        titleBar.ButtonHoverForegroundColor = Windows.UI.Colors.Black;
+                        titleBar.ButtonHoverBackgroundColor = Color.FromArgb(40, 0, 0, 0);
+                        titleBar.ButtonPressedForegroundColor = Windows.UI.Colors.Black;
+                        titleBar.ButtonPressedBackgroundColor = Color.FromArgb(50, 0, 0, 0);
                     }
                     else
                     {
                         var titleBar = ApplicationView.GetForCurrentView().TitleBar;
                         titleBar.ForegroundColor = Windows.UI.Colors.White;
-                        titleBar.BackgroundColor = Color.FromArgb(255, 50, 50, 50);
+                        titleBar.BackgroundColor = Windows.UI.Colors.Black;
                         titleBar.ButtonForegroundColor = Windows.UI.Colors.White;
-                        titleBar.ButtonBackgroundColor = Color.FromArgb(255, 50, 50, 50);
+                        titleBar.ButtonBackgroundColor = Windows.UI.Colors.Black;
+
+                        titleBar.ButtonHoverForegroundColor = Windows.UI.Colors.White;
+                        titleBar.ButtonHoverBackgroundColor = Color.FromArgb(40, 255, 255, 255);
+                        titleBar.ButtonPressedForegroundColor = Windows.UI.Colors.White;
+                        titleBar.ButtonPressedBackgroundColor = Color.FromArgb(50, 255, 255, 255);
                     }
+                }
+            }
+            else
+            {
+                CoreApplication.GetCurrentView().TitleBar.ExtendViewIntoTitleBar = true;
+                ApplicationViewTitleBar titleBar = ApplicationView.GetForCurrentView().TitleBar;
+                titleBar.ButtonBackgroundColor = Colors.Transparent;
+                titleBar.ButtonInactiveBackgroundColor = Colors.Transparent;
+                titleBar.ForegroundColor = Windows.UI.Colors.Black;
+                if (color == "light")
+                {
+                    titleBar.ButtonForegroundColor = Windows.UI.Colors.Black;
+
+                    titleBar.ButtonHoverForegroundColor = Windows.UI.Colors.Black;
+                    titleBar.ButtonHoverBackgroundColor = Color.FromArgb(40, 0, 0, 0);
+                    titleBar.ButtonPressedForegroundColor = Windows.UI.Colors.Black;
+                    titleBar.ButtonPressedBackgroundColor = Color.FromArgb(50, 0, 0, 0);
+                }
+                else
+                {
+                    titleBar.ButtonForegroundColor = Windows.UI.Colors.White;
+
+                    titleBar.ButtonHoverForegroundColor = Windows.UI.Colors.White;
+                    titleBar.ButtonHoverBackgroundColor = Color.FromArgb(40, 255, 255, 255);
+                    titleBar.ButtonPressedForegroundColor = Windows.UI.Colors.White;
+                    titleBar.ButtonPressedBackgroundColor = Color.FromArgb(50, 255, 255, 255);
                 }
             }
         }

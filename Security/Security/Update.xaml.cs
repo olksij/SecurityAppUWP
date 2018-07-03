@@ -41,7 +41,7 @@ namespace Security
         private List<DownloadOperation> activeDownloads;
         private CancellationTokenSource cts;
         string color = "light";
-        string version = "0.4.1.0";
+        string version = "0.6.0.0";
 
         public Update()
         {
@@ -68,11 +68,14 @@ namespace Security
 
 
 
-
+            /*
             Windows.Storage.StorageFolder storageFolder = Windows.Storage.ApplicationData.Current.LocalFolder;
             Windows.Storage.StorageFile sampleFile = await storageFolder.CreateFileAsync("Security_" + version + "_x64.appxbundle", Windows.Storage.CreationCollisionOption.ReplaceExisting);
 
-            Write();
+            Write();*/
+
+            await StartDownload();
+
         }
 
         private async void Write()
@@ -139,6 +142,31 @@ namespace Security
             }
             myBrush.TintOpacity = 0.7;
             RectangleAcrylic.Fill = myBrush;
+        }
+
+        public async Task StartDownload()
+        {
+            try
+            {
+                StorageFile sf = await DownloadsFolder.CreateFileAsync("Security_" + version + "_x86_x64_arm.appxbundle", CreationCollisionOption.GenerateUniqueName);
+                var downloadFolder = (await sf.GetParentAsync()).ToString();
+                System.Net.Http.HttpClient client = new System.Net.Http.HttpClient();
+                byte[] buffer = await client.GetByteArrayAsync("https://raw.githubusercontent.com/DrAlexOne/SecurityAppUWP/master/Security/Security/AppPackages/Security_" + version + "_Test/Security_" + version + "_x86_x64_arm.appxbundle");
+                using (Stream stream = await sf.OpenStreamForWriteAsync())
+                {
+                    stream.Write(buffer, 0, buffer.Length);
+                }
+                var path = sf.Path;
+                CheckButton.Content = "Done! Downloaded here: " + path.ToString();
+                CheckButton.Visibility = Visibility.Visible;
+                pb.Visibility = Visibility.Collapsed;
+            }
+            catch (Exception e)
+            {
+                CheckButton.Content = "Its only developing.. . ";
+                CheckButton.Visibility = Visibility.Visible;
+                pb.Visibility = Visibility.Collapsed;
+            }
         }
     }
 }

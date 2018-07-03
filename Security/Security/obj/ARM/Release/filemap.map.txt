@@ -7,6 +7,7 @@
 "D:\Alex\Visual\Security\Security\obj\ARM\Release\PackageLayout\Security.exe"			"Security.exe"
 "D:\Alex\Visual\Security\Security\obj\ARM\Release\PackageLayout\Security.dll"			"Security.dll"
 "D:\Alex\Visual\Security\Security\obj\ARM\Release\PackageLayout\clrcompression.dll"			"clrcompression.dll"
+"D:\Alex\Visual\Security\Security\obj\ARM\Release\PackageLayout\ChangeLog.txt"			"ChangeLog.txt"
 "D:\Alex\Visual\Security\Security\obj\ARM\Release\PackageLayout\Assets\Wide310x150Logo.scale-200.png"			"Assets\Wide310x150Logo.scale-200.png"
 "D:\Alex\Visual\Security\Security\obj\ARM\Release\PackageLayout\Assets\StoreLogo.png"			"Assets\StoreLogo.png"
 "D:\Alex\Visual\Security\Security\obj\ARM\Release\PackageLayout\Assets\Square44x44Logo.targetsize-24_altform-unplated.png"			"Assets\Square44x44Logo.targetsize-24_altform-unplated.png"

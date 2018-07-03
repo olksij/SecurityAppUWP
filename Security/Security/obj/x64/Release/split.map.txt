@@ -7,6 +7,7 @@
 "D:\Alex\Visual\Security\Security\obj\x64\Release\PackageLayout\WinMetadata\Windows.winmd"			"WinMetadata\Windows.winmd"
 "D:\Alex\Visual\Security\Security\obj\x64\Release\PackageLayout\Security.xr.xml"			"Security.xr.xml"
 "D:\Alex\Visual\Security\Security\obj\x64\Release\PackageLayout\Properties\Default.rd.xml"			"Properties\Default.rd.xml"
+"D:\Alex\Visual\Security\Security\obj\x64\Release\PackageLayout\ChangeLog.txt"			"ChangeLog.txt"
 "D:\Alex\Visual\Security\Security\obj\x64\Release\PackageLayout\Assets\Wide310x150Logo.scale-200.png"			"Assets\Wide310x150Logo.scale-200.png"
 "D:\Alex\Visual\Security\Security\obj\x64\Release\PackageLayout\Assets\StoreLogo.png"			"Assets\StoreLogo.png"
 "D:\Alex\Visual\Security\Security\obj\x64\Release\PackageLayout\Assets\Square44x44Logo.scale-200.png"			"Assets\Square44x44Logo.scale-200.png"

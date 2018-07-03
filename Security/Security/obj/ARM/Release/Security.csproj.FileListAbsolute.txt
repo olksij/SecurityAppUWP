@@ -553,3 +553,5 @@ D:\Alex\Visual\Security\Security\obj\ARM\Release\ilc\intermediate\Resources\Syst
 D:\Alex\Visual\Security\Security\obj\ARM\Release\ilc\intermediate\Resources\System.Threading.Overlapped.index.txt
 D:\Alex\Visual\Security\Security\obj\ARM\Release\ilc\intermediate\Resources\System.Threading.Thread.0.rsrc
 D:\Alex\Visual\Security\Security\obj\ARM\Release\ilc\intermediate\Resources\System.Threading.Thread.index.txt
+D:\Alex\Visual\Security\Security\bin\ARM\Release\ilc\ChangeLog.txt
+D:\Alex\Visual\Security\Security\obj\ARM\Release\ilc\in\ChangeLog.txt
