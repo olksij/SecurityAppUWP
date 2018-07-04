@@ -1,2 +1,2 @@
-﻿03/07.18 - v0.7-beta - 20th Build - Fixed bugs with gridview in MainPage, More customizing title bar, more stability.
+03.07.18 - v0.7-beta - 20th Build - Fixed bugs with gridview in MainPage, More customizing title bar, more stability.
 02.07.18 - v0.6-beta - 19th Build - Added Dark Theme, fixed bugs, redesigned MainPage.
