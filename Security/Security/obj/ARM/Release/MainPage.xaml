@@ -11,6 +11,7 @@
         <x:Double x:Key="Infinity">1E+99</x:Double>
     </Page.Resources>
 
+
     <Grid>
         <Rectangle x:ConnectionId='2' x:Name="RectangleAcrylic" Height="115" Margin="0,0,0,0" VerticalAlignment="Top">
             <Rectangle.Fill>
@@ -18,19 +19,19 @@
             </Rectangle.Fill>
         </Rectangle>
         <TextBlock x:ConnectionId='3' x:Name="txtBlock" HorizontalAlignment="Left" Margin="115,23,0,0" Text="Refresh to get info" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="30"/>
-        <ProgressBar x:ConnectionId='4' x:Name="pb" HorizontalAlignment="Left" Height="8" Margin="115,80,0,0" VerticalAlignment="Top" Width="400"/>
+        <ProgressBar x:ConnectionId='4' x:Name="pb" HorizontalAlignment="Left" Height="8" Margin="115,80,75,0" VerticalAlignment="Top" Width="400"/>
         <GridView HorizontalAlignment="Stretch" Margin="0,115,0,0" VerticalAlignment="Stretch" Height="Auto" Width="Auto" Padding="25,25,4,25">
-            <ItemsControl x:ConnectionId='11' HorizontalAlignment="Center" Height="125" VerticalAlignment="Top" Width="125"                             Margin="0,0,0,0">
+            <ItemsControl x:ConnectionId='12' HorizontalAlignment="Center" Height="125" VerticalAlignment="Top" Width="125"                             Margin="0,0,0,0">
                 <FontIcon Glyph="&#xF552;" Height="80" HorizontalAlignment="Center" Margin="0,0,0,0" VerticalAlignment="Top" Width="125" FontSize="25"/>
                 <!--<GridViewItem HorizontalAlignment="Stretch" Margin="0,0,0,0" VerticalAlignment="Stretch" PointerPressed="ComingSoon" Height="20">Defender</GridViewItem>-->
                 <TextBlock Text="Defender" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,10,0,0"/>
             </ItemsControl>
-            <ItemsControl x:ConnectionId='12' HorizontalAlignment="Stretch" Height="125" VerticalAlignment="Stretch" Width="125"                            >
+            <ItemsControl x:ConnectionId='13' HorizontalAlignment="Stretch" Height="125" VerticalAlignment="Stretch" Width="125"                            >
                 <FontIcon Glyph="&#xE95E;" Height="80" HorizontalAlignment="Center" Margin="0,0,0,0" VerticalAlignment="Top" Width="125" FontSize="25"/>
                 <!--<GridViewItem HorizontalAlignment="Stretch" Margin="0,0,0,0" VerticalAlignment="Stretch" PointerPressed="ComingSoon" Height="20">Health</GridViewItem>-->
                 <TextBlock Text="Health" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,10,0,0"/>
             </ItemsControl>
-            <ItemsControl x:ConnectionId='13' HorizontalAlignment="Stretch" Height="125" VerticalAlignment="Stretch" Width="125"                             >
+            <ItemsControl x:ConnectionId='14' HorizontalAlignment="Stretch" Height="125" VerticalAlignment="Stretch" Width="125"                             >
                 <FontIcon Glyph="&#xF5F8;" Height="80" HorizontalAlignment="Center" Margin="0,0,0,0" VerticalAlignment="Top" Width="125" FontSize="25"/>
                 <!--<GridViewItem HorizontalAlignment="Stretch" Margin="0,0,0,0" VerticalAlignment="Stretch" PointerPressed="BatteryInfo" Height="20">Battery</GridViewItem> -->
                 <TextBlock Text="Battery" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,10,0,0"/>
@@ -44,6 +45,7 @@
             <AppBarButton x:ConnectionId='8' Icon="Refresh" Label="Refresh"                           />
             <AppBarButton x:ConnectionId='9' Icon="Setting" Label="Settings"                             />
             <AppBarButton x:ConnectionId='10' Icon="Sync" Label="Update"                             />
+            <AppBarButton x:ConnectionId='11' Icon="Document" Label="Changelog"                  />
         </CommandBar>
         <Button x:ConnectionId='5' HorizontalAlignment="Left" Height="75" Margin="21,21,21,0" VerticalAlignment="Top" Width="75"                  Style="{ThemeResource ButtonRevealStyle}" Background="#13000000" Foreground="Black" FocusVisualPrimaryBrush="#1E000000">
             <FontIcon x:ConnectionId='7' x:Name="HomeIcon" Glyph="&#xE76B;"/>

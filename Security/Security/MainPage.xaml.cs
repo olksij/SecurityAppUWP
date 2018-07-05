@@ -210,5 +210,10 @@ namespace Security
             myBrush.TintOpacity = 0.7;
             RectangleAcrylic.Fill = myBrush;
         }
+
+        private void Changelog(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(Changelog), color);
+        }
     }
 }

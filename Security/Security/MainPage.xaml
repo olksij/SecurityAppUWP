@@ -11,6 +11,7 @@
         <x:Double x:Key="Infinity">1E+99</x:Double>
     </Page.Resources>
 
+
     <Grid>
         <Rectangle x:Name="RectangleAcrylic" Height="115" Margin="0,0,0,0" VerticalAlignment="Top">
             <Rectangle.Fill>
@@ -18,7 +19,7 @@
             </Rectangle.Fill>
         </Rectangle>
         <TextBlock x:Name="txtBlock" HorizontalAlignment="Left" Margin="115,23,0,0" Text="Refresh to get info" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="30"/>
-        <ProgressBar x:Name="pb" HorizontalAlignment="Left" Height="8" Margin="115,80,0,0" VerticalAlignment="Top" Width="400"/>
+        <ProgressBar x:Name="pb" HorizontalAlignment="Left" Height="8" Margin="115,80,75,0" VerticalAlignment="Top" Width="400"/>
         <GridView HorizontalAlignment="Stretch" Margin="0,115,0,0" VerticalAlignment="Stretch" Height="Auto" Width="Auto" Padding="25,25,4,25">
             <ItemsControl HorizontalAlignment="Center" Height="125" VerticalAlignment="Top" Width="125" PointerPressed="ToDefender" Margin="0,0,0,0">
                 <FontIcon Glyph="&#xF552;" Height="80" HorizontalAlignment="Center" Margin="0,0,0,0" VerticalAlignment="Top" Width="125" FontSize="25"/>
@@ -44,6 +45,7 @@
             <AppBarButton Icon="Refresh" Label="Refresh" Click="AppBarButton_Click"/>
             <AppBarButton Icon="Setting" Label="Settings" Click="AppBarButton_Click_2"/>
             <AppBarButton Icon="Sync" Label="Update" Click="AppBarButton_Click_3"/>
+            <AppBarButton Icon="Document" Label="Changelog" Click="Changelog"/>
         </CommandBar>
         <Button HorizontalAlignment="Left" Height="75" Margin="21,21,21,0" VerticalAlignment="Top" Width="75" Click="NextInfo" Style="{ThemeResource ButtonRevealStyle}" Background="#13000000" Foreground="Black" FocusVisualPrimaryBrush="#1E000000">
             <FontIcon x:Name="HomeIcon" Glyph="&#xE76B;"/>

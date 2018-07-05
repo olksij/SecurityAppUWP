@@ -17,12 +17,7 @@
 					<Base64Value>[Embedded Binary Data]</Base64Value>
 				</Candidate>
 			</NamedResource>
-			<NamedResource name="ChangeLog.txt" uri="ms-resource://DrAlexSecurityUWP/Files/ChangeLog.txt">
-				<Candidate type="Path">
-					<Value>ChangeLog.txt</Value>
-				</Candidate>
-			</NamedResource>
-			<NamedResource name="ContentDialog1.xbf" uri="ms-resource://DrAlexSecurityUWP/Files/ContentDialog1.xbf">
+			<NamedResource name="Changelog.xbf" uri="ms-resource://DrAlexSecurityUWP/Files/Changelog.xbf">
 				<Candidate type="EmbeddedData">
 					<Base64Value>[Embedded Binary Data]</Base64Value>
 				</Candidate>

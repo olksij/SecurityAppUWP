@@ -189,35 +189,31 @@ namespace Security.Security_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[13];
+            _typeNameTable = new string[11];
             _typeNameTable[0] = "Security.BatteryInfo";
             _typeNameTable[1] = "Windows.UI.Xaml.Controls.Page";
             _typeNameTable[2] = "Windows.UI.Xaml.Controls.UserControl";
-            _typeNameTable[3] = "Security.ContentDialog1";
-            _typeNameTable[4] = "Windows.UI.Xaml.Controls.ContentDialog";
-            _typeNameTable[5] = "Windows.UI.Xaml.Controls.ContentControl";
-            _typeNameTable[6] = "Security.Defender";
-            _typeNameTable[7] = "Security.MainPage";
-            _typeNameTable[8] = "Security.Settings";
-            _typeNameTable[9] = "Security.Update";
-            _typeNameTable[10] = "Windows.ApplicationModel.PackageId";
-            _typeNameTable[11] = "Object";
-            _typeNameTable[12] = "System.Collections.Generic.IEnumerable`1<String>";
+            _typeNameTable[3] = "Security.Changelog";
+            _typeNameTable[4] = "Security.Defender";
+            _typeNameTable[5] = "Security.MainPage";
+            _typeNameTable[6] = "Security.Settings";
+            _typeNameTable[7] = "Security.Update";
+            _typeNameTable[8] = "Windows.ApplicationModel.PackageId";
+            _typeNameTable[9] = "Object";
+            _typeNameTable[10] = "System.Collections.Generic.IEnumerable`1<String>";
 
-            _typeTable = new global::System.Type[13];
+            _typeTable = new global::System.Type[11];
             _typeTable[0] = typeof(global::Security.BatteryInfo);
             _typeTable[1] = typeof(global::Windows.UI.Xaml.Controls.Page);
             _typeTable[2] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
-            _typeTable[3] = typeof(global::Security.ContentDialog1);
-            _typeTable[4] = typeof(global::Windows.UI.Xaml.Controls.ContentDialog);
-            _typeTable[5] = typeof(global::Windows.UI.Xaml.Controls.ContentControl);
-            _typeTable[6] = typeof(global::Security.Defender);
-            _typeTable[7] = typeof(global::Security.MainPage);
-            _typeTable[8] = typeof(global::Security.Settings);
-            _typeTable[9] = typeof(global::Security.Update);
-            _typeTable[10] = typeof(global::Windows.ApplicationModel.PackageId);
-            _typeTable[11] = typeof(global::System.Object);
-            _typeTable[12] = typeof(global::System.Collections.Generic.IEnumerable<global::System.String>);
+            _typeTable[3] = typeof(global::Security.Changelog);
+            _typeTable[4] = typeof(global::Security.Defender);
+            _typeTable[5] = typeof(global::Security.MainPage);
+            _typeTable[6] = typeof(global::Security.Settings);
+            _typeTable[7] = typeof(global::Security.Update);
+            _typeTable[8] = typeof(global::Windows.ApplicationModel.PackageId);
+            _typeTable[9] = typeof(global::System.Object);
+            _typeTable[10] = typeof(global::System.Collections.Generic.IEnumerable<global::System.String>);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -253,11 +249,11 @@ namespace Security.Security_XamlTypeInfo
         }
 
         private object Activate_0_BatteryInfo() { return new global::Security.BatteryInfo(); }
-        private object Activate_3_ContentDialog1() { return new global::Security.ContentDialog1(); }
-        private object Activate_6_Defender() { return new global::Security.Defender(); }
-        private object Activate_7_MainPage() { return new global::Security.MainPage(); }
-        private object Activate_8_Settings() { return new global::Security.Settings(); }
-        private object Activate_9_Update() { return new global::Security.Update(); }
+        private object Activate_3_Changelog() { return new global::Security.Changelog(); }
+        private object Activate_4_Defender() { return new global::Security.Defender(); }
+        private object Activate_5_MainPage() { return new global::Security.MainPage(); }
+        private object Activate_6_Settings() { return new global::Security.Settings(); }
+        private object Activate_7_Update() { return new global::Security.Update(); }
 
         private global::Windows.UI.Xaml.Markup.IXamlType CreateXamlType(int typeIndex)
         {
@@ -284,62 +280,54 @@ namespace Security.Security_XamlTypeInfo
                 xamlType = new global::Security.Security_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 3:   //  Security.ContentDialog1
-                userType = new global::Security.Security_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.ContentDialog"));
-                userType.Activator = Activate_3_ContentDialog1;
+            case 3:   //  Security.Changelog
+                userType = new global::Security.Security_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_3_Changelog;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 4:   //  Windows.UI.Xaml.Controls.ContentDialog
-                xamlType = new global::Security.Security_XamlTypeInfo.XamlSystemBaseType(typeName, type);
-                break;
-
-            case 5:   //  Windows.UI.Xaml.Controls.ContentControl
-                xamlType = new global::Security.Security_XamlTypeInfo.XamlSystemBaseType(typeName, type);
-                break;
-
-            case 6:   //  Security.Defender
+            case 4:   //  Security.Defender
                 userType = new global::Security.Security_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_6_Defender;
+                userType.Activator = Activate_4_Defender;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 7:   //  Security.MainPage
+            case 5:   //  Security.MainPage
                 userType = new global::Security.Security_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_7_MainPage;
+                userType.Activator = Activate_5_MainPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 8:   //  Security.Settings
+            case 6:   //  Security.Settings
                 userType = new global::Security.Security_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_8_Settings;
+                userType.Activator = Activate_6_Settings;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 9:   //  Security.Update
+            case 7:   //  Security.Update
                 userType = new global::Security.Security_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_9_Update;
+                userType.Activator = Activate_7_Update;
                 userType.AddMemberName("packageId");
                 userType.AddMemberName("MobileUserAgent");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 10:   //  Windows.ApplicationModel.PackageId
+            case 8:   //  Windows.ApplicationModel.PackageId
                 userType = new global::Security.Security_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 11:   //  Object
+            case 9:   //  Object
                 xamlType = new global::Security.Security_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 12:   //  System.Collections.Generic.IEnumerable`1<String>
+            case 10:   //  System.Collections.Generic.IEnumerable`1<String>
                 userType = new global::Security.Security_XamlTypeInfo.XamlUserType(this, typeName, type, null);
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
