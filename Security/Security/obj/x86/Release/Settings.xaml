@@ -10,31 +10,55 @@
 
     <Grid>
         <Grid>
-            <Rectangle x:ConnectionId='6' x:Name="RectangleAcrylic" Height="115" Margin="0,0,0,0" VerticalAlignment="Top">
+            <Rectangle x:ConnectionId='14' x:Name="RectangleAcrylic" Height="115" Margin="0,0,0,0" VerticalAlignment="Top">
                 <Rectangle.Fill>
                     <AcrylicBrush TintOpacity="0.8" BackgroundSource="HostBackdrop" TintColor="WhiteSmoke" FallbackColor="WhiteSmoke"/>
                 </Rectangle.Fill>
             </Rectangle>
             <TextBlock HorizontalAlignment="Left" Margin="143,39,0,0" Text="Settings" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="28"/>
-            <Button x:ConnectionId='7' HorizontalAlignment="Left" Height="75" Margin="21,21,21,0" VerticalAlignment="Top" Width="75"                Style="{ThemeResource ButtonRevealStyle}" Background="#13000000" Foreground="Black" FocusVisualPrimaryBrush="#1E000000">
-                <FontIcon x:ConnectionId='8' x:Name="HomeIcon" Glyph="&#xE80F;" FontSize="25"/>
+            <Button x:ConnectionId='15' HorizontalAlignment="Left" Height="75" Margin="21,21,21,0" VerticalAlignment="Top" Width="75"                Style="{ThemeResource ButtonRevealStyle}" Background="#13000000" Foreground="Black" FocusVisualPrimaryBrush="#1E000000">
+                <FontIcon x:ConnectionId='16' x:Name="HomeIcon" Glyph="&#xE80F;" FontSize="25"/>
             </Button>
         </Grid>
-        <StackPanel Margin="15,130,0,0">
-            <TextBlock Text="Show TitleBar" VerticalAlignment="Top"/>
-            <ToggleSwitch x:ConnectionId='2' x:Name="ShowTitleBar1" HorizontalAlignment="Left" Width="100" VerticalAlignment="Top"                        Margin="0,5,0,0"/>
-            
-            <TextBlock Text="User TitleBar Color" VerticalAlignment="Top" Margin="0,20,0,0"/>
-            <ToggleSwitch x:ConnectionId='3' x:Name="ColorTitleBar1" HorizontalAlignment="Left" Width="100" VerticalAlignment="Top"                         Margin="0,5,0,0"/>
+        <ScrollViewer Margin="0,115,0,0">
+            <StackPanel Margin="15,15,0,0">
+                <TextBlock Text="Title bar" VerticalAlignment="Top" Margin="0,0,0,0" FontSize="20"/>
 
-            <TextBlock Text="Interface color" VerticalAlignment="Top" Margin="0,20,0,0"/>
-            <StackPanel>
-                <RadioButton x:ConnectionId='4' x:Name="RBdefault" Content="Default"                               IsChecked="True"/>
-                <RadioButton x:ConnectionId='5' x:Name="RBdark" Content="Dark"                               />
+                <TextBlock Text="Show TitleBar" VerticalAlignment="Top" Margin="0,20,0,0"/>
+                <ToggleSwitch x:ConnectionId='2' x:Name="ShowTitleBar1" HorizontalAlignment="Left" Width="100" VerticalAlignment="Top"                        Margin="0,5,0,0"/>
+
+                <TextBlock Text="User TitleBar Color" VerticalAlignment="Top" Margin="0,20,0,0"/>
+                <ToggleSwitch x:ConnectionId='3' x:Name="ColorTitleBar1" HorizontalAlignment="Left" Width="100" VerticalAlignment="Top"                         Margin="0,5,0,0"/>
+
+
+                <TextBlock Text="Colors" VerticalAlignment="Top" Margin="0,30,0,0" FontSize="20"/>
+
+                <TextBlock Text="Interface theme" VerticalAlignment="Top" Margin="0,20,0,0"/>
+                <StackPanel>
+                    <RadioButton x:ConnectionId='12' x:Name="RBdefault" Content="Default"                               IsChecked="True"/>
+                    <RadioButton x:ConnectionId='13' x:Name="RBdark" Content="Dark"                               />
+                </StackPanel>
+
+                <TextBlock Text="Interface color" VerticalAlignment="Top" Margin="0,20,0,0"/>
+                <StackPanel>
+                    <RadioButton x:ConnectionId='10' x:Name="RBCsystem" Content="System"                        />
+                    <RadioButton x:ConnectionId='11' x:Name="RBCuser" Content="User"                        />
+                </StackPanel>
+                <TextBlock x:ConnectionId='4' Text="User color" VerticalAlignment="Top" Margin="0,20,0,0"  Visibility="Collapsed" x:Name="txtUserColor"/>
+                <StackPanel>
+                    <RadioButton x:ConnectionId='5' x:Name="RBblue" Content="Blue" Visibility="Collapsed"                     />
+                    <RadioButton x:ConnectionId='6' x:Name="RBgreen" Content="Green" Visibility="Collapsed"                     />
+                    <RadioButton x:ConnectionId='7' x:Name="RBred" Content="Red" Visibility="Collapsed"/>
+                    <RadioButton x:ConnectionId='8' x:Name="RByellow" Content="Yellow" Visibility="Collapsed"/>
+                    <RadioButton x:ConnectionId='9' x:Name="RBpink" Content="Pink" Visibility="Collapsed"/>
+                </StackPanel>
+
+
+
+
+                <StackPanel Margin="0,27,0,0"/>
             </StackPanel>
-            
-            
-        </StackPanel>
+        </ScrollViewer>
     </Grid>
 </Page>
 

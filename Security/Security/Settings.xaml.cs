@@ -27,10 +27,36 @@ namespace Security
     public sealed partial class Settings : Page
     {
         string color = "light";
+        Color newcolor = Colors.Blue;
+
+        //Color LightBlue = Color.FromArgb(255, 54, 192, 255);
         public Settings()
         {
             this.InitializeComponent();
             this.NavigationCacheMode = Windows.UI.Xaml.Navigation.NavigationCacheMode.Enabled;
+
+            RBCsystem.IsChecked = true;
+
+            /*
+            if (RBCsystem.IsChecked == true)
+            {
+                RBblue.Visibility = Visibility.Collapsed;
+                RBred.Visibility = Visibility.Collapsed;
+                RBgreen.Visibility = Visibility.Collapsed;
+                RByellow.Visibility = Visibility.Collapsed;
+                RBpink.Visibility = Visibility.Collapsed;
+                txtUserColor.Visibility = Visibility.Collapsed;
+            }
+            else
+            {
+                RBblue.Visibility = Visibility.Visible;
+                RBred.Visibility = Visibility.Visible;
+                RBgreen.Visibility = Visibility.Visible;
+                RByellow.Visibility = Visibility.Visible;
+                RBpink.Visibility = Visibility.Visible;
+                txtUserColor.Visibility = Visibility.Visible;
+                RBblue.IsChecked = true;
+            } */
         }
 
         private void ShowTitleBar(object sender, RoutedEventArgs e)
@@ -228,6 +254,45 @@ namespace Security
                     titleBar.ButtonPressedBackgroundColor = Color.FromArgb(50, 255, 255, 255);
                 }
             }
+        }
+
+        private void RBCuser_Checked(object sender, RoutedEventArgs e)
+        {
+            if (RBCuser.IsChecked==true)
+            {
+                RBblue.Visibility = Visibility.Visible;
+                RBred.Visibility = Visibility.Visible;
+                RBgreen.Visibility = Visibility.Visible;
+                RByellow.Visibility = Visibility.Visible;
+                RBpink.Visibility = Visibility.Visible;
+                txtUserColor.Visibility = Visibility.Visible;
+                RBblue.IsChecked = true;
+            }
+            else
+            {
+                RBred.Visibility = Visibility.Collapsed;
+                RBgreen.Visibility = Visibility.Collapsed;
+                RByellow.Visibility = Visibility.Collapsed;
+                RBpink.Visibility = Visibility.Collapsed;
+                RBblue.Visibility = Visibility.Collapsed;
+                txtUserColor.Visibility = Visibility.Collapsed;
+            }
+        }
+
+        private void ChangeColor1(object sender, RoutedEventArgs e)
+        {
+            if (RBblue.IsChecked == true)
+            {
+                newcolor = Colors.Blue;
+            }
+            if (RBgreen.IsChecked == true)
+            {
+                newcolor = Colors.Green;
+            }
+
+            dynamic g = newcolor;
+            //(Application.Current.Resources["SystemControlBackgroundAccentBrush"] as SolidColorBrush).Color = (Color)g.Color;
+
         }
     }
 }

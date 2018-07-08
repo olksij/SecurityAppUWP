@@ -48,6 +48,8 @@
       <RootProperty Name="Content" />
       <RootProperty Name="GroupName" />
       <RootProperty Name="IsChecked" />
+      <RootProperty Name="Visibility" />
+      <RootEvent Name="Click" />
       <RootEvent Name="Checked" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Shapes.Rectangle">
@@ -132,6 +134,10 @@
       <RootEvent Name="PointerPressed" />
     </RootType>
     <RootType FullName="Security.MainPage" />
+    <RootType FullName="Windows.UI.Xaml.Controls.ScrollViewer">
+      <RootProperty Name="Margin" />
+      <RootProperty Name="Content" />
+    </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.ToggleSwitch">
       <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="Width" />

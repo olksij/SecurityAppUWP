@@ -751,6 +751,170 @@ namespace Internal_WinRT_Interop_WinRTCallbacks
 
 namespace System
 {
+	// System.EventHandler<Windows.UI.Xaml.Controls.ScrollViewerViewChangedEventArgs>
+	public unsafe static class EventHandler_A__wux__Controls_ScrollViewerViewChangedEventArgs_V___Impl
+	{
+		public static void Invoke(
+					this global::System.__ComObject __this, 
+					object sender, 
+					global::Windows.UI.Xaml.Controls.ScrollViewerViewChangedEventArgs args)
+		{
+			global::__Interop.ForwardComStubs.Stub_13<global::System.EventHandler<global::Windows.UI.Xaml.Controls.ScrollViewerViewChangedEventArgs>, global::Windows.UI.Xaml.Controls.ScrollViewerViewChangedEventArgs>(
+								__this, 
+								sender, 
+								args, 
+								3
+							);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+		}
+
+		// v-table for 'System.EventHandler<Windows.UI.Xaml.Controls.ScrollViewerViewChangedEventArgs>'
+		[global::System.Runtime.InteropServices.McgRootsType(typeof(global::System.EventHandler<global::Windows.UI.Xaml.Controls.ScrollViewerViewChangedEventArgs>))]
+		internal unsafe partial struct Vtbl
+		{
+			global::System.IntPtr pfnQueryInterface;
+			global::System.IntPtr pfnAddRef;
+			global::System.IntPtr pfnRelease;
+			// Windows_Foundation__EventHandler_A__wux__Controls_ScrollViewerViewChangedEventArgs_V_
+			global::System.IntPtr pfnInvoke_;
+			[global::System.Runtime.CompilerServices.InitDataBlob(typeof(global::System.EventHandler_A__wux__Controls_ScrollViewerViewChangedEventArgs_V___Impl.Vtbl.Vtbl__McgRvaContainer), "RVA_System_EventHandler_A__wux__Controls_ScrollViewerViewChangedEventArgs_V___Impl_Vtbl_s_staticVtable")]
+			static global::System.EventHandler_A__wux__Controls_ScrollViewerViewChangedEventArgs_V___Impl.Vtbl s_staticVtable
+			#if false
+			 = new global::System.EventHandler_A__wux__Controls_ScrollViewerViewChangedEventArgs_V___Impl.Vtbl() {
+				pfnQueryInterface = global::__Interop.Intrinsics.AddrOf<global::System.Runtime.InteropServices.AddrOfQueryInterface>(System.Runtime.InteropServices.__vtable_IUnknown.QueryInterface),
+				pfnAddRef = global::__Interop.Intrinsics.AddrOf<global::System.Runtime.InteropServices.AddrOfAddRef>(System.Runtime.InteropServices.__vtable_IUnknown.AddRef),
+				pfnRelease = global::__Interop.Intrinsics.AddrOf<global::System.Runtime.InteropServices.AddrOfRelease>(System.Runtime.InteropServices.__vtable_IUnknown.Release),
+				pfnInvoke_ = global::__Interop.Intrinsics.AddrOf<global::__Interop.AddrOfIntrinsics.AddrOfTarget6>(global::System.EventHandler_A__wux__Controls_ScrollViewerViewChangedEventArgs_V___Impl.Vtbl.Invoke__n),
+			}
+			#endif
+			;
+			static global::System.IntPtr s_cachedVtable;
+			internal static global::System.IntPtr GetVtbl()
+			{
+				fixed (void* pVtbl = &(global::System.EventHandler_A__wux__Controls_ScrollViewerViewChangedEventArgs_V___Impl.Vtbl.s_staticVtable))
+					return global::System.Runtime.InteropServices.McgMarshal.GetCCWVTableCopy(
+										pVtbl, 
+										ref global::System.EventHandler_A__wux__Controls_ScrollViewerViewChangedEventArgs_V___Impl.Vtbl.s_cachedVtable, 
+										sizeof(global::System.EventHandler_A__wux__Controls_ScrollViewerViewChangedEventArgs_V___Impl.Vtbl)
+									);
+			}
+
+			[global::System.Runtime.InteropServices.NativeCallable]
+			static int Invoke__n(
+						global::System.IntPtr pComThis, 
+						void* unsafe_sender, 
+						void* unsafe_args)
+			{
+				object __this = global::System.Runtime.InteropServices.McgMarshal.ThisPointerToTargetObject(pComThis);
+				global::System.IntPtr __methodPtr = global::__Interop.Intrinsics.VirtualAddrOf<global::System.EventHandler<global::Windows.UI.Xaml.Controls.ScrollViewerViewChangedEventArgs>>(
+									__this, 
+									0
+								);
+				int __ret = ((int)global::__Interop.ReverseComStubs.Stub_5<global::Windows.UI.Xaml.Controls.ScrollViewerViewChangedEventArgs>(
+									__this, 
+									unsafe_sender, 
+									unsafe_args, 
+									__methodPtr
+								));
+				global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+				return __ret;
+			}
+
+			private static class Vtbl__McgRvaContainer
+			{
+				[global::System.Runtime.CompilerServices.MethodAddrFixup(0, typeof(global::System.Runtime.InteropServices.__vtable_IUnknown), "QueryInterface")]
+				[global::System.Runtime.CompilerServices.MethodAddrFixup(8, typeof(global::System.Runtime.InteropServices.__vtable_IUnknown), "AddRef")]
+				[global::System.Runtime.CompilerServices.MethodAddrFixup(16, typeof(global::System.Runtime.InteropServices.__vtable_IUnknown), "Release")]
+				[global::System.Runtime.CompilerServices.MethodAddrFixup(24, typeof(global::System.EventHandler_A__wux__Controls_ScrollViewerViewChangedEventArgs_V___Impl.Vtbl), "Invoke__n")]
+				[global::System.Runtime.CompilerServices.NonArray]
+				static readonly byte[] RVA_System_EventHandler_A__wux__Controls_ScrollViewerViewChangedEventArgs_V___Impl_Vtbl_s_staticVtable = new byte[] {
+						0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
+			}
+		}
+	}
+
+	// System.EventHandler<Windows.UI.Xaml.Controls.ScrollViewerViewChangingEventArgs>
+	public unsafe static class EventHandler_A__wux__Controls_ScrollViewerViewChangingEventArgs_V___Impl
+	{
+		public static void Invoke(
+					this global::System.__ComObject __this, 
+					object sender, 
+					global::Windows.UI.Xaml.Controls.ScrollViewerViewChangingEventArgs args)
+		{
+			global::__Interop.ForwardComStubs.Stub_13<global::System.EventHandler<global::Windows.UI.Xaml.Controls.ScrollViewerViewChangingEventArgs>, global::Windows.UI.Xaml.Controls.ScrollViewerViewChangingEventArgs>(
+								__this, 
+								sender, 
+								args, 
+								3
+							);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+		}
+
+		// v-table for 'System.EventHandler<Windows.UI.Xaml.Controls.ScrollViewerViewChangingEventArgs>'
+		[global::System.Runtime.InteropServices.McgRootsType(typeof(global::System.EventHandler<global::Windows.UI.Xaml.Controls.ScrollViewerViewChangingEventArgs>))]
+		internal unsafe partial struct Vtbl
+		{
+			global::System.IntPtr pfnQueryInterface;
+			global::System.IntPtr pfnAddRef;
+			global::System.IntPtr pfnRelease;
+			// Windows_Foundation__EventHandler_A__wux__Controls_ScrollViewerViewChangingEventArgs_V_
+			global::System.IntPtr pfnInvoke_;
+			[global::System.Runtime.CompilerServices.InitDataBlob(typeof(global::System.EventHandler_A__wux__Controls_ScrollViewerViewChangingEventArgs_V___Impl.Vtbl.Vtbl__McgRvaContainer), "RVA_System_EventHandler_A__wux__Controls_ScrollViewerViewChangingEventArgs_V___Impl_Vtbl_s_staticVtable")]
+			static global::System.EventHandler_A__wux__Controls_ScrollViewerViewChangingEventArgs_V___Impl.Vtbl s_staticVtable
+			#if false
+			 = new global::System.EventHandler_A__wux__Controls_ScrollViewerViewChangingEventArgs_V___Impl.Vtbl() {
+				pfnQueryInterface = global::__Interop.Intrinsics.AddrOf<global::System.Runtime.InteropServices.AddrOfQueryInterface>(System.Runtime.InteropServices.__vtable_IUnknown.QueryInterface),
+				pfnAddRef = global::__Interop.Intrinsics.AddrOf<global::System.Runtime.InteropServices.AddrOfAddRef>(System.Runtime.InteropServices.__vtable_IUnknown.AddRef),
+				pfnRelease = global::__Interop.Intrinsics.AddrOf<global::System.Runtime.InteropServices.AddrOfRelease>(System.Runtime.InteropServices.__vtable_IUnknown.Release),
+				pfnInvoke_ = global::__Interop.Intrinsics.AddrOf<global::__Interop.AddrOfIntrinsics.AddrOfTarget6>(global::System.EventHandler_A__wux__Controls_ScrollViewerViewChangingEventArgs_V___Impl.Vtbl.Invoke__n),
+			}
+			#endif
+			;
+			static global::System.IntPtr s_cachedVtable;
+			internal static global::System.IntPtr GetVtbl()
+			{
+				fixed (void* pVtbl = &(global::System.EventHandler_A__wux__Controls_ScrollViewerViewChangingEventArgs_V___Impl.Vtbl.s_staticVtable))
+					return global::System.Runtime.InteropServices.McgMarshal.GetCCWVTableCopy(
+										pVtbl, 
+										ref global::System.EventHandler_A__wux__Controls_ScrollViewerViewChangingEventArgs_V___Impl.Vtbl.s_cachedVtable, 
+										sizeof(global::System.EventHandler_A__wux__Controls_ScrollViewerViewChangingEventArgs_V___Impl.Vtbl)
+									);
+			}
+
+			[global::System.Runtime.InteropServices.NativeCallable]
+			static int Invoke__n(
+						global::System.IntPtr pComThis, 
+						void* unsafe_sender, 
+						void* unsafe_args)
+			{
+				object __this = global::System.Runtime.InteropServices.McgMarshal.ThisPointerToTargetObject(pComThis);
+				global::System.IntPtr __methodPtr = global::__Interop.Intrinsics.VirtualAddrOf<global::System.EventHandler<global::Windows.UI.Xaml.Controls.ScrollViewerViewChangingEventArgs>>(
+									__this, 
+									0
+								);
+				int __ret = ((int)global::__Interop.ReverseComStubs.Stub_5<global::Windows.UI.Xaml.Controls.ScrollViewerViewChangingEventArgs>(
+									__this, 
+									unsafe_sender, 
+									unsafe_args, 
+									__methodPtr
+								));
+				global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+				return __ret;
+			}
+
+			private static class Vtbl__McgRvaContainer
+			{
+				[global::System.Runtime.CompilerServices.MethodAddrFixup(0, typeof(global::System.Runtime.InteropServices.__vtable_IUnknown), "QueryInterface")]
+				[global::System.Runtime.CompilerServices.MethodAddrFixup(8, typeof(global::System.Runtime.InteropServices.__vtable_IUnknown), "AddRef")]
+				[global::System.Runtime.CompilerServices.MethodAddrFixup(16, typeof(global::System.Runtime.InteropServices.__vtable_IUnknown), "Release")]
+				[global::System.Runtime.CompilerServices.MethodAddrFixup(24, typeof(global::System.EventHandler_A__wux__Controls_ScrollViewerViewChangingEventArgs_V___Impl.Vtbl), "Invoke__n")]
+				[global::System.Runtime.CompilerServices.NonArray]
+				static readonly byte[] RVA_System_EventHandler_A__wux__Controls_ScrollViewerViewChangingEventArgs_V___Impl_Vtbl_s_staticVtable = new byte[] {
+						0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
+			}
+		}
+	}
+
 	// System.Nullable<Windows.UI.Color>
 	public unsafe static class Nullable_A__w_UI_Color_V___Impl
 	{
@@ -32519,6 +32683,26 @@ namespace Windows.UI
 				return __ret;
 			}
 
+			public static global::Windows.UI.Color get_Blue(global::System.__ComObject __this)
+			{
+				global::Windows.UI.Color __ret = global::__Interop.ForwardComStubs.Stub_14<global::Windows.UI.IColorsStatics>(
+									__this, 
+									15
+								);
+				global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+				return __ret;
+			}
+
+			public static global::Windows.UI.Color get_Green(global::System.__ComObject __this)
+			{
+				global::Windows.UI.Color __ret = global::__Interop.ForwardComStubs.Stub_14<global::Windows.UI.IColorsStatics>(
+									__this, 
+									57
+								);
+				global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+				return __ret;
+			}
+
 			public static global::Windows.UI.Color get_Transparent(global::System.__ComObject __this)
 			{
 				global::Windows.UI.Color __ret = global::__Interop.ForwardComStubs.Stub_14<global::Windows.UI.IColorsStatics>(
@@ -41553,6 +41737,178 @@ namespace Windows.UI.Xaml.Controls
 				global::__Interop.ForwardComStubs.Stub_7<global::Windows.UI.Xaml.Controls.IAppBarButton, global::Windows.UI.Xaml.Controls.IconElement>(
 									__this, 
 									value, 
+									9
+								);
+				global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			}
+		}
+	}
+
+	// Windows.UI.Xaml.Controls.IScrollViewer
+	public unsafe static class IScrollViewer__Impl
+	{
+		// StubClass for 'Windows.UI.Xaml.Controls.IScrollViewer'
+		public static partial class Stubs
+		{
+			// Signature, Windows.UI.Xaml.Controls.IScrollViewer.add_ViewChanged, [fwd] [return] [EETypeRva:0x000406BC] void__int, [fwd] [in] [EETypeRva:0x0003F504] System_EventHandler_1_Windows_UI_Xaml_Controls_ScrollViewerViewChangedEventArgs___Windows_Foundation__EventHandler_A__wux__Controls_ScrollViewerViewChangedEventArgs_V_ *, [fwd] [out] [retval] [nativebyref] [EETypeRva:0x0004157C] System_Runtime_InteropServices_WindowsRuntime_EventRegistrationToken__Windows_Foundation__EventRegistrationToken, 
+			public static global::System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken add_ViewChanged(
+						global::System.__ComObject __this, 
+						global::System.EventHandler<global::Windows.UI.Xaml.Controls.ScrollViewerViewChangedEventArgs> value)
+			{
+				// Setup
+				void* unsafe_value = default(void*);
+				global::System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken unsafe_token__retval;
+				global::System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken token__retval;
+				int unsafe___hr;
+				try
+				{
+					// Marshalling
+					unsafe_value = (void*)global::System.Runtime.InteropServices.McgMarshal.DelegateToComInterface(
+										value, 
+										typeof(global::System.EventHandler<global::Windows.UI.Xaml.Controls.ScrollViewerViewChangedEventArgs>).TypeHandle
+									);
+					// Call to native method
+					unsafe___hr = global::__Interop.ComCallHelpers.Call(
+										__this, 
+										typeof(global::Windows.UI.Xaml.Controls.IScrollViewer).TypeHandle, 
+										56, 
+										unsafe_value, 
+										&(unsafe_token__retval)
+									);
+					global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+					token__retval = unsafe_token__retval;
+					// Return
+					return token__retval;
+				}
+				finally
+				{
+					// Cleanup
+					global::System.Runtime.InteropServices.McgMarshal.ComSafeRelease(new global::System.IntPtr(((void*)unsafe_value)));
+				}
+			}
+
+			public static void remove_ViewChanged(
+						global::System.__ComObject __this, 
+						global::System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken token)
+			{
+				global::__Interop.ForwardComStubs.Stub_9<global::Windows.UI.Xaml.Controls.IScrollViewer>(
+									__this, 
+									token, 
+									57
+								);
+				global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			}
+		}
+	}
+
+	// Windows.UI.Xaml.Controls.IScrollViewer2
+	public unsafe static class IScrollViewer2__Impl
+	{
+		// StubClass for 'Windows.UI.Xaml.Controls.IScrollViewer2'
+		public static partial class Stubs
+		{
+			// Signature, Windows.UI.Xaml.Controls.IScrollViewer2.add_ViewChanging, [fwd] [return] [EETypeRva:0x000406BC] void__int, [fwd] [in] [EETypeRva:0x0003F504] System_EventHandler_1_Windows_UI_Xaml_Controls_ScrollViewerViewChangingEventArgs___Windows_Foundation__EventHandler_A__wux__Controls_ScrollViewerViewChangingEventArgs_V_ *, [fwd] [out] [retval] [nativebyref] [EETypeRva:0x0004157C] System_Runtime_InteropServices_WindowsRuntime_EventRegistrationToken__Windows_Foundation__EventRegistrationToken, 
+			public static global::System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken add_ViewChanging(
+						global::System.__ComObject __this, 
+						global::System.EventHandler<global::Windows.UI.Xaml.Controls.ScrollViewerViewChangingEventArgs> value)
+			{
+				// Setup
+				void* unsafe_value = default(void*);
+				global::System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken unsafe_token__retval;
+				global::System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken token__retval;
+				int unsafe___hr;
+				try
+				{
+					// Marshalling
+					unsafe_value = (void*)global::System.Runtime.InteropServices.McgMarshal.DelegateToComInterface(
+										value, 
+										typeof(global::System.EventHandler<global::Windows.UI.Xaml.Controls.ScrollViewerViewChangingEventArgs>).TypeHandle
+									);
+					// Call to native method
+					unsafe___hr = global::__Interop.ComCallHelpers.Call(
+										__this, 
+										typeof(global::Windows.UI.Xaml.Controls.IScrollViewer2).TypeHandle, 
+										12, 
+										unsafe_value, 
+										&(unsafe_token__retval)
+									);
+					global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+					token__retval = unsafe_token__retval;
+					// Return
+					return token__retval;
+				}
+				finally
+				{
+					// Cleanup
+					global::System.Runtime.InteropServices.McgMarshal.ComSafeRelease(new global::System.IntPtr(((void*)unsafe_value)));
+				}
+			}
+
+			public static void remove_ViewChanging(
+						global::System.__ComObject __this, 
+						global::System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken token)
+			{
+				global::__Interop.ForwardComStubs.Stub_9<global::Windows.UI.Xaml.Controls.IScrollViewer2>(
+									__this, 
+									token, 
+									13
+								);
+				global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			}
+		}
+	}
+
+	// Windows.UI.Xaml.Controls.IScrollViewer3
+	public unsafe static class IScrollViewer3__Impl
+	{
+		// StubClass for 'Windows.UI.Xaml.Controls.IScrollViewer3'
+		public static partial class Stubs
+		{
+			public static global::System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken add_DirectManipulationStarted(
+						global::System.__ComObject __this, 
+						global::System.EventHandler<object> value)
+			{
+				global::System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken __ret = global::__Interop.ForwardComStubs.Stub_10<global::Windows.UI.Xaml.Controls.IScrollViewer3>(
+									__this, 
+									value, 
+									6
+								);
+				global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+				return __ret;
+			}
+
+			public static void remove_DirectManipulationStarted(
+						global::System.__ComObject __this, 
+						global::System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken token)
+			{
+				global::__Interop.ForwardComStubs.Stub_9<global::Windows.UI.Xaml.Controls.IScrollViewer3>(
+									__this, 
+									token, 
+									7
+								);
+				global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			}
+
+			public static global::System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken add_DirectManipulationCompleted(
+						global::System.__ComObject __this, 
+						global::System.EventHandler<object> value)
+			{
+				global::System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken __ret = global::__Interop.ForwardComStubs.Stub_10<global::Windows.UI.Xaml.Controls.IScrollViewer3>(
+									__this, 
+									value, 
+									8
+								);
+				global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+				return __ret;
+			}
+
+			public static void remove_DirectManipulationCompleted(
+						global::System.__ComObject __this, 
+						global::System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken token)
+			{
+				global::__Interop.ForwardComStubs.Stub_9<global::Windows.UI.Xaml.Controls.IScrollViewer3>(
+									__this, 
+									token, 
 									9
 								);
 				global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();

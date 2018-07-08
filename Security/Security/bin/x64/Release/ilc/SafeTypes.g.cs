@@ -381,29 +381,6 @@ namespace Internal.Cryptography.Pal.Native
 		}
 	}
 
-	[global::System.Runtime.InteropServices.McgRedirectedType("Internal.Cryptography.Pal.Native.SafeCertContextHandleWithKeyContainerDeletion,System.Security.Cryptography.X509" +
-		"Certificates, Version=4.2.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
-	public unsafe class SafeCertContextHandleWithKeyContainerDeletion__System_Security_Cryptography_X509Certificates : global::System.Runtime.InteropServices.SafeHandle
-	{
-		public SafeCertContextHandleWithKeyContainerDeletion__System_Security_Cryptography_X509Certificates() : 
-				base(default(global::System.IntPtr), false)
-		{
-		}
-
-		public override bool IsInvalid
-		{
-			get
-			{
-				return false;
-			}
-		}
-
-		protected override bool ReleaseHandle()
-		{
-			return false;
-		}
-	}
-
 	[global::System.Runtime.InteropServices.McgRedirectedType("Internal.Cryptography.Pal.Native.SafeCertStoreHandle,System.Security.Cryptography.X509Certificates, Version=4.2." +
 		"1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
 	public unsafe class SafeCertStoreHandle__System_Security_Cryptography_X509Certificates : global::System.Runtime.InteropServices.SafeHandle
@@ -432,6 +409,29 @@ namespace Internal.Cryptography.Pal.Native
 	public unsafe class SafeCryptMsgHandle__System_Security_Cryptography_X509Certificates : global::System.Runtime.InteropServices.SafeHandle
 	{
 		public SafeCryptMsgHandle__System_Security_Cryptography_X509Certificates() : 
+				base(default(global::System.IntPtr), false)
+		{
+		}
+
+		public override bool IsInvalid
+		{
+			get
+			{
+				return false;
+			}
+		}
+
+		protected override bool ReleaseHandle()
+		{
+			return false;
+		}
+	}
+
+	[global::System.Runtime.InteropServices.McgRedirectedType("Internal.Cryptography.Pal.Native.SafeCertContextHandleWithKeyContainerDeletion,System.Security.Cryptography.X509" +
+		"Certificates, Version=4.2.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
+	public unsafe class SafeCertContextHandleWithKeyContainerDeletion__System_Security_Cryptography_X509Certificates : global::System.Runtime.InteropServices.SafeHandle
+	{
+		public SafeCertContextHandleWithKeyContainerDeletion__System_Security_Cryptography_X509Certificates() : 
 				base(default(global::System.IntPtr), false)
 		{
 		}
@@ -5368,6 +5368,46 @@ namespace Windows.UI
 			return __pRetVal;
 		}
 
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "Blue")]
+		public static global::Windows.UI.Color get_Blue()
+		{
+			global::Windows.UI.Color retval;
+			retval = __Factory_Windows_UI__IColorsStatics_get_Blue("Windows.UI.Colors");
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			return retval;
+		}
+
+		static global::Windows.UI.Color __Factory_Windows_UI__IColorsStatics_get_Blue(string typeName)
+		{
+			global::Windows.UI.Color __pRetVal;
+			__pRetVal = global::Windows.UI.IColorsStatics__Impl.Stubs.get_Blue(global::System.Runtime.InteropServices.McgMarshal.GetActivationFactory(
+									typeName, 
+									typeof(global::Windows.UI.IColorsStatics).TypeHandle
+								));
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			return __pRetVal;
+		}
+
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "Green")]
+		public static global::Windows.UI.Color get_Green()
+		{
+			global::Windows.UI.Color retval;
+			retval = __Factory_Windows_UI__IColorsStatics_get_Green("Windows.UI.Colors");
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			return retval;
+		}
+
+		static global::Windows.UI.Color __Factory_Windows_UI__IColorsStatics_get_Green(string typeName)
+		{
+			global::Windows.UI.Color __pRetVal;
+			__pRetVal = global::Windows.UI.IColorsStatics__Impl.Stubs.get_Green(global::System.Runtime.InteropServices.McgMarshal.GetActivationFactory(
+									typeName, 
+									typeof(global::Windows.UI.IColorsStatics).TypeHandle
+								));
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			return __pRetVal;
+		}
+
 		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "Transparent")]
 		public static global::Windows.UI.Color get_Transparent()
 		{
@@ -5439,6 +5479,12 @@ namespace Windows.UI
 	{
 		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "Black")]
 		global::Windows.UI.Color get_Black();
+
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "Blue")]
+		global::Windows.UI.Color get_Blue();
+
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "Green")]
+		global::Windows.UI.Color get_Green();
 
 		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "Transparent")]
 		global::Windows.UI.Color get_Transparent();
@@ -13759,6 +13805,147 @@ namespace Windows.UI.Xaml.Controls
 		}
 	}
 
+	[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::Windows.UI.Xaml.Controls.IScrollViewer))]
+	[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::Windows.UI.Xaml.Controls.IScrollViewer2))]
+	[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::Windows.UI.Xaml.Controls.IScrollViewer3))]
+	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(65536)]
+	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
+	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
+	public unsafe sealed class ScrollViewer : global::Windows.UI.Xaml.Controls.ContentControl, global::Windows.UI.Xaml.Controls.IScrollViewer, global::Windows.UI.Xaml.Controls.IScrollViewer2, global::Windows.UI.Xaml.Controls.IScrollViewer3
+	{
+		[global::System.Runtime.CompilerServices.MethodImpl(global::System.Runtime.CompilerServices.MethodImplOptions.NoInlining)]
+		public ScrollViewer() : 
+				base(default(global::System.IntPtr))
+		{
+			global::System.IntPtr retval;
+			retval = global::System.Runtime.InteropServices.McgMarshal.ActivateInstance("Windows.UI.Xaml.Controls.ScrollViewer");
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			global::__Interop.McgHelpers.GetIUnknownForFactoryReturn(ref retval);
+			this.__AttachAndRelease(retval);
+		}
+
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.EventAdd, "ViewChanged")]
+		public global::System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken add_ViewChanged(global::System.EventHandler<global::Windows.UI.Xaml.Controls.ScrollViewerViewChangedEventArgs> value)
+		{
+			global::System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken __retVal = global::Windows.UI.Xaml.Controls.IScrollViewer__Impl.Stubs.add_ViewChanged(
+								this, 
+								value
+							);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			return __retVal;
+		}
+
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.EventRemove, "ViewChanged")]
+		public void remove_ViewChanged(global::System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken token)
+		{
+			global::Windows.UI.Xaml.Controls.IScrollViewer__Impl.Stubs.remove_ViewChanged(
+								this, 
+								token
+							);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+		}
+
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.EventAdd, "ViewChanging")]
+		public global::System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken add_ViewChanging(global::System.EventHandler<global::Windows.UI.Xaml.Controls.ScrollViewerViewChangingEventArgs> value)
+		{
+			global::System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken __retVal = global::Windows.UI.Xaml.Controls.IScrollViewer2__Impl.Stubs.add_ViewChanging(
+								this, 
+								value
+							);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			return __retVal;
+		}
+
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.EventRemove, "ViewChanging")]
+		public void remove_ViewChanging(global::System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken token)
+		{
+			global::Windows.UI.Xaml.Controls.IScrollViewer2__Impl.Stubs.remove_ViewChanging(
+								this, 
+								token
+							);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+		}
+
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.EventAdd, "DirectManipulationStarted")]
+		public global::System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken add_DirectManipulationStarted(global::System.EventHandler<object> value)
+		{
+			global::System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken __retVal = global::Windows.UI.Xaml.Controls.IScrollViewer3__Impl.Stubs.add_DirectManipulationStarted(
+								this, 
+								value
+							);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			return __retVal;
+		}
+
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.EventRemove, "DirectManipulationStarted")]
+		public void remove_DirectManipulationStarted(global::System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken token)
+		{
+			global::Windows.UI.Xaml.Controls.IScrollViewer3__Impl.Stubs.remove_DirectManipulationStarted(
+								this, 
+								token
+							);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+		}
+
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.EventAdd, "DirectManipulationCompleted")]
+		public global::System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken add_DirectManipulationCompleted(global::System.EventHandler<object> value)
+		{
+			global::System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken __retVal = global::Windows.UI.Xaml.Controls.IScrollViewer3__Impl.Stubs.add_DirectManipulationCompleted(
+								this, 
+								value
+							);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			return __retVal;
+		}
+
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.EventRemove, "DirectManipulationCompleted")]
+		public void remove_DirectManipulationCompleted(global::System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken token)
+		{
+			global::Windows.UI.Xaml.Controls.IScrollViewer3__Impl.Stubs.remove_DirectManipulationCompleted(
+								this, 
+								token
+							);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+		}
+
+		public ScrollViewer(global::System.IntPtr dummy) : 
+				base(dummy)
+		{
+		}
+	}
+
+	[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::Windows.UI.Xaml.Controls.IScrollViewerViewChangedEventArgs))]
+	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(65536)]
+	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
+	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
+	public unsafe sealed class ScrollViewerViewChangedEventArgs : global::System.__ComObject, global::Windows.UI.Xaml.Controls.IScrollViewerViewChangedEventArgs
+	{
+		[global::System.Runtime.CompilerServices.MethodImpl(global::System.Runtime.CompilerServices.MethodImplOptions.NoInlining)]
+		public ScrollViewerViewChangedEventArgs()
+		{
+			global::System.IntPtr retval;
+			retval = global::System.Runtime.InteropServices.McgMarshal.ActivateInstance("Windows.UI.Xaml.Controls.ScrollViewerViewChangedEventArgs");
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			global::__Interop.McgHelpers.GetIUnknownForFactoryReturn(ref retval);
+			this.__AttachAndRelease(retval);
+		}
+
+		public ScrollViewerViewChangedEventArgs(global::System.IntPtr dummy)
+		{
+		}
+	}
+
+	[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::Windows.UI.Xaml.Controls.IScrollViewerViewChangingEventArgs))]
+	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(0)]
+	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
+	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
+	public unsafe sealed class ScrollViewerViewChangingEventArgs : global::System.__ComObject, global::Windows.UI.Xaml.Controls.IScrollViewerViewChangingEventArgs
+	{
+		public ScrollViewerViewChangingEventArgs(global::System.IntPtr dummy)
+		{
+		}
+	}
+
 	[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::Windows.UI.Xaml.Controls.IToggleSwitch))]
 	[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::Windows.UI.Xaml.Controls.IToggleSwitchOverrides))]
 	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(65536)]
@@ -15078,6 +15265,57 @@ namespace Windows.UI.Xaml.Controls
 
 		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertySet, "Icon")]
 		void put_Icon(global::Windows.UI.Xaml.Controls.IconElement value);
+	}
+
+	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
+	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
+	public unsafe interface IScrollViewer
+	{
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.EventAdd, "ViewChanged")]
+		global::System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken add_ViewChanged(global::System.EventHandler<global::Windows.UI.Xaml.Controls.ScrollViewerViewChangedEventArgs> value);
+
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.EventRemove, "ViewChanged")]
+		void remove_ViewChanged(global::System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken token);
+	}
+
+	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
+	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
+	public unsafe interface IScrollViewerViewChangedEventArgs
+	{
+	}
+
+	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
+	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
+	public unsafe interface IScrollViewer2
+	{
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.EventAdd, "ViewChanging")]
+		global::System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken add_ViewChanging(global::System.EventHandler<global::Windows.UI.Xaml.Controls.ScrollViewerViewChangingEventArgs> value);
+
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.EventRemove, "ViewChanging")]
+		void remove_ViewChanging(global::System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken token);
+	}
+
+	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
+	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
+	public unsafe interface IScrollViewerViewChangingEventArgs
+	{
+	}
+
+	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
+	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
+	public unsafe interface IScrollViewer3
+	{
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.EventAdd, "DirectManipulationStarted")]
+		global::System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken add_DirectManipulationStarted(global::System.EventHandler<object> value);
+
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.EventRemove, "DirectManipulationStarted")]
+		void remove_DirectManipulationStarted(global::System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken token);
+
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.EventAdd, "DirectManipulationCompleted")]
+		global::System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken add_DirectManipulationCompleted(global::System.EventHandler<object> value);
+
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.EventRemove, "DirectManipulationCompleted")]
+		void remove_DirectManipulationCompleted(global::System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken token);
 	}
 
 	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
