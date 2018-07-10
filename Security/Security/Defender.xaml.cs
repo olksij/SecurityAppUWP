@@ -36,10 +36,7 @@ namespace Security
 
         }
 
-        private void ToHome(object sender, TappedRoutedEventArgs e)
-        {
-            this.Frame.Navigate(typeof(MainPage), color);
-        }
+
 
         private async void CheckButton_Click(object sender, RoutedEventArgs e)
         {

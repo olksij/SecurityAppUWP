@@ -41,7 +41,7 @@ namespace Security
         private List<DownloadOperation> activeDownloads;
         private CancellationTokenSource cts;
         string color = "light";
-        string version = "0.6.0.0";
+        string version = "0.9.0.0";
 
         public Update()
         {
@@ -68,13 +68,13 @@ namespace Security
 
 
 
-            /*
+           
             Windows.Storage.StorageFolder storageFolder = Windows.Storage.ApplicationData.Current.LocalFolder;
             Windows.Storage.StorageFile sampleFile = await storageFolder.CreateFileAsync("Security_" + version + "_x64.appxbundle", Windows.Storage.CreationCollisionOption.ReplaceExisting);
 
-            Write();*/
+            Write();
 
-            await StartDownload();
+            //await StartDownload();
 
         }
 

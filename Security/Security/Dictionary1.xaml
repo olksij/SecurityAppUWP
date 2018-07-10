@@ -9,5 +9,7 @@
             TintColor="#FFFF0000"
             TintOpacity="0.8"
             FallbackColor="#FF7F0000"/>
+
+        <SolidColorBrush x:Key="SolidColorBrush1"/>
     </ResourceDictionary>
 </ResourceDictionary>

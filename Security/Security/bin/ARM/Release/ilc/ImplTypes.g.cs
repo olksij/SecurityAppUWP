@@ -454,9 +454,9 @@ namespace Internal_WinRT_Interop_WinRTCallbacks
 				pfnGetIids = global::__Interop.Intrinsics.AddrOf<global::__Interop.AddrOfIntrinsics.AddrOfTarget0>(System.Runtime.InteropServices.__vtable_IInspectable.GetIIDs),
 				pfnGetRuntimeClassName = global::__Interop.Intrinsics.AddrOf<global::__Interop.AddrOfIntrinsics.AddrOfTarget1>(System.Runtime.InteropServices.__vtable_IInspectable.GetRuntimeClassName),
 				pfnGetTrustLevel = global::__Interop.Intrinsics.AddrOf<global::__Interop.AddrOfIntrinsics.AddrOfTarget1>(System.Runtime.InteropServices.__vtable_IInspectable.GetTrustLevel),
-				pfnCreateTimer_ = global::__Interop.Intrinsics.AddrOf<global::__Interop.AddrOfIntrinsics.AddrOfTarget48>(global::Internal_WinRT_Interop_WinRTCallbacks.IDispatcherQueue__System_Private_WinRTInterop_CoreLib__Impl.Vtbl.CreateTimer__n),
-				pfnTryEnqueue_ = global::__Interop.Intrinsics.AddrOf<global::__Interop.AddrOfIntrinsics.AddrOfTarget49>(global::Internal_WinRT_Interop_WinRTCallbacks.IDispatcherQueue__System_Private_WinRTInterop_CoreLib__Impl.Vtbl.TryEnqueue__n),
-				pfnTryEnqueue__0_ = global::__Interop.Intrinsics.AddrOf<global::__Interop.AddrOfIntrinsics.AddrOfTarget50>(global::Internal_WinRT_Interop_WinRTCallbacks.IDispatcherQueue__System_Private_WinRTInterop_CoreLib__Impl.Vtbl.TryEnqueue__0__n),
+				pfnCreateTimer_ = global::__Interop.Intrinsics.AddrOf<global::__Interop.AddrOfIntrinsics.AddrOfTarget47>(global::Internal_WinRT_Interop_WinRTCallbacks.IDispatcherQueue__System_Private_WinRTInterop_CoreLib__Impl.Vtbl.CreateTimer__n),
+				pfnTryEnqueue_ = global::__Interop.Intrinsics.AddrOf<global::__Interop.AddrOfIntrinsics.AddrOfTarget48>(global::Internal_WinRT_Interop_WinRTCallbacks.IDispatcherQueue__System_Private_WinRTInterop_CoreLib__Impl.Vtbl.TryEnqueue__n),
+				pfnTryEnqueue__0_ = global::__Interop.Intrinsics.AddrOf<global::__Interop.AddrOfIntrinsics.AddrOfTarget49>(global::Internal_WinRT_Interop_WinRTCallbacks.IDispatcherQueue__System_Private_WinRTInterop_CoreLib__Impl.Vtbl.TryEnqueue__0__n),
 			}
 			#endif
 			;
@@ -1556,7 +1556,7 @@ namespace System
 		{
 			public static global::Windows.Web.Http.HttpStatusCode get_Value(global::System.__ComObject __this)
 			{
-				global::Windows.Web.Http.HttpStatusCode __ret = global::__Interop.ForwardComStubs.Stub_63<global::Windows.Foundation.IReference<global::Windows.Web.Http.HttpStatusCode>>(
+				global::Windows.Web.Http.HttpStatusCode __ret = global::__Interop.ForwardComStubs.Stub_62<global::Windows.Foundation.IReference<global::Windows.Web.Http.HttpStatusCode>>(
 									__this, 
 									6
 								);
@@ -1588,7 +1588,7 @@ namespace System
 				pfnGetIids = global::__Interop.Intrinsics.AddrOf<global::__Interop.AddrOfIntrinsics.AddrOfTarget0>(System.Runtime.InteropServices.__vtable_IInspectable.GetIIDs),
 				pfnGetRuntimeClassName = global::__Interop.Intrinsics.AddrOf<global::__Interop.AddrOfIntrinsics.AddrOfTarget1>(System.Runtime.InteropServices.__vtable_IInspectable.GetRuntimeClassName),
 				pfnGetTrustLevel = global::__Interop.Intrinsics.AddrOf<global::__Interop.AddrOfIntrinsics.AddrOfTarget1>(System.Runtime.InteropServices.__vtable_IInspectable.GetTrustLevel),
-				pfnget_Value_ = global::__Interop.Intrinsics.AddrOf<global::__Interop.AddrOfIntrinsics.AddrOfTarget41>(global::System.Nullable_A__w_Web_Http_HttpStatusCode_V___Impl.Vtbl.get_Value__n),
+				pfnget_Value_ = global::__Interop.Intrinsics.AddrOf<global::__Interop.AddrOfIntrinsics.AddrOfTarget40>(global::System.Nullable_A__w_Web_Http_HttpStatusCode_V___Impl.Vtbl.get_Value__n),
 			}
 			#endif
 			;
@@ -1656,7 +1656,7 @@ namespace System
 		{
 			public static global::Windows.Foundation.AsyncOperationProgressHandler<global::Windows.Web.Http.HttpResponseMessage, global::Windows.Web.Http.HttpProgress> get_Value(global::System.__ComObject __this)
 			{
-				global::Windows.Foundation.AsyncOperationProgressHandler<global::Windows.Web.Http.HttpResponseMessage, global::Windows.Web.Http.HttpProgress> __ret = global::__Interop.ForwardComStubs.Stub_65<global::Windows.Foundation.IReference<global::Windows.Foundation.AsyncOperationProgressHandler<global::Windows.Web.Http.HttpResponseMessage, global::Windows.Web.Http.HttpProgress>>>(
+				global::Windows.Foundation.AsyncOperationProgressHandler<global::Windows.Web.Http.HttpResponseMessage, global::Windows.Web.Http.HttpProgress> __ret = global::__Interop.ForwardComStubs.Stub_64<global::Windows.Foundation.IReference<global::Windows.Foundation.AsyncOperationProgressHandler<global::Windows.Web.Http.HttpResponseMessage, global::Windows.Web.Http.HttpProgress>>>(
 									__this, 
 									6
 								);
@@ -1674,7 +1674,7 @@ namespace System
 		{
 			public static global::Windows.Foundation.AsyncOperationProgressHandler<global::Windows.Storage.Streams.IInputStream, ulong> get_Value(global::System.__ComObject __this)
 			{
-				global::Windows.Foundation.AsyncOperationProgressHandler<global::Windows.Storage.Streams.IInputStream, ulong> __ret = global::__Interop.ForwardComStubs.Stub_62<global::Windows.Foundation.IReference<global::Windows.Foundation.AsyncOperationProgressHandler<global::Windows.Storage.Streams.IInputStream, ulong>>>(
+				global::Windows.Foundation.AsyncOperationProgressHandler<global::Windows.Storage.Streams.IInputStream, ulong> __ret = global::__Interop.ForwardComStubs.Stub_61<global::Windows.Foundation.IReference<global::Windows.Foundation.AsyncOperationProgressHandler<global::Windows.Storage.Streams.IInputStream, ulong>>>(
 									__this, 
 									6
 								);
@@ -4535,10 +4535,10 @@ namespace System.Collections.Generic
 				pfnGetTrustLevel = global::__Interop.Intrinsics.AddrOf<global::__Interop.AddrOfIntrinsics.AddrOfTarget1>(System.Runtime.InteropServices.__vtable_IInspectable.GetTrustLevel),
 				pfnLookup_ = global::__Interop.Intrinsics.AddrOf<global::__Interop.AddrOfIntrinsics.AddrOfTarget8>(global::System.Collections.Generic.IDictionary_A_string_j__o__V___Impl.Vtbl.Lookup__n),
 				pfnget_Size_ = global::__Interop.Intrinsics.AddrOf<global::__Interop.AddrOfIntrinsics.AddrOfTarget27>(global::System.Collections.Generic.IDictionary_A_string_j__o__V___Impl.Vtbl.get_Size__n),
-				pfnHasKey_ = global::__Interop.Intrinsics.AddrOf<global::__Interop.AddrOfIntrinsics.AddrOfTarget33>(global::System.Collections.Generic.IDictionary_A_string_j__o__V___Impl.Vtbl.HasKey__n),
+				pfnHasKey_ = global::__Interop.Intrinsics.AddrOf<global::__Interop.AddrOfIntrinsics.AddrOfTarget32>(global::System.Collections.Generic.IDictionary_A_string_j__o__V___Impl.Vtbl.HasKey__n),
 				pfnGetView_ = global::__Interop.Intrinsics.AddrOf<global::__Interop.AddrOfIntrinsics.AddrOfTarget10>(global::System.Collections.Generic.IDictionary_A_string_j__o__V___Impl.Vtbl.GetView__n),
-				pfnInsert_ = global::__Interop.Intrinsics.AddrOf<global::__Interop.AddrOfIntrinsics.AddrOfTarget34>(global::System.Collections.Generic.IDictionary_A_string_j__o__V___Impl.Vtbl.Insert__n),
-				pfnRemove_ = global::__Interop.Intrinsics.AddrOf<global::__Interop.AddrOfIntrinsics.AddrOfTarget35>(global::System.Collections.Generic.IDictionary_A_string_j__o__V___Impl.Vtbl.Remove__n),
+				pfnInsert_ = global::__Interop.Intrinsics.AddrOf<global::__Interop.AddrOfIntrinsics.AddrOfTarget33>(global::System.Collections.Generic.IDictionary_A_string_j__o__V___Impl.Vtbl.Insert__n),
+				pfnRemove_ = global::__Interop.Intrinsics.AddrOf<global::__Interop.AddrOfIntrinsics.AddrOfTarget34>(global::System.Collections.Generic.IDictionary_A_string_j__o__V___Impl.Vtbl.Remove__n),
 				pfnClear_ = global::__Interop.Intrinsics.AddrOf<global::__Interop.AddrOfIntrinsics.AddrOfTarget5>(global::System.Collections.Generic.IDictionary_A_string_j__o__V___Impl.Vtbl.Clear__n),
 			}
 			#endif
@@ -4884,8 +4884,8 @@ namespace System.Collections.Generic
 				pfnGetTrustLevel = global::__Interop.Intrinsics.AddrOf<global::__Interop.AddrOfIntrinsics.AddrOfTarget1>(System.Runtime.InteropServices.__vtable_IInspectable.GetTrustLevel),
 				pfnLookup_ = global::__Interop.Intrinsics.AddrOf<global::__Interop.AddrOfIntrinsics.AddrOfTarget8>(global::System.Collections.Generic.IReadOnlyDictionary_A_string_j__o__V___Impl.Vtbl.Lookup__n),
 				pfnget_Size_ = global::__Interop.Intrinsics.AddrOf<global::__Interop.AddrOfIntrinsics.AddrOfTarget27>(global::System.Collections.Generic.IReadOnlyDictionary_A_string_j__o__V___Impl.Vtbl.get_Size__n),
-				pfnHasKey_ = global::__Interop.Intrinsics.AddrOf<global::__Interop.AddrOfIntrinsics.AddrOfTarget33>(global::System.Collections.Generic.IReadOnlyDictionary_A_string_j__o__V___Impl.Vtbl.HasKey__n),
-				pfnSplit_ = global::__Interop.Intrinsics.AddrOf<global::__Interop.AddrOfIntrinsics.AddrOfTarget37>(global::System.Collections.Generic.IReadOnlyDictionary_A_string_j__o__V___Impl.Vtbl.Split__n),
+				pfnHasKey_ = global::__Interop.Intrinsics.AddrOf<global::__Interop.AddrOfIntrinsics.AddrOfTarget32>(global::System.Collections.Generic.IReadOnlyDictionary_A_string_j__o__V___Impl.Vtbl.HasKey__n),
+				pfnSplit_ = global::__Interop.Intrinsics.AddrOf<global::__Interop.AddrOfIntrinsics.AddrOfTarget36>(global::System.Collections.Generic.IReadOnlyDictionary_A_string_j__o__V___Impl.Vtbl.Split__n),
 			}
 			#endif
 			;
@@ -5972,7 +5972,7 @@ namespace System.Collections.Generic
 						global::System.__ComObject __this, 
 						uint index)
 			{
-				global::Windows.Security.Cryptography.Certificates.ChainValidationResult __ret = global::__Interop.ForwardComStubs.Stub_66<global::System.Collections.Generic.IList<global::Windows.Security.Cryptography.Certificates.ChainValidationResult>>(
+				global::Windows.Security.Cryptography.Certificates.ChainValidationResult __ret = global::__Interop.ForwardComStubs.Stub_65<global::System.Collections.Generic.IList<global::Windows.Security.Cryptography.Certificates.ChainValidationResult>>(
 									__this, 
 									index, 
 									6
@@ -6006,7 +6006,7 @@ namespace System.Collections.Generic
 						global::Windows.Security.Cryptography.Certificates.ChainValidationResult value, 
 						out uint index)
 			{
-				bool __ret = global::__Interop.ForwardComStubs.Stub_67<global::System.Collections.Generic.IList<global::Windows.Security.Cryptography.Certificates.ChainValidationResult>>(
+				bool __ret = global::__Interop.ForwardComStubs.Stub_66<global::System.Collections.Generic.IList<global::Windows.Security.Cryptography.Certificates.ChainValidationResult>>(
 									__this, 
 									((int)value), 
 									out index, 
@@ -6021,7 +6021,7 @@ namespace System.Collections.Generic
 						uint index, 
 						global::Windows.Security.Cryptography.Certificates.ChainValidationResult value)
 			{
-				global::__Interop.ForwardComStubs.Stub_68<global::System.Collections.Generic.IList<global::Windows.Security.Cryptography.Certificates.ChainValidationResult>>(
+				global::__Interop.ForwardComStubs.Stub_67<global::System.Collections.Generic.IList<global::Windows.Security.Cryptography.Certificates.ChainValidationResult>>(
 									__this, 
 									index, 
 									((int)value), 
@@ -6035,7 +6035,7 @@ namespace System.Collections.Generic
 						uint index, 
 						global::Windows.Security.Cryptography.Certificates.ChainValidationResult value)
 			{
-				global::__Interop.ForwardComStubs.Stub_68<global::System.Collections.Generic.IList<global::Windows.Security.Cryptography.Certificates.ChainValidationResult>>(
+				global::__Interop.ForwardComStubs.Stub_67<global::System.Collections.Generic.IList<global::Windows.Security.Cryptography.Certificates.ChainValidationResult>>(
 									__this, 
 									index, 
 									((int)value), 
@@ -6091,7 +6091,7 @@ namespace System.Collections.Generic
 						uint startIndex, 
 						global::Windows.Security.Cryptography.Certificates.ChainValidationResult[] items)
 			{
-				uint __ret = global::__Interop.ForwardComStubs.Stub_69<global::System.Collections.Generic.IList<global::Windows.Security.Cryptography.Certificates.ChainValidationResult>>(
+				uint __ret = global::__Interop.ForwardComStubs.Stub_68<global::System.Collections.Generic.IList<global::Windows.Security.Cryptography.Certificates.ChainValidationResult>>(
 									__this, 
 									startIndex, 
 									items, 
@@ -6556,7 +6556,7 @@ namespace System.Collections.Generic
 						global::System.__ComObject __this, 
 						uint index)
 			{
-				global::Windows.Security.Cryptography.Certificates.ChainValidationResult __ret = global::__Interop.ForwardComStubs.Stub_66<global::System.Collections.Generic.IReadOnlyList<global::Windows.Security.Cryptography.Certificates.ChainValidationResult>>(
+				global::Windows.Security.Cryptography.Certificates.ChainValidationResult __ret = global::__Interop.ForwardComStubs.Stub_65<global::System.Collections.Generic.IReadOnlyList<global::Windows.Security.Cryptography.Certificates.ChainValidationResult>>(
 									__this, 
 									index, 
 									6
@@ -6580,7 +6580,7 @@ namespace System.Collections.Generic
 						global::Windows.Security.Cryptography.Certificates.ChainValidationResult value, 
 						out uint index)
 			{
-				bool __ret = global::__Interop.ForwardComStubs.Stub_67<global::System.Collections.Generic.IReadOnlyList<global::Windows.Security.Cryptography.Certificates.ChainValidationResult>>(
+				bool __ret = global::__Interop.ForwardComStubs.Stub_66<global::System.Collections.Generic.IReadOnlyList<global::Windows.Security.Cryptography.Certificates.ChainValidationResult>>(
 									__this, 
 									((int)value), 
 									out index, 
@@ -6595,7 +6595,7 @@ namespace System.Collections.Generic
 						uint startIndex, 
 						global::Windows.Security.Cryptography.Certificates.ChainValidationResult[] items)
 			{
-				uint __ret = global::__Interop.ForwardComStubs.Stub_69<global::System.Collections.Generic.IReadOnlyList<global::Windows.Security.Cryptography.Certificates.ChainValidationResult>>(
+				uint __ret = global::__Interop.ForwardComStubs.Stub_68<global::System.Collections.Generic.IReadOnlyList<global::Windows.Security.Cryptography.Certificates.ChainValidationResult>>(
 									__this, 
 									startIndex, 
 									items, 
@@ -8258,8 +8258,8 @@ namespace System_Runtime_InteropServices
 				pfnQueryInterface = global::__Interop.Intrinsics.AddrOf<global::System.Runtime.InteropServices.AddrOfQueryInterface>(System.Runtime.InteropServices.__vtable_IUnknown.QueryInterface),
 				pfnAddRef = global::__Interop.Intrinsics.AddrOf<global::System.Runtime.InteropServices.AddrOfAddRef>(System.Runtime.InteropServices.__vtable_IUnknown.AddRef),
 				pfnRelease = global::__Interop.Intrinsics.AddrOf<global::System.Runtime.InteropServices.AddrOfRelease>(System.Runtime.InteropServices.__vtable_IUnknown.Release),
-				pfnCreateInstance_ = global::__Interop.Intrinsics.AddrOf<global::__Interop.AddrOfIntrinsics.AddrOfTarget42>(global::System_Runtime_InteropServices.IClassFactory__System_Private_Interop__Impl.Vtbl.CreateInstance__n),
-				pfnLockServer_ = global::__Interop.Intrinsics.AddrOf<global::__Interop.AddrOfIntrinsics.AddrOfTarget43>(global::System_Runtime_InteropServices.IClassFactory__System_Private_Interop__Impl.Vtbl.LockServer__n),
+				pfnCreateInstance_ = global::__Interop.Intrinsics.AddrOf<global::__Interop.AddrOfIntrinsics.AddrOfTarget41>(global::System_Runtime_InteropServices.IClassFactory__System_Private_Interop__Impl.Vtbl.CreateInstance__n),
+				pfnLockServer_ = global::__Interop.Intrinsics.AddrOf<global::__Interop.AddrOfIntrinsics.AddrOfTarget42>(global::System_Runtime_InteropServices.IClassFactory__System_Private_Interop__Impl.Vtbl.LockServer__n),
 			}
 			#endif
 			;
@@ -8629,10 +8629,10 @@ namespace System_Runtime_InteropServices
 				pfnQueryInterface = global::__Interop.Intrinsics.AddrOf<global::System.Runtime.InteropServices.AddrOfQueryInterface>(System.Runtime.InteropServices.__vtable_IUnknown.QueryInterface),
 				pfnAddRef = global::__Interop.Intrinsics.AddrOf<global::System.Runtime.InteropServices.AddrOfAddRef>(System.Runtime.InteropServices.__vtable_IUnknown.AddRef),
 				pfnRelease = global::__Interop.Intrinsics.AddrOf<global::System.Runtime.InteropServices.AddrOfRelease>(System.Runtime.InteropServices.__vtable_IUnknown.Release),
-				pfnGetUnmarshalClass_ = global::__Interop.Intrinsics.AddrOf<global::__Interop.AddrOfIntrinsics.AddrOfTarget45>(global::System_Runtime_InteropServices.IMarshal__System_Runtime_WindowsRuntime__Impl.Vtbl.GetUnmarshalClass__n),
-				pfnGetMarshalSizeMax_ = global::__Interop.Intrinsics.AddrOf<global::__Interop.AddrOfIntrinsics.AddrOfTarget46>(global::System_Runtime_InteropServices.IMarshal__System_Runtime_WindowsRuntime__Impl.Vtbl.GetMarshalSizeMax__n),
-				pfnMarshalInterface_ = global::__Interop.Intrinsics.AddrOf<global::__Interop.AddrOfIntrinsics.AddrOfTarget47>(global::System_Runtime_InteropServices.IMarshal__System_Runtime_WindowsRuntime__Impl.Vtbl.MarshalInterface__n),
-				pfnUnmarshalInterface_ = global::__Interop.Intrinsics.AddrOf<global::__Interop.AddrOfIntrinsics.AddrOfTarget42>(global::System_Runtime_InteropServices.IMarshal__System_Runtime_WindowsRuntime__Impl.Vtbl.UnmarshalInterface__n),
+				pfnGetUnmarshalClass_ = global::__Interop.Intrinsics.AddrOf<global::__Interop.AddrOfIntrinsics.AddrOfTarget44>(global::System_Runtime_InteropServices.IMarshal__System_Runtime_WindowsRuntime__Impl.Vtbl.GetUnmarshalClass__n),
+				pfnGetMarshalSizeMax_ = global::__Interop.Intrinsics.AddrOf<global::__Interop.AddrOfIntrinsics.AddrOfTarget45>(global::System_Runtime_InteropServices.IMarshal__System_Runtime_WindowsRuntime__Impl.Vtbl.GetMarshalSizeMax__n),
+				pfnMarshalInterface_ = global::__Interop.Intrinsics.AddrOf<global::__Interop.AddrOfIntrinsics.AddrOfTarget46>(global::System_Runtime_InteropServices.IMarshal__System_Runtime_WindowsRuntime__Impl.Vtbl.MarshalInterface__n),
+				pfnUnmarshalInterface_ = global::__Interop.Intrinsics.AddrOf<global::__Interop.AddrOfIntrinsics.AddrOfTarget41>(global::System_Runtime_InteropServices.IMarshal__System_Runtime_WindowsRuntime__Impl.Vtbl.UnmarshalInterface__n),
 				pfnReleaseMarshalData_ = global::__Interop.Intrinsics.AddrOf<global::__Interop.AddrOfIntrinsics.AddrOfTarget1>(global::System_Runtime_InteropServices.IMarshal__System_Runtime_WindowsRuntime__Impl.Vtbl.ReleaseMarshalData__n),
 				pfnDisconnectObject_ = global::__Interop.Intrinsics.AddrOf<global::__Interop.AddrOfIntrinsics.AddrOfTarget28>(global::System_Runtime_InteropServices.IMarshal__System_Runtime_WindowsRuntime__Impl.Vtbl.DisconnectObject__n),
 			}
@@ -8952,7 +8952,7 @@ namespace System_Runtime_InteropServices_ComTypes
 						global::System.__ComObject __this, 
 						out global::System.IntPtr ppTypeAttr)
 			{
-				global::__Interop.ForwardComStubs.Stub_70<global::System_Runtime_InteropServices_ComTypes.ITypeInfo__System_Private_Interop>(
+				global::__Interop.ForwardComStubs.Stub_69<global::System_Runtime_InteropServices_ComTypes.ITypeInfo__System_Private_Interop>(
 									__this, 
 									out ppTypeAttr, 
 									3
@@ -8964,7 +8964,7 @@ namespace System_Runtime_InteropServices_ComTypes
 						global::System.__ComObject __this, 
 						out global::System_Runtime_InteropServices_ComTypes.ITypeComp__System_Private_Interop ppTComp)
 			{
-				global::__Interop.ForwardComStubs.Stub_71<global::System_Runtime_InteropServices_ComTypes.ITypeInfo__System_Private_Interop>(
+				global::__Interop.ForwardComStubs.Stub_70<global::System_Runtime_InteropServices_ComTypes.ITypeInfo__System_Private_Interop>(
 									__this, 
 									out ppTComp, 
 									4
@@ -8977,7 +8977,7 @@ namespace System_Runtime_InteropServices_ComTypes
 						int index, 
 						out global::System.IntPtr ppFuncDesc)
 			{
-				global::__Interop.ForwardComStubs.Stub_72<global::System_Runtime_InteropServices_ComTypes.ITypeInfo__System_Private_Interop>(
+				global::__Interop.ForwardComStubs.Stub_71<global::System_Runtime_InteropServices_ComTypes.ITypeInfo__System_Private_Interop>(
 									__this, 
 									index, 
 									out ppFuncDesc, 
@@ -8991,7 +8991,7 @@ namespace System_Runtime_InteropServices_ComTypes
 						int index, 
 						out global::System.IntPtr ppVarDesc)
 			{
-				global::__Interop.ForwardComStubs.Stub_72<global::System_Runtime_InteropServices_ComTypes.ITypeInfo__System_Private_Interop>(
+				global::__Interop.ForwardComStubs.Stub_71<global::System_Runtime_InteropServices_ComTypes.ITypeInfo__System_Private_Interop>(
 									__this, 
 									index, 
 									out ppVarDesc, 
@@ -9221,7 +9221,7 @@ namespace System_Runtime_InteropServices_ComTypes
 						out int dwHelpContext, 
 						out string strHelpFile)
 			{
-				global::__Interop.ForwardComStubs.Stub_73<global::System_Runtime_InteropServices_ComTypes.ITypeInfo__System_Private_Interop>(
+				global::__Interop.ForwardComStubs.Stub_72<global::System_Runtime_InteropServices_ComTypes.ITypeInfo__System_Private_Interop>(
 									__this, 
 									index, 
 									out strName, 
@@ -9266,7 +9266,7 @@ namespace System_Runtime_InteropServices_ComTypes
 						int hRef, 
 						out global::System_Runtime_InteropServices_ComTypes.ITypeInfo__System_Private_Interop ppTI)
 			{
-				global::__Interop.ForwardComStubs.Stub_74<global::System_Runtime_InteropServices_ComTypes.ITypeInfo__System_Private_Interop>(
+				global::__Interop.ForwardComStubs.Stub_73<global::System_Runtime_InteropServices_ComTypes.ITypeInfo__System_Private_Interop>(
 									__this, 
 									hRef, 
 									out ppTI, 
@@ -9426,7 +9426,7 @@ namespace System_Runtime_InteropServices_ComTypes
 						global::System.__ComObject __this, 
 						global::System.IntPtr pTypeAttr)
 			{
-				global::__Interop.ForwardComStubs.Stub_75<global::System_Runtime_InteropServices_ComTypes.ITypeInfo__System_Private_Interop>(
+				global::__Interop.ForwardComStubs.Stub_74<global::System_Runtime_InteropServices_ComTypes.ITypeInfo__System_Private_Interop>(
 									__this, 
 									pTypeAttr, 
 									19
@@ -9438,7 +9438,7 @@ namespace System_Runtime_InteropServices_ComTypes
 						global::System.__ComObject __this, 
 						global::System.IntPtr pFuncDesc)
 			{
-				global::__Interop.ForwardComStubs.Stub_75<global::System_Runtime_InteropServices_ComTypes.ITypeInfo__System_Private_Interop>(
+				global::__Interop.ForwardComStubs.Stub_74<global::System_Runtime_InteropServices_ComTypes.ITypeInfo__System_Private_Interop>(
 									__this, 
 									pFuncDesc, 
 									20
@@ -9450,7 +9450,7 @@ namespace System_Runtime_InteropServices_ComTypes
 						global::System.__ComObject __this, 
 						global::System.IntPtr pVarDesc)
 			{
-				global::__Interop.ForwardComStubs.Stub_75<global::System_Runtime_InteropServices_ComTypes.ITypeInfo__System_Private_Interop>(
+				global::__Interop.ForwardComStubs.Stub_74<global::System_Runtime_InteropServices_ComTypes.ITypeInfo__System_Private_Interop>(
 									__this, 
 									pVarDesc, 
 									21
@@ -9896,7 +9896,7 @@ namespace System_Runtime_InteropServices_ComTypes
 						int index, 
 						out global::System_Runtime_InteropServices_ComTypes.ITypeInfo__System_Private_Interop ppTI)
 			{
-				global::__Interop.ForwardComStubs.Stub_74<global::System_Runtime_InteropServices_ComTypes.ITypeLib__System_Private_Interop>(
+				global::__Interop.ForwardComStubs.Stub_73<global::System_Runtime_InteropServices_ComTypes.ITypeLib__System_Private_Interop>(
 									__this, 
 									index, 
 									out ppTI, 
@@ -9974,7 +9974,7 @@ namespace System_Runtime_InteropServices_ComTypes
 						global::System.__ComObject __this, 
 						out global::System.IntPtr ppTLibAttr)
 			{
-				global::__Interop.ForwardComStubs.Stub_70<global::System_Runtime_InteropServices_ComTypes.ITypeLib__System_Private_Interop>(
+				global::__Interop.ForwardComStubs.Stub_69<global::System_Runtime_InteropServices_ComTypes.ITypeLib__System_Private_Interop>(
 									__this, 
 									out ppTLibAttr, 
 									7
@@ -9986,7 +9986,7 @@ namespace System_Runtime_InteropServices_ComTypes
 						global::System.__ComObject __this, 
 						out global::System_Runtime_InteropServices_ComTypes.ITypeComp__System_Private_Interop ppTComp)
 			{
-				global::__Interop.ForwardComStubs.Stub_71<global::System_Runtime_InteropServices_ComTypes.ITypeLib__System_Private_Interop>(
+				global::__Interop.ForwardComStubs.Stub_70<global::System_Runtime_InteropServices_ComTypes.ITypeLib__System_Private_Interop>(
 									__this, 
 									out ppTComp, 
 									8
@@ -10002,7 +10002,7 @@ namespace System_Runtime_InteropServices_ComTypes
 						out int dwHelpContext, 
 						out string strHelpFile)
 			{
-				global::__Interop.ForwardComStubs.Stub_73<global::System_Runtime_InteropServices_ComTypes.ITypeLib__System_Private_Interop>(
+				global::__Interop.ForwardComStubs.Stub_72<global::System_Runtime_InteropServices_ComTypes.ITypeLib__System_Private_Interop>(
 									__this, 
 									index, 
 									out strName, 
@@ -10119,7 +10119,7 @@ namespace System_Runtime_InteropServices_ComTypes
 						global::System.__ComObject __this, 
 						global::System.IntPtr pTLibAttr)
 			{
-				global::__Interop.ForwardComStubs.Stub_75<global::System_Runtime_InteropServices_ComTypes.ITypeLib__System_Private_Interop>(
+				global::__Interop.ForwardComStubs.Stub_74<global::System_Runtime_InteropServices_ComTypes.ITypeLib__System_Private_Interop>(
 									__this, 
 									pTLibAttr, 
 									12
@@ -10315,7 +10315,7 @@ namespace System_Runtime_InteropServices_WindowsRuntime
 				pfnQueryInterface = global::__Interop.Intrinsics.AddrOf<global::System.Runtime.InteropServices.AddrOfQueryInterface>(System.Runtime.InteropServices.__vtable_IUnknown.QueryInterface),
 				pfnAddRef = global::__Interop.Intrinsics.AddrOf<global::System.Runtime.InteropServices.AddrOfAddRef>(System.Runtime.InteropServices.__vtable_IUnknown.AddRef),
 				pfnRelease = global::__Interop.Intrinsics.AddrOf<global::System.Runtime.InteropServices.AddrOfRelease>(System.Runtime.InteropServices.__vtable_IUnknown.Release),
-				pfnGetBuffer_ = global::__Interop.Intrinsics.AddrOf<global::__Interop.AddrOfIntrinsics.AddrOfTarget44>(global::System_Runtime_InteropServices_WindowsRuntime.IBufferByteAccess__System_Runtime_WindowsRuntime__Impl.Vtbl.GetBuffer__n),
+				pfnGetBuffer_ = global::__Interop.Intrinsics.AddrOf<global::__Interop.AddrOfIntrinsics.AddrOfTarget43>(global::System_Runtime_InteropServices_WindowsRuntime.IBufferByteAccess__System_Runtime_WindowsRuntime__Impl.Vtbl.GetBuffer__n),
 			}
 			#endif
 			;
@@ -17280,664 +17280,6 @@ namespace Windows.Foundation
 		}
 	}
 
-	// Windows.Foundation.TypedEventHandler<Windows.UI.Xaml.Controls.ContentDialog,Windows.UI.Xaml.Controls.ContentDialogClosingEventArgs>
-	public unsafe static class TypedEventHandler_A__wux__Controls_ContentDialog_j__wux__Controls_ContentDialogClosingEventArgs_V___Impl
-	{
-		public static void Invoke(
-					this global::System.__ComObject __this, 
-					global::Windows.UI.Xaml.Controls.ContentDialog sender, 
-					global::Windows.UI.Xaml.Controls.ContentDialogClosingEventArgs args)
-		{
-			global::__Interop.ForwardComStubs.Stub_26<global::Windows.Foundation.TypedEventHandler<global::Windows.UI.Xaml.Controls.ContentDialog, global::Windows.UI.Xaml.Controls.ContentDialogClosingEventArgs>, global::Windows.UI.Xaml.Controls.ContentDialog, global::Windows.UI.Xaml.Controls.ContentDialogClosingEventArgs>(
-								__this, 
-								sender, 
-								args, 
-								3
-							);
-			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
-		}
-
-		// v-table for 'Windows.Foundation.TypedEventHandler<Windows.UI.Xaml.Controls.ContentDialog,Windows.UI.Xaml.Controls.ContentDialogClosingEventArgs>'
-		[global::System.Runtime.InteropServices.McgRootsType(typeof(global::Windows.Foundation.TypedEventHandler<global::Windows.UI.Xaml.Controls.ContentDialog, global::Windows.UI.Xaml.Controls.ContentDialogClosingEventArgs>))]
-		internal unsafe partial struct Vtbl
-		{
-			global::System.IntPtr pfnQueryInterface;
-			global::System.IntPtr pfnAddRef;
-			global::System.IntPtr pfnRelease;
-			// Windows_Foundation__TypedEventHandler_A__wux__Controls_ContentDialog_j__wux__Controls_ContentDialogClosingEventArgs_V_
-			global::System.IntPtr pfnInvoke_;
-			[global::System.Runtime.CompilerServices.InitDataBlob(typeof(global::Windows.Foundation.TypedEventHandler_A__wux__Controls_ContentDialog_j__wux__Controls_ContentDialogClosingEventArgs_V___Impl.Vtbl.Vtbl__McgRvaContainer), "RVA_Windows_Foundation_TypedEventHandler_A__wux__Controls_ContentDialog_j__wux__Controls_ContentDialogClosingEve" +
-				"ntArgs_V___Impl_Vtbl_s_staticVtable")]
-			static global::Windows.Foundation.TypedEventHandler_A__wux__Controls_ContentDialog_j__wux__Controls_ContentDialogClosingEventArgs_V___Impl.Vtbl s_staticVtable
-			#if false
-			 = new global::Windows.Foundation.TypedEventHandler_A__wux__Controls_ContentDialog_j__wux__Controls_ContentDialogClosingEventArgs_V___Impl.Vtbl() {
-				pfnQueryInterface = global::__Interop.Intrinsics.AddrOf<global::System.Runtime.InteropServices.AddrOfQueryInterface>(System.Runtime.InteropServices.__vtable_IUnknown.QueryInterface),
-				pfnAddRef = global::__Interop.Intrinsics.AddrOf<global::System.Runtime.InteropServices.AddrOfAddRef>(System.Runtime.InteropServices.__vtable_IUnknown.AddRef),
-				pfnRelease = global::__Interop.Intrinsics.AddrOf<global::System.Runtime.InteropServices.AddrOfRelease>(System.Runtime.InteropServices.__vtable_IUnknown.Release),
-				pfnInvoke_ = global::__Interop.Intrinsics.AddrOf<global::__Interop.AddrOfIntrinsics.AddrOfTarget6>(global::Windows.Foundation.TypedEventHandler_A__wux__Controls_ContentDialog_j__wux__Controls_ContentDialogClosingEventArgs_V___Impl.Vtbl.Invoke__n),
-			}
-			#endif
-			;
-			static global::System.IntPtr s_cachedVtable;
-			internal static global::System.IntPtr GetVtbl()
-			{
-				fixed (void* pVtbl = &(global::Windows.Foundation.TypedEventHandler_A__wux__Controls_ContentDialog_j__wux__Controls_ContentDialogClosingEventArgs_V___Impl.Vtbl.s_staticVtable))
-					return global::System.Runtime.InteropServices.McgMarshal.GetCCWVTableCopy(
-										pVtbl, 
-										ref global::Windows.Foundation.TypedEventHandler_A__wux__Controls_ContentDialog_j__wux__Controls_ContentDialogClosingEventArgs_V___Impl.Vtbl.s_cachedVtable, 
-										sizeof(global::Windows.Foundation.TypedEventHandler_A__wux__Controls_ContentDialog_j__wux__Controls_ContentDialogClosingEventArgs_V___Impl.Vtbl)
-									);
-			}
-
-			[global::System.Runtime.InteropServices.NativeCallable]
-			static int Invoke__n(
-						global::System.IntPtr pComThis, 
-						void* unsafe_sender, 
-						void* unsafe_args)
-			{
-				object __this = global::System.Runtime.InteropServices.McgMarshal.ThisPointerToTargetObject(pComThis);
-				global::System.IntPtr __methodPtr = global::__Interop.Intrinsics.VirtualAddrOf<global::Windows.Foundation.TypedEventHandler<global::Windows.UI.Xaml.Controls.ContentDialog, global::Windows.UI.Xaml.Controls.ContentDialogClosingEventArgs>>(
-									__this, 
-									0
-								);
-				int __ret = ((int)global::__Interop.ReverseComStubs.Stub_6<global::Windows.UI.Xaml.Controls.ContentDialog, global::Windows.UI.Xaml.Controls.ContentDialogClosingEventArgs>(
-									__this, 
-									unsafe_sender, 
-									unsafe_args, 
-									__methodPtr
-								));
-				global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
-				return __ret;
-			}
-
-			private static class Vtbl__McgRvaContainer
-			{
-				[global::System.Runtime.CompilerServices.MethodAddrFixup(0, typeof(global::System.Runtime.InteropServices.__vtable_IUnknown), "QueryInterface")]
-				[global::System.Runtime.CompilerServices.MethodAddrFixup(4, typeof(global::System.Runtime.InteropServices.__vtable_IUnknown), "AddRef")]
-				[global::System.Runtime.CompilerServices.MethodAddrFixup(8, typeof(global::System.Runtime.InteropServices.__vtable_IUnknown), "Release")]
-				[global::System.Runtime.CompilerServices.MethodAddrFixup(12, typeof(global::Windows.Foundation.TypedEventHandler_A__wux__Controls_ContentDialog_j__wux__Controls_ContentDialogClosingEventArgs_V___Impl.Vtbl), "Invoke__n")]
-				[global::System.Runtime.CompilerServices.NonArray]
-				static readonly byte[] RVA_Windows_Foundation_TypedEventHandler_A__wux__Controls_ContentDialog_j__wux__Controls_ContentDialogClosingEventArgs_V___Impl_Vtbl_s_staticVtable = new byte[] {
-						0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
-			}
-		}
-	}
-
-	// Windows.Foundation.TypedEventHandler<Windows.UI.Xaml.Controls.ContentDialog,Windows.UI.Xaml.Controls.ContentDialogClosedEventArgs>
-	public unsafe static class TypedEventHandler_A__wux__Controls_ContentDialog_j__wux__Controls_ContentDialogClosedEventArgs_V___Impl
-	{
-		public static void Invoke(
-					this global::System.__ComObject __this, 
-					global::Windows.UI.Xaml.Controls.ContentDialog sender, 
-					global::Windows.UI.Xaml.Controls.ContentDialogClosedEventArgs args)
-		{
-			global::__Interop.ForwardComStubs.Stub_26<global::Windows.Foundation.TypedEventHandler<global::Windows.UI.Xaml.Controls.ContentDialog, global::Windows.UI.Xaml.Controls.ContentDialogClosedEventArgs>, global::Windows.UI.Xaml.Controls.ContentDialog, global::Windows.UI.Xaml.Controls.ContentDialogClosedEventArgs>(
-								__this, 
-								sender, 
-								args, 
-								3
-							);
-			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
-		}
-
-		// v-table for 'Windows.Foundation.TypedEventHandler<Windows.UI.Xaml.Controls.ContentDialog,Windows.UI.Xaml.Controls.ContentDialogClosedEventArgs>'
-		[global::System.Runtime.InteropServices.McgRootsType(typeof(global::Windows.Foundation.TypedEventHandler<global::Windows.UI.Xaml.Controls.ContentDialog, global::Windows.UI.Xaml.Controls.ContentDialogClosedEventArgs>))]
-		internal unsafe partial struct Vtbl
-		{
-			global::System.IntPtr pfnQueryInterface;
-			global::System.IntPtr pfnAddRef;
-			global::System.IntPtr pfnRelease;
-			// Windows_Foundation__TypedEventHandler_A__wux__Controls_ContentDialog_j__wux__Controls_ContentDialogClosedEventArgs_V_
-			global::System.IntPtr pfnInvoke_;
-			[global::System.Runtime.CompilerServices.InitDataBlob(typeof(global::Windows.Foundation.TypedEventHandler_A__wux__Controls_ContentDialog_j__wux__Controls_ContentDialogClosedEventArgs_V___Impl.Vtbl.Vtbl__McgRvaContainer), "RVA_Windows_Foundation_TypedEventHandler_A__wux__Controls_ContentDialog_j__wux__Controls_ContentDialogClosedEven" +
-				"tArgs_V___Impl_Vtbl_s_staticVtable")]
-			static global::Windows.Foundation.TypedEventHandler_A__wux__Controls_ContentDialog_j__wux__Controls_ContentDialogClosedEventArgs_V___Impl.Vtbl s_staticVtable
-			#if false
-			 = new global::Windows.Foundation.TypedEventHandler_A__wux__Controls_ContentDialog_j__wux__Controls_ContentDialogClosedEventArgs_V___Impl.Vtbl() {
-				pfnQueryInterface = global::__Interop.Intrinsics.AddrOf<global::System.Runtime.InteropServices.AddrOfQueryInterface>(System.Runtime.InteropServices.__vtable_IUnknown.QueryInterface),
-				pfnAddRef = global::__Interop.Intrinsics.AddrOf<global::System.Runtime.InteropServices.AddrOfAddRef>(System.Runtime.InteropServices.__vtable_IUnknown.AddRef),
-				pfnRelease = global::__Interop.Intrinsics.AddrOf<global::System.Runtime.InteropServices.AddrOfRelease>(System.Runtime.InteropServices.__vtable_IUnknown.Release),
-				pfnInvoke_ = global::__Interop.Intrinsics.AddrOf<global::__Interop.AddrOfIntrinsics.AddrOfTarget6>(global::Windows.Foundation.TypedEventHandler_A__wux__Controls_ContentDialog_j__wux__Controls_ContentDialogClosedEventArgs_V___Impl.Vtbl.Invoke__n),
-			}
-			#endif
-			;
-			static global::System.IntPtr s_cachedVtable;
-			internal static global::System.IntPtr GetVtbl()
-			{
-				fixed (void* pVtbl = &(global::Windows.Foundation.TypedEventHandler_A__wux__Controls_ContentDialog_j__wux__Controls_ContentDialogClosedEventArgs_V___Impl.Vtbl.s_staticVtable))
-					return global::System.Runtime.InteropServices.McgMarshal.GetCCWVTableCopy(
-										pVtbl, 
-										ref global::Windows.Foundation.TypedEventHandler_A__wux__Controls_ContentDialog_j__wux__Controls_ContentDialogClosedEventArgs_V___Impl.Vtbl.s_cachedVtable, 
-										sizeof(global::Windows.Foundation.TypedEventHandler_A__wux__Controls_ContentDialog_j__wux__Controls_ContentDialogClosedEventArgs_V___Impl.Vtbl)
-									);
-			}
-
-			[global::System.Runtime.InteropServices.NativeCallable]
-			static int Invoke__n(
-						global::System.IntPtr pComThis, 
-						void* unsafe_sender, 
-						void* unsafe_args)
-			{
-				object __this = global::System.Runtime.InteropServices.McgMarshal.ThisPointerToTargetObject(pComThis);
-				global::System.IntPtr __methodPtr = global::__Interop.Intrinsics.VirtualAddrOf<global::Windows.Foundation.TypedEventHandler<global::Windows.UI.Xaml.Controls.ContentDialog, global::Windows.UI.Xaml.Controls.ContentDialogClosedEventArgs>>(
-									__this, 
-									0
-								);
-				int __ret = ((int)global::__Interop.ReverseComStubs.Stub_6<global::Windows.UI.Xaml.Controls.ContentDialog, global::Windows.UI.Xaml.Controls.ContentDialogClosedEventArgs>(
-									__this, 
-									unsafe_sender, 
-									unsafe_args, 
-									__methodPtr
-								));
-				global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
-				return __ret;
-			}
-
-			private static class Vtbl__McgRvaContainer
-			{
-				[global::System.Runtime.CompilerServices.MethodAddrFixup(0, typeof(global::System.Runtime.InteropServices.__vtable_IUnknown), "QueryInterface")]
-				[global::System.Runtime.CompilerServices.MethodAddrFixup(4, typeof(global::System.Runtime.InteropServices.__vtable_IUnknown), "AddRef")]
-				[global::System.Runtime.CompilerServices.MethodAddrFixup(8, typeof(global::System.Runtime.InteropServices.__vtable_IUnknown), "Release")]
-				[global::System.Runtime.CompilerServices.MethodAddrFixup(12, typeof(global::Windows.Foundation.TypedEventHandler_A__wux__Controls_ContentDialog_j__wux__Controls_ContentDialogClosedEventArgs_V___Impl.Vtbl), "Invoke__n")]
-				[global::System.Runtime.CompilerServices.NonArray]
-				static readonly byte[] RVA_Windows_Foundation_TypedEventHandler_A__wux__Controls_ContentDialog_j__wux__Controls_ContentDialogClosedEventArgs_V___Impl_Vtbl_s_staticVtable = new byte[] {
-						0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
-			}
-		}
-	}
-
-	// Windows.Foundation.TypedEventHandler<Windows.UI.Xaml.Controls.ContentDialog,Windows.UI.Xaml.Controls.ContentDialogOpenedEventArgs>
-	public unsafe static class TypedEventHandler_A__wux__Controls_ContentDialog_j__wux__Controls_ContentDialogOpenedEventArgs_V___Impl
-	{
-		public static void Invoke(
-					this global::System.__ComObject __this, 
-					global::Windows.UI.Xaml.Controls.ContentDialog sender, 
-					global::Windows.UI.Xaml.Controls.ContentDialogOpenedEventArgs args)
-		{
-			global::__Interop.ForwardComStubs.Stub_26<global::Windows.Foundation.TypedEventHandler<global::Windows.UI.Xaml.Controls.ContentDialog, global::Windows.UI.Xaml.Controls.ContentDialogOpenedEventArgs>, global::Windows.UI.Xaml.Controls.ContentDialog, global::Windows.UI.Xaml.Controls.ContentDialogOpenedEventArgs>(
-								__this, 
-								sender, 
-								args, 
-								3
-							);
-			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
-		}
-
-		// v-table for 'Windows.Foundation.TypedEventHandler<Windows.UI.Xaml.Controls.ContentDialog,Windows.UI.Xaml.Controls.ContentDialogOpenedEventArgs>'
-		[global::System.Runtime.InteropServices.McgRootsType(typeof(global::Windows.Foundation.TypedEventHandler<global::Windows.UI.Xaml.Controls.ContentDialog, global::Windows.UI.Xaml.Controls.ContentDialogOpenedEventArgs>))]
-		internal unsafe partial struct Vtbl
-		{
-			global::System.IntPtr pfnQueryInterface;
-			global::System.IntPtr pfnAddRef;
-			global::System.IntPtr pfnRelease;
-			// Windows_Foundation__TypedEventHandler_A__wux__Controls_ContentDialog_j__wux__Controls_ContentDialogOpenedEventArgs_V_
-			global::System.IntPtr pfnInvoke_;
-			[global::System.Runtime.CompilerServices.InitDataBlob(typeof(global::Windows.Foundation.TypedEventHandler_A__wux__Controls_ContentDialog_j__wux__Controls_ContentDialogOpenedEventArgs_V___Impl.Vtbl.Vtbl__McgRvaContainer), "RVA_Windows_Foundation_TypedEventHandler_A__wux__Controls_ContentDialog_j__wux__Controls_ContentDialogOpenedEven" +
-				"tArgs_V___Impl_Vtbl_s_staticVtable")]
-			static global::Windows.Foundation.TypedEventHandler_A__wux__Controls_ContentDialog_j__wux__Controls_ContentDialogOpenedEventArgs_V___Impl.Vtbl s_staticVtable
-			#if false
-			 = new global::Windows.Foundation.TypedEventHandler_A__wux__Controls_ContentDialog_j__wux__Controls_ContentDialogOpenedEventArgs_V___Impl.Vtbl() {
-				pfnQueryInterface = global::__Interop.Intrinsics.AddrOf<global::System.Runtime.InteropServices.AddrOfQueryInterface>(System.Runtime.InteropServices.__vtable_IUnknown.QueryInterface),
-				pfnAddRef = global::__Interop.Intrinsics.AddrOf<global::System.Runtime.InteropServices.AddrOfAddRef>(System.Runtime.InteropServices.__vtable_IUnknown.AddRef),
-				pfnRelease = global::__Interop.Intrinsics.AddrOf<global::System.Runtime.InteropServices.AddrOfRelease>(System.Runtime.InteropServices.__vtable_IUnknown.Release),
-				pfnInvoke_ = global::__Interop.Intrinsics.AddrOf<global::__Interop.AddrOfIntrinsics.AddrOfTarget6>(global::Windows.Foundation.TypedEventHandler_A__wux__Controls_ContentDialog_j__wux__Controls_ContentDialogOpenedEventArgs_V___Impl.Vtbl.Invoke__n),
-			}
-			#endif
-			;
-			static global::System.IntPtr s_cachedVtable;
-			internal static global::System.IntPtr GetVtbl()
-			{
-				fixed (void* pVtbl = &(global::Windows.Foundation.TypedEventHandler_A__wux__Controls_ContentDialog_j__wux__Controls_ContentDialogOpenedEventArgs_V___Impl.Vtbl.s_staticVtable))
-					return global::System.Runtime.InteropServices.McgMarshal.GetCCWVTableCopy(
-										pVtbl, 
-										ref global::Windows.Foundation.TypedEventHandler_A__wux__Controls_ContentDialog_j__wux__Controls_ContentDialogOpenedEventArgs_V___Impl.Vtbl.s_cachedVtable, 
-										sizeof(global::Windows.Foundation.TypedEventHandler_A__wux__Controls_ContentDialog_j__wux__Controls_ContentDialogOpenedEventArgs_V___Impl.Vtbl)
-									);
-			}
-
-			[global::System.Runtime.InteropServices.NativeCallable]
-			static int Invoke__n(
-						global::System.IntPtr pComThis, 
-						void* unsafe_sender, 
-						void* unsafe_args)
-			{
-				object __this = global::System.Runtime.InteropServices.McgMarshal.ThisPointerToTargetObject(pComThis);
-				global::System.IntPtr __methodPtr = global::__Interop.Intrinsics.VirtualAddrOf<global::Windows.Foundation.TypedEventHandler<global::Windows.UI.Xaml.Controls.ContentDialog, global::Windows.UI.Xaml.Controls.ContentDialogOpenedEventArgs>>(
-									__this, 
-									0
-								);
-				int __ret = ((int)global::__Interop.ReverseComStubs.Stub_6<global::Windows.UI.Xaml.Controls.ContentDialog, global::Windows.UI.Xaml.Controls.ContentDialogOpenedEventArgs>(
-									__this, 
-									unsafe_sender, 
-									unsafe_args, 
-									__methodPtr
-								));
-				global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
-				return __ret;
-			}
-
-			private static class Vtbl__McgRvaContainer
-			{
-				[global::System.Runtime.CompilerServices.MethodAddrFixup(0, typeof(global::System.Runtime.InteropServices.__vtable_IUnknown), "QueryInterface")]
-				[global::System.Runtime.CompilerServices.MethodAddrFixup(4, typeof(global::System.Runtime.InteropServices.__vtable_IUnknown), "AddRef")]
-				[global::System.Runtime.CompilerServices.MethodAddrFixup(8, typeof(global::System.Runtime.InteropServices.__vtable_IUnknown), "Release")]
-				[global::System.Runtime.CompilerServices.MethodAddrFixup(12, typeof(global::Windows.Foundation.TypedEventHandler_A__wux__Controls_ContentDialog_j__wux__Controls_ContentDialogOpenedEventArgs_V___Impl.Vtbl), "Invoke__n")]
-				[global::System.Runtime.CompilerServices.NonArray]
-				static readonly byte[] RVA_Windows_Foundation_TypedEventHandler_A__wux__Controls_ContentDialog_j__wux__Controls_ContentDialogOpenedEventArgs_V___Impl_Vtbl_s_staticVtable = new byte[] {
-						0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
-			}
-		}
-	}
-
-	// Windows.Foundation.TypedEventHandler<Windows.UI.Xaml.Controls.ContentDialog,Windows.UI.Xaml.Controls.ContentDialogButtonClickEventArgs>
-	public unsafe static class TypedEventHandler_A__wux__Controls_ContentDialog_j__wux__Controls_ContentDialogButtonClickEventArgs_V___Impl
-	{
-		public static void Invoke(
-					this global::System.__ComObject __this, 
-					global::Windows.UI.Xaml.Controls.ContentDialog sender, 
-					global::Windows.UI.Xaml.Controls.ContentDialogButtonClickEventArgs args)
-		{
-			global::__Interop.ForwardComStubs.Stub_26<global::Windows.Foundation.TypedEventHandler<global::Windows.UI.Xaml.Controls.ContentDialog, global::Windows.UI.Xaml.Controls.ContentDialogButtonClickEventArgs>, global::Windows.UI.Xaml.Controls.ContentDialog, global::Windows.UI.Xaml.Controls.ContentDialogButtonClickEventArgs>(
-								__this, 
-								sender, 
-								args, 
-								3
-							);
-			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
-		}
-
-		// v-table for 'Windows.Foundation.TypedEventHandler<Windows.UI.Xaml.Controls.ContentDialog,Windows.UI.Xaml.Controls.ContentDialogButtonClickEventArgs>'
-		[global::System.Runtime.InteropServices.McgRootsType(typeof(global::Windows.Foundation.TypedEventHandler<global::Windows.UI.Xaml.Controls.ContentDialog, global::Windows.UI.Xaml.Controls.ContentDialogButtonClickEventArgs>))]
-		internal unsafe partial struct Vtbl
-		{
-			global::System.IntPtr pfnQueryInterface;
-			global::System.IntPtr pfnAddRef;
-			global::System.IntPtr pfnRelease;
-			// Windows_Foundation__TypedEventHandler_A__wux__Controls_ContentDialog_j__wux__Controls_ContentDialogButtonClickEventArgs_V_
-			global::System.IntPtr pfnInvoke_;
-			[global::System.Runtime.CompilerServices.InitDataBlob(typeof(global::Windows.Foundation.TypedEventHandler_A__wux__Controls_ContentDialog_j__wux__Controls_ContentDialogButtonClickEventArgs_V___Impl.Vtbl.Vtbl__McgRvaContainer), "RVA_Windows_Foundation_TypedEventHandler_A__wux__Controls_ContentDialog_j__wux__Controls_ContentDialogButtonClic" +
-				"kEventArgs_V___Impl_Vtbl_s_staticVtable")]
-			static global::Windows.Foundation.TypedEventHandler_A__wux__Controls_ContentDialog_j__wux__Controls_ContentDialogButtonClickEventArgs_V___Impl.Vtbl s_staticVtable
-			#if false
-			 = new global::Windows.Foundation.TypedEventHandler_A__wux__Controls_ContentDialog_j__wux__Controls_ContentDialogButtonClickEventArgs_V___Impl.Vtbl() {
-				pfnQueryInterface = global::__Interop.Intrinsics.AddrOf<global::System.Runtime.InteropServices.AddrOfQueryInterface>(System.Runtime.InteropServices.__vtable_IUnknown.QueryInterface),
-				pfnAddRef = global::__Interop.Intrinsics.AddrOf<global::System.Runtime.InteropServices.AddrOfAddRef>(System.Runtime.InteropServices.__vtable_IUnknown.AddRef),
-				pfnRelease = global::__Interop.Intrinsics.AddrOf<global::System.Runtime.InteropServices.AddrOfRelease>(System.Runtime.InteropServices.__vtable_IUnknown.Release),
-				pfnInvoke_ = global::__Interop.Intrinsics.AddrOf<global::__Interop.AddrOfIntrinsics.AddrOfTarget6>(global::Windows.Foundation.TypedEventHandler_A__wux__Controls_ContentDialog_j__wux__Controls_ContentDialogButtonClickEventArgs_V___Impl.Vtbl.Invoke__n),
-			}
-			#endif
-			;
-			static global::System.IntPtr s_cachedVtable;
-			internal static global::System.IntPtr GetVtbl()
-			{
-				fixed (void* pVtbl = &(global::Windows.Foundation.TypedEventHandler_A__wux__Controls_ContentDialog_j__wux__Controls_ContentDialogButtonClickEventArgs_V___Impl.Vtbl.s_staticVtable))
-					return global::System.Runtime.InteropServices.McgMarshal.GetCCWVTableCopy(
-										pVtbl, 
-										ref global::Windows.Foundation.TypedEventHandler_A__wux__Controls_ContentDialog_j__wux__Controls_ContentDialogButtonClickEventArgs_V___Impl.Vtbl.s_cachedVtable, 
-										sizeof(global::Windows.Foundation.TypedEventHandler_A__wux__Controls_ContentDialog_j__wux__Controls_ContentDialogButtonClickEventArgs_V___Impl.Vtbl)
-									);
-			}
-
-			[global::System.Runtime.InteropServices.NativeCallable]
-			static int Invoke__n(
-						global::System.IntPtr pComThis, 
-						void* unsafe_sender, 
-						void* unsafe_args)
-			{
-				object __this = global::System.Runtime.InteropServices.McgMarshal.ThisPointerToTargetObject(pComThis);
-				global::System.IntPtr __methodPtr = global::__Interop.Intrinsics.VirtualAddrOf<global::Windows.Foundation.TypedEventHandler<global::Windows.UI.Xaml.Controls.ContentDialog, global::Windows.UI.Xaml.Controls.ContentDialogButtonClickEventArgs>>(
-									__this, 
-									0
-								);
-				int __ret = ((int)global::__Interop.ReverseComStubs.Stub_6<global::Windows.UI.Xaml.Controls.ContentDialog, global::Windows.UI.Xaml.Controls.ContentDialogButtonClickEventArgs>(
-									__this, 
-									unsafe_sender, 
-									unsafe_args, 
-									__methodPtr
-								));
-				global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
-				return __ret;
-			}
-
-			private static class Vtbl__McgRvaContainer
-			{
-				[global::System.Runtime.CompilerServices.MethodAddrFixup(0, typeof(global::System.Runtime.InteropServices.__vtable_IUnknown), "QueryInterface")]
-				[global::System.Runtime.CompilerServices.MethodAddrFixup(4, typeof(global::System.Runtime.InteropServices.__vtable_IUnknown), "AddRef")]
-				[global::System.Runtime.CompilerServices.MethodAddrFixup(8, typeof(global::System.Runtime.InteropServices.__vtable_IUnknown), "Release")]
-				[global::System.Runtime.CompilerServices.MethodAddrFixup(12, typeof(global::Windows.Foundation.TypedEventHandler_A__wux__Controls_ContentDialog_j__wux__Controls_ContentDialogButtonClickEventArgs_V___Impl.Vtbl), "Invoke__n")]
-				[global::System.Runtime.CompilerServices.NonArray]
-				static readonly byte[] RVA_Windows_Foundation_TypedEventHandler_A__wux__Controls_ContentDialog_j__wux__Controls_ContentDialogButtonClickEventArgs_V___Impl_Vtbl_s_staticVtable = new byte[] {
-						0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
-			}
-		}
-	}
-
-	// Windows.Foundation.IAsyncOperation<Windows.UI.Xaml.Controls.ContentDialogResult>
-	public unsafe static class IAsyncOperation_A__wux__Controls_ContentDialogResult_V___Impl
-	{
-		// StubClass for 'Windows.Foundation.IAsyncOperation<Windows.UI.Xaml.Controls.ContentDialogResult>'
-		public static partial class Stubs
-		{
-			// Signature, Windows.Foundation.IAsyncOperation<Windows.UI.Xaml.Controls.ContentDialogResult>.put_Completed, [fwd] [return] [EETypeRva:0x000406BC] void__int, [fwd] [in] [EETypeRva:0x0003F504] Windows_Foundation_AsyncOperationCompletedHandler_1_Windows_UI_Xaml_Controls_ContentDialogResult___Windows_Foundation__AsyncOperationCompletedHandler_A__wux__Controls_ContentDialogResult_V_ *, 
-			public static void put_Completed(
-						global::System.__ComObject __this, 
-						global::Windows.Foundation.AsyncOperationCompletedHandler<global::Windows.UI.Xaml.Controls.ContentDialogResult> handler)
-			{
-				// Setup
-				void* unsafe_handler = default(void*);
-				int unsafe___hr;
-				try
-				{
-					// Marshalling
-					unsafe_handler = (void*)global::System.Runtime.InteropServices.McgMarshal.DelegateToComInterface(
-										handler, 
-										typeof(global::Windows.Foundation.AsyncOperationCompletedHandler<global::Windows.UI.Xaml.Controls.ContentDialogResult>).TypeHandle
-									);
-					// Call to native method
-					unsafe___hr = global::__Interop.ComCallHelpers.Call(
-										__this, 
-										typeof(global::Windows.Foundation.IAsyncOperation<global::Windows.UI.Xaml.Controls.ContentDialogResult>).TypeHandle, 
-										6, 
-										unsafe_handler
-									);
-					global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
-					// Return
-				}
-				finally
-				{
-					// Cleanup
-					global::System.Runtime.InteropServices.McgMarshal.ComSafeRelease(new global::System.IntPtr(((void*)unsafe_handler)));
-				}
-			}
-
-			// Signature, Windows.Foundation.IAsyncOperation<Windows.UI.Xaml.Controls.ContentDialogResult>.get_Completed, [fwd] [return] [EETypeRva:0x000406BC] void__int, [fwd] [out] [retval] [nativebyref] [EETypeRva:0x0003F504] Windows_Foundation_AsyncOperationCompletedHandler_1_Windows_UI_Xaml_Controls_ContentDialogResult___Windows_Foundation__AsyncOperationCompletedHandler_A__wux__Controls_ContentDialogResult_V_ *, 
-			public static global::Windows.Foundation.AsyncOperationCompletedHandler<global::Windows.UI.Xaml.Controls.ContentDialogResult> get_Completed(global::System.__ComObject __this)
-			{
-				// Setup
-				void* unsafe___value__retval = default(void*);
-				global::Windows.Foundation.AsyncOperationCompletedHandler<global::Windows.UI.Xaml.Controls.ContentDialogResult> __value__retval = default(global::Windows.Foundation.AsyncOperationCompletedHandler<global::Windows.UI.Xaml.Controls.ContentDialogResult>);
-				int unsafe___hr;
-				try
-				{
-					// Marshalling
-					unsafe___value__retval = null;
-					// Call to native method
-					unsafe___hr = global::__Interop.ComCallHelpers.Call(
-										__this, 
-										typeof(global::Windows.Foundation.IAsyncOperation<global::Windows.UI.Xaml.Controls.ContentDialogResult>).TypeHandle, 
-										7, 
-										&(unsafe___value__retval)
-									);
-					global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
-					__value__retval = (global::Windows.Foundation.AsyncOperationCompletedHandler<global::Windows.UI.Xaml.Controls.ContentDialogResult>)global::System.Runtime.InteropServices.McgMarshal.ComInterfaceToDelegate(
-										((global::System.IntPtr)unsafe___value__retval), 
-										typeof(global::Windows.Foundation.AsyncOperationCompletedHandler<global::Windows.UI.Xaml.Controls.ContentDialogResult>).TypeHandle
-									);
-					// Return
-					return __value__retval;
-				}
-				finally
-				{
-					// Cleanup
-					global::System.Runtime.InteropServices.McgMarshal.ComSafeRelease(new global::System.IntPtr(((void*)unsafe___value__retval)));
-				}
-			}
-
-			// Signature, Windows.Foundation.IAsyncOperation<Windows.UI.Xaml.Controls.ContentDialogResult>.GetResults, [fwd] [return] [EETypeRva:0x000406BC] void__int, [fwd] [out] [retval] [nativebyref] [EETypeRva:0x000414B4] Windows_UI_Xaml_Controls_ContentDialogResult__Windows_UI_Xaml_Controls__ContentDialogResult, 
-			public static global::Windows.UI.Xaml.Controls.ContentDialogResult GetResults(global::System.__ComObject __this)
-			{
-				// Setup
-				global::Windows.UI.Xaml.Controls.ContentDialogResult unsafe___value__retval;
-				global::Windows.UI.Xaml.Controls.ContentDialogResult __value__retval;
-				int unsafe___hr;
-				// Marshalling
-				// Call to native method
-				unsafe___hr = global::__Interop.ComCallHelpers.Call(
-									__this, 
-									typeof(global::Windows.Foundation.IAsyncOperation<global::Windows.UI.Xaml.Controls.ContentDialogResult>).TypeHandle, 
-									8, 
-									&(unsafe___value__retval)
-								);
-				global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
-				__value__retval = unsafe___value__retval;
-				// Return
-				return __value__retval;
-			}
-		}
-
-		// DispatchClass for 'Windows.Foundation.IAsyncOperation<Windows.UI.Xaml.Controls.ContentDialogResult>'
-		[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::Windows.Foundation.IAsyncOperation<global::Windows.UI.Xaml.Controls.ContentDialogResult>))]
-		internal abstract partial class Dispatcher : global::System.__ComObject, global::Windows.Foundation.IAsyncOperation<global::Windows.UI.Xaml.Controls.ContentDialogResult>
-		{
-			[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "Windows.Foundation.IAsyncInfo.Id")]
-			uint global::Windows.Foundation.IAsyncInfo.get_Id()
-			{
-				global::__Interop.McgHelpers.FailFastForReducedMethod();
-				return 0;
-			}
-
-			[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "Windows.Foundation.IAsyncInfo.Status")]
-			global::Windows.Foundation.AsyncStatus global::Windows.Foundation.IAsyncInfo.get_Status()
-			{
-				global::__Interop.McgHelpers.FailFastForReducedMethod();
-				return default(global::Windows.Foundation.AsyncStatus);
-			}
-
-			[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "Windows.Foundation.IAsyncInfo.ErrorCode")]
-			global::System.Exception global::Windows.Foundation.IAsyncInfo.get_ErrorCode()
-			{
-				global::__Interop.McgHelpers.FailFastForReducedMethod();
-				return default(global::System.Exception);
-			}
-
-			void global::Windows.Foundation.IAsyncInfo.Cancel()
-			{
-				global::__Interop.McgHelpers.FailFastForReducedMethod();
-			}
-
-			void global::Windows.Foundation.IAsyncInfo.Close()
-			{
-				global::__Interop.McgHelpers.FailFastForReducedMethod();
-			}
-
-			[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertySet, "Windows.Foundation.IAsyncOperation`1.Completed")]
-			void global::Windows.Foundation.IAsyncOperation<global::Windows.UI.Xaml.Controls.ContentDialogResult>.put_Completed(global::Windows.Foundation.AsyncOperationCompletedHandler<global::Windows.UI.Xaml.Controls.ContentDialogResult> handler)
-			{
-				global::Windows.Foundation.IAsyncOperation_A__wux__Controls_ContentDialogResult_V___Impl.Stubs.put_Completed(
-									this, 
-									handler
-								);
-				global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
-			}
-
-			[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "Windows.Foundation.IAsyncOperation`1.Completed")]
-			global::Windows.Foundation.AsyncOperationCompletedHandler<global::Windows.UI.Xaml.Controls.ContentDialogResult> global::Windows.Foundation.IAsyncOperation<global::Windows.UI.Xaml.Controls.ContentDialogResult>.get_Completed()
-			{
-				global::Windows.Foundation.AsyncOperationCompletedHandler<global::Windows.UI.Xaml.Controls.ContentDialogResult> __retVal = global::Windows.Foundation.IAsyncOperation_A__wux__Controls_ContentDialogResult_V___Impl.Stubs.get_Completed(this);
-				global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
-				return __retVal;
-			}
-
-			global::Windows.UI.Xaml.Controls.ContentDialogResult global::Windows.Foundation.IAsyncOperation<global::Windows.UI.Xaml.Controls.ContentDialogResult>.GetResults()
-			{
-				global::Windows.UI.Xaml.Controls.ContentDialogResult __retVal = global::Windows.Foundation.IAsyncOperation_A__wux__Controls_ContentDialogResult_V___Impl.Stubs.GetResults(this);
-				global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
-				return __retVal;
-			}
-		}
-
-		// v-table for 'Windows.Foundation.IAsyncOperation<Windows.UI.Xaml.Controls.ContentDialogResult>'
-		[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::Windows.Foundation.IAsyncOperation<global::Windows.UI.Xaml.Controls.ContentDialogResult>))]
-		[global::System.Runtime.InteropServices.McgRootsType(typeof(global::Windows.Foundation.IAsyncOperation<global::Windows.UI.Xaml.Controls.ContentDialogResult>))]
-		internal unsafe partial struct Vtbl
-		{
-			global::System.IntPtr pfnQueryInterface;
-			global::System.IntPtr pfnAddRef;
-			global::System.IntPtr pfnRelease;
-			global::System.IntPtr pfnGetIids;
-			global::System.IntPtr pfnGetRuntimeClassName;
-			global::System.IntPtr pfnGetTrustLevel;
-			// Windows_Foundation__IAsyncOperation_A__wux__Controls_ContentDialogResult_V_
-			global::System.IntPtr pfnput_Completed_;
-			global::System.IntPtr pfnget_Completed_;
-			global::System.IntPtr pfnGetResults_;
-			[global::System.Runtime.CompilerServices.InitDataBlob(typeof(global::Windows.Foundation.IAsyncOperation_A__wux__Controls_ContentDialogResult_V___Impl.Vtbl.Vtbl__McgRvaContainer), "RVA_Windows_Foundation_IAsyncOperation_A__wux__Controls_ContentDialogResult_V___Impl_Vtbl_s_staticVtable")]
-			static global::Windows.Foundation.IAsyncOperation_A__wux__Controls_ContentDialogResult_V___Impl.Vtbl s_staticVtable
-			#if false
-			 = new global::Windows.Foundation.IAsyncOperation_A__wux__Controls_ContentDialogResult_V___Impl.Vtbl() {
-				pfnQueryInterface = global::__Interop.Intrinsics.AddrOf<global::System.Runtime.InteropServices.AddrOfQueryInterface>(System.Runtime.InteropServices.__vtable_IUnknown.QueryInterface),
-				pfnAddRef = global::__Interop.Intrinsics.AddrOf<global::System.Runtime.InteropServices.AddrOfAddRef>(System.Runtime.InteropServices.__vtable_IUnknown.AddRef),
-				pfnRelease = global::__Interop.Intrinsics.AddrOf<global::System.Runtime.InteropServices.AddrOfRelease>(System.Runtime.InteropServices.__vtable_IUnknown.Release),
-				pfnGetIids = global::__Interop.Intrinsics.AddrOf<global::__Interop.AddrOfIntrinsics.AddrOfTarget0>(System.Runtime.InteropServices.__vtable_IInspectable.GetIIDs),
-				pfnGetRuntimeClassName = global::__Interop.Intrinsics.AddrOf<global::__Interop.AddrOfIntrinsics.AddrOfTarget1>(System.Runtime.InteropServices.__vtable_IInspectable.GetRuntimeClassName),
-				pfnGetTrustLevel = global::__Interop.Intrinsics.AddrOf<global::__Interop.AddrOfIntrinsics.AddrOfTarget1>(System.Runtime.InteropServices.__vtable_IInspectable.GetTrustLevel),
-				pfnput_Completed_ = global::__Interop.Intrinsics.AddrOf<global::__Interop.AddrOfIntrinsics.AddrOfTarget4>(global::Windows.Foundation.IAsyncOperation_A__wux__Controls_ContentDialogResult_V___Impl.Vtbl.put_Completed__n),
-				pfnget_Completed_ = global::__Interop.Intrinsics.AddrOf<global::__Interop.AddrOfIntrinsics.AddrOfTarget10>(global::Windows.Foundation.IAsyncOperation_A__wux__Controls_ContentDialogResult_V___Impl.Vtbl.get_Completed__n),
-				pfnGetResults_ = global::__Interop.Intrinsics.AddrOf<global::__Interop.AddrOfIntrinsics.AddrOfTarget32>(global::Windows.Foundation.IAsyncOperation_A__wux__Controls_ContentDialogResult_V___Impl.Vtbl.GetResults__n),
-			}
-			#endif
-			;
-			static global::System.IntPtr s_cachedVtable;
-			internal static global::System.IntPtr GetVtbl()
-			{
-				fixed (void* pVtbl = &(global::Windows.Foundation.IAsyncOperation_A__wux__Controls_ContentDialogResult_V___Impl.Vtbl.s_staticVtable))
-					return global::System.Runtime.InteropServices.McgMarshal.GetCCWVTableCopy(
-										pVtbl, 
-										ref global::Windows.Foundation.IAsyncOperation_A__wux__Controls_ContentDialogResult_V___Impl.Vtbl.s_cachedVtable, 
-										sizeof(global::Windows.Foundation.IAsyncOperation_A__wux__Controls_ContentDialogResult_V___Impl.Vtbl)
-									);
-			}
-
-			// Signature, Windows.Foundation.IAsyncOperation<Windows.UI.Xaml.Controls.ContentDialogResult>.put_Completed, [rev] [return] [EETypeRva:0x000406BC] void__int, [rev] [in] [EETypeRva:0x0003F504] Windows_Foundation_AsyncOperationCompletedHandler_1_Windows_UI_Xaml_Controls_ContentDialogResult___Windows_Foundation__AsyncOperationCompletedHandler_A__wux__Controls_ContentDialogResult_V_ *, 
-			[global::System.Runtime.InteropServices.NativeCallable]
-			static int put_Completed__n(
-						global::System.IntPtr pComThis, 
-						void* unsafe_handler)
-			{
-				// Setup
-				global::Windows.Foundation.AsyncOperationCompletedHandler<global::Windows.UI.Xaml.Controls.ContentDialogResult> handler = default(global::Windows.Foundation.AsyncOperationCompletedHandler<global::Windows.UI.Xaml.Controls.ContentDialogResult>);
-				try
-				{
-					// Marshalling
-					handler = (global::Windows.Foundation.AsyncOperationCompletedHandler<global::Windows.UI.Xaml.Controls.ContentDialogResult>)global::System.Runtime.InteropServices.McgMarshal.ComInterfaceToDelegate(
-										((global::System.IntPtr)unsafe_handler), 
-										typeof(global::Windows.Foundation.AsyncOperationCompletedHandler<global::Windows.UI.Xaml.Controls.ContentDialogResult>).TypeHandle
-									);
-					// Call to managed method
-					global::System.Runtime.InteropServices.McgMarshal.FastCast<global::Windows.Foundation.IAsyncOperation<global::Windows.UI.Xaml.Controls.ContentDialogResult>>(global::System.Runtime.InteropServices.McgMarshal.ThisPointerToTargetObject(pComThis)).put_Completed(handler);
-					global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
-					// Return
-					return 0;
-				}
-				catch (global::System.Exception hrExcep)
-				{
-					// ExceptionReturn
-					return global::System.Runtime.InteropServices.McgMarshal.GetHRForExceptionWinRT(hrExcep);
-				}
-			}
-
-			// Signature, Windows.Foundation.IAsyncOperation<Windows.UI.Xaml.Controls.ContentDialogResult>.get_Completed, [rev] [return] [EETypeRva:0x000406BC] void__int, [rev] [out] [retval] [nativebyref] [EETypeRva:0x0003F504] Windows_Foundation_AsyncOperationCompletedHandler_1_Windows_UI_Xaml_Controls_ContentDialogResult___Windows_Foundation__AsyncOperationCompletedHandler_A__wux__Controls_ContentDialogResult_V_ *, 
-			[global::System.Runtime.InteropServices.NativeCallable]
-			static int get_Completed__n(
-						global::System.IntPtr pComThis, 
-						void** unsafe___value__retval)
-			{
-				// Setup
-				if (unsafe___value__retval != null)
-					(*(unsafe___value__retval)) = null;
-				global::Windows.Foundation.AsyncOperationCompletedHandler<global::Windows.UI.Xaml.Controls.ContentDialogResult> __value__retval = default(global::Windows.Foundation.AsyncOperationCompletedHandler<global::Windows.UI.Xaml.Controls.ContentDialogResult>);
-				try
-				{
-					// Marshalling
-					// Call to managed method
-					__value__retval = global::System.Runtime.InteropServices.McgMarshal.FastCast<global::Windows.Foundation.IAsyncOperation<global::Windows.UI.Xaml.Controls.ContentDialogResult>>(global::System.Runtime.InteropServices.McgMarshal.ThisPointerToTargetObject(pComThis)).get_Completed();
-					global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
-					if (unsafe___value__retval != null)
-						(*(unsafe___value__retval)) = (void*)global::System.Runtime.InteropServices.McgMarshal.DelegateToComInterface(
-											__value__retval, 
-											typeof(global::Windows.Foundation.AsyncOperationCompletedHandler<global::Windows.UI.Xaml.Controls.ContentDialogResult>).TypeHandle
-										);
-					// Return
-					return 0;
-				}
-				catch (global::System.Exception hrExcep)
-				{
-					// ExceptionCleanup
-					if (unsafe___value__retval != null)
-					{
-						global::System.Runtime.InteropServices.McgMarshal.ComSafeRelease(new global::System.IntPtr(((void*)(*(unsafe___value__retval)))));
-						(*(unsafe___value__retval)) = null;
-					}
-					// ExceptionReturn
-					return global::System.Runtime.InteropServices.McgMarshal.GetHRForExceptionWinRT(hrExcep);
-				}
-			}
-
-			// Signature, Windows.Foundation.IAsyncOperation<Windows.UI.Xaml.Controls.ContentDialogResult>.GetResults, [rev] [return] [EETypeRva:0x000406BC] void__int, [rev] [out] [retval] [nativebyref] [EETypeRva:0x000414B4] Windows_UI_Xaml_Controls_ContentDialogResult__Windows_UI_Xaml_Controls__ContentDialogResult, 
-			[global::System.Runtime.InteropServices.NativeCallable]
-			static int GetResults__n(
-						global::System.IntPtr pComThis, 
-						global::Windows.UI.Xaml.Controls.ContentDialogResult* unsafe___value__retval)
-			{
-				// Setup
-				global::Windows.UI.Xaml.Controls.ContentDialogResult __value__retval;
-				try
-				{
-					// Marshalling
-					// Call to managed method
-					__value__retval = global::System.Runtime.InteropServices.McgMarshal.FastCast<global::Windows.Foundation.IAsyncOperation<global::Windows.UI.Xaml.Controls.ContentDialogResult>>(global::System.Runtime.InteropServices.McgMarshal.ThisPointerToTargetObject(pComThis)).GetResults();
-					global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
-					if (unsafe___value__retval != null)
-						(*(unsafe___value__retval)) = __value__retval;
-					// Return
-					return 0;
-				}
-				catch (global::System.Exception hrExcep)
-				{
-					// ExceptionCleanup
-					if (unsafe___value__retval != null)
-						(*(unsafe___value__retval)) = default(global::Windows.UI.Xaml.Controls.ContentDialogResult);
-					// ExceptionReturn
-					return global::System.Runtime.InteropServices.McgMarshal.GetHRForExceptionWinRT(hrExcep);
-				}
-			}
-
-			private static class Vtbl__McgRvaContainer
-			{
-				[global::System.Runtime.CompilerServices.MethodAddrFixup(0, typeof(global::System.Runtime.InteropServices.__vtable_IUnknown), "QueryInterface")]
-				[global::System.Runtime.CompilerServices.MethodAddrFixup(4, typeof(global::System.Runtime.InteropServices.__vtable_IUnknown), "AddRef")]
-				[global::System.Runtime.CompilerServices.MethodAddrFixup(8, typeof(global::System.Runtime.InteropServices.__vtable_IUnknown), "Release")]
-				[global::System.Runtime.CompilerServices.MethodAddrFixup(12, typeof(global::System.Runtime.InteropServices.__vtable_IInspectable), "GetIIDs")]
-				[global::System.Runtime.CompilerServices.MethodAddrFixup(16, typeof(global::System.Runtime.InteropServices.__vtable_IInspectable), "GetRuntimeClassName")]
-				[global::System.Runtime.CompilerServices.MethodAddrFixup(20, typeof(global::System.Runtime.InteropServices.__vtable_IInspectable), "GetTrustLevel")]
-				[global::System.Runtime.CompilerServices.MethodAddrFixup(24, typeof(global::Windows.Foundation.IAsyncOperation_A__wux__Controls_ContentDialogResult_V___Impl.Vtbl), "put_Completed__n")]
-				[global::System.Runtime.CompilerServices.MethodAddrFixup(28, typeof(global::Windows.Foundation.IAsyncOperation_A__wux__Controls_ContentDialogResult_V___Impl.Vtbl), "get_Completed__n")]
-				[global::System.Runtime.CompilerServices.MethodAddrFixup(32, typeof(global::Windows.Foundation.IAsyncOperation_A__wux__Controls_ContentDialogResult_V___Impl.Vtbl), "GetResults__n")]
-				[global::System.Runtime.CompilerServices.NonArray]
-				static readonly byte[] RVA_Windows_Foundation_IAsyncOperation_A__wux__Controls_ContentDialogResult_V___Impl_Vtbl_s_staticVtable = new byte[] {
-						0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
-			}
-		}
-	}
-
-	// Windows.Foundation.AsyncOperationCompletedHandler<Windows.UI.Xaml.Controls.ContentDialogResult>
-	public unsafe static class AsyncOperationCompletedHandler_A__wux__Controls_ContentDialogResult_V___Impl
-	{
-		public static void Invoke(
-					this global::System.__ComObject __this, 
-					global::Windows.Foundation.IAsyncOperation<global::Windows.UI.Xaml.Controls.ContentDialogResult> asyncInfo, 
-					global::Windows.Foundation.AsyncStatus asyncStatus)
-		{
-			global::__Interop.ForwardComStubs.Stub_43<global::Windows.Foundation.AsyncOperationCompletedHandler<global::Windows.UI.Xaml.Controls.ContentDialogResult>, global::Windows.Foundation.IAsyncOperation<global::Windows.UI.Xaml.Controls.ContentDialogResult>>(
-								__this, 
-								asyncInfo, 
-								((int)asyncStatus), 
-								3
-							);
-			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
-		}
-	}
-
 	// Windows.Foundation.AsyncOperationProgressHandler<ulong,ulong>
 	public unsafe static class AsyncOperationProgressHandler_A_ulong_j_ulong_V___Impl
 	{
@@ -17946,7 +17288,7 @@ namespace Windows.Foundation
 					global::Windows.Foundation.IAsyncOperationWithProgress<ulong, ulong> asyncInfo, 
 					ulong progressInfo)
 		{
-			global::__Interop.ForwardComStubs.Stub_61<global::Windows.Foundation.AsyncOperationProgressHandler<ulong, ulong>, global::Windows.Foundation.IAsyncOperationWithProgress<ulong, ulong>>(
+			global::__Interop.ForwardComStubs.Stub_60<global::Windows.Foundation.AsyncOperationProgressHandler<ulong, ulong>, global::Windows.Foundation.IAsyncOperationWithProgress<ulong, ulong>>(
 								__this, 
 								asyncInfo, 
 								progressInfo, 
@@ -17982,7 +17324,7 @@ namespace Windows.Foundation
 					global::Windows.Foundation.IAsyncOperationWithProgress<global::Windows.Storage.Streams.IBuffer, ulong> asyncInfo, 
 					ulong progressInfo)
 		{
-			global::__Interop.ForwardComStubs.Stub_61<global::Windows.Foundation.AsyncOperationProgressHandler<global::Windows.Storage.Streams.IBuffer, ulong>, global::Windows.Foundation.IAsyncOperationWithProgress<global::Windows.Storage.Streams.IBuffer, ulong>>(
+			global::__Interop.ForwardComStubs.Stub_60<global::Windows.Foundation.AsyncOperationProgressHandler<global::Windows.Storage.Streams.IBuffer, ulong>, global::Windows.Foundation.IAsyncOperationWithProgress<global::Windows.Storage.Streams.IBuffer, ulong>>(
 								__this, 
 								asyncInfo, 
 								progressInfo, 
@@ -18050,7 +17392,7 @@ namespace Windows.Foundation
 
 			public static global::Windows.Foundation.AsyncOperationProgressHandler<global::Windows.Storage.Streams.IInputStream, ulong> get_Progress(global::System.__ComObject __this)
 			{
-				global::Windows.Foundation.AsyncOperationProgressHandler<global::Windows.Storage.Streams.IInputStream, ulong> __ret = global::__Interop.ForwardComStubs.Stub_62<global::Windows.Foundation.IAsyncOperationWithProgress<global::Windows.Storage.Streams.IInputStream, ulong>>(
+				global::Windows.Foundation.AsyncOperationProgressHandler<global::Windows.Storage.Streams.IInputStream, ulong> __ret = global::__Interop.ForwardComStubs.Stub_61<global::Windows.Foundation.IAsyncOperationWithProgress<global::Windows.Storage.Streams.IInputStream, ulong>>(
 									__this, 
 									7
 								);
@@ -18437,7 +17779,7 @@ namespace Windows.Foundation
 					global::Windows.Foundation.IAsyncOperationWithProgress<global::Windows.Storage.Streams.IInputStream, ulong> asyncInfo, 
 					ulong progressInfo)
 		{
-			global::__Interop.ForwardComStubs.Stub_61<global::Windows.Foundation.AsyncOperationProgressHandler<global::Windows.Storage.Streams.IInputStream, ulong>, global::Windows.Foundation.IAsyncOperationWithProgress<global::Windows.Storage.Streams.IInputStream, ulong>>(
+			global::__Interop.ForwardComStubs.Stub_60<global::Windows.Foundation.AsyncOperationProgressHandler<global::Windows.Storage.Streams.IInputStream, ulong>, global::Windows.Foundation.IAsyncOperationWithProgress<global::Windows.Storage.Streams.IInputStream, ulong>>(
 								__this, 
 								asyncInfo, 
 								progressInfo, 
@@ -18463,7 +17805,7 @@ namespace Windows.Foundation
 				pfnQueryInterface = global::__Interop.Intrinsics.AddrOf<global::System.Runtime.InteropServices.AddrOfQueryInterface>(System.Runtime.InteropServices.__vtable_IUnknown.QueryInterface),
 				pfnAddRef = global::__Interop.Intrinsics.AddrOf<global::System.Runtime.InteropServices.AddrOfAddRef>(System.Runtime.InteropServices.__vtable_IUnknown.AddRef),
 				pfnRelease = global::__Interop.Intrinsics.AddrOf<global::System.Runtime.InteropServices.AddrOfRelease>(System.Runtime.InteropServices.__vtable_IUnknown.Release),
-				pfnInvoke_ = global::__Interop.Intrinsics.AddrOf<global::__Interop.AddrOfIntrinsics.AddrOfTarget39>(global::Windows.Foundation.AsyncOperationProgressHandler_A__w_Storage_Streams_IInputStream_j_ulong_V___Impl.Vtbl.Invoke__n),
+				pfnInvoke_ = global::__Interop.Intrinsics.AddrOf<global::__Interop.AddrOfIntrinsics.AddrOfTarget38>(global::Windows.Foundation.AsyncOperationProgressHandler_A__w_Storage_Streams_IInputStream_j_ulong_V___Impl.Vtbl.Invoke__n),
 			}
 			#endif
 			;
@@ -18614,7 +17956,7 @@ namespace Windows.Foundation
 					global::Windows.Foundation.IAsyncOperationWithProgress<string, ulong> asyncInfo, 
 					ulong progressInfo)
 		{
-			global::__Interop.ForwardComStubs.Stub_61<global::Windows.Foundation.AsyncOperationProgressHandler<string, ulong>, global::Windows.Foundation.IAsyncOperationWithProgress<string, ulong>>(
+			global::__Interop.ForwardComStubs.Stub_60<global::Windows.Foundation.AsyncOperationProgressHandler<string, ulong>, global::Windows.Foundation.IAsyncOperationWithProgress<string, ulong>>(
 								__this, 
 								asyncInfo, 
 								progressInfo, 
@@ -18682,7 +18024,7 @@ namespace Windows.Foundation
 
 			public static global::Windows.Foundation.AsyncOperationProgressHandler<global::Windows.Web.Http.HttpResponseMessage, global::Windows.Web.Http.HttpProgress> get_Progress(global::System.__ComObject __this)
 			{
-				global::Windows.Foundation.AsyncOperationProgressHandler<global::Windows.Web.Http.HttpResponseMessage, global::Windows.Web.Http.HttpProgress> __ret = global::__Interop.ForwardComStubs.Stub_65<global::Windows.Foundation.IAsyncOperationWithProgress<global::Windows.Web.Http.HttpResponseMessage, global::Windows.Web.Http.HttpProgress>>(
+				global::Windows.Foundation.AsyncOperationProgressHandler<global::Windows.Web.Http.HttpResponseMessage, global::Windows.Web.Http.HttpProgress> __ret = global::__Interop.ForwardComStubs.Stub_64<global::Windows.Foundation.IAsyncOperationWithProgress<global::Windows.Web.Http.HttpResponseMessage, global::Windows.Web.Http.HttpProgress>>(
 									__this, 
 									7
 								);
@@ -19122,7 +18464,7 @@ namespace Windows.Foundation
 				pfnQueryInterface = global::__Interop.Intrinsics.AddrOf<global::System.Runtime.InteropServices.AddrOfQueryInterface>(System.Runtime.InteropServices.__vtable_IUnknown.QueryInterface),
 				pfnAddRef = global::__Interop.Intrinsics.AddrOf<global::System.Runtime.InteropServices.AddrOfAddRef>(System.Runtime.InteropServices.__vtable_IUnknown.AddRef),
 				pfnRelease = global::__Interop.Intrinsics.AddrOf<global::System.Runtime.InteropServices.AddrOfRelease>(System.Runtime.InteropServices.__vtable_IUnknown.Release),
-				pfnInvoke_ = global::__Interop.Intrinsics.AddrOf<global::__Interop.AddrOfIntrinsics.AddrOfTarget40>(global::Windows.Foundation.AsyncOperationProgressHandler_A__w_Web_Http_HttpResponseMessage_j__w_Web_Http_HttpProgress_V___Impl.Vtbl.Invoke__n),
+				pfnInvoke_ = global::__Interop.Intrinsics.AddrOf<global::__Interop.AddrOfIntrinsics.AddrOfTarget39>(global::Windows.Foundation.AsyncOperationProgressHandler_A__w_Web_Http_HttpResponseMessage_j__w_Web_Http_HttpProgress_V___Impl.Vtbl.Invoke__n),
 			}
 			#endif
 			;
@@ -19930,7 +19272,7 @@ namespace Windows.Foundation.Collections
 		{
 			public static global::Windows.Foundation.Point get_Current(global::System.__ComObject __this)
 			{
-				global::Windows.Foundation.Point __ret = global::__Interop.ForwardComStubs.Stub_23<global::Windows.Foundation.Collections.IIterator<global::Windows.Foundation.Point>>(
+				global::Windows.Foundation.Point __ret = global::__Interop.ForwardComStubs.Stub_18<global::Windows.Foundation.Collections.IIterator<global::Windows.Foundation.Point>>(
 									__this, 
 									6
 								);
@@ -25865,7 +25207,7 @@ namespace Windows.Foundation.Collections
 				pfnget_Current_ = global::__Interop.Intrinsics.AddrOf<global::__Interop.AddrOfIntrinsics.AddrOfTarget10>(global::Windows.Foundation.Collections.IIterator_A__scg_KeyValuePair_A_string_j__o__V__V___Impl.Vtbl.get_Current__n),
 				pfnget_HasCurrent_ = global::__Interop.Intrinsics.AddrOf<global::__Interop.AddrOfIntrinsics.AddrOfTarget11>(global::Windows.Foundation.Collections.IIterator_A__scg_KeyValuePair_A_string_j__o__V__V___Impl.Vtbl.get_HasCurrent__n),
 				pfnMoveNext_ = global::__Interop.Intrinsics.AddrOf<global::__Interop.AddrOfIntrinsics.AddrOfTarget11>(global::Windows.Foundation.Collections.IIterator_A__scg_KeyValuePair_A_string_j__o__V__V___Impl.Vtbl.MoveNext__n),
-				pfnGetMany_ = global::__Interop.Intrinsics.AddrOf<global::__Interop.AddrOfIntrinsics.AddrOfTarget36>(global::Windows.Foundation.Collections.IIterator_A__scg_KeyValuePair_A_string_j__o__V__V___Impl.Vtbl.GetMany__n),
+				pfnGetMany_ = global::__Interop.Intrinsics.AddrOf<global::__Interop.AddrOfIntrinsics.AddrOfTarget35>(global::Windows.Foundation.Collections.IIterator_A__scg_KeyValuePair_A_string_j__o__V__V___Impl.Vtbl.GetMany__n),
 			}
 			#endif
 			;
@@ -26222,7 +25564,7 @@ namespace Windows.Foundation.Collections
 				pfnget_Current_ = global::__Interop.Intrinsics.AddrOf<global::__Interop.AddrOfIntrinsics.AddrOfTarget10>(global::Windows.Foundation.Collections.IIterator_A__scg_KeyValuePair_A_string_j__scg_IEnumerable_A_string_V__V__V___Impl.Vtbl.get_Current__n),
 				pfnget_HasCurrent_ = global::__Interop.Intrinsics.AddrOf<global::__Interop.AddrOfIntrinsics.AddrOfTarget11>(global::Windows.Foundation.Collections.IIterator_A__scg_KeyValuePair_A_string_j__scg_IEnumerable_A_string_V__V__V___Impl.Vtbl.get_HasCurrent__n),
 				pfnMoveNext_ = global::__Interop.Intrinsics.AddrOf<global::__Interop.AddrOfIntrinsics.AddrOfTarget11>(global::Windows.Foundation.Collections.IIterator_A__scg_KeyValuePair_A_string_j__scg_IEnumerable_A_string_V__V__V___Impl.Vtbl.MoveNext__n),
-				pfnGetMany_ = global::__Interop.Intrinsics.AddrOf<global::__Interop.AddrOfIntrinsics.AddrOfTarget36>(global::Windows.Foundation.Collections.IIterator_A__scg_KeyValuePair_A_string_j__scg_IEnumerable_A_string_V__V__V___Impl.Vtbl.GetMany__n),
+				pfnGetMany_ = global::__Interop.Intrinsics.AddrOf<global::__Interop.AddrOfIntrinsics.AddrOfTarget35>(global::Windows.Foundation.Collections.IIterator_A__scg_KeyValuePair_A_string_j__scg_IEnumerable_A_string_V__V__V___Impl.Vtbl.GetMany__n),
 			}
 			#endif
 			;
@@ -29897,7 +29239,7 @@ namespace Windows.Foundation.Diagnostics
 						ulong operationId, 
 						global::Windows.Foundation.AsyncStatus status)
 			{
-				global::__Interop.ForwardComStubs.Stub_58<global::Windows.Foundation.Diagnostics.IAsyncCausalityTracerStatics>(
+				global::__Interop.ForwardComStubs.Stub_57<global::Windows.Foundation.Diagnostics.IAsyncCausalityTracerStatics>(
 									__this, 
 									((int)traceLevel), 
 									((int)source), 
@@ -29917,7 +29259,7 @@ namespace Windows.Foundation.Diagnostics
 						ulong operationId, 
 						global::Windows.Foundation.Diagnostics.CausalityRelation relation)
 			{
-				global::__Interop.ForwardComStubs.Stub_58<global::Windows.Foundation.Diagnostics.IAsyncCausalityTracerStatics>(
+				global::__Interop.ForwardComStubs.Stub_57<global::Windows.Foundation.Diagnostics.IAsyncCausalityTracerStatics>(
 									__this, 
 									((int)traceLevel), 
 									((int)source), 
@@ -29937,7 +29279,7 @@ namespace Windows.Foundation.Diagnostics
 						ulong operationId, 
 						global::Windows.Foundation.Diagnostics.CausalitySynchronousWork work)
 			{
-				global::__Interop.ForwardComStubs.Stub_58<global::Windows.Foundation.Diagnostics.IAsyncCausalityTracerStatics>(
+				global::__Interop.ForwardComStubs.Stub_57<global::Windows.Foundation.Diagnostics.IAsyncCausalityTracerStatics>(
 									__this, 
 									((int)traceLevel), 
 									((int)source), 
@@ -30037,7 +29379,7 @@ namespace Windows.Foundation.Metadata
 						string typeName, 
 						string eventName)
 			{
-				bool __ret = global::__Interop.ForwardComStubs.Stub_60<global::Windows.Foundation.Metadata.IApiInformationStatics>(
+				bool __ret = global::__Interop.ForwardComStubs.Stub_59<global::Windows.Foundation.Metadata.IApiInformationStatics>(
 									__this, 
 									typeName, 
 									eventName, 
@@ -30052,7 +29394,7 @@ namespace Windows.Foundation.Metadata
 						string typeName, 
 						string propertyName)
 			{
-				bool __ret = global::__Interop.ForwardComStubs.Stub_60<global::Windows.Foundation.Metadata.IApiInformationStatics>(
+				bool __ret = global::__Interop.ForwardComStubs.Stub_59<global::Windows.Foundation.Metadata.IApiInformationStatics>(
 									__this, 
 									typeName, 
 									propertyName, 
@@ -30067,7 +29409,7 @@ namespace Windows.Foundation.Metadata
 						string enumTypeName, 
 						string valueName)
 			{
-				bool __ret = global::__Interop.ForwardComStubs.Stub_60<global::Windows.Foundation.Metadata.IApiInformationStatics>(
+				bool __ret = global::__Interop.ForwardComStubs.Stub_59<global::Windows.Foundation.Metadata.IApiInformationStatics>(
 									__this, 
 									enumTypeName, 
 									valueName, 
@@ -32923,7 +32265,7 @@ namespace Windows.UI.ViewManagement
 						global::System.__ComObject __this, 
 						global::System.Nullable<global::Windows.UI.Color> value)
 			{
-				global::__Interop.ForwardComStubs.Stub_59<global::Windows.UI.ViewManagement.IApplicationViewTitleBar>(
+				global::__Interop.ForwardComStubs.Stub_58<global::Windows.UI.ViewManagement.IApplicationViewTitleBar>(
 									__this, 
 									value, 
 									6
@@ -32935,7 +32277,7 @@ namespace Windows.UI.ViewManagement
 						global::System.__ComObject __this, 
 						global::System.Nullable<global::Windows.UI.Color> value)
 			{
-				global::__Interop.ForwardComStubs.Stub_59<global::Windows.UI.ViewManagement.IApplicationViewTitleBar>(
+				global::__Interop.ForwardComStubs.Stub_58<global::Windows.UI.ViewManagement.IApplicationViewTitleBar>(
 									__this, 
 									value, 
 									8
@@ -32947,7 +32289,7 @@ namespace Windows.UI.ViewManagement
 						global::System.__ComObject __this, 
 						global::System.Nullable<global::Windows.UI.Color> value)
 			{
-				global::__Interop.ForwardComStubs.Stub_59<global::Windows.UI.ViewManagement.IApplicationViewTitleBar>(
+				global::__Interop.ForwardComStubs.Stub_58<global::Windows.UI.ViewManagement.IApplicationViewTitleBar>(
 									__this, 
 									value, 
 									10
@@ -32959,7 +32301,7 @@ namespace Windows.UI.ViewManagement
 						global::System.__ComObject __this, 
 						global::System.Nullable<global::Windows.UI.Color> value)
 			{
-				global::__Interop.ForwardComStubs.Stub_59<global::Windows.UI.ViewManagement.IApplicationViewTitleBar>(
+				global::__Interop.ForwardComStubs.Stub_58<global::Windows.UI.ViewManagement.IApplicationViewTitleBar>(
 									__this, 
 									value, 
 									12
@@ -32971,7 +32313,7 @@ namespace Windows.UI.ViewManagement
 						global::System.__ComObject __this, 
 						global::System.Nullable<global::Windows.UI.Color> value)
 			{
-				global::__Interop.ForwardComStubs.Stub_59<global::Windows.UI.ViewManagement.IApplicationViewTitleBar>(
+				global::__Interop.ForwardComStubs.Stub_58<global::Windows.UI.ViewManagement.IApplicationViewTitleBar>(
 									__this, 
 									value, 
 									14
@@ -32983,7 +32325,7 @@ namespace Windows.UI.ViewManagement
 						global::System.__ComObject __this, 
 						global::System.Nullable<global::Windows.UI.Color> value)
 			{
-				global::__Interop.ForwardComStubs.Stub_59<global::Windows.UI.ViewManagement.IApplicationViewTitleBar>(
+				global::__Interop.ForwardComStubs.Stub_58<global::Windows.UI.ViewManagement.IApplicationViewTitleBar>(
 									__this, 
 									value, 
 									16
@@ -32995,7 +32337,7 @@ namespace Windows.UI.ViewManagement
 						global::System.__ComObject __this, 
 						global::System.Nullable<global::Windows.UI.Color> value)
 			{
-				global::__Interop.ForwardComStubs.Stub_59<global::Windows.UI.ViewManagement.IApplicationViewTitleBar>(
+				global::__Interop.ForwardComStubs.Stub_58<global::Windows.UI.ViewManagement.IApplicationViewTitleBar>(
 									__this, 
 									value, 
 									18
@@ -33007,7 +32349,7 @@ namespace Windows.UI.ViewManagement
 						global::System.__ComObject __this, 
 						global::System.Nullable<global::Windows.UI.Color> value)
 			{
-				global::__Interop.ForwardComStubs.Stub_59<global::Windows.UI.ViewManagement.IApplicationViewTitleBar>(
+				global::__Interop.ForwardComStubs.Stub_58<global::Windows.UI.ViewManagement.IApplicationViewTitleBar>(
 									__this, 
 									value, 
 									20
@@ -33019,7 +32361,7 @@ namespace Windows.UI.ViewManagement
 						global::System.__ComObject __this, 
 						global::System.Nullable<global::Windows.UI.Color> value)
 			{
-				global::__Interop.ForwardComStubs.Stub_59<global::Windows.UI.ViewManagement.IApplicationViewTitleBar>(
+				global::__Interop.ForwardComStubs.Stub_58<global::Windows.UI.ViewManagement.IApplicationViewTitleBar>(
 									__this, 
 									value, 
 									28
@@ -33061,6 +32403,16 @@ namespace Windows.UI.Xaml
 		// StubClass for 'Windows.UI.Xaml.IApplicationStatics'
 		public static partial class Stubs
 		{
+			public static global::Windows.UI.Xaml.Application get_Current(global::System.__ComObject __this)
+			{
+				global::Windows.UI.Xaml.Application __ret = global::__Interop.ForwardComStubs.Stub_3<global::Windows.UI.Xaml.IApplicationStatics, global::Windows.UI.Xaml.Application>(
+									__this, 
+									6
+								);
+				global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+				return __ret;
+			}
+
 			// Signature, Windows.UI.Xaml.IApplicationStatics.Start, [fwd] [return] [EETypeRva:0x000406BC] void__int, [fwd] [in] [EETypeRva:0x0003F504] Windows_UI_Xaml_ApplicationInitializationCallback__Windows_UI_Xaml__ApplicationInitializationCallback *, 
 			public static void Start(
 						global::System.__ComObject __this, 
@@ -34241,6 +33593,57 @@ namespace Windows.UI.Xaml
 		// StubClass for 'Windows.UI.Xaml.IUIElement'
 		public static partial class Stubs
 		{
+			public static global::Windows.UI.Xaml.Media.Transform get_RenderTransform(global::System.__ComObject __this)
+			{
+				global::Windows.UI.Xaml.Media.Transform __ret = global::__Interop.ForwardComStubs.Stub_3<global::Windows.UI.Xaml.IUIElement, global::Windows.UI.Xaml.Media.Transform>(
+									__this, 
+									13
+								);
+				global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+				return __ret;
+			}
+
+			public static void put_RenderTransform(
+						global::System.__ComObject __this, 
+						global::Windows.UI.Xaml.Media.Transform value)
+			{
+				global::__Interop.ForwardComStubs.Stub_7<global::Windows.UI.Xaml.IUIElement, global::Windows.UI.Xaml.Media.Transform>(
+									__this, 
+									value, 
+									14
+								);
+				global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			}
+
+			public static global::Windows.Foundation.Point get_RenderTransformOrigin(global::System.__ComObject __this)
+			{
+				global::Windows.Foundation.Point __ret = global::__Interop.ForwardComStubs.Stub_18<global::Windows.UI.Xaml.IUIElement>(
+									__this, 
+									17
+								);
+				global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+				return __ret;
+			}
+
+			// Signature, Windows.UI.Xaml.IUIElement.put_RenderTransformOrigin, [fwd] [return] [EETypeRva:0x000406BC] void__int, [fwd] [in] [EETypeRva:0x0004157C] Windows_Foundation_Point__Windows_Foundation__Point, 
+			public static void put_RenderTransformOrigin(
+						global::System.__ComObject __this, 
+						global::Windows.Foundation.Point value)
+			{
+				// Setup
+				int unsafe___hr;
+				// Marshalling
+				// Call to native method
+				unsafe___hr = global::__Interop.ComCallHelpers.Call(
+									__this, 
+									typeof(global::Windows.UI.Xaml.IUIElement).TypeHandle, 
+									18, 
+									value
+								);
+				global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+				// Return
+			}
+
 			// Signature, Windows.UI.Xaml.IUIElement.get_Visibility, [fwd] [return] [EETypeRva:0x000406BC] void__int, [fwd] [out] [retval] [nativebyref] [EETypeRva:0x000414B4] Windows_UI_Xaml_Visibility__Windows_UI_Xaml__Visibility, 
 			public static global::Windows.UI.Xaml.Visibility get_Visibility(global::System.__ComObject __this)
 			{
@@ -34278,7 +33681,7 @@ namespace Windows.UI.Xaml
 						global::System.__ComObject __this, 
 						global::Windows.UI.Xaml.Input.KeyEventHandler value)
 			{
-				global::System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken __ret = global::__Interop.ForwardComStubs.Stub_18<global::Windows.UI.Xaml.IUIElement>(
+				global::System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken __ret = global::__Interop.ForwardComStubs.Stub_19<global::Windows.UI.Xaml.IUIElement>(
 									__this, 
 									value, 
 									41
@@ -34303,7 +33706,7 @@ namespace Windows.UI.Xaml
 						global::System.__ComObject __this, 
 						global::Windows.UI.Xaml.Input.KeyEventHandler value)
 			{
-				global::System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken __ret = global::__Interop.ForwardComStubs.Stub_18<global::Windows.UI.Xaml.IUIElement>(
+				global::System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken __ret = global::__Interop.ForwardComStubs.Stub_19<global::Windows.UI.Xaml.IUIElement>(
 									__this, 
 									value, 
 									43
@@ -34328,7 +33731,7 @@ namespace Windows.UI.Xaml
 						global::System.__ComObject __this, 
 						global::Windows.UI.Xaml.RoutedEventHandler value)
 			{
-				global::System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken __ret = global::__Interop.ForwardComStubs.Stub_19<global::Windows.UI.Xaml.IUIElement>(
+				global::System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken __ret = global::__Interop.ForwardComStubs.Stub_20<global::Windows.UI.Xaml.IUIElement>(
 									__this, 
 									value, 
 									45
@@ -34353,7 +33756,7 @@ namespace Windows.UI.Xaml
 						global::System.__ComObject __this, 
 						global::Windows.UI.Xaml.RoutedEventHandler value)
 			{
-				global::System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken __ret = global::__Interop.ForwardComStubs.Stub_19<global::Windows.UI.Xaml.IUIElement>(
+				global::System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken __ret = global::__Interop.ForwardComStubs.Stub_20<global::Windows.UI.Xaml.IUIElement>(
 									__this, 
 									value, 
 									47
@@ -34378,7 +33781,7 @@ namespace Windows.UI.Xaml
 						global::System.__ComObject __this, 
 						global::Windows.UI.Xaml.DragEventHandler value)
 			{
-				global::System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken __ret = global::__Interop.ForwardComStubs.Stub_20<global::Windows.UI.Xaml.IUIElement>(
+				global::System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken __ret = global::__Interop.ForwardComStubs.Stub_21<global::Windows.UI.Xaml.IUIElement>(
 									__this, 
 									value, 
 									49
@@ -34403,7 +33806,7 @@ namespace Windows.UI.Xaml
 						global::System.__ComObject __this, 
 						global::Windows.UI.Xaml.DragEventHandler value)
 			{
-				global::System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken __ret = global::__Interop.ForwardComStubs.Stub_20<global::Windows.UI.Xaml.IUIElement>(
+				global::System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken __ret = global::__Interop.ForwardComStubs.Stub_21<global::Windows.UI.Xaml.IUIElement>(
 									__this, 
 									value, 
 									51
@@ -34428,7 +33831,7 @@ namespace Windows.UI.Xaml
 						global::System.__ComObject __this, 
 						global::Windows.UI.Xaml.DragEventHandler value)
 			{
-				global::System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken __ret = global::__Interop.ForwardComStubs.Stub_20<global::Windows.UI.Xaml.IUIElement>(
+				global::System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken __ret = global::__Interop.ForwardComStubs.Stub_21<global::Windows.UI.Xaml.IUIElement>(
 									__this, 
 									value, 
 									53
@@ -34453,7 +33856,7 @@ namespace Windows.UI.Xaml
 						global::System.__ComObject __this, 
 						global::Windows.UI.Xaml.DragEventHandler value)
 			{
-				global::System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken __ret = global::__Interop.ForwardComStubs.Stub_20<global::Windows.UI.Xaml.IUIElement>(
+				global::System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken __ret = global::__Interop.ForwardComStubs.Stub_21<global::Windows.UI.Xaml.IUIElement>(
 									__this, 
 									value, 
 									55
@@ -34478,7 +33881,7 @@ namespace Windows.UI.Xaml
 						global::System.__ComObject __this, 
 						global::Windows.UI.Xaml.Input.PointerEventHandler value)
 			{
-				global::System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken __ret = global::__Interop.ForwardComStubs.Stub_21<global::Windows.UI.Xaml.IUIElement>(
+				global::System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken __ret = global::__Interop.ForwardComStubs.Stub_22<global::Windows.UI.Xaml.IUIElement>(
 									__this, 
 									value, 
 									57
@@ -34503,7 +33906,7 @@ namespace Windows.UI.Xaml
 						global::System.__ComObject __this, 
 						global::Windows.UI.Xaml.Input.PointerEventHandler value)
 			{
-				global::System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken __ret = global::__Interop.ForwardComStubs.Stub_21<global::Windows.UI.Xaml.IUIElement>(
+				global::System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken __ret = global::__Interop.ForwardComStubs.Stub_22<global::Windows.UI.Xaml.IUIElement>(
 									__this, 
 									value, 
 									59
@@ -34528,7 +33931,7 @@ namespace Windows.UI.Xaml
 						global::System.__ComObject __this, 
 						global::Windows.UI.Xaml.Input.PointerEventHandler value)
 			{
-				global::System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken __ret = global::__Interop.ForwardComStubs.Stub_21<global::Windows.UI.Xaml.IUIElement>(
+				global::System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken __ret = global::__Interop.ForwardComStubs.Stub_22<global::Windows.UI.Xaml.IUIElement>(
 									__this, 
 									value, 
 									61
@@ -34553,7 +33956,7 @@ namespace Windows.UI.Xaml
 						global::System.__ComObject __this, 
 						global::Windows.UI.Xaml.Input.PointerEventHandler value)
 			{
-				global::System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken __ret = global::__Interop.ForwardComStubs.Stub_21<global::Windows.UI.Xaml.IUIElement>(
+				global::System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken __ret = global::__Interop.ForwardComStubs.Stub_22<global::Windows.UI.Xaml.IUIElement>(
 									__this, 
 									value, 
 									63
@@ -34578,7 +33981,7 @@ namespace Windows.UI.Xaml
 						global::System.__ComObject __this, 
 						global::Windows.UI.Xaml.Input.PointerEventHandler value)
 			{
-				global::System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken __ret = global::__Interop.ForwardComStubs.Stub_21<global::Windows.UI.Xaml.IUIElement>(
+				global::System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken __ret = global::__Interop.ForwardComStubs.Stub_22<global::Windows.UI.Xaml.IUIElement>(
 									__this, 
 									value, 
 									65
@@ -34603,7 +34006,7 @@ namespace Windows.UI.Xaml
 						global::System.__ComObject __this, 
 						global::Windows.UI.Xaml.Input.PointerEventHandler value)
 			{
-				global::System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken __ret = global::__Interop.ForwardComStubs.Stub_21<global::Windows.UI.Xaml.IUIElement>(
+				global::System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken __ret = global::__Interop.ForwardComStubs.Stub_22<global::Windows.UI.Xaml.IUIElement>(
 									__this, 
 									value, 
 									67
@@ -34628,7 +34031,7 @@ namespace Windows.UI.Xaml
 						global::System.__ComObject __this, 
 						global::Windows.UI.Xaml.Input.PointerEventHandler value)
 			{
-				global::System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken __ret = global::__Interop.ForwardComStubs.Stub_21<global::Windows.UI.Xaml.IUIElement>(
+				global::System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken __ret = global::__Interop.ForwardComStubs.Stub_22<global::Windows.UI.Xaml.IUIElement>(
 									__this, 
 									value, 
 									69
@@ -34653,7 +34056,7 @@ namespace Windows.UI.Xaml
 						global::System.__ComObject __this, 
 						global::Windows.UI.Xaml.Input.PointerEventHandler value)
 			{
-				global::System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken __ret = global::__Interop.ForwardComStubs.Stub_21<global::Windows.UI.Xaml.IUIElement>(
+				global::System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken __ret = global::__Interop.ForwardComStubs.Stub_22<global::Windows.UI.Xaml.IUIElement>(
 									__this, 
 									value, 
 									71
@@ -35991,7 +35394,7 @@ namespace Windows.UI.Xaml
 						global::System.__ComObject __this, 
 						global::Windows.UI.Xaml.Input.KeyEventHandler value)
 			{
-				global::System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken __ret = global::__Interop.ForwardComStubs.Stub_18<global::Windows.UI.Xaml.IUIElement7>(
+				global::System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken __ret = global::__Interop.ForwardComStubs.Stub_19<global::Windows.UI.Xaml.IUIElement7>(
 									__this, 
 									value, 
 									11
@@ -36016,7 +35419,7 @@ namespace Windows.UI.Xaml
 						global::System.__ComObject __this, 
 						global::Windows.UI.Xaml.Input.KeyEventHandler value)
 			{
-				global::System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken __ret = global::__Interop.ForwardComStubs.Stub_18<global::Windows.UI.Xaml.IUIElement7>(
+				global::System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken __ret = global::__Interop.ForwardComStubs.Stub_19<global::Windows.UI.Xaml.IUIElement7>(
 									__this, 
 									value, 
 									13
@@ -36344,7 +35747,7 @@ namespace Windows.UI.Xaml
 						global::System.__ComObject __this, 
 						global::Windows.UI.Xaml.RoutedEventHandler value)
 			{
-				global::System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken __ret = global::__Interop.ForwardComStubs.Stub_19<global::Windows.UI.Xaml.IFrameworkElement>(
+				global::System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken __ret = global::__Interop.ForwardComStubs.Stub_20<global::Windows.UI.Xaml.IFrameworkElement>(
 									__this, 
 									value, 
 									43
@@ -36369,7 +35772,7 @@ namespace Windows.UI.Xaml
 						global::System.__ComObject __this, 
 						global::Windows.UI.Xaml.RoutedEventHandler value)
 			{
-				global::System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken __ret = global::__Interop.ForwardComStubs.Stub_19<global::Windows.UI.Xaml.IFrameworkElement>(
+				global::System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken __ret = global::__Interop.ForwardComStubs.Stub_20<global::Windows.UI.Xaml.IFrameworkElement>(
 									__this, 
 									value, 
 									45
@@ -37474,7 +36877,7 @@ namespace Windows.UI.Xaml.Automation.Peers
 						global::System.__ComObject __this, 
 						global::Windows.UI.Xaml.Automation.Peers.PatternInterface patternInterface)
 			{
-				object __ret = global::__Interop.ForwardComStubs.Stub_22<global::Windows.UI.Xaml.Automation.Peers.IAutomationPeerOverrides>(
+				object __ret = global::__Interop.ForwardComStubs.Stub_23<global::Windows.UI.Xaml.Automation.Peers.IAutomationPeerOverrides>(
 									__this, 
 									((int)patternInterface), 
 									6
@@ -37577,7 +36980,7 @@ namespace Windows.UI.Xaml.Automation.Peers
 
 			public static global::Windows.Foundation.Point GetClickablePointCore(global::System.__ComObject __this)
 			{
-				global::Windows.Foundation.Point __ret = global::__Interop.ForwardComStubs.Stub_23<global::Windows.UI.Xaml.Automation.Peers.IAutomationPeerOverrides>(
+				global::Windows.Foundation.Point __ret = global::__Interop.ForwardComStubs.Stub_18<global::Windows.UI.Xaml.Automation.Peers.IAutomationPeerOverrides>(
 									__this, 
 									14
 								);
@@ -37885,7 +37288,7 @@ namespace Windows.UI.Xaml.Automation.Peers
 						global::System.__ComObject __this, 
 						global::Windows.UI.Xaml.Automation.Peers.AutomationNavigationDirection direction)
 			{
-				object __ret = global::__Interop.ForwardComStubs.Stub_22<global::Windows.UI.Xaml.Automation.Peers.IAutomationPeerOverrides3>(
+				object __ret = global::__Interop.ForwardComStubs.Stub_23<global::Windows.UI.Xaml.Automation.Peers.IAutomationPeerOverrides3>(
 									__this, 
 									((int)direction), 
 									6
@@ -39902,7 +39305,7 @@ namespace Windows.UI.Xaml.Controls
 						global::System.__ComObject __this, 
 						global::Windows.UI.Xaml.RoutedEventHandler value)
 			{
-				global::System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken __ret = global::__Interop.ForwardComStubs.Stub_19<global::Windows.UI.Xaml.Controls.ITextBlock>(
+				global::System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken __ret = global::__Interop.ForwardComStubs.Stub_20<global::Windows.UI.Xaml.Controls.ITextBlock>(
 									__this, 
 									value, 
 									43
@@ -41900,7 +41303,7 @@ namespace Windows.UI.Xaml.Controls
 						global::System.__ComObject __this, 
 						global::Windows.UI.Xaml.RoutedEventHandler value)
 			{
-				global::System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken __ret = global::__Interop.ForwardComStubs.Stub_19<global::Windows.UI.Xaml.Controls.IToggleSwitch>(
+				global::System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken __ret = global::__Interop.ForwardComStubs.Stub_20<global::Windows.UI.Xaml.Controls.IToggleSwitch>(
 									__this, 
 									value, 
 									21
@@ -41981,301 +41384,6 @@ namespace Windows.UI.Xaml.Controls
 			}
 		}
 	}
-
-	// Windows.UI.Xaml.Controls.IContentDialogFactory
-	public unsafe static class IContentDialogFactory__Impl
-	{
-		// StubClass for 'Windows.UI.Xaml.Controls.IContentDialogFactory'
-		public static partial class Stubs
-		{
-			public static global::System.IntPtr CreateInstance(
-						global::System.__ComObject __this, 
-						global::System.IntPtr outer, 
-						out global::System.IntPtr inner)
-			{
-				global::System.IntPtr __ret = global::__Interop.ForwardComStubs.Stub_6<global::Windows.UI.Xaml.Controls.IContentDialogFactory>(
-									__this, 
-									outer, 
-									out inner, 
-									6
-								);
-				global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
-				return __ret;
-			}
-		}
-	}
-
-	// Windows.UI.Xaml.Controls.IContentDialog
-	public unsafe static class IContentDialog__Impl
-	{
-		// StubClass for 'Windows.UI.Xaml.Controls.IContentDialog'
-		public static partial class Stubs
-		{
-			public static void put_Title(
-						global::System.__ComObject __this, 
-						object value)
-			{
-				global::__Interop.ForwardComStubs.Stub_35<global::Windows.UI.Xaml.Controls.IContentDialog>(
-									__this, 
-									value, 
-									7
-								);
-				global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
-			}
-
-			// Signature, Windows.UI.Xaml.Controls.IContentDialog.add_Closing, [fwd] [return] [EETypeRva:0x000406BC] void__int, [fwd] [in] [EETypeRva:0x0003F504] Windows_Foundation_TypedEventHandler_2_Windows_UI_Xaml_Controls_ContentDialog__Windows_UI_Xaml_Controls_ContentDialogClosingEventArgs___Windows_Foundation__TypedEventHandler_A__wux__Controls_ContentDialog_j__wux__Controls_ContentDialogClosingEventArgs_V_ *, [fwd] [out] [retval] [nativebyref] [EETypeRva:0x0004157C] System_Runtime_InteropServices_WindowsRuntime_EventRegistrationToken__Windows_Foundation__EventRegistrationToken, 
-			public static global::System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken add_Closing(
-						global::System.__ComObject __this, 
-						global::Windows.Foundation.TypedEventHandler<global::Windows.UI.Xaml.Controls.ContentDialog, global::Windows.UI.Xaml.Controls.ContentDialogClosingEventArgs> value)
-			{
-				// Setup
-				void* unsafe_value = default(void*);
-				global::System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken unsafe_token__retval;
-				global::System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken token__retval;
-				int unsafe___hr;
-				try
-				{
-					// Marshalling
-					unsafe_value = (void*)global::System.Runtime.InteropServices.McgMarshal.DelegateToComInterface(
-										value, 
-										typeof(global::Windows.Foundation.TypedEventHandler<global::Windows.UI.Xaml.Controls.ContentDialog, global::Windows.UI.Xaml.Controls.ContentDialogClosingEventArgs>).TypeHandle
-									);
-					// Call to native method
-					unsafe___hr = global::__Interop.ComCallHelpers.Call(
-										__this, 
-										typeof(global::Windows.UI.Xaml.Controls.IContentDialog).TypeHandle, 
-										28, 
-										unsafe_value, 
-										&(unsafe_token__retval)
-									);
-					global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
-					token__retval = unsafe_token__retval;
-					// Return
-					return token__retval;
-				}
-				finally
-				{
-					// Cleanup
-					global::System.Runtime.InteropServices.McgMarshal.ComSafeRelease(new global::System.IntPtr(((void*)unsafe_value)));
-				}
-			}
-
-			public static void remove_Closing(
-						global::System.__ComObject __this, 
-						global::System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken token)
-			{
-				global::__Interop.ForwardComStubs.Stub_9<global::Windows.UI.Xaml.Controls.IContentDialog>(
-									__this, 
-									token, 
-									29
-								);
-				global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
-			}
-
-			// Signature, Windows.UI.Xaml.Controls.IContentDialog.add_Closed, [fwd] [return] [EETypeRva:0x000406BC] void__int, [fwd] [in] [EETypeRva:0x0003F504] Windows_Foundation_TypedEventHandler_2_Windows_UI_Xaml_Controls_ContentDialog__Windows_UI_Xaml_Controls_ContentDialogClosedEventArgs___Windows_Foundation__TypedEventHandler_A__wux__Controls_ContentDialog_j__wux__Controls_ContentDialogClosedEventArgs_V_ *, [fwd] [out] [retval] [nativebyref] [EETypeRva:0x0004157C] System_Runtime_InteropServices_WindowsRuntime_EventRegistrationToken__Windows_Foundation__EventRegistrationToken, 
-			public static global::System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken add_Closed(
-						global::System.__ComObject __this, 
-						global::Windows.Foundation.TypedEventHandler<global::Windows.UI.Xaml.Controls.ContentDialog, global::Windows.UI.Xaml.Controls.ContentDialogClosedEventArgs> value)
-			{
-				// Setup
-				void* unsafe_value = default(void*);
-				global::System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken unsafe_token__retval;
-				global::System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken token__retval;
-				int unsafe___hr;
-				try
-				{
-					// Marshalling
-					unsafe_value = (void*)global::System.Runtime.InteropServices.McgMarshal.DelegateToComInterface(
-										value, 
-										typeof(global::Windows.Foundation.TypedEventHandler<global::Windows.UI.Xaml.Controls.ContentDialog, global::Windows.UI.Xaml.Controls.ContentDialogClosedEventArgs>).TypeHandle
-									);
-					// Call to native method
-					unsafe___hr = global::__Interop.ComCallHelpers.Call(
-										__this, 
-										typeof(global::Windows.UI.Xaml.Controls.IContentDialog).TypeHandle, 
-										30, 
-										unsafe_value, 
-										&(unsafe_token__retval)
-									);
-					global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
-					token__retval = unsafe_token__retval;
-					// Return
-					return token__retval;
-				}
-				finally
-				{
-					// Cleanup
-					global::System.Runtime.InteropServices.McgMarshal.ComSafeRelease(new global::System.IntPtr(((void*)unsafe_value)));
-				}
-			}
-
-			public static void remove_Closed(
-						global::System.__ComObject __this, 
-						global::System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken token)
-			{
-				global::__Interop.ForwardComStubs.Stub_9<global::Windows.UI.Xaml.Controls.IContentDialog>(
-									__this, 
-									token, 
-									31
-								);
-				global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
-			}
-
-			// Signature, Windows.UI.Xaml.Controls.IContentDialog.add_Opened, [fwd] [return] [EETypeRva:0x000406BC] void__int, [fwd] [in] [EETypeRva:0x0003F504] Windows_Foundation_TypedEventHandler_2_Windows_UI_Xaml_Controls_ContentDialog__Windows_UI_Xaml_Controls_ContentDialogOpenedEventArgs___Windows_Foundation__TypedEventHandler_A__wux__Controls_ContentDialog_j__wux__Controls_ContentDialogOpenedEventArgs_V_ *, [fwd] [out] [retval] [nativebyref] [EETypeRva:0x0004157C] System_Runtime_InteropServices_WindowsRuntime_EventRegistrationToken__Windows_Foundation__EventRegistrationToken, 
-			public static global::System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken add_Opened(
-						global::System.__ComObject __this, 
-						global::Windows.Foundation.TypedEventHandler<global::Windows.UI.Xaml.Controls.ContentDialog, global::Windows.UI.Xaml.Controls.ContentDialogOpenedEventArgs> value)
-			{
-				// Setup
-				void* unsafe_value = default(void*);
-				global::System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken unsafe_token__retval;
-				global::System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken token__retval;
-				int unsafe___hr;
-				try
-				{
-					// Marshalling
-					unsafe_value = (void*)global::System.Runtime.InteropServices.McgMarshal.DelegateToComInterface(
-										value, 
-										typeof(global::Windows.Foundation.TypedEventHandler<global::Windows.UI.Xaml.Controls.ContentDialog, global::Windows.UI.Xaml.Controls.ContentDialogOpenedEventArgs>).TypeHandle
-									);
-					// Call to native method
-					unsafe___hr = global::__Interop.ComCallHelpers.Call(
-										__this, 
-										typeof(global::Windows.UI.Xaml.Controls.IContentDialog).TypeHandle, 
-										32, 
-										unsafe_value, 
-										&(unsafe_token__retval)
-									);
-					global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
-					token__retval = unsafe_token__retval;
-					// Return
-					return token__retval;
-				}
-				finally
-				{
-					// Cleanup
-					global::System.Runtime.InteropServices.McgMarshal.ComSafeRelease(new global::System.IntPtr(((void*)unsafe_value)));
-				}
-			}
-
-			public static void remove_Opened(
-						global::System.__ComObject __this, 
-						global::System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken token)
-			{
-				global::__Interop.ForwardComStubs.Stub_9<global::Windows.UI.Xaml.Controls.IContentDialog>(
-									__this, 
-									token, 
-									33
-								);
-				global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
-			}
-
-			public static global::System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken add_PrimaryButtonClick(
-						global::System.__ComObject __this, 
-						global::Windows.Foundation.TypedEventHandler<global::Windows.UI.Xaml.Controls.ContentDialog, global::Windows.UI.Xaml.Controls.ContentDialogButtonClickEventArgs> value)
-			{
-				global::System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken __ret = global::__Interop.ForwardComStubs.Stub_57<global::Windows.UI.Xaml.Controls.IContentDialog>(
-									__this, 
-									value, 
-									34
-								);
-				global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
-				return __ret;
-			}
-
-			public static void remove_PrimaryButtonClick(
-						global::System.__ComObject __this, 
-						global::System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken token)
-			{
-				global::__Interop.ForwardComStubs.Stub_9<global::Windows.UI.Xaml.Controls.IContentDialog>(
-									__this, 
-									token, 
-									35
-								);
-				global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
-			}
-
-			public static global::System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken add_SecondaryButtonClick(
-						global::System.__ComObject __this, 
-						global::Windows.Foundation.TypedEventHandler<global::Windows.UI.Xaml.Controls.ContentDialog, global::Windows.UI.Xaml.Controls.ContentDialogButtonClickEventArgs> value)
-			{
-				global::System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken __ret = global::__Interop.ForwardComStubs.Stub_57<global::Windows.UI.Xaml.Controls.IContentDialog>(
-									__this, 
-									value, 
-									36
-								);
-				global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
-				return __ret;
-			}
-
-			public static void remove_SecondaryButtonClick(
-						global::System.__ComObject __this, 
-						global::System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken token)
-			{
-				global::__Interop.ForwardComStubs.Stub_9<global::Windows.UI.Xaml.Controls.IContentDialog>(
-									__this, 
-									token, 
-									37
-								);
-				global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
-			}
-
-			public static global::Windows.Foundation.IAsyncOperation<global::Windows.UI.Xaml.Controls.ContentDialogResult> ShowAsync(global::System.__ComObject __this)
-			{
-				global::Windows.Foundation.IAsyncOperation<global::Windows.UI.Xaml.Controls.ContentDialogResult> __ret = global::__Interop.ForwardComStubs.Stub_3<global::Windows.UI.Xaml.Controls.IContentDialog, global::Windows.Foundation.IAsyncOperation<global::Windows.UI.Xaml.Controls.ContentDialogResult>>(
-									__this, 
-									39
-								);
-				global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
-				return __ret;
-			}
-		}
-	}
-
-	// Windows.UI.Xaml.Controls.IContentDialog2
-	public unsafe static class IContentDialog2__Impl
-	{
-		// StubClass for 'Windows.UI.Xaml.Controls.IContentDialog2'
-		public static partial class Stubs
-		{
-			public static void put_CloseButtonText(
-						global::System.__ComObject __this, 
-						string value)
-			{
-				global::__Interop.ForwardComStubs.Stub_40<global::Windows.UI.Xaml.Controls.IContentDialog2>(
-									__this, 
-									value, 
-									7
-								);
-				global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
-			}
-
-			public static global::System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken add_CloseButtonClick(
-						global::System.__ComObject __this, 
-						global::Windows.Foundation.TypedEventHandler<global::Windows.UI.Xaml.Controls.ContentDialog, global::Windows.UI.Xaml.Controls.ContentDialogButtonClickEventArgs> value)
-			{
-				global::System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken __ret = global::__Interop.ForwardComStubs.Stub_57<global::Windows.UI.Xaml.Controls.IContentDialog2>(
-									__this, 
-									value, 
-									20
-								);
-				global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
-				return __ret;
-			}
-
-			public static void remove_CloseButtonClick(
-						global::System.__ComObject __this, 
-						global::System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken token)
-			{
-				global::__Interop.ForwardComStubs.Stub_9<global::Windows.UI.Xaml.Controls.IContentDialog2>(
-									__this, 
-									token, 
-									21
-								);
-				global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
-			}
-		}
-	}
 }
 
 namespace Windows.UI.Xaml.Controls.Primitives
@@ -42348,7 +41456,7 @@ namespace Windows.UI.Xaml.Controls.Primitives
 						global::System.__ComObject __this, 
 						global::Windows.UI.Xaml.RoutedEventHandler value)
 			{
-				global::System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken __ret = global::__Interop.ForwardComStubs.Stub_19<global::Windows.UI.Xaml.Controls.Primitives.IButtonBase>(
+				global::System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken __ret = global::__Interop.ForwardComStubs.Stub_20<global::Windows.UI.Xaml.Controls.Primitives.IButtonBase>(
 									__this, 
 									value, 
 									14
@@ -42458,7 +41566,7 @@ namespace Windows.UI.Xaml.Controls.Primitives
 						global::System.__ComObject __this, 
 						global::Windows.UI.Xaml.RoutedEventHandler value)
 			{
-				global::System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken __ret = global::__Interop.ForwardComStubs.Stub_19<global::Windows.UI.Xaml.Controls.Primitives.IToggleButton>(
+				global::System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken __ret = global::__Interop.ForwardComStubs.Stub_20<global::Windows.UI.Xaml.Controls.Primitives.IToggleButton>(
 									__this, 
 									value, 
 									10
@@ -42483,7 +41591,7 @@ namespace Windows.UI.Xaml.Controls.Primitives
 						global::System.__ComObject __this, 
 						global::Windows.UI.Xaml.RoutedEventHandler value)
 			{
-				global::System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken __ret = global::__Interop.ForwardComStubs.Stub_19<global::Windows.UI.Xaml.Controls.Primitives.IToggleButton>(
+				global::System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken __ret = global::__Interop.ForwardComStubs.Stub_20<global::Windows.UI.Xaml.Controls.Primitives.IToggleButton>(
 									__this, 
 									value, 
 									12
@@ -42508,7 +41616,7 @@ namespace Windows.UI.Xaml.Controls.Primitives
 						global::System.__ComObject __this, 
 						global::Windows.UI.Xaml.RoutedEventHandler value)
 			{
-				global::System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken __ret = global::__Interop.ForwardComStubs.Stub_19<global::Windows.UI.Xaml.Controls.Primitives.IToggleButton>(
+				global::System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken __ret = global::__Interop.ForwardComStubs.Stub_20<global::Windows.UI.Xaml.Controls.Primitives.IToggleButton>(
 									__this, 
 									value, 
 									14
@@ -46173,6 +45281,77 @@ namespace Windows.UI.Xaml.Media
 		}
 	}
 
+	// Windows.UI.Xaml.Media.IGeneralTransformOverrides
+	public unsafe static class IGeneralTransformOverrides__Impl
+	{
+		// StubClass for 'Windows.UI.Xaml.Media.IGeneralTransformOverrides'
+		public static partial class Stubs
+		{
+			public static global::Windows.UI.Xaml.Media.GeneralTransform get_InverseCore(global::System.__ComObject __this)
+			{
+				global::Windows.UI.Xaml.Media.GeneralTransform __ret = global::__Interop.ForwardComStubs.Stub_3<global::Windows.UI.Xaml.Media.IGeneralTransformOverrides, global::Windows.UI.Xaml.Media.GeneralTransform>(
+									__this, 
+									6
+								);
+				global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+				return __ret;
+			}
+
+			// Signature, Windows.UI.Xaml.Media.IGeneralTransformOverrides.TryTransformCore, [fwd] [return] [EETypeRva:0x000406BC] void__int, [fwd] [in] [EETypeRva:0x0004157C] Windows_Foundation_Point__Windows_Foundation__Point, [fwd] [out] [managedbyref] [nativebyref] [EETypeRva:0x0004157C] Windows_Foundation_Point__Windows_Foundation__Point, [fwd] [out] [retval] [nativebyref] [EETypeRva:0x0003EFA8] bool__bool, 
+			public static bool TryTransformCore(
+						global::System.__ComObject __this, 
+						global::Windows.Foundation.Point inPoint, 
+						out global::Windows.Foundation.Point outPoint)
+			{
+				// Setup
+				bool returnValue__retval;
+				sbyte unsafe_returnValue__retval;
+				int unsafe___hr;
+				// Marshalling
+				fixed (global::Windows.Foundation.Point* pinned_outPoint = &(outPoint))
+				{
+					// Call to native method
+					unsafe___hr = global::__Interop.ComCallHelpers.Call(
+										__this, 
+										typeof(global::Windows.UI.Xaml.Media.IGeneralTransformOverrides).TypeHandle, 
+										7, 
+										inPoint, 
+										pinned_outPoint, 
+										&(unsafe_returnValue__retval)
+									);
+					global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+					returnValue__retval = unsafe_returnValue__retval != 0;
+				}
+				// Return
+				return returnValue__retval;
+			}
+
+			// Signature, Windows.UI.Xaml.Media.IGeneralTransformOverrides.TransformBoundsCore, [fwd] [return] [EETypeRva:0x000406BC] void__int, [fwd] [in] [EETypeRva:0x0004157C] Windows_Foundation_Rect__Windows_Foundation__Rect, [fwd] [out] [retval] [nativebyref] [EETypeRva:0x0004157C] Windows_Foundation_Rect__Windows_Foundation__Rect, 
+			public static global::Windows.Foundation.Rect TransformBoundsCore(
+						global::System.__ComObject __this, 
+						global::Windows.Foundation.Rect rect)
+			{
+				// Setup
+				global::Windows.Foundation.Rect unsafe_returnValue__retval;
+				global::Windows.Foundation.Rect returnValue__retval;
+				int unsafe___hr;
+				// Marshalling
+				// Call to native method
+				unsafe___hr = global::__Interop.ComCallHelpers.Call(
+									__this, 
+									typeof(global::Windows.UI.Xaml.Media.IGeneralTransformOverrides).TypeHandle, 
+									8, 
+									rect, 
+									&(unsafe_returnValue__retval)
+								);
+				global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+				returnValue__retval = unsafe_returnValue__retval;
+				// Return
+				return returnValue__retval;
+			}
+		}
+	}
+
 	// Windows.UI.Xaml.Media.IFontFamilyFactory
 	public unsafe static class IFontFamilyFactory__Impl
 	{
@@ -46194,6 +45373,36 @@ namespace Windows.UI.Xaml.Media
 								);
 				global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
 				return __ret;
+			}
+		}
+	}
+
+	// Windows.UI.Xaml.Media.ICompositeTransform
+	public unsafe static class ICompositeTransform__Impl
+	{
+		// StubClass for 'Windows.UI.Xaml.Media.ICompositeTransform'
+		public static partial class Stubs
+		{
+			public static double get_ScaleY(global::System.__ComObject __this)
+			{
+				double __ret = global::__Interop.ForwardComStubs.Stub_16<global::Windows.UI.Xaml.Media.ICompositeTransform>(
+									__this, 
+									12
+								);
+				global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+				return __ret;
+			}
+
+			public static void put_ScaleY(
+						global::System.__ComObject __this, 
+						double value)
+			{
+				global::__Interop.ForwardComStubs.Stub_17<global::Windows.UI.Xaml.Media.ICompositeTransform>(
+									__this, 
+									value, 
+									13
+								);
+				global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
 			}
 		}
 	}
@@ -46879,7 +46088,7 @@ namespace Windows.Web.Http
 				pfnReadAsBufferAsync_ = global::__Interop.Intrinsics.AddrOf<global::__Interop.AddrOfIntrinsics.AddrOfTarget10>(global::Windows.Web.Http.IHttpContent__Impl.Vtbl.ReadAsBufferAsync__n),
 				pfnReadAsInputStreamAsync_ = global::__Interop.Intrinsics.AddrOf<global::__Interop.AddrOfIntrinsics.AddrOfTarget10>(global::Windows.Web.Http.IHttpContent__Impl.Vtbl.ReadAsInputStreamAsync__n),
 				pfnReadAsStringAsync_ = global::__Interop.Intrinsics.AddrOf<global::__Interop.AddrOfIntrinsics.AddrOfTarget10>(global::Windows.Web.Http.IHttpContent__Impl.Vtbl.ReadAsStringAsync__n),
-				pfnTryComputeLength_ = global::__Interop.Intrinsics.AddrOf<global::__Interop.AddrOfIntrinsics.AddrOfTarget38>(global::Windows.Web.Http.IHttpContent__Impl.Vtbl.TryComputeLength__n),
+				pfnTryComputeLength_ = global::__Interop.Intrinsics.AddrOf<global::__Interop.AddrOfIntrinsics.AddrOfTarget37>(global::Windows.Web.Http.IHttpContent__Impl.Vtbl.TryComputeLength__n),
 				pfnWriteToStreamAsync_ = global::__Interop.Intrinsics.AddrOf<global::__Interop.AddrOfIntrinsics.AddrOfTarget14>(global::Windows.Web.Http.IHttpContent__Impl.Vtbl.WriteToStreamAsync__n),
 			}
 			#endif
@@ -47106,7 +46315,7 @@ namespace Windows.Web.Http
 
 			public static global::Windows.Web.Http.HttpStatusCode get_StatusCode(global::System.__ComObject __this)
 			{
-				global::Windows.Web.Http.HttpStatusCode __ret = global::__Interop.ForwardComStubs.Stub_63<global::Windows.Web.Http.IHttpResponseMessage>(
+				global::Windows.Web.Http.HttpStatusCode __ret = global::__Interop.ForwardComStubs.Stub_62<global::Windows.Web.Http.IHttpResponseMessage>(
 									__this, 
 									16
 								);
@@ -47116,7 +46325,7 @@ namespace Windows.Web.Http
 
 			public static global::Windows.Web.Http.HttpVersion get_Version(global::System.__ComObject __this)
 			{
-				global::Windows.Web.Http.HttpVersion __ret = global::__Interop.ForwardComStubs.Stub_64<global::Windows.Web.Http.IHttpResponseMessage>(
+				global::Windows.Web.Http.HttpVersion __ret = global::__Interop.ForwardComStubs.Stub_63<global::Windows.Web.Http.IHttpResponseMessage>(
 									__this, 
 									18
 								);
@@ -47596,7 +46805,7 @@ namespace Windows.Web.Http.Filters
 		{
 			public static global::Windows.Web.Http.HttpVersion get_MaxVersion(global::System.__ComObject __this)
 			{
-				global::Windows.Web.Http.HttpVersion __ret = global::__Interop.ForwardComStubs.Stub_64<global::Windows.Web.Http.Filters.IHttpBaseProtocolFilter2>(
+				global::Windows.Web.Http.HttpVersion __ret = global::__Interop.ForwardComStubs.Stub_63<global::Windows.Web.Http.Filters.IHttpBaseProtocolFilter2>(
 									__this, 
 									6
 								);
@@ -47825,7 +47034,7 @@ namespace Windows.Web.Http.Headers
 						string name, 
 						string value)
 			{
-				bool __ret = global::__Interop.ForwardComStubs.Stub_60<global::Windows.Web.Http.Headers.IHttpContentHeaderCollection>(
+				bool __ret = global::__Interop.ForwardComStubs.Stub_59<global::Windows.Web.Http.Headers.IHttpContentHeaderCollection>(
 									__this, 
 									name, 
 									value, 
@@ -47848,7 +47057,7 @@ namespace Windows.Web.Http.Headers
 						string name, 
 						string value)
 			{
-				bool __ret = global::__Interop.ForwardComStubs.Stub_60<global::Windows.Web.Http.Headers.IHttpRequestHeaderCollection>(
+				bool __ret = global::__Interop.ForwardComStubs.Stub_59<global::Windows.Web.Http.Headers.IHttpRequestHeaderCollection>(
 									__this, 
 									name, 
 									value, 

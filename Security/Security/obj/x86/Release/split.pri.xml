@@ -32,6 +32,11 @@
 					<Base64Value>[Embedded Binary Data]</Base64Value>
 				</Candidate>
 			</NamedResource>
+			<NamedResource name="Health.xbf" uri="ms-resource://DrAlexSecurityUWP/Files/Health.xbf">
+				<Candidate type="EmbeddedData">
+					<Base64Value>[Embedded Binary Data]</Base64Value>
+				</Candidate>
+			</NamedResource>
 			<NamedResource name="MainPage.xbf" uri="ms-resource://DrAlexSecurityUWP/Files/MainPage.xbf">
 				<Candidate type="EmbeddedData">
 					<Base64Value>[Embedded Binary Data]</Base64Value>

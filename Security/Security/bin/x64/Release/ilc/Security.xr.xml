@@ -69,6 +69,8 @@
       <RootProperty Name="Height" />
       <RootProperty Name="Padding" />
       <RootProperty Name="Visibility" />
+      <RootProperty Name="RenderTransformOrigin" />
+      <RootProperty Name="RenderTransform" />
       <RootEvent Name="SelectionChanged" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.FontIcon">
@@ -106,7 +108,9 @@
       <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="HorizontalAlignment" />
     </RootType>
+    <RootType FullName="Security.Health" />
     <RootType FullName="Security.Defender" />
+    <RootType FullName="Windows.UI.Xaml.Media.SolidColorBrush" />
     <RootType FullName="System.Double" />
     <RootType FullName="Windows.UI.Xaml.Controls.CommandBar">
       <RootProperty Name="Margin" />
@@ -146,6 +150,9 @@
       <RootEvent Name="Toggled" />
     </RootType>
     <RootType FullName="Security.Settings" />
+    <RootType FullName="Windows.UI.Xaml.Media.CompositeTransform">
+      <RootProperty Name="ScaleY" />
+    </RootType>
     <RootType FullName="Security.Update" />
   </Roots.RootTypes>
 </Roots>

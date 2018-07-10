@@ -555,3 +555,8 @@ D:\Alex\Visual\Security\Security\obj\ARM\Release\Changelog.xaml
 D:\Alex\Visual\Security\Security\obj\ARM\Release\Changelog.xbf
 D:\Alex\Visual\Security\Security\obj\ARM\Release\ilc\intermediate\Resources\Security.0.rsrc
 D:\Alex\Visual\Security\Security\obj\ARM\Release\ilc\intermediate\Resources\Security.index.txt
+D:\Alex\Visual\Security\Security\bin\ARM\Release\Health.xbf
+D:\Alex\Visual\Security\Security\obj\ARM\Release\Health.g.i.cs
+D:\Alex\Visual\Security\Security\obj\ARM\Release\Health.g.cs
+D:\Alex\Visual\Security\Security\obj\ARM\Release\Health.xaml
+D:\Alex\Visual\Security\Security\obj\ARM\Release\Health.xbf

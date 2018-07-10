@@ -105,14 +105,17 @@ namespace Security
 
         private async void ComingSoon(object sender, PointerRoutedEventArgs e)
         {
-            ContentDialog ComingSoon = new ContentDialog
+            /*ContentDialog ComingSoon = new ContentDialog
             {
                 Title = "Coming soon",
                 Content = "Please, wait for next updates",
                 CloseButtonText = "OK"
             };
 
-            ContentDialogResult result = await ComingSoon.ShowAsync();
+            ContentDialogResult result = await ComingSoon.ShowAsync();*/
+
+            this.Frame.Navigate(typeof(Health), color);
+
         }
 
         private void AppBarButton_Click_2(object sender, RoutedEventArgs e)

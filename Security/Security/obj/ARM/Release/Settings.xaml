@@ -25,7 +25,7 @@
                 <TextBlock Text="Title bar" VerticalAlignment="Top" Margin="0,0,0,0" FontSize="20"/>
 
                 <TextBlock Text="Show TitleBar" VerticalAlignment="Top" Margin="0,20,0,0"/>
-                <ToggleSwitch x:ConnectionId='2' x:Name="ShowTitleBar1" HorizontalAlignment="Left" Width="100" VerticalAlignment="Top"                        Margin="0,5,0,0"/>
+                <ToggleSwitch x:ConnectionId='2' x:Name="ShowTitleBar1" HorizontalAlignment="Left" Width="100" VerticalAlignment="Top"                        Margin="0,5,0,0" />
 
                 <TextBlock Text="User TitleBar Color" VerticalAlignment="Top" Margin="0,20,0,0"/>
                 <ToggleSwitch x:ConnectionId='3' x:Name="ColorTitleBar1" HorizontalAlignment="Left" Width="100" VerticalAlignment="Top"                         Margin="0,5,0,0"/>

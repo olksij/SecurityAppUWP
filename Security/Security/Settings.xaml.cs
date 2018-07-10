@@ -290,9 +290,16 @@ namespace Security
                 newcolor = Colors.Green;
             }
 
-            dynamic g = newcolor;
-            //(Application.Current.Resources["SystemControlBackgroundAccentBrush"] as SolidColorBrush).Color = (Color)g.Color;
-
+            dynamic g = Colors.Green;
+            /*try
+            {
+                SolidColorBrush solidColorBrush = (Application.Current.Resources["SystemControlBackgroundAccentBrush"] as SolidColorBrush);
+                solidColorBrush.Color = (Color)g.Color;
+            }
+            catch
+            {*/
+                Application.Current.Resources["SolidColorBrush1"] = Colors.Green;
+            //}
         }
     }
 }
