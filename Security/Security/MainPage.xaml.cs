@@ -74,6 +74,8 @@ namespace Security
                 //txtBlock.Text = ((pb.Value / pb.Maximum) * 100).ToString("F2") + "%";
             }
 
+            UpdateColors();
+
         }
 
         void AppBarButton_Click(object sender, RoutedEventArgs e)
@@ -182,33 +184,32 @@ namespace Security
             }
         }
 
-        protected override void OnNavigatedTo(NavigationEventArgs e)
+        void UpdateColors()
         {
-            color = e.Parameter.ToString();
-
+            string theme = AppSettings.Theme;
             Windows.UI.Xaml.Media.AcrylicBrush myBrush = new Windows.UI.Xaml.Media.AcrylicBrush();
             myBrush.BackgroundSource = Windows.UI.Xaml.Media.AcrylicBackgroundSource.HostBackdrop;
-            if (color == "light")
+            if (theme == "light")
             {
                 myBrush.TintColor = Windows.UI.Colors.WhiteSmoke;
                 myBrush.FallbackColor = Windows.UI.Colors.WhiteSmoke;
                 RequestedTheme = ElementTheme.Light;
-                HomeIcon.Foreground = new SolidColorBrush(Windows.UI.Colors.Black);
+                HomeIcon.Foreground = new SolidColorBrush(Colors.Black);
             }
-            if (color == "dark")
+            if (theme == "dark")
             {
                 myBrush.TintColor = Color.FromArgb(255, 50, 50, 50);
                 myBrush.FallbackColor = Color.FromArgb(255, 50, 50, 50);
                 RequestedTheme = ElementTheme.Dark;
-                HomeIcon.Foreground = new SolidColorBrush(Windows.UI.Colors.White);
+                HomeIcon.Foreground = new SolidColorBrush(Colors.White);
             }
             else
             {
-                color = "light";
+                theme = "light";
                 myBrush.TintColor = Windows.UI.Colors.WhiteSmoke;
                 myBrush.FallbackColor = Windows.UI.Colors.WhiteSmoke;
                 RequestedTheme = ElementTheme.Light;
-                HomeIcon.Foreground = new SolidColorBrush(Windows.UI.Colors.Black);
+                HomeIcon.Foreground = new SolidColorBrush(Colors.Black);
             }
             myBrush.TintOpacity = 0.7;
             RectangleAcrylic.Fill = myBrush;

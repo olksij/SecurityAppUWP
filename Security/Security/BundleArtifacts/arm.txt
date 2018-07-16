@@ -1,2 +1,2 @@
-MainPackage=D:\Alex\Visual\Security\Security\bin\ARM\Release\Security_0.10.23.0_ARM.appx
-SymbolPackage=D:\Alex\Visual\Security\Security\AppPackages\Security_0.10.23.0_Test\Security_0.10.23.0_ARM.appxsym
+MainPackage=D:\Alex\Visual\Security\Security\bin\ARM\Release\Security_0.11.25.0_ARM.appx
+SymbolPackage=D:\Alex\Visual\Security\Security\AppPackages\Security_0.11.25.0_Test\Security_0.11.25.0_ARM.appxsym

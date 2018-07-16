@@ -26,7 +26,6 @@ namespace Security
     /// </summary>
     public sealed partial class Settings : Page
     {
-        string color = "light";
         Color newcolor = Colors.Blue;
 
         //Color LightBlue = Color.FromArgb(255, 54, 192, 255);
@@ -57,6 +56,8 @@ namespace Security
                 txtUserColor.Visibility = Visibility.Visible;
                 RBblue.IsChecked = true;
             } */
+
+            UpdateColors();
         }
 
         private void ShowTitleBar(object sender, RoutedEventArgs e)
@@ -74,7 +75,7 @@ namespace Security
                 titleBar.ButtonBackgroundColor = Colors.Transparent;
                 titleBar.ButtonInactiveBackgroundColor = Colors.Transparent;
                 titleBar.ForegroundColor = Windows.UI.Colors.Black;
-                if (color == "light")
+                if (AppSettings.Theme == "light")
                 {
                     titleBar.ButtonForegroundColor = Windows.UI.Colors.Black;
                 }
@@ -129,7 +130,7 @@ namespace Security
 
         private void ToHome(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(MainPage), color);
+            this.Frame.Navigate(typeof(MainPage));
         }
 
         private void StackPanel_Tapped(object sender, TappedRoutedEventArgs e)
@@ -141,7 +142,7 @@ namespace Security
         {
             if (RBdefault.IsChecked == true)
             {
-                color = "light";
+                AppSettings.Theme = "light";
             }
 
             RefreshColors();
@@ -152,7 +153,7 @@ namespace Security
         {
             if (RBdark.IsChecked == true)
             {
-                color = "dark";
+                AppSettings.Theme = "dark";
             }
 
             RefreshColors();
@@ -162,7 +163,7 @@ namespace Security
         {
             Windows.UI.Xaml.Media.AcrylicBrush myBrush = new Windows.UI.Xaml.Media.AcrylicBrush();
             myBrush.BackgroundSource = Windows.UI.Xaml.Media.AcrylicBackgroundSource.HostBackdrop;
-            if (color == "light")
+            if (AppSettings.Theme == "light")
             {
                 myBrush.TintColor = Windows.UI.Colors.WhiteSmoke;
                 myBrush.FallbackColor = Windows.UI.Colors.WhiteSmoke;
@@ -200,7 +201,7 @@ namespace Security
                 }
                 else
                 {
-                    if (color == "light")
+                    if (AppSettings.Theme == "light")
                     {
                         var titleBar = ApplicationView.GetForCurrentView().TitleBar;
                         titleBar.ForegroundColor = Windows.UI.Colors.Black;
@@ -235,7 +236,7 @@ namespace Security
                 titleBar.ButtonBackgroundColor = Colors.Transparent;
                 titleBar.ButtonInactiveBackgroundColor = Colors.Transparent;
                 titleBar.ForegroundColor = Windows.UI.Colors.Black;
-                if (color == "light")
+                if (AppSettings.Theme == "light")
                 {
                     titleBar.ButtonForegroundColor = Windows.UI.Colors.Black;
 
@@ -301,5 +302,37 @@ namespace Security
                 Application.Current.Resources["SolidColorBrush1"] = Colors.Green;
             //}
         }
+
+        void UpdateColors()
+        {
+            string theme = AppSettings.Theme;
+            Windows.UI.Xaml.Media.AcrylicBrush myBrush = new Windows.UI.Xaml.Media.AcrylicBrush();
+            myBrush.BackgroundSource = Windows.UI.Xaml.Media.AcrylicBackgroundSource.HostBackdrop;
+            if (theme == "light")
+            {
+                myBrush.TintColor = Windows.UI.Colors.WhiteSmoke;
+                myBrush.FallbackColor = Windows.UI.Colors.WhiteSmoke;
+                RequestedTheme = ElementTheme.Light;
+                HomeIcon.Foreground = new SolidColorBrush(Colors.Black);
+            }
+            if (theme == "dark")
+            {
+                myBrush.TintColor = Color.FromArgb(255, 50, 50, 50);
+                myBrush.FallbackColor = Color.FromArgb(255, 50, 50, 50);
+                RequestedTheme = ElementTheme.Dark;
+                HomeIcon.Foreground = new SolidColorBrush(Colors.White);
+            }
+            else
+            {
+                theme = "light";
+                myBrush.TintColor = Windows.UI.Colors.WhiteSmoke;
+                myBrush.FallbackColor = Windows.UI.Colors.WhiteSmoke;
+                RequestedTheme = ElementTheme.Light;
+                HomeIcon.Foreground = new SolidColorBrush(Colors.Black);
+            }
+            myBrush.TintOpacity = 0.7;
+            RectangleAcrylic.Fill = myBrush;
+        }
+
     }
 }

@@ -27,6 +27,8 @@ namespace Security
         public Changelog()
         {
             this.InitializeComponent();
+            UpdateColors();
+
             LoadChangelog();
         }
 
@@ -87,5 +89,37 @@ namespace Security
         {
             this.Frame.Navigate(typeof(MainPage), color);
         }
+
+        void UpdateColors()
+        {
+            string theme = AppSettings.Theme;
+            Windows.UI.Xaml.Media.AcrylicBrush myBrush = new Windows.UI.Xaml.Media.AcrylicBrush();
+            myBrush.BackgroundSource = Windows.UI.Xaml.Media.AcrylicBackgroundSource.HostBackdrop;
+            if (theme == "light")
+            {
+                myBrush.TintColor = Windows.UI.Colors.WhiteSmoke;
+                myBrush.FallbackColor = Windows.UI.Colors.WhiteSmoke;
+                RequestedTheme = ElementTheme.Light;
+                HomeIcon.Foreground = new SolidColorBrush(Colors.Black);
+            }
+            if (theme == "dark")
+            {
+                myBrush.TintColor = Color.FromArgb(255, 50, 50, 50);
+                myBrush.FallbackColor = Color.FromArgb(255, 50, 50, 50);
+                RequestedTheme = ElementTheme.Dark;
+                HomeIcon.Foreground = new SolidColorBrush(Colors.White);
+            }
+            else
+            {
+                theme = "light";
+                myBrush.TintColor = Windows.UI.Colors.WhiteSmoke;
+                myBrush.FallbackColor = Windows.UI.Colors.WhiteSmoke;
+                RequestedTheme = ElementTheme.Light;
+                HomeIcon.Foreground = new SolidColorBrush(Colors.Black);
+            }
+            myBrush.TintOpacity = 0.7;
+            RectangleAcrylic.Fill = myBrush;
+        }
+
     }
 }

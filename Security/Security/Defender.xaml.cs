@@ -28,6 +28,8 @@ namespace Security
         public Defender()
         {
             this.InitializeComponent();
+
+            UpdateColors();
         }
         bool checking = false;
 
@@ -61,20 +63,19 @@ namespace Security
             this.Frame.Navigate(typeof(MainPage), color);
         }
 
-        protected override void OnNavigatedTo(NavigationEventArgs e)
+        void UpdateColors()
         {
-            color = e.Parameter.ToString();
-
+            string theme = AppSettings.Theme;
             Windows.UI.Xaml.Media.AcrylicBrush myBrush = new Windows.UI.Xaml.Media.AcrylicBrush();
             myBrush.BackgroundSource = Windows.UI.Xaml.Media.AcrylicBackgroundSource.HostBackdrop;
-            if (color == "light")
+            if (theme == "light")
             {
                 myBrush.TintColor = Windows.UI.Colors.WhiteSmoke;
                 myBrush.FallbackColor = Windows.UI.Colors.WhiteSmoke;
                 RequestedTheme = ElementTheme.Light;
                 HomeIcon.Foreground = new SolidColorBrush(Colors.Black);
             }
-            if (color == "dark")
+            if (theme == "dark")
             {
                 myBrush.TintColor = Color.FromArgb(255, 50, 50, 50);
                 myBrush.FallbackColor = Color.FromArgb(255, 50, 50, 50);
@@ -83,7 +84,7 @@ namespace Security
             }
             else
             {
-                color = "light";
+                theme = "light";
                 myBrush.TintColor = Windows.UI.Colors.WhiteSmoke;
                 myBrush.FallbackColor = Windows.UI.Colors.WhiteSmoke;
                 RequestedTheme = ElementTheme.Light;

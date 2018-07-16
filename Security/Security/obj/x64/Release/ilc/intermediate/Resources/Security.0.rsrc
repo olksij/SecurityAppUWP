@@ -1,4 +1,18 @@
-﻿09.07.18 - v0.9-beta - Added scrolling in Settings page. Added components and scripts to change colorof app. [scripts are disabled]
-DD.MM.YY - v0.8-beta - Bugs fixed. Added Changelog page.
+﻿10.07.18 - v0.10-beta - Added Health page.
+09.07.18 - v0.9-beta - Added scrolling in Settings page. Added components and scripts to change colorof app. [scripts are disabled]
+05.07.18 - v0.8-beta - Added Changelog page. 
 03.07.18 - v0.7-beta - Fixed bugs with gridview in MainPage, More customizing title bar, more stability.
 02.07.18 - v0.6-beta - Added Dark Theme, fixed bugs, redesigned MainPage.
+02.07.18 - v0.5-beta
+01.07.18 - v0.4.2-beta
+30.06.18 - v0.4-beta
+30.06.18 - v0.3-beta - Redesigned Window. Fixed Bugs. Added Windows Fall and April Creators Updates effects
+29.06.18 - v0.2.10-beta
+28.06.18 - v0.2.9-beta
+27.06.18 - v0.2.8-beta
+25.06.18 - v0.2.7-beta - Fixed bugs, added update page, alpha code with autoupdate, deleted dont used/old things
+23.06.18 - v0.2.6-beta
+23.06.18 - v0.2.5-beta - Fixed bugs with Package.appxmanifest
+22.06.18 - v0.2.4-beta
+20.06.18 - v0.2.2-beta - Fixed resizing, added settings, redesigned window, fixed bugs.
+16.06.18 - v0.1-alpha
